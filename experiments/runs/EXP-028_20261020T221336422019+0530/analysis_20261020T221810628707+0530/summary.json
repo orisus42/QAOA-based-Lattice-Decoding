@@ -1,0 +1,162 @@
+{
+  "experiment_id": "EXP-028",
+  "hardware": {
+    "at": "2026-10-20T22:17:43.711425+05:30",
+    "pubs": 80,
+    "shots": 327680,
+    "job_id": "dbbpkvk24mrc73ci7mjg",
+    "backend": "ibm_marrakesh"
+  },
+  "qpu_usage": {
+    "quantum_seconds": 94,
+    "seconds": 94,
+    "status": "complete"
+  },
+  "primary": {
+    "mean_probability_difference": 0.0001220703125,
+    "fixed_cohort_shot_bootstrap_ci95": [
+      2.0345052083333332e-05,
+      0.000244140625
+    ],
+    "conservative_simultaneous_exact_ci95": [
+      -0.0007881405192722299,
+      0.0010452280633928748
+    ],
+    "case_differences": [
+      0.0,
+      0.0001220703125,
+      0.0,
+      0.0001220703125,
+      0.0001220703125,
+      0.0003662109375
+    ],
+    "zero_count_cells": 7,
+    "note": "Shot uncertainty conditional on six fixed cases; no population CI. Bootstrap can underrepresent uncertainty at zero counts; exact simultaneous bounds supplied."
+  },
+  "comparisons": {
+    "weak75_frozen_minus_full_fixed": {
+      "mean_probability_difference": 0.0001220703125,
+      "fixed_cohort_shot_bootstrap_ci95": [
+        2.0345052083333332e-05,
+        0.000244140625
+      ],
+      "conservative_simultaneous_exact_ci95": [
+        -0.0007881405192722299,
+        0.0010452280633928748
+      ],
+      "case_differences": [
+        0.0,
+        0.0001220703125,
+        0.0,
+        0.0001220703125,
+        0.0001220703125,
+        0.0003662109375
+      ],
+      "zero_count_cells": 7,
+      "note": "Shot uncertainty conditional on six fixed cases; no population CI. Bootstrap can underrepresent uncertainty at zero counts; exact simultaneous bounds supplied."
+    },
+    "weak75_retrained_minus_full_fixed": {
+      "mean_probability_difference": 8.138020833333333e-05,
+      "fixed_cohort_shot_bootstrap_ci95": [
+        0.0,
+        0.00018310546875
+      ],
+      "conservative_simultaneous_exact_ci95": [
+        -0.0007974745954393148,
+        0.0009749131321426873
+      ],
+      "case_differences": [
+        0.0,
+        0.0,
+        0.0001220703125,
+        0.0001220703125,
+        0.0001220703125,
+        0.0001220703125
+      ],
+      "zero_count_cells": 7,
+      "note": "Shot uncertainty conditional on six fixed cases; no population CI. Bootstrap can underrepresent uncertainty at zero counts; exact simultaneous bounds supplied."
+    },
+    "cached24_minus_incumbent24": {
+      "mean_probability_difference": -0.00020345052083333334,
+      "fixed_cohort_shot_bootstrap_ci95": [
+        -0.00042724609375,
+        2.0345052083333332e-05
+      ],
+      "conservative_simultaneous_exact_ci95": [
+        -0.0014643973303779033,
+        0.0010626073662128664
+      ],
+      "case_differences": [
+        -0.0006103515625,
+        0.0003662109375,
+        0.0001220703125,
+        0.0003662109375,
+        -0.0010986328125,
+        -0.0003662109375
+      ],
+      "zero_count_cells": 4,
+      "note": "Shot uncertainty conditional on six fixed cases; no population CI. Bootstrap can underrepresent uncertainty at zero counts; exact simultaneous bounds supplied."
+    }
+  },
+  "failure_case_ids": [
+    "FRESH-0057",
+    "FRESH-0134",
+    "FRESH-0137",
+    "FRESH-0200",
+    "FRESH-0237",
+    "FRESH-0411"
+  ],
+  "all_case_count": 8,
+  "failure_case_count": 6,
+  "methods": {
+    "full_fixed": {
+      "mean_native_cz": 527.75,
+      "failure_mean_p_improve": 2.0345052083333332e-05,
+      "failure_improvement_counts": 1,
+      "failure_optimum_counts": 1,
+      "all_observed_optimum_with_babai": 3,
+      "all_observed_improved_over_babai": 1
+    },
+    "weak75_frozen": {
+      "mean_native_cz": 156.25,
+      "failure_mean_p_improve": 0.00014241536458333334,
+      "failure_improvement_counts": 7,
+      "failure_optimum_counts": 7,
+      "all_observed_optimum_with_babai": 6,
+      "all_observed_improved_over_babai": 4
+    },
+    "weak75_retrained": {
+      "mean_native_cz": 156.25,
+      "failure_mean_p_improve": 0.00010172526041666667,
+      "failure_improvement_counts": 5,
+      "failure_optimum_counts": 4,
+      "all_observed_optimum_with_babai": 5,
+      "all_observed_improved_over_babai": 4
+    },
+    "cached24": {
+      "mean_native_cz": 155.375,
+      "failure_mean_p_improve": 0.00020345052083333334,
+      "failure_improvement_counts": 10,
+      "failure_optimum_counts": 6,
+      "all_observed_optimum_with_babai": 5,
+      "all_observed_improved_over_babai": 4
+    },
+    "incumbent24": {
+      "mean_native_cz": 160.125,
+      "failure_mean_p_improve": 0.0004069010416666667,
+      "failure_improvement_counts": 20,
+      "failure_optimum_counts": 17,
+      "all_observed_optimum_with_babai": 6,
+      "all_observed_improved_over_babai": 4
+    }
+  },
+  "limitations": [
+    "Small same-family conditional replication; no secure ML-KEM attack or quantum advantage.",
+    "Two ordered blocks permit a drift check but do not establish independent hardware replications.",
+    "All methods and angles fixed before hardware data; no adaptive favorable-case filtering.",
+    "Finite-shot estimates at rare optimum events may be imprecise; zero counts do not mean zero probability.",
+    "Classical retained Babai remains available; QAOA-only probability is distinct from hybrid success.",
+    "Cached selection changes implementation time, not quantum behavior relative to its uncached equivalent.",
+    "Per-shot/binomial intervals assume independent stationary shots; block counts permit a limited drift diagnostic."
+  ]
+}

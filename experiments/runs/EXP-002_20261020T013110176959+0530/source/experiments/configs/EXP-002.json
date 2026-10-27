@@ -1,0 +1,27 @@
+{
+  "id": "EXP-002",
+  "name": "Ideal QAOA probabilities and observed finite-shot success",
+  "cohort": "Existing 200-instance generic q-ary replication cohort from EXP-000; NOT the 64 Module-LWE instances",
+  "instances_path": "outputs/replication_instances.json",
+  "policies": ["separately trained fixed angles per qubit count", "previously frozen learned schedule selections"],
+  "depth_p": 1,
+  "retraining": false,
+  "measurement_seed": 2026102001,
+  "uniform_seed": 2026102002,
+  "shots_per_circuit": 1024,
+  "report_budgets": [1, 10, 25, 50, 100, 256, 1024],
+  "prefix_design": "All smaller budgets are prefixes of each 1024-shot sequence, so budget rows are correlated.",
+  "statevector_check": "Independent NumPy evolution versus Qiskit Statevector for all 400 QAOA circuits",
+  "sampling": "Qiskit Aer noiseless statevector circuits with final measurements and saved memory",
+  "success": "Minimum public squared-distance cost among sampled candidates equals the independently checked global CVP optimum; count all tied optima.",
+  "classical_controls": ["Babai", "uniform sampling in the same bounded coefficient box", "exhaustive evaluation of the same box"],
+  "hardware": "none",
+  "limitations": [
+    "Ideal simulation only; no physical noise, connectivity cost, queue time, or hardware run.",
+    "One measured batch per circuit; exact probabilities predict repeated-batch performance on this fixed cohort.",
+    "Existing exploratory instances and trained policies, not a new independent holdout or a new optimized method.",
+    "Success refers to CVP optimality, not planted-secret recovery.",
+    "Both QAOA policies already use a search box centered on Babai.",
+    "A successful repeated-shot experiment does not establish quantum advantage."
+  ]
+}

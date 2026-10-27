@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-10-20T16:39:38.239603+05:30",
+  "scope": "Targeted nearest-prior-art and relevance check, not exhaustive novelty certification",
+  "sources": [
+    {
+      "title": "NIST FIPS203",
+      "url": "https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.203.pdf",
+      "checked_finding": "Sections3.1 and5.1: Module-LWE assumption and public noisy equations."
+    },
+    {
+      "title": "Lattice Estimator primal attacks",
+      "url": "https://lattice-estimator.readthedocs.io/en/latest/algorithms/lwe-primal.html",
+      "checked_finding": "Primal BDD/CVP-style decoding after basis preprocessing."
+    },
+    {
+      "title": "Liu, Shaydulin, Safro2022",
+      "url": "https://arxiv.org/abs/2205.00118",
+      "checked_finding": "Full PDF Algorithms1/2: incumbent-informed phase sparsification and original-objective scoring."
+    },
+    {
+      "title": "Priestley and Wallden",
+      "url": "https://arxiv.org/abs/2503.08403",
+      "checked_finding": "Full-text review: fixed-angle restricted prime-lattice CVP and structure-specific limitations."
+    },
+    {
+      "title": "Dynamic-ADAPT-QAOA",
+      "url": "https://doi.org/10.1103/PhysRevA.109.032420",
+      "checked_finding": "Adaptive removal of costly circuit operations already studied."
+    },
+    {
+      "title": "Moondra et al.",
+      "url": "https://arxiv.org/abs/2406.14330",
+      "checked_finding": "Sparsification and compilation with resource/noise guarantees for its specified setting."
+    },
+    {
+      "title": "IBM multi-objective tutorial",
+      "url": "https://quantum.cloud.ibm.com/docs/en/tutorials/quantum-approximate-multi-objective-optimization",
+      "checked_finding": "Inspected importance-aware QAP code: joint magnitude/routing selection is prior art."
+    },
+    {
+      "title": "Leichenauer2019 talk",
+      "url": "https://pirsa.org/19070008",
+      "checked_finding": "Talk abstract includes analytical estimates for eliminating QAOA gates; no claim its full method is identical to ours."
+    }
+  ]
+}

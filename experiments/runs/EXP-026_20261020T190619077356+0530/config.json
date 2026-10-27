@@ -1,0 +1,131 @@
+{
+  "experiment_id": "EXP-026",
+  "purpose": "Fresh near-matched native-CZ comparison of cached objective-guided and incumbent-informed pruning under saved IBM Fez calibrated noise.",
+  "training_run": "experiments/runs/EXP-003_20261020T014441792732+0530",
+  "previous_fresh_run": "experiments/runs/EXP-023_20261020T180743053982+0530",
+  "fixed_angles_run": "experiments/runs/EXP-021_20261020T175520818890+0530",
+  "profile_run": "experiments/runs/EXP-025_20261020T190055128754+0530",
+  "parameters": {
+    "n": 2,
+    "k": 2,
+    "q": 17,
+    "eta": 2
+  },
+  "fresh_count": 128,
+  "fresh_first_seed": 2026102026000,
+  "logical_grid": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "native_caps": [
+    128,
+    160
+  ],
+  "native_gap_tolerance": 2,
+  "routing_seeds": [
+    2026102031
+  ],
+  "selection_angles": [
+    1.3393885543560986,
+    -0.3516024709404892
+  ],
+  "matching": "Compile both complete mask families at one fixed layout and routing seed with symbolic angles. For each cap choose the pair maximizing min(nativeCZ), with absolute nativeCZ gap<=2 and both<=cap. Ties: smaller gap, larger sumK, larger minK, lower summed duration, deterministic K/seed order. No padding. Retain exact-match intersections as diagnostics.",
+  "development_amendment": "Single-seed and three-seed exact-match development profiles both severely underfilled budgets. Near-match tolerance2 chosen using only old public circuit resources; one seed retained because extra seeds did not improve matching. No fresh quality outcomes used.",
+  "training": "Separate16 original training groups. For each matched-cap method fit one global angle pair against original full energy with identical768-call budget. Freeze fits before generating fresh data. Fixed24 controls reuse previously frozen EXP017/019 angles through EXP021.",
+  "optimizer": {
+    "seed": 2026102041,
+    "population": 24,
+    "generations": 31,
+    "evaluation_budget": 768,
+    "gamma_bounds": [
+      0,
+      12.566370614359172
+    ],
+    "beta_bounds": [
+      -1.5707963267948966,
+      0
+    ]
+  },
+  "methods": [
+    "cached_cap128",
+    "incumbent_cap128",
+    "cached_cap160",
+    "incumbent_cap160",
+    "cached24",
+    "incumbent24"
+  ],
+  "calibration": "research/calibrations/ibm_fez_20261020T050035937321+0530/snapshot.json",
+  "noise": "Native calibrated depolarization plus gate-time T1/T2, explicit T1/T2 relaxation during scheduled idle delays, and asymmetric readout. Zero-temperature, ideal initial reset. Same saved16-qubit Fez patch and calibration for all circuits. No crosstalk, leakage, drift or coherent calibration errors.",
+  "trajectories_per_circuit": 64,
+  "noise_seed": 2026102601,
+  "sentinel_count": 4,
+  "sentinel_seed": 20261020261,
+  "noise_cohort": "Simulate all Babai-nonoptimal fresh cases plus4 outcome-independent sentinel cases. All128 cases enter hybrid statistics; optimal Babai incumbents make other hybrid outcomes deterministically optimal. This evaluation shortcut never supplies reference labels to selection or supports a runtime/standalone claim.",
+  "simulator": {
+    "method": "statevector",
+    "max_parallel_threads": 4,
+    "max_parallel_shots": 4,
+    "max_parallel_experiments": 1,
+    "max_memory_mb": 2048,
+    "zero_threshold": 0.0,
+    "fusion_max_qubit": 1
+  },
+  "normalization_tolerance": 1e-10,
+  "primary_budget": 1024,
+  "budgets": [
+    256,
+    1024,
+    4096,
+    16384
+  ],
+  "primary": "At cap160, cached minus incumbent hybrid global-optimum success after1024 independent noisy samples; paired95% bootstrap combining group and independent trajectory resampling. Improvement only if lower bound>0. Report actual CZ counts and slack; pairing is within2 CZ, not exact equality.",
+  "secondary": "Cap128 and fixed24 comparisons, ideal/readout-only/gate-idle controls, noise penalties, original expected distance, physical duration and full classical preprocessing/selection/compilation costs. Secondary intervals are descriptive, not multiplicity-adjusted confirmatory claims.",
+  "bootstrap_seed": 20261020262,
+  "bootstrap_replicates": 5000,
+  "exact_reference_candidate_cap": 1000000,
+  "classical_refinement_evaluation_cap": 1024,
+  "qpu_seconds": 0,
+  "limitations": [
+    "One small16-qubit toy Module-LWE family and one frozen calibration; no secure ML-KEM or scaling claim.",
+    "Near-matched within2 CZ under common caps; duration, gate placement and error exposure need not be equal.",
+    "All matching/compiler search cost is counted; this is a comparison protocol rather than a new standalone decoder.",
+    "Finite64-trajectory noisy probabilities imply Monte Carlo uncertainty and nonlinear plug-in bias; report separate MC and group intervals and jackknife sensitivity.",
+    "Caching changes CPU implementation cost only; any quantum/noise effect comes from the selected masks and circuits.",
+    "No quantum hardware, cloud jobs, purchases or repository publication."
+  ],
+  "documentation": [
+    "https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.noise.NoiseModel.html",
+    "https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.noise.RelaxationNoisePass.html"
+  ]
+}

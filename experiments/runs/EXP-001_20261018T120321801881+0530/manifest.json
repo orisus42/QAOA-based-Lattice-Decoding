@@ -1,0 +1,29 @@
+{
+  "run_id": "EXP-001_20261018T120321801881+0530",
+  "status": "completed",
+  "started_at": "2026-10-18T12:03:21.801881+05:30",
+  "python": "3.14.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.4.6",
+    "sympy": "1.14.0"
+  },
+  "command": "python experiments/run_module_lwe_baseline.py",
+  "source_sha256": {
+    "src/lattice_qaoa/__init__.py": "c735051e3cdf56fb6f25aeaa155befc21569d17d8d35c8d626494b7673355e08",
+    "src/lattice_qaoa/instances.py": "4a3ba14e8b39674d0aabd63a8dabde14066210ddcfd1457480bb1c996bbe781b",
+    "src/lattice_qaoa/reference.py": "db8d1b3e270d1c88cb5f7e70ade6aa4c4b04c537991c0479f222f9e91fbb098d",
+    "experiments/run_module_lwe_baseline.py": "0764a54ba1460a714acdee45e8a03b6268cd7c89195129a5af503238f83db485",
+    "experiments/configs/EXP-001.json": "6b07d2fffac7cb253a93df2a20e0c2981f47bf45670e9601c72f0cd74ca7d057",
+    "tests/test_module_lwe.py": "a1cd4c7b4a7385c2948ad80d9ad7ca538d03a5fa4afb013f13c822c8fbd68380",
+    "requirements-research.txt": "669b548d27ccb14699386e121ecd607f89cfcedd747c7434af56d75218013039",
+    "pytest.ini": "4d5193eb36807e4622451417a9fe7bea71e7307137cd05cc214332e514fd9527"
+  },
+  "qpu_seconds": 0,
+  "finished_at": "2026-10-18T12:03:22.420955+05:30",
+  "output_sha256": {
+    "config.json": "78155c65176ac9294ea7f225efe384838f4cd95f5e85411e50875a32da1b02e3",
+    "instances.json": "c501984a2a5ec80fdecfe52a6972ae9d6951fc7a988d71d6336cba47e03cc929",
+    "summary.json": "3af796e160762e38d73475f5d09373bd4fe17c4ec36aab8f74bc139583f0fc56"
+  }
+}

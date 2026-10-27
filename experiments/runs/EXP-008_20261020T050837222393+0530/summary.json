@@ -1,0 +1,1304 @@
+{
+  "experiment_id": "EXP-008",
+  "run_id": "EXP-008_20261020T050837222393+0530",
+  "count": 512,
+  "backend": "ibm_fez",
+  "calibration_last_update": "2026-10-20T03:37:33+05:30",
+  "calibration_fetched_at": "2026-10-20T05:00:43.997481+05:30",
+  "physical_qubits": [
+    91,
+    92,
+    93,
+    94,
+    95,
+    98,
+    99,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    118,
+    129
+  ],
+  "qubits": 16,
+  "depth_p": 1,
+  "primary_budget": 1024,
+  "babai": {
+    "solved_count": 441,
+    "success": {
+      "mean": 0.861328125,
+      "ci95": [
+        0.83203125,
+        0.890625
+      ]
+    },
+    "mean_distance": 2.6899081631811015,
+    "secret_recovered_count": 353
+  },
+  "classical_refinement": {
+    "refine_1": {
+      "solved_count": 471,
+      "strict_improved_count": 38,
+      "mean_distance": 2.6607300274421637,
+      "secret_recovered_count": 370,
+      "candidate_evaluations_min_median_max": [
+        17,
+        17.0,
+        49
+      ],
+      "evaluation_cap_reached_count": 0
+    },
+    "refine_2": {
+      "solved_count": 497,
+      "strict_improved_count": 58,
+      "mean_distance": 2.639696070132038,
+      "secret_recovered_count": 384,
+      "candidate_evaluations_min_median_max": [
+        129,
+        129.0,
+        513
+      ],
+      "evaluation_cap_reached_count": 0
+    }
+  },
+  "noise_union_count": 101,
+  "babai_failure_count": 71,
+  "random_subset_count": 32,
+  "trajectories_per_circuit": 64,
+  "methods": {
+    "full_fixed": {
+      "resources": {
+        "native_cz": {
+          "mean": 559.751953125,
+          "min": 349.0,
+          "median": 562.0,
+          "max": 694.0
+        },
+        "depth": {
+          "mean": 669.42578125,
+          "min": 394.0,
+          "median": 668.0,
+          "max": 858.0
+        },
+        "two_qubit_depth": {
+          "mean": 238.8984375,
+          "min": 136.0,
+          "median": 240.0,
+          "max": 315.0
+        },
+        "duration_unitary_s": {
+          "mean": 2.278342968750001e-05,
+          "min": 1.3088000000000018e-05,
+          "median": 2.286800000000002e-05,
+          "max": 2.9987999999999998e-05
+        },
+        "duration_with_readout_s": {
+          "mean": 2.444342968750001e-05,
+          "min": 1.4748000000000017e-05,
+          "median": 2.452800000000002e-05,
+          "max": 3.1648e-05
+        },
+        "idle_delay_count": {
+          "mean": 318.13671875,
+          "min": 204.0,
+          "median": 320.0,
+          "max": 386.0
+        }
+      },
+      "by_budget": {
+        "256": {
+          "hybrid_distance": {
+            "estimate": 2.688426503648398,
+            "fixed_cohort_mc_ci95": [
+              2.688362153032233,
+              2.6884876580535364
+            ],
+            "group_and_mc_ci95": [
+              2.6365859929514577,
+              2.739979197872528
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.8639172741425136,
+            "fixed_cohort_mc_ci95": [
+              0.863824617422491,
+              0.8640134741528582
+            ],
+            "group_and_mc_ci95": [
+              0.833345751461631,
+              0.8926355255539176
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.003561570542419251,
+            "fixed_cohort_mc_ci95": [
+              0.0034390648399758284,
+              0.0036858229575206865
+            ],
+            "group_and_mc_ci95": [
+              0.0026867456554942673,
+              0.00450013091965743
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.0014816595327036275,
+            "fixed_cohort_mc_ci95": [
+              0.001420505127565108,
+              0.0015460101488687372
+            ],
+            "group_and_mc_ci95": [
+              0.0010501153970722931,
+              0.00196685568078363
+            ]
+          },
+          "expected_recovered_count": 1.325644360966976,
+          "jackknife_bias_check": {
+            "distance_correction": -4.0715186333528663e-07,
+            "success_correction": 5.758430287050587e-07
+          },
+          "ideal_hybrid_success": 0.8700168102439196,
+          "ideal_hybrid_distance": 2.684979170407366
+        },
+        "1024": {
+          "hybrid_distance": {
+            "estimate": 2.6842504173285255,
+            "fixed_cohort_mc_ci95": [
+              2.68402535514117,
+              2.684474882069977
+            ],
+            "group_and_mc_ci95": [
+              2.633038552157633,
+              2.734865912530656
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.8713733206157162,
+            "fixed_cohort_mc_ci95": [
+              0.8710218781960035,
+              0.871725965569933
+            ],
+            "group_and_mc_ci95": [
+              0.842726537706483,
+              0.8984324272136418
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.013526247711789865,
+            "fixed_cohort_mc_ci95": [
+              0.01307765762222104,
+              0.013949995560989923
+            ],
+            "group_and_mc_ci95": [
+              0.010278918365510785,
+              0.017015337057750057
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.005657745852575946,
+            "fixed_cohort_mc_ci95": [
+              0.0054332811111244324,
+              0.005882808039931376
+            ],
+            "group_and_mc_ci95": [
+              0.004024177835545528,
+              0.007467806927517994
+            ]
+          },
+          "expected_recovered_count": 5.14314015524667,
+          "jackknife_bias_check": {
+            "distance_correction": -5.843017681694818e-06,
+            "success_correction": 8.67108461855004e-06
+          },
+          "ideal_hybrid_success": 0.8927005639009578,
+          "ideal_hybrid_distance": 2.6728068505729836
+        },
+        "4096": {
+          "hybrid_distance": {
+            "estimate": 2.670787438157921,
+            "fixed_cohort_mc_ci95": [
+              2.6702176891081,
+              2.671487445397176
+            ],
+            "group_and_mc_ci95": [
+              2.621397968400833,
+              2.719601009140956
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.8970388109018863,
+            "fixed_cohort_mc_ci95": [
+              0.8958558099378683,
+              0.8980465198932496
+            ],
+            "group_and_mc_ci95": [
+              0.8739831755624174,
+              0.9184761150572236
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.04492044506209529,
+            "fixed_cohort_mc_ci95": [
+              0.04359617279238797,
+              0.045958931828368986
+            ],
+            "group_and_mc_ci95": [
+              0.03462017966114512,
+              0.055688871303541713
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.01912072502318063,
+            "fixed_cohort_mc_ci95": [
+              0.018420717783925587,
+              0.019690474073001316
+            ],
+            "group_and_mc_ci95": [
+              0.013854008314661603,
+              0.024882969209548012
+            ]
+          },
+          "expected_recovered_count": 18.28387118176579,
+          "jackknife_bias_check": {
+            "distance_correction": -6.268285854016398e-05,
+            "success_correction": 0.00010801914188329764
+          },
+          "ideal_hybrid_success": 0.9485494968349248,
+          "ideal_hybrid_distance": 2.6464903010390355
+        },
+        "16384": {
+          "hybrid_distance": {
+            "estimate": 2.6438760674956048,
+            "fixed_cohort_mc_ci95": [
+              2.643245952876968,
+              2.645118515704192
+            ],
+            "group_and_mc_ci95": [
+              2.5983312452772998,
+              2.6897017056542563
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.9559568771390342,
+            "fixed_cohort_mc_ci95": [
+              0.9535283816957407,
+              0.9570903149688536
+            ],
+            "group_and_mc_ci95": [
+              0.944414416393021,
+              0.9652810398636681
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.1041481128860175,
+            "fixed_cohort_mc_ci95": [
+              0.1019387758407639,
+              0.10509775174809843
+            ],
+            "group_and_mc_ci95": [
+              0.08173014188782496,
+              0.1267601264511607
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.04603209568549671,
+            "fixed_cohort_mc_ci95": [
+              0.044789647476909465,
+              0.04666221030413372
+            ],
+            "group_and_mc_ci95": [
+              0.033880479708572574,
+              0.05876361500708608
+            ]
+          },
+          "expected_recovered_count": 48.449921095185516,
+          "jackknife_bias_check": {
+            "distance_correction": -0.0002998355029926181,
+            "success_correction": 0.0006656557038187128
+          },
+          "ideal_hybrid_success": 0.9959406181649442,
+          "ideal_hybrid_distance": 2.6276876300901817
+        }
+      },
+      "random_subset_qaoa_only": {
+        "256": {
+          "count": 32,
+          "estimated_success": 0.022486334421374276,
+          "fixed_subset_mc_ci95": [
+            0.02128987545211546,
+            0.02364890361753355
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        },
+        "1024": {
+          "count": 32,
+          "estimated_success": 0.08629711876768455,
+          "fixed_subset_mc_ci95": [
+            0.0819137736851867,
+            0.09041430822253284
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        },
+        "4096": {
+          "count": 32,
+          "estimated_success": 0.29619519381572734,
+          "fixed_subset_mc_ci95": [
+            0.2827189404040463,
+            0.30728725192856565
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        },
+        "16384": {
+          "count": 32,
+          "estimated_success": 0.7302579934766688,
+          "fixed_subset_mc_ci95": [
+            0.7061047441041318,
+            0.7433503707337219
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        }
+      }
+    },
+    "weak75_frozen": {
+      "resources": {
+        "native_cz": {
+          "mean": 165.548828125,
+          "min": 97.0,
+          "median": 166.0,
+          "max": 231.0
+        },
+        "depth": {
+          "mean": 222.70703125,
+          "min": 131.0,
+          "median": 221.5,
+          "max": 363.0
+        },
+        "two_qubit_depth": {
+          "mean": 76.779296875,
+          "min": 43.0,
+          "median": 76.0,
+          "max": 134.0
+        },
+        "duration_unitary_s": {
+          "mean": 7.404195312500009e-06,
+          "min": 4.220000000000004e-06,
+          "median": 7.3060000000000085e-06,
+          "max": 1.2760000000000017e-05
+        },
+        "duration_with_readout_s": {
+          "mean": 9.064195312500009e-06,
+          "min": 5.880000000000004e-06,
+          "median": 8.966000000000009e-06,
+          "max": 1.4420000000000016e-05
+        },
+        "idle_delay_count": {
+          "mean": 98.4375,
+          "min": 69.0,
+          "median": 99.0,
+          "max": 124.0
+        }
+      },
+      "by_budget": {
+        "256": {
+          "hybrid_distance": {
+            "estimate": 2.686511001727618,
+            "fixed_cohort_mc_ci95": [
+              2.6864408005593288,
+              2.686583842606681
+            ],
+            "group_and_mc_ci95": [
+              2.634839283708157,
+              2.737657264696044
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.8674938108894212,
+            "fixed_cohort_mc_ci95": [
+              0.8673837883981049,
+              0.8676006534780552
+            ],
+            "group_and_mc_ci95": [
+              0.8378489015201334,
+              0.8952807571728172
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.008118379666459377,
+            "fixed_cohort_mc_ci95": [
+              0.00797147289438411,
+              0.008257037918643151
+            ],
+            "group_and_mc_ci95": [
+              0.006198347803459804,
+              0.010163299815708548
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.003397161453483566,
+            "fixed_cohort_mc_ci95": [
+              0.003324320574420625,
+              0.0034673626217726627
+            ],
+            "group_and_mc_ci95": [
+              0.0024434235819663975,
+              0.004440270468557294
+            ]
+          },
+          "expected_recovered_count": 3.1568311753836724,
+          "jackknife_bias_check": {
+            "distance_correction": -6.048533527369671e-07,
+            "success_correction": 8.67764508361013e-07
+          },
+          "ideal_hybrid_success": 0.8711394774177657,
+          "ideal_hybrid_distance": 2.6844882219958004
+        },
+        "1024": {
+          "hybrid_distance": {
+            "estimate": 2.6776338621318616,
+            "fixed_cohort_mc_ci95": [
+              2.677418762465557,
+              2.6778713617928176
+            ],
+            "group_and_mc_ci95": [
+              2.6272793805209163,
+              2.727310034309231
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.88416806868976,
+            "fixed_cohort_mc_ci95": [
+              0.8837918692701716,
+              0.8845184561597427
+            ],
+            "group_and_mc_ci95": [
+              0.8583626451932755,
+              0.9081862504578256
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.02903166919243371,
+            "fixed_cohort_mc_ci95": [
+              0.02856272808991841,
+              0.02944033614583927
+            ],
+            "group_and_mc_ci95": [
+              0.022346972043483914,
+              0.036063581242569
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.012274301049239877,
+            "fixed_cohort_mc_ci95": [
+              0.01203680138828378,
+              0.01248940071554433
+            ],
+            "group_and_mc_ci95": [
+              0.008936886609898387,
+              0.01593673475505416
+            ]
+          },
+          "expected_recovered_count": 11.694051169157092,
+          "jackknife_bias_check": {
+            "distance_correction": -7.521877428029455e-06,
+            "success_correction": 1.1709606131171668e-05
+          },
+          "ideal_hybrid_success": 0.8960221118597257,
+          "ideal_hybrid_distance": 2.671530188637158
+        },
+        "4096": {
+          "hybrid_distance": {
+            "estimate": 2.655123428662255,
+            "fixed_cohort_mc_ci95": [
+              2.654746172542558,
+              2.6556195585524542
+            ],
+            "group_and_mc_ci95": [
+              2.6079282626999767,
+              2.702221678483206
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.9305581762309899,
+            "fixed_cohort_mc_ci95": [
+              0.9296687867870331,
+              0.9312457453162057
+            ],
+            "group_and_mc_ci95": [
+              0.914328666991641,
+              0.945213545715149
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.07996480421636831,
+            "fixed_cohort_mc_ci95": [
+              0.07907421016026733,
+              0.08061432126069983
+            ],
+            "group_and_mc_ci95": [
+              0.06231764313300159,
+              0.09806600592919738
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.03478473451884634,
+            "fixed_cohort_mc_ci95": [
+              0.034288604628647225,
+              0.035161990638543514
+            ],
+            "group_and_mc_ci95": [
+              0.02566325882936359,
+              0.04459043416069467
+            ]
+          },
+          "expected_recovered_count": 35.44578623026683,
+          "jackknife_bias_check": {
+            "distance_correction": -5.025189878571368e-05,
+            "success_correction": 9.782594932350452e-05
+          },
+          "ideal_hybrid_success": 0.9525486900328108,
+          "ideal_hybrid_distance": 2.6454770751838925
+        },
+        "16384": {
+          "hybrid_distance": {
+            "estimate": 2.631101654505037,
+            "fixed_cohort_mc_ci95": [
+              2.630871075712929,
+              2.63149712499064
+            ],
+            "group_and_mc_ci95": [
+              2.5854577468216546,
+              2.675497899548058
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.9877074624660004,
+            "fixed_cohort_mc_ci95": [
+              0.9870242106279572,
+              0.9880405150646396
+            ],
+            "group_and_mc_ci95": [
+              0.9836589661907136,
+              0.99104309801829
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.1298137570336352,
+            "fixed_cohort_mc_ci95": [
+              0.12923734524673158,
+              0.1301069108011513
+            ],
+            "group_and_mc_ci95": [
+              0.10231251617129532,
+              0.15836966867812463
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.05880650867606452,
+            "fixed_cohort_mc_ci95": [
+              0.05841103819046143,
+              0.05903708746817243
+            ],
+            "group_and_mc_ci95": [
+              0.04377644416763027,
+              0.07499296820404655
+            ]
+          },
+          "expected_recovered_count": 64.7062207825922,
+          "jackknife_bias_check": {
+            "distance_correction": -7.310586429154498e-05,
+            "success_correction": 0.0001762360709075539
+          },
+          "ideal_hybrid_success": 0.995308631292609,
+          "ideal_hybrid_distance": 2.628043310088305
+        }
+      },
+      "random_subset_qaoa_only": {
+        "256": {
+          "count": 32,
+          "estimated_success": 0.04845984916787216,
+          "fixed_subset_mc_ci95": [
+            0.047053135078488635,
+            0.04985022986165445
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        },
+        "1024": {
+          "count": 32,
+          "estimated_success": 0.1759465595138393,
+          "fixed_subset_mc_ci95": [
+            0.17146597229856664,
+            0.1801712099777469
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        },
+        "4096": {
+          "count": 32,
+          "estimated_success": 0.5131294675430268,
+          "fixed_subset_mc_ci95": [
+            0.5035909218901613,
+            0.521235253536848
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        },
+        "16384": {
+          "count": 32,
+          "estimated_success": 0.9169045153680295,
+          "fixed_subset_mc_ci95": [
+            0.909992542740173,
+            0.9211845240010723
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        }
+      }
+    },
+    "weak75_retrained": {
+      "resources": {
+        "native_cz": {
+          "mean": 165.548828125,
+          "min": 97.0,
+          "median": 166.0,
+          "max": 231.0
+        },
+        "depth": {
+          "mean": 222.73046875,
+          "min": 133.0,
+          "median": 221.0,
+          "max": 362.0
+        },
+        "two_qubit_depth": {
+          "mean": 76.779296875,
+          "min": 43.0,
+          "median": 76.0,
+          "max": 134.0
+        },
+        "duration_unitary_s": {
+          "mean": 7.402851562500009e-06,
+          "min": 4.220000000000004e-06,
+          "median": 7.302000000000008e-06,
+          "max": 1.2736000000000017e-05
+        },
+        "duration_with_readout_s": {
+          "mean": 9.062851562500008e-06,
+          "min": 5.880000000000004e-06,
+          "median": 8.962000000000007e-06,
+          "max": 1.4396000000000016e-05
+        },
+        "idle_delay_count": {
+          "mean": 98.4609375,
+          "min": 69.0,
+          "median": 99.0,
+          "max": 124.0
+        }
+      },
+      "by_budget": {
+        "256": {
+          "hybrid_distance": {
+            "estimate": 2.686124191057004,
+            "fixed_cohort_mc_ci95": [
+              2.686042376343785,
+              2.6862044115657877
+            ],
+            "group_and_mc_ci95": [
+              2.6345378741731236,
+              2.7371367034271796
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.8681735383229285,
+            "fixed_cohort_mc_ci95": [
+              0.8680461442425349,
+              0.8682957747454129
+            ],
+            "group_and_mc_ci95": [
+              0.8388475382009963,
+              0.8957254618523532
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.008976210967986615,
+            "fixed_cohort_mc_ci95": [
+              0.00881077992106814,
+              0.009135389872836816
+            ],
+            "group_and_mc_ci95": [
+              0.006833677922318248,
+              0.011261016944003152
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.0037839721240975344,
+            "fixed_cohort_mc_ci95": [
+              0.0037037516153136775,
+              0.003865786837316587
+            ],
+            "group_and_mc_ci95": [
+              0.002712458888984026,
+              0.004963739111778753
+            ]
+          },
+          "expected_recovered_count": 3.5048516213394123,
+          "jackknife_bias_check": {
+            "distance_correction": -7.642993771206363e-07,
+            "success_correction": 1.123611142683778e-06
+          },
+          "ideal_hybrid_success": 0.8722693551576494,
+          "ideal_hybrid_distance": 2.683879493252659
+        },
+        "1024": {
+          "hybrid_distance": {
+            "estimate": 2.6764015152191325,
+            "fixed_cohort_mc_ci95": [
+              2.676154216553888,
+              2.6766562643094596
+            ],
+            "group_and_mc_ci95": [
+              2.626262621805098,
+              2.7259000866284877
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.8864575847467269,
+            "fixed_cohort_mc_ci95": [
+              0.8860272001889714,
+              0.8868495674524111
+            ],
+            "group_and_mc_ci95": [
+              0.8611678758257308,
+              0.909846081346836
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.03168561783249498,
+            "fixed_cohort_mc_ci95": [
+              0.031185668428111605,
+              0.03213789636732592
+            ],
+            "group_and_mc_ci95": [
+              0.0243893562635172,
+              0.03940446635940689
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.013506647961968987,
+            "fixed_cohort_mc_ci95": [
+              0.013251898871642053,
+              0.01375394662721341
+            ],
+            "group_and_mc_ci95": [
+              0.009785034299327611,
+              0.017576640195913724
+            ]
+          },
+          "expected_recovered_count": 12.866283390324156,
+          "jackknife_bias_check": {
+            "distance_correction": -9.225667477075206e-06,
+            "success_correction": 1.4841012072053239e-05
+          },
+          "ideal_hybrid_success": 0.8994206262936122,
+          "ideal_hybrid_distance": 2.6698389898660904
+        },
+        "4096": {
+          "hybrid_distance": {
+            "estimate": 2.65289893954219,
+            "fixed_cohort_mc_ci95": [
+              2.6525031117941342,
+              2.653388142980946
+            ],
+            "group_and_mc_ci95": [
+              2.605889589625206,
+              2.6995416107828727
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.935332451502816,
+            "fixed_cohort_mc_ci95": [
+              0.9343765887690754,
+              0.9360620900871165
+            ],
+            "group_and_mc_ci95": [
+              0.9200281130087087,
+              0.9489694979806239
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.08440227181616464,
+            "fixed_cohort_mc_ci95": [
+              0.08346986093018176,
+              0.08507492357841594
+            ],
+            "group_and_mc_ci95": [
+              0.0657577519013628,
+              0.10364568689481198
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.03700922363891168,
+            "fixed_cohort_mc_ci95": [
+              0.0365200202001557,
+              0.03740505138696708
+            ],
+            "group_and_mc_ci95": [
+              0.0274235723234584,
+              0.047371253577094444
+            ]
+          },
+          "expected_recovered_count": 37.890215169441774,
+          "jackknife_bias_check": {
+            "distance_correction": -5.6604613146937766e-05,
+            "success_correction": 0.00011489646772167017
+          },
+          "ideal_hybrid_success": 0.9573123264872399,
+          "ideal_hybrid_distance": 2.643383910795142
+        },
+        "16384": {
+          "hybrid_distance": {
+            "estimate": 2.6302480005458015,
+            "fixed_cohort_mc_ci95": [
+              2.630026367648485,
+              2.6306336500285354
+            ],
+            "group_and_mc_ci95": [
+              2.5847308783347285,
+              2.674629596583587
+            ]
+          },
+          "hybrid_success": {
+            "estimate": 0.989765041007482,
+            "fixed_cohort_mc_ci95": [
+              0.9891063522432781,
+              0.9900752262863289
+            ],
+            "group_and_mc_ci95": [
+              0.9860177242757391,
+              0.9928295451748503
+            ]
+          },
+          "strict_improved_fraction": {
+            "estimate": 0.1313859963092995,
+            "fixed_cohort_mc_ci95": [
+              0.1308247657804287,
+              0.13165371127343226
+            ],
+            "group_and_mc_ci95": [
+              0.10356098219841066,
+              0.1602801217975496
+            ]
+          },
+          "extra_distance_improvement": {
+            "estimate": 0.05966016263529994,
+            "fixed_cohort_mc_ci95": [
+              0.05927451315256603,
+              0.059881795532616376
+            ],
+            "group_and_mc_ci95": [
+              0.04436022951252895,
+              0.07591494660301289
+            ]
+          },
+          "expected_recovered_count": 65.75970099583077,
+          "jackknife_bias_check": {
+            "distance_correction": -6.925921372546995e-05,
+            "success_correction": 0.00016777952974134092
+          },
+          "ideal_hybrid_success": 0.9960177554530767,
+          "ideal_hybrid_distance": 2.6277071167115955
+        }
+      },
+      "random_subset_qaoa_only": {
+        "256": {
+          "count": 32,
+          "estimated_success": 0.050811669877981934,
+          "fixed_subset_mc_ci95": [
+            0.04937967456129524,
+            0.05232105990706528
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        },
+        "1024": {
+          "count": 32,
+          "estimated_success": 0.18385689546719194,
+          "fixed_subset_mc_ci95": [
+            0.17924864689363168,
+            0.18850451549104688
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        },
+        "4096": {
+          "count": 32,
+          "estimated_success": 0.5290656732916587,
+          "fixed_subset_mc_ci95": [
+            0.519080351510078,
+            0.5377446946790487
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        },
+        "16384": {
+          "count": 32,
+          "estimated_success": 0.9223212616474129,
+          "fixed_subset_mc_ci95": [
+            0.9152689734261235,
+            0.9266383836081072
+          ],
+          "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+        }
+      }
+    }
+  },
+  "comparisons_to_full": {
+    "weak75_frozen": {
+      "256": {
+        "paired_success_difference": {
+          "estimate": 0.0035765367469076104,
+          "fixed_cohort_mc_ci95": [
+            0.0034336584712615524,
+            0.0037191285612786836
+          ],
+          "group_and_mc_ci95": [
+            0.0026860712885730664,
+            0.004554624079322666
+          ]
+        },
+        "paired_distance_difference": {
+          "estimate": -0.0019155019207799384,
+          "fixed_cohort_mc_ci95": [
+            -0.0020074419859057334,
+            -0.0018204842153053292
+          ],
+          "group_and_mc_ci95": [
+            -0.0025512520718330655,
+            -0.001349429551511672
+          ]
+        },
+        "extra_distance_benefit_ratio": {
+          "estimate": 2.292808420895903,
+          "fixed_cohort_mc_ci95": [
+            2.185993649182825,
+            2.4012283249436193
+          ],
+          "group_and_mc_ci95": [
+            2.0333414288850222,
+            2.600198589418049
+          ]
+        }
+      },
+      "1024": {
+        "paired_success_difference": {
+          "estimate": 0.012794748074043794,
+          "fixed_cohort_mc_ci95": [
+            0.01228620976700839,
+            0.01329263905695396
+          ],
+          "group_and_mc_ci95": [
+            0.009651871319129937,
+            0.016236076684262347
+          ]
+        },
+        "paired_distance_difference": {
+          "estimate": -0.006616555196663931,
+          "fixed_cohort_mc_ci95": [
+            -0.006922841881441022,
+            -0.006293602070245807
+          ],
+          "group_and_mc_ci95": [
+            -0.008739343949986222,
+            -0.00467354350006386
+          ]
+        },
+        "extra_distance_benefit_ratio": {
+          "estimate": 2.169468436559667,
+          "fixed_cohort_mc_ci95": [
+            2.076358174236147,
+            2.264856590146905
+          ],
+          "group_and_mc_ci95": [
+            1.9375287055996884,
+            2.4438584638594785
+          ]
+        }
+      },
+      "4096": {
+        "paired_success_difference": {
+          "estimate": 0.0335193653291036,
+          "fixed_cohort_mc_ci95": [
+            0.032168467765388016,
+            0.03486037364413122
+          ],
+          "group_and_mc_ci95": [
+            0.025465462641688693,
+            0.04227060694019872
+          ]
+        },
+        "paired_distance_difference": {
+          "estimate": -0.01566400949566571,
+          "fixed_cohort_mc_ci95": [
+            -0.016433835818299002,
+            -0.014908604800022185
+          ],
+          "group_and_mc_ci95": [
+            -0.020559429385737647,
+            -0.011292215562068497
+          ]
+        },
+        "extra_distance_benefit_ratio": {
+          "estimate": 1.819216294187368,
+          "fixed_cohort_mc_ci95": [
+            1.760023059395575,
+            1.8883622289080086
+          ],
+          "group_and_mc_ci95": [
+            1.6616418738492054,
+            2.013232245820917
+          ]
+        }
+      },
+      "16384": {
+        "paired_success_difference": {
+          "estimate": 0.031750585326966174,
+          "fixed_cohort_mc_ci95": [
+            0.030386711525655315,
+            0.03404965843388251
+          ],
+          "group_and_mc_ci95": [
+            0.024405067665458288,
+            0.040661267906982636
+          ]
+        },
+        "paired_distance_difference": {
+          "estimate": -0.012774412990567807,
+          "fixed_cohort_mc_ci95": [
+            -0.013989015995289822,
+            -0.012026886962658856
+          ],
+          "group_and_mc_ci95": [
+            -0.017383405042949152,
+            -0.009151997321615458
+          ]
+        },
+        "extra_distance_benefit_ratio": {
+          "estimate": 1.2775110018419742,
+          "fixed_cohort_mc_ci95": [
+            1.2579391573928205,
+            1.3119924935739302
+          ],
+          "group_and_mc_ci95": [
+            1.2246545005518807,
+            1.3548030233837878
+          ]
+        }
+      }
+    },
+    "weak75_retrained": {
+      "256": {
+        "paired_success_difference": {
+          "estimate": 0.004256264180414915,
+          "fixed_cohort_mc_ci95": [
+            0.004099231231050102,
+            0.004410890065732406
+          ],
+          "group_and_mc_ci95": [
+            0.0031771765763543265,
+            0.005404589194641776
+          ]
+        },
+        "paired_distance_difference": {
+          "estimate": -0.002302312591393907,
+          "fixed_cohort_mc_ci95": [
+            -0.0024063218708821775,
+            -0.0021989738375303713
+          ],
+          "group_and_mc_ci95": [
+            -0.00306976629023773,
+            -0.0016113497946750213
+          ]
+        },
+        "extra_distance_benefit_ratio": {
+          "estimate": 2.5538742474749307,
+          "fixed_cohort_mc_ci95": [
+            2.436867571549494,
+            2.6770454208059036
+          ],
+          "group_and_mc_ci95": [
+            2.253419084825336,
+            2.8994351594611447
+          ]
+        }
+      },
+      "1024": {
+        "paired_success_difference": {
+          "estimate": 0.015084264131010716,
+          "fixed_cohort_mc_ci95": [
+            0.014527134634333697,
+            0.015629542069654345
+          ],
+          "group_and_mc_ci95": [
+            0.011318247262995906,
+            0.019097369003702413
+          ]
+        },
+        "paired_distance_difference": {
+          "estimate": -0.007848902109393041,
+          "fixed_cohort_mc_ci95": [
+            -0.008189685555517879,
+            -0.007508478133959696
+          ],
+          "group_and_mc_ci95": [
+            -0.010406630711399412,
+            -0.005550467340885413
+          ]
+        },
+        "extra_distance_benefit_ratio": {
+          "estimate": 2.3872843202773897,
+          "fixed_cohort_mc_ci95": [
+            2.28618110512781,
+            2.495374050620615
+          ],
+          "group_and_mc_ci95": [
+            2.125634958396854,
+            2.6984191516375944
+          ]
+        }
+      },
+      "4096": {
+        "paired_success_difference": {
+          "estimate": 0.03829364060092966,
+          "fixed_cohort_mc_ci95": [
+            0.03686739368707287,
+            0.039712060971944144
+          ],
+          "group_and_mc_ci95": [
+            0.02912183806451149,
+            0.047920264083104985
+          ]
+        },
+        "paired_distance_difference": {
+          "estimate": -0.017888498615731052,
+          "fixed_cohort_mc_ci95": [
+            -0.018667618568028288,
+            -0.017116148725888125
+          ],
+          "group_and_mc_ci95": [
+            -0.02342140633947798,
+            -0.012887241070972257
+          ]
+        },
+        "extra_distance_benefit_ratio": {
+          "estimate": 1.935555455875459,
+          "fixed_cohort_mc_ci95": [
+            1.8728515268179946,
+            2.0098890302124817
+          ],
+          "group_and_mc_ci95": [
+            1.7641825132521487,
+            2.148439449605092
+          ]
+        }
+      },
+      "16384": {
+        "paired_success_difference": {
+          "estimate": 0.03380816386844776,
+          "fixed_cohort_mc_ci95": [
+            0.03241763503259273,
+            0.03615568673221558
+          ],
+          "group_and_mc_ci95": [
+            0.026018095255258954,
+            0.04312414840274767
+          ]
+        },
+        "paired_distance_difference": {
+          "estimate": -0.01362806694980323,
+          "fixed_cohort_mc_ci95": [
+            -0.014867008053321274,
+            -0.012876385186518959
+          ],
+          "group_and_mc_ci95": [
+            -0.01845826846851002,
+            -0.00975659793504885
+          ]
+        },
+        "extra_distance_benefit_ratio": {
+          "estimate": 1.2960557573331821,
+          "fixed_cohort_mc_ci95": [
+            1.2760605934391194,
+            1.3315727567157933
+          ],
+          "group_and_mc_ci95": [
+            1.2411532374835776,
+            1.3733710499223026
+          ]
+        }
+      }
+    }
+  },
+  "planning": {
+    "reset_duration_s": 1.684e-06,
+    "default_rep_delay_s": 0.00025,
+    "reserve_seconds": 120,
+    "estimates": [
+      {
+        "cases": 16,
+        "methods": 3,
+        "shots_per_circuit": 1024,
+        "total_executions": 49152,
+        "single_job_2s_overhead_estimate_seconds": 15.068246656,
+        "one_job_per_circuit_2s_overhead_estimate_seconds": 109.068246656,
+        "note": "Two overhead scenarios, not bounds or a guarantee. Actual quota and calibration must be refreshed before execution."
+      },
+      {
+        "cases": 16,
+        "methods": 3,
+        "shots_per_circuit": 4096,
+        "total_executions": 196608,
+        "single_job_2s_overhead_estimate_seconds": 54.272986624,
+        "one_job_per_circuit_2s_overhead_estimate_seconds": 148.272986624,
+        "note": "Two overhead scenarios, not bounds or a guarantee. Actual quota and calibration must be refreshed before execution."
+      },
+      {
+        "cases": 16,
+        "methods": 3,
+        "shots_per_circuit": 8192,
+        "total_executions": 393216,
+        "single_job_2s_overhead_estimate_seconds": 106.545973248,
+        "one_job_per_circuit_2s_overhead_estimate_seconds": 200.545973248,
+        "note": "Two overhead scenarios, not bounds or a guarantee. Actual quota and calibration must be refreshed before execution."
+      },
+      {
+        "cases": 16,
+        "methods": 3,
+        "shots_per_circuit": 16384,
+        "total_executions": 786432,
+        "single_job_2s_overhead_estimate_seconds": 211.091946496,
+        "one_job_per_circuit_2s_overhead_estimate_seconds": 305.091946496,
+        "note": "Two overhead scenarios, not bounds or a guarantee. Actual quota and calibration must be refreshed before execution."
+      }
+    ]
+  },
+  "validation": {
+    "input_manifest_hashes": 38,
+    "routed_ideal_circuits_verified": 1536,
+    "native_two_qubit_edges_verified": 456115,
+    "max_routed_probability_discrepancy": 5.355958732078392e-17,
+    "noisy_circuits_completed": 303,
+    "noise_trajectories": 19392,
+    "readout_normalization_checks": 19392,
+    "low_cost_mass_agreement_checks": 303,
+    "manifest_hashes_before_analysis": 858
+  },
+  "qpu_jobs_submitted": 0,
+  "qpu_seconds": 0,
+  "limitations": [
+    "One currently accessible IBM device, one calibration snapshot, one connected 16-qubit patch and one fixed routing seed. Not a claim about every IBM processor or placement.",
+    "Calibration-based Markovian noise is an approximation, not an experiment on the device. Calibration drift, crosstalk, leakage and coherent errors are excluded.",
+    "64 noise trajectories per circuit give Monte Carlo uncertainty; displayed best-of-shot results are nonlinear plug-in estimates with a finite-trajectory bias check, not exact predictions.",
+    "All 512 examples contribute to hybrid metrics. QAOA-only noisy population summaries use only the separate random 32-case subset, never the enriched union.",
+    "No new fitting; this is a follow-up on the existing fresh-validation cohort. Any new changes motivated by these outcomes need new evaluation.",
+    "Fewer native gates need not translate proportionally into QPU usage because readout, reset, repetition delay and job overhead also consume time.",
+    "Small Module-LWE parameters, no secure ML-KEM attack, no end-to-end quantum advantage, and no real QPU execution."
+  ],
+  "timing": {
+    "routing_seconds": 173.70827040000586,
+    "simulation_and_routing_seconds": 1075.0917581000103
+  }
+}

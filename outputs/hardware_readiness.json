@@ -1,0 +1,123 @@
+{
+  "scope": "LOCAL ONLY. Synthetic noise; no IBM calibration and no QPU use.",
+  "replication": {
+    "seed": 20262016,
+    "generation_attempts": 244,
+    "audit": {
+      "count": 200,
+      "bdd_certified": 102,
+      "nonzero_error": 169,
+      "unique_cvp": 194,
+      "babai_optimal": 193,
+      "box_covers_optimum": 200,
+      "planted_is_closest": 157
+    },
+    "learned": 0.03614865185572499,
+    "fixed_by_size": 0.029419111475656224,
+    "delta": {
+      "mean": 0.006729540380068763,
+      "ci95": [
+        0.004669139069095084,
+        0.008878498687601244
+      ],
+      "bootstrap_unit": "lattice"
+    },
+    "caveat": "New lattices exclude all original lattice groups; only one fresh seed and tiny dimensions."
+  },
+  "original_grouped_deltas": {
+    "fixed_by_size": {
+      "mean": 0.006026436424862613,
+      "ci95": [
+        0.0029403961698771597,
+        0.009437782586273667
+      ],
+      "bootstrap_unit": "lattice"
+    },
+    "cluster_rule": {
+      "mean": 0.0013445028024024058,
+      "ci95": [
+        0.00033911630329280226,
+        0.002727679210728182
+      ],
+      "bootstrap_unit": "lattice"
+    }
+  },
+  "noise": {
+    "light": {
+      "count": 24,
+      "model": {
+        "depolarizing_1q": 0.0001,
+        "depolarizing_2q": 0.003,
+        "amplitude_damping_1q": 0.0001,
+        "amplitude_damping_2q": 0.001,
+        "readout_0_to_1": 0.01,
+        "readout_1_to_0": 0.02
+      },
+      "learned": 0.029284480694162302,
+      "fixed_by_size": 0.024541691151572703,
+      "delta": {
+        "mean": 0.004742789542589602,
+        "ci95": [
+          0.0008659213501119823,
+          0.009574194077175455
+        ],
+        "bootstrap_unit": "lattice"
+      },
+      "ideal_learned_same_subset": 0.03460027569191498,
+      "ideal_fixed_same_subset": 0.02858912400282394,
+      "oracle": 0.029805920302369216,
+      "rank_changed_count": 3,
+      "note": "Exact density-matrix probabilities with a synthetic gate/readout model; not sampled hardware counts or fitted IBM noise."
+    },
+    "moderate": {
+      "count": 24,
+      "model": {
+        "depolarizing_1q": 0.0005,
+        "depolarizing_2q": 0.01,
+        "amplitude_damping_1q": 0.0003,
+        "amplitude_damping_2q": 0.002,
+        "readout_0_to_1": 0.02,
+        "readout_1_to_0": 0.04
+      },
+      "learned": 0.02282699157523833,
+      "fixed_by_size": 0.019591311175822457,
+      "delta": {
+        "mean": 0.0032356803994158675,
+        "ci95": [
+          0.0006691632536908919,
+          0.006407099331540722
+        ],
+        "bootstrap_unit": "lattice"
+      },
+      "ideal_learned_same_subset": 0.03460027569191498,
+      "ideal_fixed_same_subset": 0.02858912400282394,
+      "oracle": 0.023029694742815826,
+      "rank_changed_count": 5,
+      "note": "Exact density-matrix probabilities with a synthetic gate/readout model; not sampled hardware counts or fitted IBM noise."
+    }
+  },
+  "validation": {
+    "direct_statevector_max_error": 1.249000902703301e-16,
+    "routed_statevector_max_error": 4.787836793695988e-16,
+    "circuits": 96,
+    "topology": "synthetic bidirectional line; rz,sx,x,cx basis",
+    "cx_range": [
+      26,
+      150
+    ],
+    "depth_range": [
+      38,
+      138
+    ]
+  },
+  "runtime_seconds": 6.675485610961914,
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "sympy": "1.14.0",
+    "scikit-learn": "1.9.0",
+    "qiskit": "2.4.2",
+    "qiskit-aer": "0.17.2",
+    "joblib": "1.5.3"
+  }
+}

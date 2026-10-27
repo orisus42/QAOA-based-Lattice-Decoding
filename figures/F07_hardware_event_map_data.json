@@ -1,0 +1,63 @@
+{
+  "description": "Actual hardware strict improvements over Babai, equal shots per cell. Six conditional failure cases, not a population accuracy estimate. Rare events require intervals in supporting table.",
+  "data": {
+    "counts": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        10,
+        3,
+        17
+      ],
+      [
+        4,
+        0,
+        3,
+        10,
+        3,
+        9
+      ],
+      [
+        0,
+        6,
+        9,
+        6,
+        5,
+        2
+      ],
+      [
+        7,
+        1,
+        1,
+        5,
+        22,
+        6
+      ]
+    ],
+    "cases": [
+      "FRESH-0057",
+      "FRESH-0134",
+      "FRESH-0137",
+      "FRESH-0200",
+      "FRESH-0237",
+      "FRESH-0411"
+    ],
+    "methods": [
+      "full_fixed",
+      "weak75_frozen",
+      "weak75_retrained",
+      "cached24",
+      "incumbent24"
+    ],
+    "shots_per_cell": 24576
+  }
+}

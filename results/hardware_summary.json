@@ -1,0 +1,202 @@
+{
+  "experiment_id": "EXP-028",
+  "hardware": {
+    "jobs": [
+      {
+        "at": "2026-10-20T22:17:43.711425+05:30",
+        "pubs": 80,
+        "shots": 327680,
+        "job_id": "dbbpkvk24mrc73ci7mjg",
+        "backend": "ibm_marrakesh"
+      },
+      {
+        "at": "2026-10-20T22:23:46.344410+05:30",
+        "pubs": 80,
+        "shots": 655360,
+        "job_id": "dbbpn7424mrc73ci7os0",
+        "backend": "ibm_marrakesh"
+      }
+    ],
+    "shots": 983040,
+    "shots_per_case_method": 24576
+  },
+  "analysis_type": "Post-initial-data pooled descriptive analysis; first protocol result and fixed repeat kept separately.",
+  "qpu_usage": {
+    "quantum_seconds": 280
+  },
+  "primary": {
+    "mean_probability_difference": 0.00018988715277777778,
+    "fixed_cohort_shot_bootstrap_ci95": [
+      0.0001152886284722222,
+      0.0002712673611111111
+    ],
+    "conservative_simultaneous_exact_ci95": [
+      -0.0002316201305705508,
+      0.0006126450327894869
+    ],
+    "case_differences": [
+      0.0,
+      4.0690104166666664e-05,
+      0.0,
+      0.0004069010416666667,
+      0.0001220703125,
+      0.0005696614583333334
+    ],
+    "zero_count_cells": 5,
+    "note": "Shot uncertainty conditional on six fixed cases; no population CI. Bootstrap can underrepresent uncertainty at zero counts; exact simultaneous bounds supplied.",
+    "supplemental_exact_conditional_test": {
+      "two_sided_p": 1.9341230268819757e-06,
+      "method_improving_events": 32,
+      "case_block_strata": 24,
+      "added_after_initial_data": true,
+      "null": "Equal method event probabilities within every fixed case/block; independent shots. Conditions on event totals within each stratum. This is not a population test or the preregistered primary interval."
+    }
+  },
+  "comparisons": {
+    "weak75_frozen_minus_full_fixed": {
+      "mean_probability_difference": 0.00018988715277777778,
+      "fixed_cohort_shot_bootstrap_ci95": [
+        0.0001152886284722222,
+        0.0002712673611111111
+      ],
+      "conservative_simultaneous_exact_ci95": [
+        -0.0002316201305705508,
+        0.0006126450327894869
+      ],
+      "case_differences": [
+        0.0,
+        4.0690104166666664e-05,
+        0.0,
+        0.0004069010416666667,
+        0.0001220703125,
+        0.0005696614583333334
+      ],
+      "zero_count_cells": 5,
+      "note": "Shot uncertainty conditional on six fixed cases; no population CI. Bootstrap can underrepresent uncertainty at zero counts; exact simultaneous bounds supplied.",
+      "supplemental_exact_conditional_test": {
+        "two_sided_p": 1.9341230268819757e-06,
+        "method_improving_events": 32,
+        "case_block_strata": 24,
+        "added_after_initial_data": true,
+        "null": "Equal method event probabilities within every fixed case/block; independent shots. Conditions on event totals within each stratum. This is not a population test or the preregistered primary interval."
+      }
+    },
+    "weak75_retrained_minus_full_fixed": {
+      "mean_probability_difference": 0.00016954210069444447,
+      "fixed_cohort_shot_bootstrap_ci95": [
+        9.494357638888889e-05,
+        0.000244140625
+      ],
+      "conservative_simultaneous_exact_ci95": [
+        -0.00025904949033651306,
+        0.0005990817821828076
+      ],
+      "case_differences": [
+        0.00016276041666666666,
+        0.0,
+        8.138020833333334e-05,
+        0.0004069010416666667,
+        0.0001220703125,
+        0.000244140625
+      ],
+      "zero_count_cells": 5,
+      "note": "Shot uncertainty conditional on six fixed cases; no population CI. Bootstrap can underrepresent uncertainty at zero counts; exact simultaneous bounds supplied.",
+      "supplemental_exact_conditional_test": {
+        "two_sided_p": 1.0909070160185941e-05,
+        "method_improving_events": 29,
+        "case_block_strata": 24,
+        "added_after_initial_data": true,
+        "null": "Equal method event probabilities within every fixed case/block; independent shots. Conditions on event totals within each stratum. This is not a population test or the preregistered primary interval."
+      }
+    },
+    "cached24_minus_incumbent24": {
+      "mean_probability_difference": -9.494357638888888e-05,
+      "fixed_cohort_shot_bootstrap_ci95": [
+        -0.0002102322048611111,
+        1.3563368055555567e-05
+      ],
+      "conservative_simultaneous_exact_ci95": [
+        -0.0006824552908305592,
+        0.0004919118472081216
+      ],
+      "case_differences": [
+        -0.0002848307291666667,
+        0.00020345052083333334,
+        0.0003255208333333333,
+        4.069010416666666e-05,
+        -0.0006917317708333333,
+        -0.00016276041666666668
+      ],
+      "zero_count_cells": 1,
+      "note": "Shot uncertainty conditional on six fixed cases; no population CI. Bootstrap can underrepresent uncertainty at zero counts; exact simultaneous bounds supplied.",
+      "supplemental_exact_conditional_test": {
+        "two_sided_p": 0.11954297684075034,
+        "method_improving_events": 28,
+        "case_block_strata": 24,
+        "added_after_initial_data": true,
+        "null": "Equal method event probabilities within every fixed case/block; independent shots. Conditions on event totals within each stratum. This is not a population test or the preregistered primary interval."
+      }
+    }
+  },
+  "failure_case_ids": [
+    "FRESH-0057",
+    "FRESH-0134",
+    "FRESH-0137",
+    "FRESH-0200",
+    "FRESH-0237",
+    "FRESH-0411"
+  ],
+  "all_case_count": 8,
+  "failure_case_count": 6,
+  "methods": {
+    "full_fixed": {
+      "mean_native_cz": 527.75,
+      "failure_mean_p_improve": 2.712673611111111e-05,
+      "failure_improvement_counts": 4,
+      "failure_optimum_counts": 4,
+      "all_observed_optimum_with_babai": 4,
+      "all_observed_improved_over_babai": 2
+    },
+    "weak75_frozen": {
+      "mean_native_cz": 156.25,
+      "failure_mean_p_improve": 0.0002170138888888889,
+      "failure_improvement_counts": 32,
+      "failure_optimum_counts": 27,
+      "all_observed_optimum_with_babai": 7,
+      "all_observed_improved_over_babai": 5
+    },
+    "weak75_retrained": {
+      "mean_native_cz": 156.25,
+      "failure_mean_p_improve": 0.00019666883680555553,
+      "failure_improvement_counts": 29,
+      "failure_optimum_counts": 25,
+      "all_observed_optimum_with_babai": 7,
+      "all_observed_improved_over_babai": 5
+    },
+    "cached24": {
+      "mean_native_cz": 155.375,
+      "failure_mean_p_improve": 0.00018988715277777775,
+      "failure_improvement_counts": 28,
+      "failure_optimum_counts": 22,
+      "all_observed_optimum_with_babai": 7,
+      "all_observed_improved_over_babai": 5
+    },
+    "incumbent24": {
+      "mean_native_cz": 160.125,
+      "failure_mean_p_improve": 0.0002848307291666667,
+      "failure_improvement_counts": 42,
+      "failure_optimum_counts": 34,
+      "all_observed_optimum_with_babai": 8,
+      "all_observed_improved_over_babai": 6
+    }
+  },
+  "limitations": [
+    "Small same-family conditional replication; no secure ML-KEM attack or quantum advantage.",
+    "Two ordered blocks permit a drift check but do not establish independent hardware replications.",
+    "All methods and angles fixed before hardware data; no adaptive favorable-case filtering.",
+    "Finite-shot estimates at rare optimum events may be imprecise; zero counts do not mean zero probability.",
+    "Classical retained Babai remains available; QAOA-only probability is distinct from hybrid success.",
+    "Cached selection changes implementation time, not quantum behavior relative to its uncached equivalent.",
+    "Per-shot/binomial intervals assume independent stationary shots; block counts permit a limited drift diagnostic."
+  ]
+}

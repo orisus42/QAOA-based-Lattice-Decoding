@@ -1,0 +1,64 @@
+{
+  "id": "EXP-008",
+  "name": "IBM Fez routing and calibrated noise for full and 75% pruned QAOA",
+  "input_run": "experiments/runs/EXP-007_20261020T044846904050+0530",
+  "calibration": "research/calibrations/ibm_fez_20261020T050035937321+0530",
+  "profile_run": "experiments/runs/PRE-008_20261020T050346262969+0530",
+  "methods": [
+    "full_fixed",
+    "weak75_frozen",
+    "weak75_retrained"
+  ],
+  "depth_p": 1,
+  "qubits": 16,
+  "routing_count": 512,
+  "initial_layout": "logical bit i maps to fixed selected physical patch position i; identical for all methods",
+  "optimization_level": 3,
+  "routing_seed": 2026102030,
+  "scheduling": "ALAP, explicit padded idle delays, final barrier; native rz/sx/x/cz/id basis",
+  "noise_cohort": "Union of every Babai-nonoptimal case and a fixed random 32-case subset. The 441 Babai-optimal hybrid outputs are deterministic, so their noisy simulation is unnecessary for full-cohort hybrid statistics. Reference-based computational shortcut only: no oracle is supplied to a solver and no runtime advantage is claimed from skipping these cases.",
+  "random_subset_count": 32,
+  "random_subset_seed": 2026102032,
+  "trajectories_per_circuit": 64,
+  "noise_seed": 2026102040,
+  "noise_model": "Aer calibrated native gate depolarization plus gate-time T1/T2 relaxation, explicit T1/T2 relaxation on scheduled idle delays, and asymmetric readout confusion from the same live public calibration. Zero temperature; ideal initial reset. No crosstalk, leakage, drift, coherent calibration errors, mitigation, twirling, dynamical decoupling or refitting.",
+  "simulator": {
+    "method": "statevector",
+    "max_parallel_threads": 4,
+    "max_parallel_shots": 4,
+    "max_parallel_experiments": 1,
+    "max_memory_mb": 2048
+  },
+  "primary_budget": 1024,
+  "budgets": [
+    256,
+    1024,
+    4096,
+    16384
+  ],
+  "analysis": "Estimate mixed-state probabilities by averaging 64 independently sampled noise trajectories; apply readout analytically to each trajectory. These are Monte Carlo estimates, not exact noisy probabilities or hardware shots. Store low-cost probability masses per trajectory and full mean distributions. Keep fixed-cohort Monte Carlo intervals separate from paired group-bootstrap intervals. Main outcomes: mean extra hybrid distance improvement over Babai, paired differences versus full, gate counts and scheduled duration. Both pruned variants remain fixed; no adaptive selection or stopping by quality.",
+  "bootstrap_seed": 2026102041,
+  "bootstrap_replicates": 5000,
+  "planning": {
+    "reserve_seconds": 120,
+    "candidate_cases": 16,
+    "candidate_shots": [
+      1024,
+      4096,
+      8192,
+      16384
+    ],
+    "note": "Only local time estimates with default repetition delay and reset duration. Not guaranteed quota usage, not permission to submit, and actual available account balance remains unverified."
+  },
+  "qpu_jobs_submitted": 0,
+  "qpu_seconds": 0,
+  "limitations": [
+    "One currently accessible IBM device, one calibration snapshot, one connected 16-qubit patch and one fixed routing seed. Not a claim about every IBM processor or placement.",
+    "Calibration-based Markovian noise is an approximation, not an experiment on the device. Calibration drift, crosstalk, leakage and coherent errors are excluded.",
+    "64 noise trajectories per circuit give Monte Carlo uncertainty; displayed best-of-shot results are nonlinear plug-in estimates with a finite-trajectory bias check, not exact predictions.",
+    "All 512 examples contribute to hybrid metrics. QAOA-only noisy population summaries use only the separate random 32-case subset, never the enriched union.",
+    "No new fitting; this is a follow-up on the existing fresh-validation cohort. Any new changes motivated by these outcomes need new evaluation.",
+    "Fewer native gates need not translate proportionally into QPU usage because readout, reset, repetition delay and job overhead also consume time.",
+    "Small Module-LWE parameters, no secure ML-KEM attack, no end-to-end quantum advantage, and no real QPU execution."
+  ]
+}

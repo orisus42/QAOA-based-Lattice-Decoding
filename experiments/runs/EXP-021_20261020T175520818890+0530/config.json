@@ -1,0 +1,43 @@
+{
+  "experiment_id": "EXP-021",
+  "purpose": "Frozen fresh comparison of objective-guided residual24 pruning with the cheap incumbent-informed24 control.",
+  "previous_run": "experiments/runs/EXP-017_20261020T162226494018+0530",
+  "incumbent_run": "experiments/runs/EXP-019_20261020T163117532414+0530",
+  "parameters": {
+    "n": 2,
+    "k": 2,
+    "q": 17,
+    "eta": 2
+  },
+  "fresh_count": 256,
+  "fresh_first_seed": 2026102021000,
+  "logical_budget": 24,
+  "selection_angles": [
+    1.3393885543560986,
+    -0.3516024709404892
+  ],
+  "budgets": [
+    256,
+    1024,
+    4096,
+    16384
+  ],
+  "bootstrap_seed": 20261020211,
+  "bootstrap_replicates": 10000,
+  "measurement_seed": 20261020212,
+  "primary": "Paired residual-minus-incumbent mean hybrid global-optimum success at1024 ideal independent samples. Two-sided95% instance bootstrap; improvement only if lower bound>0.",
+  "secondary": "Other shot budgets, same-anchor comparison, original expected distance, magnitude/full QAOA, prior/uniform sampling and classical two-coordinate refinement. No multiplicity-adjusted secondary claims.",
+  "training": "Reuse all previously frozen EXP017 and EXP019 global angles, without refitting. Generate fresh outcomes only after recording frozen models.",
+  "exact_reference_candidate_cap": 1000000,
+  "classical_refinement_evaluation_cap": 1024,
+  "calibration": "research/calibrations/ibm_fez_20261020T050035937321+0530/snapshot.json",
+  "routing_seed": 2026102031,
+  "limitations": [
+    "Same tiny Module-LWE family only; no secure ML-KEM attack or scaling claim.",
+    "Ideal exact probabilities and local saved-calibration routing; no noise simulation or QPU.",
+    "Selection timings are descriptive single executions; controlled repeated timing is deferred to a separate cost experiment.",
+    "This cohort will not be reused as untouched validation for a modified selector.",
+    "Closest-vector success is distinct from planted-secret recovery; all solvers retain Babai."
+  ],
+  "qpu_seconds": 0
+}

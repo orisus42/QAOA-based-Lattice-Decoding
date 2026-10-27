@@ -1,0 +1,529 @@
+{
+  "experiment_id": "EXP-003",
+  "run_id": "EXP-003_20261020T014441792732+0530",
+  "count": 64,
+  "cohort": "The same 64 previously generated toy Module-LWE development examples, all retained",
+  "parameters": {
+    "n": 2,
+    "k": 2,
+    "q": 17,
+    "eta": 2
+  },
+  "qubits": 16,
+  "depth_p": 1,
+  "binary_candidates_per_instance": 65536,
+  "box_covers_optimum_count": 64,
+  "cbd_support_covers_optimum_count": 64,
+  "babai": {
+    "solved_count": 53,
+    "solved_fraction": 0.828125,
+    "planted_secret_recovered_count": 48
+  },
+  "classical_refinement": {
+    "refine_1": {
+      "solved_count": 56,
+      "secret_recovered_count": 49,
+      "evaluations_min_median_max": [
+        17,
+        17.0,
+        33
+      ],
+      "evaluation_budget_reached_count": 0
+    },
+    "refine_2": {
+      "solved_count": 61,
+      "secret_recovered_count": 52,
+      "evaluations_min_median_max": [
+        129,
+        129.0,
+        385
+      ],
+      "evaluation_budget_reached_count": 0
+    }
+  },
+  "methods": {
+    "qaoa_fixed": {
+      "mean_single_shot_probability": 0.0002503671854267569,
+      "single_shot_probability_min_max": [
+        0.00012303544640674514,
+        0.0005909332652144369
+      ],
+      "observed_successful_samples": 23,
+      "samples_total": 65536,
+      "observed_single_shot_fraction": 0.0003509521484375,
+      "by_budget": [
+        {
+          "shots_or_samples": 1,
+          "expected_solved_fraction": 0.0002503671854267569,
+          "observed_solved_count": 0,
+          "observed_solved_fraction": 0.0,
+          "measurement_only_95pct_count_interval": [
+            0,
+            0
+          ],
+          "expected_hybrid_solved_fraction": 0.828171640938633,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 10,
+          "expected_solved_fraction": 0.0025005365199880485,
+          "observed_solved_count": 0,
+          "observed_solved_fraction": 0.0,
+          "measurement_only_95pct_count_interval": [
+            0,
+            1
+          ],
+          "expected_hybrid_solved_fraction": 0.828590747735392,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 50,
+          "expected_solved_fraction": 0.012433368162882822,
+          "observed_solved_count": 0,
+          "observed_solved_fraction": 0.0,
+          "measurement_only_95pct_count_interval": [
+            0,
+            3
+          ],
+          "expected_hybrid_solved_fraction": 0.8304391260642578,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 100,
+          "expected_solved_fraction": 0.024695086837547696,
+          "observed_solved_count": 3,
+          "observed_solved_fraction": 0.046875,
+          "measurement_only_95pct_count_interval": [
+            0,
+            4
+          ],
+          "expected_hybrid_solved_fraction": 0.8327171326475782,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 3,
+          "hybrid_returned_secret_recovered_count": 49
+        },
+        {
+          "shots_or_samples": 256,
+          "expected_solved_fraction": 0.061877681600813604,
+          "observed_solved_count": 7,
+          "observed_solved_fraction": 0.109375,
+          "measurement_only_95pct_count_interval": [
+            1,
+            8
+          ],
+          "expected_hybrid_solved_fraction": 0.8395996946172809,
+          "observed_hybrid_solved_count": 55,
+          "babai_failures_recovered": 2,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 8,
+          "hybrid_returned_secret_recovered_count": 50
+        },
+        {
+          "shots_or_samples": 1024,
+          "expected_solved_fraction": 0.22345990314554653,
+          "observed_solved_count": 18,
+          "observed_solved_fraction": 0.28125,
+          "measurement_only_95pct_count_interval": [
+            8,
+            21
+          ],
+          "expected_hybrid_solved_fraction": 0.8690696121000407,
+          "observed_hybrid_solved_count": 58,
+          "babai_failures_recovered": 5,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 16,
+          "hybrid_returned_secret_recovered_count": 51
+        }
+      ]
+    },
+    "qaoa_tuned": {
+      "mean_single_shot_probability": 0.0002520196748806589,
+      "single_shot_probability_min_max": [
+        0.00011120372504092111,
+        0.0006169953274947275
+      ],
+      "observed_successful_samples": 24,
+      "samples_total": 65536,
+      "observed_single_shot_fraction": 0.0003662109375,
+      "by_budget": [
+        {
+          "shots_or_samples": 1,
+          "expected_solved_fraction": 0.0002520196748806589,
+          "observed_solved_count": 0,
+          "observed_solved_fraction": 0.0,
+          "measurement_only_95pct_count_interval": [
+            0,
+            0
+          ],
+          "expected_hybrid_solved_fraction": 0.8281725709936936,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 10,
+          "expected_solved_fraction": 0.0025169730334066998,
+          "observed_solved_count": 0,
+          "observed_solved_fraction": 0.0,
+          "measurement_only_95pct_count_interval": [
+            0,
+            1
+          ],
+          "expected_hybrid_solved_fraction": 0.8286000079912972,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 50,
+          "expected_solved_fraction": 0.012513609688702474,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            3
+          ],
+          "expected_hybrid_solved_fraction": 0.8304845425186387,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 1,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 100,
+          "expected_solved_fraction": 0.024850821177550803,
+          "observed_solved_count": 2,
+          "observed_solved_fraction": 0.03125,
+          "measurement_only_95pct_count_interval": [
+            0,
+            4
+          ],
+          "expected_hybrid_solved_fraction": 0.8328058014043551,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 1,
+          "hybrid_returned_secret_recovered_count": 47
+        },
+        {
+          "shots_or_samples": 256,
+          "expected_solved_fraction": 0.06224025949037157,
+          "observed_solved_count": 8,
+          "observed_solved_fraction": 0.125,
+          "measurement_only_95pct_count_interval": [
+            1,
+            8
+          ],
+          "expected_hybrid_solved_fraction": 0.8398102410030959,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 6,
+          "hybrid_returned_secret_recovered_count": 47
+        },
+        {
+          "shots_or_samples": 1024,
+          "expected_solved_fraction": 0.22433821871170617,
+          "observed_solved_count": 20,
+          "observed_solved_fraction": 0.3125,
+          "measurement_only_95pct_count_interval": [
+            8,
+            21
+          ],
+          "expected_hybrid_solved_fraction": 0.8696511096051842,
+          "observed_hybrid_solved_count": 55,
+          "babai_failures_recovered": 2,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 18,
+          "hybrid_returned_secret_recovered_count": 48
+        }
+      ]
+    },
+    "uniform_box": {
+      "mean_single_shot_probability": 1.621246337890625e-05,
+      "single_shot_probability_min_max": [
+        1.52587890625e-05,
+        3.0517578125e-05
+      ],
+      "observed_successful_samples": 1,
+      "samples_total": 65536,
+      "observed_single_shot_fraction": 1.52587890625e-05,
+      "by_budget": [
+        {
+          "shots_or_samples": 1,
+          "expected_solved_fraction": 1.621246337890625e-05,
+          "observed_solved_count": 0,
+          "observed_solved_fraction": 0.0,
+          "measurement_only_95pct_count_interval": [
+            0,
+            0
+          ],
+          "expected_hybrid_solved_fraction": 0.8281278610229492,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 10,
+          "expected_solved_fraction": 0.00016211219251436327,
+          "observed_solved_count": 0,
+          "observed_solved_fraction": 0.0,
+          "measurement_only_95pct_count_interval": [
+            0,
+            0
+          ],
+          "expected_hybrid_solved_fraction": 0.8281536079376854,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 50,
+          "expected_solved_fraction": 0.0008102845731918964,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            1
+          ],
+          "expected_hybrid_solved_fraction": 0.8282679887757036,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 47
+        },
+        {
+          "shots_or_samples": 100,
+          "expected_solved_fraction": 0.0016198785556578157,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            1
+          ],
+          "expected_hybrid_solved_fraction": 0.8284108503444749,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 47
+        },
+        {
+          "shots_or_samples": 256,
+          "expected_solved_fraction": 0.004141380204282775,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            2
+          ],
+          "expected_hybrid_solved_fraction": 0.8288557622216708,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 47
+        },
+        {
+          "shots_or_samples": 1024,
+          "expected_solved_fraction": 0.016457652065803706,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            3
+          ],
+          "expected_hybrid_solved_fraction": 0.8310281879885681,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 47
+        }
+      ]
+    },
+    "cbd_secret": {
+      "mean_single_shot_probability": 0.0065250396728515625,
+      "single_shot_probability_min_max": [
+        0.000244140625,
+        0.019775390625
+      ],
+      "observed_successful_samples": 427,
+      "samples_total": 65536,
+      "observed_single_shot_fraction": 0.0065155029296875,
+      "by_budget": [
+        {
+          "shots_or_samples": 1,
+          "expected_solved_fraction": 0.0065250396728515625,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            2
+          ],
+          "expected_hybrid_solved_fraction": 0.8290138244628906,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 1,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 10,
+          "expected_solved_fraction": 0.06237950893208798,
+          "observed_solved_count": 6,
+          "observed_solved_fraction": 0.09375,
+          "measurement_only_95pct_count_interval": [
+            1,
+            8
+          ],
+          "expected_hybrid_solved_fraction": 0.8367341223460075,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 4,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 50,
+          "expected_solved_fraction": 0.25882853827652796,
+          "observed_solved_count": 17,
+          "observed_solved_fraction": 0.265625,
+          "measurement_only_95pct_count_interval": [
+            10,
+            23
+          ],
+          "expected_hybrid_solved_fraction": 0.8656999951726334,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 15,
+          "hybrid_returned_secret_recovered_count": 49
+        },
+        {
+          "shots_or_samples": 100,
+          "expected_solved_fraction": 0.42154766833659546,
+          "observed_solved_count": 26,
+          "observed_solved_fraction": 0.40625,
+          "measurement_only_95pct_count_interval": [
+            20,
+            34
+          ],
+          "expected_hybrid_solved_fraction": 0.8923595495258776,
+          "observed_hybrid_solved_count": 55,
+          "babai_failures_recovered": 2,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 25,
+          "hybrid_returned_secret_recovered_count": 50
+        },
+        {
+          "shots_or_samples": 256,
+          "expected_solved_fraction": 0.6605122073578349,
+          "observed_solved_count": 41,
+          "observed_solved_fraction": 0.640625,
+          "measurement_only_95pct_count_interval": [
+            37,
+            48
+          ],
+          "expected_hybrid_solved_fraction": 0.937408328152728,
+          "observed_hybrid_solved_count": 60,
+          "babai_failures_recovered": 7,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 37,
+          "hybrid_returned_secret_recovered_count": 52
+        },
+        {
+          "shots_or_samples": 1024,
+          "expected_solved_fraction": 0.8797840711355878,
+          "observed_solved_count": 57,
+          "observed_solved_fraction": 0.890625,
+          "measurement_only_95pct_count_interval": [
+            52,
+            60
+          ],
+          "expected_hybrid_solved_fraction": 0.9803782129501004,
+          "observed_hybrid_solved_count": 63,
+          "babai_failures_recovered": 10,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 51,
+          "hybrid_returned_secret_recovered_count": 54
+        }
+      ]
+    }
+  },
+  "exact_reference": {
+    "solved_count": 64,
+    "secret_candidates_examined_total": 27720,
+    "candidate_count_max": 1425
+  },
+  "training": {
+    "angles": [
+      1.3393885543560986,
+      -0.3516024709404892
+    ],
+    "normalized_mean_expected_cost": -1.1031391192883198,
+    "objective_evaluations": 509,
+    "training_instance_energy_evaluations": 8144,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "elapsed_seconds": 0.6265364999999292
+  },
+  "tuning_energy_evaluations_min_median_max": [
+    86,
+    101.0,
+    116
+  ],
+  "logical_rzz_gates_min_max": [
+    80,
+    120
+  ],
+  "resources_note": "RZZ counts are logical. A usual decomposition uses two CNOTs per RZZ before routing; no device compilation or end-to-end runtime comparison performed.",
+  "validation": {
+    "all_binary_costs_checked": 4194304,
+    "global_cvp_references_rechecked": 64,
+    "ideal_circuits_independently_checked": 128,
+    "max_probability_discrepancy": 3.198396408832238e-18,
+    "max_analytic_energy_discrepancy": 2.4424906541753444e-15
+  },
+  "actual_circuit_measurements": 131072,
+  "classical_candidate_samples": 131072,
+  "qpu_seconds": 0,
+  "timing": {
+    "preparation_and_sampling_seconds": 6.519643300001917,
+    "circuit_sampling_and_probability_validation_seconds": 2.061397199999192,
+    "total_seconds": 7.703484300000127
+  },
+  "limitations": [
+    "Exploratory comparison on one tiny parameter set and previously inspected development instances, not a final unseen evaluation.",
+    "One QAOA layer and this specific encoding/parameter procedure; no general conclusion about all QAOA variants.",
+    "Analytic p=1 energy optimization is performed classically; its effort is recorded and excluded from the displayed shot budget.",
+    "Equal samples do not mean equal runtime, energy consumption, or full computational effort.",
+    "Classical secret sampling exploits the known small-secret distribution and is not confined to the binary box; uniform box sampling isolates the same-space comparison.",
+    "Classical local refinement is over the full integer coefficient lattice, with explicit candidate-evaluation counts.",
+    "No noise or hardware execution. CVP success is separate from planted-secret recovery."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "frozen_angles": [
+    1.3393885543560986,
+    -0.3516024709404892
+  ],
+  "new_fits": {
+    "0.75": {
+      "angles": [
+        1.4414467519942051,
+        -0.37736552328564704
+      ],
+      "training_expected_original_energy": -1.1176521371478652,
+      "frozen_training_expected_original_energy": -1.1064889995449514,
+      "objective_evaluations": 571,
+      "instance_energy_evaluations": 9136,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "seconds": 0.9042724000028102
+    },
+    "0.9": {
+      "angles": [
+        1.5761152886101966,
+        -0.4034192067394315
+      ],
+      "training_expected_original_energy": -1.0841078727519393,
+      "frozen_training_expected_original_energy": -1.0395326567456447,
+      "objective_evaluations": 511,
+      "instance_energy_evaluations": 8176,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "seconds": 0.884443500006455
+    },
+    "1.0": {
+      "angles": [
+        1.4954813927747472,
+        -0.7854107873176716
+      ],
+      "training_expected_original_energy": -0.5807831422031999,
+      "frozen_training_expected_original_energy": -0.47641596592393953,
+      "objective_evaluations": 448,
+      "instance_energy_evaluations": 7168,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "seconds": 0.5359334999957355
+    }
+  },
+  "training_instances": 16,
+  "note": "Same separate public training cohort as EXP-003; no evaluation secrets or optimum labels used."
+}

@@ -1,0 +1,874 @@
+{
+  "experiment_id": "DIAG-015",
+  "count": 64,
+  "babai_solved": 53,
+  "refine_one_solved": 56,
+  "refine_two_solved": 61,
+  "strata": {
+    "all": {
+      "count": 64,
+      "ids": [
+        "MLWE-000",
+        "MLWE-001",
+        "MLWE-002",
+        "MLWE-003",
+        "MLWE-004",
+        "MLWE-005",
+        "MLWE-006",
+        "MLWE-007",
+        "MLWE-008",
+        "MLWE-009",
+        "MLWE-010",
+        "MLWE-011",
+        "MLWE-012",
+        "MLWE-013",
+        "MLWE-014",
+        "MLWE-015",
+        "MLWE-016",
+        "MLWE-017",
+        "MLWE-018",
+        "MLWE-019",
+        "MLWE-020",
+        "MLWE-021",
+        "MLWE-022",
+        "MLWE-023",
+        "MLWE-024",
+        "MLWE-025",
+        "MLWE-026",
+        "MLWE-027",
+        "MLWE-028",
+        "MLWE-029",
+        "MLWE-030",
+        "MLWE-031",
+        "MLWE-032",
+        "MLWE-033",
+        "MLWE-034",
+        "MLWE-035",
+        "MLWE-036",
+        "MLWE-037",
+        "MLWE-038",
+        "MLWE-039",
+        "MLWE-040",
+        "MLWE-041",
+        "MLWE-042",
+        "MLWE-043",
+        "MLWE-044",
+        "MLWE-045",
+        "MLWE-046",
+        "MLWE-047",
+        "MLWE-048",
+        "MLWE-049",
+        "MLWE-050",
+        "MLWE-051",
+        "MLWE-052",
+        "MLWE-053",
+        "MLWE-054",
+        "MLWE-055",
+        "MLWE-056",
+        "MLWE-057",
+        "MLWE-058",
+        "MLWE-059",
+        "MLWE-060",
+        "MLWE-061",
+        "MLWE-062",
+        "MLWE-063"
+      ]
+    },
+    "babai_failures": {
+      "count": 11,
+      "ids": [
+        "MLWE-009",
+        "MLWE-016",
+        "MLWE-019",
+        "MLWE-021",
+        "MLWE-023",
+        "MLWE-025",
+        "MLWE-046",
+        "MLWE-047",
+        "MLWE-049",
+        "MLWE-050",
+        "MLWE-053"
+      ]
+    },
+    "two_coordinate_failures": {
+      "count": 3,
+      "ids": [
+        "MLWE-009",
+        "MLWE-021",
+        "MLWE-049"
+      ]
+    },
+    "unique_planted_optimum": {
+      "count": 52,
+      "ids": [
+        "MLWE-001",
+        "MLWE-002",
+        "MLWE-003",
+        "MLWE-005",
+        "MLWE-006",
+        "MLWE-007",
+        "MLWE-008",
+        "MLWE-009",
+        "MLWE-010",
+        "MLWE-011",
+        "MLWE-012",
+        "MLWE-014",
+        "MLWE-015",
+        "MLWE-016",
+        "MLWE-017",
+        "MLWE-018",
+        "MLWE-019",
+        "MLWE-020",
+        "MLWE-021",
+        "MLWE-022",
+        "MLWE-025",
+        "MLWE-027",
+        "MLWE-028",
+        "MLWE-029",
+        "MLWE-030",
+        "MLWE-031",
+        "MLWE-032",
+        "MLWE-033",
+        "MLWE-034",
+        "MLWE-035",
+        "MLWE-036",
+        "MLWE-037",
+        "MLWE-038",
+        "MLWE-039",
+        "MLWE-040",
+        "MLWE-041",
+        "MLWE-042",
+        "MLWE-043",
+        "MLWE-045",
+        "MLWE-046",
+        "MLWE-048",
+        "MLWE-050",
+        "MLWE-051",
+        "MLWE-052",
+        "MLWE-054",
+        "MLWE-055",
+        "MLWE-056",
+        "MLWE-058",
+        "MLWE-059",
+        "MLWE-060",
+        "MLWE-062",
+        "MLWE-063"
+      ]
+    },
+    "unique_planted_babai_failures": {
+      "count": 7,
+      "ids": [
+        "MLWE-009",
+        "MLWE-016",
+        "MLWE-019",
+        "MLWE-021",
+        "MLWE-025",
+        "MLWE-046",
+        "MLWE-050"
+      ]
+    },
+    "unique_planted_two_coordinate_failures": {
+      "count": 2,
+      "ids": [
+        "MLWE-009",
+        "MLWE-021"
+      ]
+    }
+  },
+  "methods": {
+    "full": {
+      "mean_logical_rzz": 101.4375,
+      "cohort_targets": {
+        "0.9": {
+          "common_shots_per_instance": 2078,
+          "logical_rzz_shot_volume_per_instance": 210787.125
+        },
+        "0.95": {
+          "common_shots_per_instance": 4929,
+          "logical_rzz_shot_volume_per_instance": 499985.4375
+        },
+        "0.99": {
+          "common_shots_per_instance": 12059,
+          "logical_rzz_shot_volume_per_instance": 1223234.8125
+        }
+      },
+      "by_budget": {
+        "128": {
+          "babai_hybrid": 0.8339772919456252,
+          "after_two_coordinate_refinement": 0.9551902483148396,
+          "additional_expected_optima_over_babai": 0.3745466845200127
+        },
+        "256": {
+          "babai_hybrid": 0.8395996946172809,
+          "after_two_coordinate_refinement": 0.9571450484487349,
+          "additional_expected_optima_over_babai": 0.7343804555059776
+        },
+        "512": {
+          "babai_hybrid": 0.8501973003443315,
+          "after_two_coordinate_refinement": 0.9607502829491467,
+          "additional_expected_optima_over_babai": 1.4126272220372158
+        },
+        "1024": {
+          "babai_hybrid": 0.8690696121000407,
+          "after_two_coordinate_refinement": 0.9669078880995907,
+          "additional_expected_optima_over_babai": 2.6204551744026077
+        },
+        "2048": {
+          "babai_hybrid": 0.8992633867848614,
+          "after_two_coordinate_refinement": 0.9760377226552888,
+          "additional_expected_optima_over_babai": 4.552856754231129
+        },
+        "4096": {
+          "babai_hybrid": 0.939051022980424,
+          "after_two_coordinate_refinement": 0.9866854861042207,
+          "additional_expected_optima_over_babai": 7.0992654707471345
+        },
+        "8192": {
+          "babai_hybrid": 0.9764409625618555,
+          "after_two_coordinate_refinement": 0.9953247637745439,
+          "additional_expected_optima_over_babai": 9.492221603958754
+        },
+        "16384": {
+          "babai_hybrid": 0.9960371606194813,
+          "after_two_coordinate_refinement": 0.9993359339523595,
+          "additional_expected_optima_over_babai": 10.746378279646805
+        }
+      },
+      "strata_at_1024": {
+        "all": {
+          "mean_standalone_optimum_probability": 0.22345990314554626,
+          "mean_babai_hybrid_success": 0.8690696121000407
+        },
+        "babai_failures": {
+          "mean_standalone_optimum_probability": 0.2382231976729641,
+          "mean_babai_hybrid_success": 0.2382231976729641
+        },
+        "two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.29403494612460274,
+          "mean_babai_hybrid_success": 0.29403494612460274
+        },
+        "unique_planted_optimum": {
+          "mean_standalone_optimum_probability": 0.21317011738618835,
+          "mean_babai_hybrid_success": 0.893842717790996
+        },
+        "unique_planted_babai_failures": {
+          "mean_standalone_optimum_probability": 0.21140304644739832,
+          "mean_babai_hybrid_success": 0.21140304644739832
+        },
+        "unique_planted_two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.21400922791684335,
+          "mean_babai_hybrid_success": 0.21400922791684335
+        }
+      }
+    },
+    "weak75": {
+      "mean_logical_rzz": 25.359375,
+      "cohort_targets": {
+        "0.9": {
+          "common_shots_per_instance": 1702,
+          "logical_rzz_shot_volume_per_instance": 43161.65625
+        },
+        "0.95": {
+          "common_shots_per_instance": 4055,
+          "logical_rzz_shot_volume_per_instance": 102832.265625
+        },
+        "0.99": {
+          "common_shots_per_instance": 10179,
+          "logical_rzz_shot_volume_per_instance": 258133.078125
+        }
+      },
+      "by_budget": {
+        "128": {
+          "babai_hybrid": 0.8352170003328321,
+          "after_two_coordinate_refinement": 0.9552772428160168,
+          "additional_expected_optima_over_babai": 0.4538880213012533
+        },
+        "256": {
+          "babai_hybrid": 0.8419782262292315,
+          "after_two_coordinate_refinement": 0.9573093860408106,
+          "additional_expected_optima_over_babai": 0.8866064786708137
+        },
+        "512": {
+          "babai_hybrid": 0.8545767344683356,
+          "after_two_coordinate_refinement": 0.9610437472614066,
+          "additional_expected_optima_over_babai": 1.6929110059734782
+        },
+        "1024": {
+          "babai_hybrid": 0.8765037733928258,
+          "after_two_coordinate_refinement": 0.9673772787126452,
+          "additional_expected_optima_over_babai": 3.096241497140852
+        },
+        "2048": {
+          "babai_hybrid": 0.9100334531068123,
+          "after_two_coordinate_refinement": 0.9766449948843494,
+          "additional_expected_optima_over_babai": 5.2421409988359855
+        },
+        "4096": {
+          "babai_hybrid": 0.9505831453480784,
+          "after_two_coordinate_refinement": 0.987210353339965,
+          "additional_expected_optima_over_babai": 7.837321302277019
+        },
+        "8192": {
+          "babai_hybrid": 0.9835253023198592,
+          "after_two_coordinate_refinement": 0.995518903809955,
+          "additional_expected_optima_over_babai": 9.945619348470991
+        },
+        "16384": {
+          "babai_hybrid": 0.9977012738243463,
+          "after_two_coordinate_refinement": 0.9993141143141275,
+          "additional_expected_optima_over_babai": 10.85288152475816
+        }
+      },
+      "strata_at_1024": {
+        "all": {
+          "mean_standalone_optimum_probability": 0.25743818222656045,
+          "mean_babai_hybrid_success": 0.8765037733928258
+        },
+        "babai_failures": {
+          "mean_standalone_optimum_probability": 0.2814764997400775,
+          "mean_babai_hybrid_success": 0.2814764997400775
+        },
+        "two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.3040486125364319,
+          "mean_babai_hybrid_success": 0.3040486125364319
+        },
+        "unique_planted_optimum": {
+          "mean_standalone_optimum_probability": 0.2548575255722524,
+          "mean_babai_hybrid_success": 0.9027058460571612
+        },
+        "unique_planted_babai_failures": {
+          "mean_standalone_optimum_probability": 0.27724342785319683,
+          "mean_babai_hybrid_success": 0.27724342785319683
+        },
+        "unique_planted_two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.22314306255767768,
+          "mean_babai_hybrid_success": 0.22314306255767768
+        }
+      }
+    },
+    "weak81": {
+      "mean_logical_rzz": 19.703125,
+      "cohort_targets": {
+        "0.9": {
+          "common_shots_per_instance": 1561,
+          "logical_rzz_shot_volume_per_instance": 30756.578125
+        },
+        "0.95": {
+          "common_shots_per_instance": 3828,
+          "logical_rzz_shot_volume_per_instance": 75423.5625
+        },
+        "0.99": {
+          "common_shots_per_instance": 10107,
+          "logical_rzz_shot_volume_per_instance": 199139.484375
+        }
+      },
+      "by_budget": {
+        "128": {
+          "babai_hybrid": 0.8360486720588461,
+          "after_two_coordinate_refinement": 0.9556828090244491,
+          "additional_expected_optima_over_babai": 0.5071150117661531
+        },
+        "256": {
+          "babai_hybrid": 0.8435186105563472,
+          "after_two_coordinate_refinement": 0.9580321797167436,
+          "additional_expected_optima_over_babai": 0.9851910756062239
+        },
+        "512": {
+          "babai_hybrid": 0.8572235566354096,
+          "after_two_coordinate_refinement": 0.9621849215553693,
+          "additional_expected_optima_over_babai": 1.8623076246662151
+        },
+        "1024": {
+          "babai_hybrid": 0.8804386791206699,
+          "after_two_coordinate_refinement": 0.968754943089541,
+          "additional_expected_optima_over_babai": 3.3480754637228713
+        },
+        "2048": {
+          "babai_hybrid": 0.9144991251189118,
+          "after_two_coordinate_refinement": 0.9773994343290275,
+          "additional_expected_optima_over_babai": 5.527944007610358
+        },
+        "4096": {
+          "babai_hybrid": 0.9537087750278187,
+          "after_two_coordinate_refinement": 0.986339740968984,
+          "additional_expected_optima_over_babai": 8.037361601780397
+        },
+        "8192": {
+          "babai_hybrid": 0.9842658556330481,
+          "after_two_coordinate_refinement": 0.9937703449830613,
+          "additional_expected_optima_over_babai": 9.99301476051508
+        },
+        "16384": {
+          "babai_hybrid": 0.9973011548629304,
+          "after_two_coordinate_refinement": 0.9983298302340422,
+          "additional_expected_optima_over_babai": 10.827273911227543
+        }
+      },
+      "strata_at_1024": {
+        "all": {
+          "mean_standalone_optimum_probability": 0.2665876844213779,
+          "mean_babai_hybrid_success": 0.8804386791206699
+        },
+        "babai_failures": {
+          "mean_standalone_optimum_probability": 0.30437049670207916,
+          "mean_babai_hybrid_success": 0.30437049670207916
+        },
+        "two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.333438785910207,
+          "mean_babai_hybrid_success": 0.333438785910207
+        },
+        "unique_planted_optimum": {
+          "mean_standalone_optimum_probability": 0.2650950740147005,
+          "mean_babai_hybrid_success": 0.9043316911660836
+        },
+        "unique_planted_babai_failures": {
+          "mean_standalone_optimum_probability": 0.2893211343766214,
+          "mean_babai_hybrid_success": 0.2893211343766214
+        },
+        "unique_planted_two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.20154967014134395,
+          "mean_babai_hybrid_success": 0.20154967014134395
+        }
+      }
+    },
+    "weak75_trained": {
+      "mean_logical_rzz": 25.359375,
+      "cohort_targets": {
+        "0.9": {
+          "common_shots_per_instance": 1535,
+          "logical_rzz_shot_volume_per_instance": 38926.640625
+        },
+        "0.95": {
+          "common_shots_per_instance": 3656,
+          "logical_rzz_shot_volume_per_instance": 92713.875
+        },
+        "0.99": {
+          "common_shots_per_instance": 9212,
+          "logical_rzz_shot_volume_per_instance": 233610.5625
+        }
+      },
+      "by_budget": {
+        "128": {
+          "babai_hybrid": 0.8359656337559911,
+          "after_two_coordinate_refinement": 0.9555026587796597,
+          "additional_expected_optima_over_babai": 0.5018005603834297
+        },
+        "256": {
+          "babai_hybrid": 0.8434036265978205,
+          "after_two_coordinate_refinement": 0.9577361451582287,
+          "additional_expected_optima_over_babai": 0.9778321022605141
+        },
+        "512": {
+          "babai_hybrid": 0.8571624914212388,
+          "after_two_coordinate_refinement": 0.9618097327180792,
+          "additional_expected_optima_over_babai": 1.8583994509592827
+        },
+        "1024": {
+          "babai_hybrid": 0.8807716018153928,
+          "after_two_coordinate_refinement": 0.968618658028783,
+          "additional_expected_optima_over_babai": 3.3693825161851407
+        },
+        "2048": {
+          "babai_hybrid": 0.9159154387986445,
+          "after_two_coordinate_refinement": 0.9783133051876263,
+          "additional_expected_optima_over_babai": 5.618588083113245
+        },
+        "4096": {
+          "babai_hybrid": 0.9564084000196529,
+          "after_two_coordinate_refinement": 0.9888413699867773,
+          "additional_expected_optima_over_babai": 8.210137601257784
+        },
+        "8192": {
+          "babai_hybrid": 0.9867811438170937,
+          "after_two_coordinate_refinement": 0.996477223038285,
+          "additional_expected_optima_over_babai": 10.153993204293997
+        },
+        "16384": {
+          "babai_hybrid": 0.9984076301398974,
+          "after_two_coordinate_refinement": 0.9995448288699247,
+          "additional_expected_optima_over_babai": 10.898088328953435
+        }
+      },
+      "strata_at_1024": {
+        "all": {
+          "mean_standalone_optimum_probability": 0.27475623209710487,
+          "mean_babai_hybrid_success": 0.8807716018153928
+        },
+        "babai_failures": {
+          "mean_standalone_optimum_probability": 0.3063075014713761,
+          "mean_babai_hybrid_success": 0.3063075014713761
+        },
+        "two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.33053137128070387,
+          "mean_babai_hybrid_success": 0.33053137128070387
+        },
+        "unique_planted_optimum": {
+          "mean_standalone_optimum_probability": 0.27246321460116146,
+          "mean_babai_hybrid_success": 0.9061993366389902
+        },
+        "unique_planted_babai_failures": {
+          "mean_standalone_optimum_probability": 0.30319507217535646,
+          "mean_babai_hybrid_success": 0.30319507217535646
+        },
+        "unique_planted_two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.24937143515694743,
+          "mean_babai_hybrid_success": 0.24937143515694743
+        }
+      }
+    },
+    "weak81_trained": {
+      "mean_logical_rzz": 19.703125,
+      "cohort_targets": {
+        "0.9": {
+          "common_shots_per_instance": 1335,
+          "logical_rzz_shot_volume_per_instance": 26303.671875
+        },
+        "0.95": {
+          "common_shots_per_instance": 3288,
+          "logical_rzz_shot_volume_per_instance": 64783.875
+        },
+        "0.99": {
+          "common_shots_per_instance": 8850,
+          "logical_rzz_shot_volume_per_instance": 174372.65625
+        }
+      },
+      "by_budget": {
+        "128": {
+          "babai_hybrid": 0.8373659178495272,
+          "after_two_coordinate_refinement": 0.9561243987265963,
+          "additional_expected_optima_over_babai": 0.5914187423697399
+        },
+        "256": {
+          "babai_hybrid": 0.8459887398264982,
+          "after_two_coordinate_refinement": 0.9588402773538343,
+          "additional_expected_optima_over_babai": 1.143279348895888
+        },
+        "512": {
+          "babai_hybrid": 0.8615788716290076,
+          "after_two_coordinate_refinement": 0.9635449412138458,
+          "additional_expected_optima_over_babai": 2.141047784256486
+        },
+        "1024": {
+          "babai_hybrid": 0.8872793097227033,
+          "after_two_coordinate_refinement": 0.9707216295147616,
+          "additional_expected_optima_over_babai": 3.7858758222530113
+        },
+        "2048": {
+          "babai_hybrid": 0.9232349140980844,
+          "after_two_coordinate_refinement": 0.9796315019077497,
+          "additional_expected_optima_over_babai": 6.087034502277405
+        },
+        "4096": {
+          "babai_hybrid": 0.9615500572074289,
+          "after_two_coordinate_refinement": 0.9882118037581564,
+          "additional_expected_optima_over_babai": 8.539203661275451
+        },
+        "8192": {
+          "babai_hybrid": 0.9881578952501082,
+          "after_two_coordinate_refinement": 0.9948537536493334,
+          "additional_expected_optima_over_babai": 10.242105296006926
+        },
+        "16384": {
+          "babai_hybrid": 0.9980933333629258,
+          "after_two_coordinate_refinement": 0.9986803763184441,
+          "additional_expected_optima_over_babai": 10.877973335227253
+        }
+      },
+      "strata_at_1024": {
+        "all": {
+          "mean_standalone_optimum_probability": 0.2929348977816064,
+          "mean_babai_hybrid_success": 0.8872793097227033
+        },
+        "babai_failures": {
+          "mean_standalone_optimum_probability": 0.34417052929572817,
+          "mean_babai_hybrid_success": 0.34417052929572817
+        },
+        "two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.37539476298158175,
+          "mean_babai_hybrid_success": 0.37539476298158175
+        },
+        "unique_planted_optimum": {
+          "mean_standalone_optimum_probability": 0.2921851746353955,
+          "mean_babai_hybrid_success": 0.9099176671182974
+        },
+        "unique_planted_babai_failures": {
+          "mean_standalone_optimum_probability": 0.33081695573592257,
+          "mean_babai_hybrid_success": 0.33081695573592257
+        },
+        "unique_planted_two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.2361826853860195,
+          "mean_babai_hybrid_success": 0.2361826853860195
+        }
+      }
+    },
+    "product100": {
+      "mean_logical_rzz": 0.0,
+      "cohort_targets": {
+        "0.9": {
+          "common_shots_per_instance": 17696,
+          "logical_rzz_shot_volume_per_instance": 0.0
+        },
+        "0.95": {
+          "common_shots_per_instance": 41555,
+          "logical_rzz_shot_volume_per_instance": 0.0
+        },
+        "0.99": {
+          "common_shots_per_instance": 101826,
+          "logical_rzz_shot_volume_per_instance": 0.0
+        }
+      },
+      "by_budget": {
+        "128": {
+          "babai_hybrid": 0.8288130640223894,
+          "after_two_coordinate_refinement": 0.9533591438935294,
+          "additional_expected_optima_over_babai": 0.04403609743292236
+        },
+        "256": {
+          "babai_hybrid": 0.8294981308505903,
+          "after_two_coordinate_refinement": 0.9535920325041474,
+          "additional_expected_optima_over_babai": 0.08788037443778052
+        },
+        "512": {
+          "babai_hybrid": 0.8308593294670044,
+          "after_two_coordinate_refinement": 0.9540540722442239,
+          "additional_expected_optima_over_babai": 0.174997085888279
+        },
+        "1024": {
+          "babai_hybrid": 0.8335463783412231,
+          "after_two_coordinate_refinement": 0.9549633980480091,
+          "additional_expected_optima_over_babai": 0.3469682138382808
+        },
+        "2048": {
+          "babai_hybrid": 0.8387821581363764,
+          "after_two_coordinate_refinement": 0.9567245707321967,
+          "additional_expected_optima_over_babai": 0.6820581207280867
+        },
+        "4096": {
+          "babai_hybrid": 0.8487241376119974,
+          "after_two_coordinate_refinement": 0.9600287594161703,
+          "additional_expected_optima_over_babai": 1.3183448071678328
+        },
+        "8192": {
+          "babai_hybrid": 0.8666656427561144,
+          "after_two_coordinate_refinement": 0.9658507471177951,
+          "additional_expected_optima_over_babai": 2.4666011363913185
+        },
+        "16384": {
+          "babai_hybrid": 0.8959935659201976,
+          "after_two_coordinate_refinement": 0.9749306608183407,
+          "additional_expected_optima_over_babai": 4.3435882188926485
+        }
+      },
+      "strata_at_1024": {
+        "all": {
+          "mean_standalone_optimum_probability": 0.027352703191365898,
+          "mean_babai_hybrid_success": 0.8335463783412231
+        },
+        "babai_failures": {
+          "mean_standalone_optimum_probability": 0.031542564894388836,
+          "mean_babai_hybrid_success": 0.031542564894388836
+        },
+        "two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.03921915835752902,
+          "mean_babai_hybrid_success": 0.03921915835752902
+        },
+        "unique_planted_optimum": {
+          "mean_standalone_optimum_probability": 0.025477483477109993,
+          "mean_babai_hybrid_success": 0.8691737423477703
+        },
+        "unique_planted_babai_failures": {
+          "mean_standalone_optimum_probability": 0.02814780029772273,
+          "mean_babai_hybrid_success": 0.02814780029772273
+        },
+        "unique_planted_two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.033231055445900215,
+          "mean_babai_hybrid_success": 0.033231055445900215
+        }
+      }
+    },
+    "uniform_box": {
+      "mean_logical_rzz": 0.0,
+      "cohort_targets": {
+        "0.9": {
+          "common_shots_per_instance": 33089,
+          "logical_rzz_shot_volume_per_instance": 0.0
+        },
+        "0.95": {
+          "common_shots_per_instance": 76677,
+          "logical_rzz_shot_volume_per_instance": 0.0
+        },
+        "0.99": {
+          "common_shots_per_instance": 180565,
+          "logical_rzz_shot_volume_per_instance": 0.0
+        }
+      },
+      "by_budget": {
+        "128": {
+          "babai_hybrid": 0.8284907973054839,
+          "after_two_coordinate_refinement": 0.9532468930848887,
+          "additional_expected_optima_over_babai": 0.023411027550970687
+        },
+        "256": {
+          "babai_hybrid": 0.8288557622216708,
+          "after_two_coordinate_refinement": 0.953368429694631,
+          "additional_expected_optima_over_babai": 0.04676878218693048
+        },
+        "512": {
+          "babai_hybrid": 0.82958320322708,
+          "after_two_coordinate_refinement": 0.9536104381169357,
+          "additional_expected_optima_over_babai": 0.09332500653312081
+        },
+        "1024": {
+          "babai_hybrid": 0.8310281879885681,
+          "after_two_coordinate_refinement": 0.9540902279439558,
+          "additional_expected_optima_over_babai": 0.1858040312683613
+        },
+        "2048": {
+          "babai_hybrid": 0.8338790281123489,
+          "after_two_coordinate_refinement": 0.9550331535362002,
+          "additional_expected_optima_over_babai": 0.3682577991903315
+        },
+        "4096": {
+          "babai_hybrid": 0.8394277911259,
+          "after_two_coordinate_refinement": 0.9568543679836463,
+          "additional_expected_optima_over_babai": 0.723378632057603
+        },
+        "8192": {
+          "babai_hybrid": 0.8499412746602272,
+          "after_two_coordinate_refinement": 0.9602532822804528,
+          "additional_expected_optima_over_babai": 1.3962415782545392
+        },
+        "16384": {
+          "babai_hybrid": 0.8688356404952273,
+          "after_two_coordinate_refinement": 0.966185552696865,
+          "additional_expected_optima_over_babai": 2.6054809916945487
+        }
+      },
+      "strata_at_1024": {
+        "all": {
+          "mean_standalone_optimum_probability": 0.016457652065803706,
+          "mean_babai_hybrid_success": 0.8310281879885681
+        },
+        "babai_failures": {
+          "mean_standalone_optimum_probability": 0.016891275569851164,
+          "mean_babai_hybrid_success": 0.016891275569851164
+        },
+        "two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.02059152947105616,
+          "mean_babai_hybrid_success": 0.02059152947105616
+        },
+        "unique_planted_optimum": {
+          "mean_standalone_optimum_probability": 0.015503680356899292,
+          "mean_babai_hybrid_success": 0.8674716492788133
+        },
+        "unique_planted_babai_failures": {
+          "mean_standalone_optimum_probability": 0.015503680356899292,
+          "mean_babai_hybrid_success": 0.015503680356899292
+        },
+        "unique_planted_two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.01550368035689929,
+          "mean_babai_hybrid_success": 0.01550368035689929
+        }
+      }
+    },
+    "cbd_secret": {
+      "mean_logical_rzz": 0.0,
+      "cohort_targets": {
+        "0.9": {
+          "common_shots_per_instance": 119,
+          "logical_rzz_shot_volume_per_instance": 0.0
+        },
+        "0.95": {
+          "common_shots_per_instance": 344,
+          "logical_rzz_shot_volume_per_instance": 0.0
+        },
+        "0.99": {
+          "common_shots_per_instance": 2003,
+          "logical_rzz_shot_volume_per_instance": 0.0
+        }
+      },
+      "by_budget": {
+        "128": {
+          "babai_hybrid": 0.9038754131683581,
+          "after_two_coordinate_refinement": 0.9664766595658659,
+          "additional_expected_optima_over_babai": 4.848026442774916
+        },
+        "256": {
+          "babai_hybrid": 0.937408328152728,
+          "after_two_coordinate_refinement": 0.9742031424841353,
+          "additional_expected_optima_over_babai": 6.994133001774593
+        },
+        "512": {
+          "babai_hybrid": 0.9639782236849679,
+          "after_two_coordinate_refinement": 0.9820774448908207,
+          "additional_expected_optima_over_babai": 8.694606315837945
+        },
+        "1024": {
+          "babai_hybrid": 0.9803782129501004,
+          "after_two_coordinate_refinement": 0.9880957266854314,
+          "additional_expected_optima_over_babai": 9.744205628806426
+        },
+        "2048": {
+          "babai_hybrid": 0.9902482291680869,
+          "after_two_coordinate_refinement": 0.992538752054817,
+          "additional_expected_optima_over_babai": 10.375886666757559
+        },
+        "4096": {
+          "babai_hybrid": 0.9962265903510434,
+          "after_two_coordinate_refinement": 0.9965141244246638,
+          "additional_expected_optima_over_babai": 10.75850178246678
+        },
+        "8192": {
+          "babai_hybrid": 0.9992172829695074,
+          "after_two_coordinate_refinement": 0.999222504358007,
+          "additional_expected_optima_over_babai": 10.949906110048474
+        },
+        "16384": {
+          "babai_hybrid": 0.9999613102901859,
+          "after_two_coordinate_refinement": 0.9999613120348554,
+          "additional_expected_optima_over_babai": 10.997523858571896
+        }
+      },
+      "strata_at_1024": {
+        "all": {
+          "mean_standalone_optimum_probability": 0.8797840711355878,
+          "mean_babai_hybrid_success": 0.9803782129501004
+        },
+        "babai_failures": {
+          "mean_standalone_optimum_probability": 0.885836875346039,
+          "mean_babai_hybrid_success": 0.885836875346039
+        },
+        "two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.7460421692892041,
+          "mean_babai_hybrid_success": 0.7460421692892041
+        },
+        "unique_planted_optimum": {
+          "mean_standalone_optimum_probability": 0.9081154652644793,
+          "mean_babai_hybrid_success": 0.9866810144523795
+        },
+        "unique_planted_babai_failures": {
+          "mean_standalone_optimum_probability": 0.901058964503391,
+          "mean_babai_hybrid_success": 0.901058964503391
+        },
+        "unique_planted_two_coordinate_failures": {
+          "mean_standalone_optimum_probability": 0.6551612652046356,
+          "mean_babai_hybrid_success": 0.6551612652046356
+        }
+      }
+    }
+  },
+  "qpu_seconds": 0,
+  "limitations": [
+    "All64 are repeatedly inspected development examples; no new generalization evidence.",
+    "Shot counts use exact ideal probabilities and mean cohort optimum success, not observed success or a per-instance guarantee.",
+    "Logical RZZ count times shots is only an entangling-operation volume, not runtime or billing; all64 are charged shots, including Babai successes unknown to the solver.",
+    "Conditional strata are evaluation labels only; no oracle case filtering is a deployable method.",
+    "Classical CBD and local-search candidates have different generation costs; sample counts are not end-to-end time comparisons."
+  ],
+  "ranking_diagnostic": {
+    "weak81_higher_p_on_babai_failures": 10,
+    "weak75_higher_p_on_babai_failures": 1,
+    "per_instance_ranking_reversal_possible_at_fixed_p": false,
+    "formula": "1-(1-p_i)^S; increasing in p_i for every S>0; cohort rankings may reverse through heterogeneous saturation."
+  }
+}

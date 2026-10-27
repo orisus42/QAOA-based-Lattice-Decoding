@@ -1,0 +1,45 @@
+{
+  "run_id": "EXP-001_20261018T120321801881+0530",
+  "count": 64,
+  "parameters": {
+    "n": 2,
+    "k": 2,
+    "q": 17,
+    "eta": 2
+  },
+  "expanded_secret_dimension": 4,
+  "embedding_dimension": 8,
+  "counts": {
+    "original_babai_optimal": 1,
+    "lll_babai_optimal": 53,
+    "original_babai_recovers_planted_secret": 1,
+    "lll_babai_recovers_planted_secret": 48,
+    "planted_is_an_optimum": 56,
+    "planted_secret_in_optimum_set": 56,
+    "unique_cvp": 60,
+    "nonzero_error": 64
+  },
+  "mean_squared_cost": {
+    "original_babai_cost": 90.03125,
+    "lll_babai_cost": 8.125,
+    "planted_cost": 7.734375
+  },
+  "mean_exact_squared_cost": 7.28125,
+  "optimum_multiplicity_histogram": {
+    "1": 60,
+    "2": 4
+  },
+  "candidate_count_total": 27720,
+  "candidate_count_max": 1425,
+  "naive_two_bits_per_embedding_coefficient_qubits": 16,
+  "encoding_status": "Only a resource illustration; no bit bounds or coverage established yet.",
+  "limitations": [
+    "CBD eta=2 is used independently for secret and error coefficients.",
+    "n=2, q=17 are tiny toy choices, not ML-KEM parameters.",
+    "The least-squares objective is not exact maximum-likelihood decoding for CBD.",
+    "Closest-vector recovery and planted-secret recovery are separate measurements.",
+    "No BDD promise, QAOA improvement, novelty, or quantum advantage is asserted.",
+    "One tiny parameter set and 64 development instances; no hardware or QAOA experiment."
+  ],
+  "elapsed_seconds": 0.44189379999988887
+}

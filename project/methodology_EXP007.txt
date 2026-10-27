@@ -1,0 +1,155 @@
+EXP-007: frozen methods on 512 fresh toy Module-LWE lattice groups
+Internal research record, not final poster prose or captions.
+
+Prospective design
+  D-018 records the configuration and its SHA-256 before cohort generation.
+  This is a local timestamped analysis plan, not external preregistration.
+  Seeds 2026102400 through 2026102911 specify 512 independent examples, each
+  with its own polynomial matrix A, secret and error. The generator uses the
+  same n=2, k=2, q=17, eta=2 distribution as the earlier development study.
+  This is an eightfold increase in example count, not an increase in dimension.
+  Expanded A modulo q identifies public lattice groups. All new groups must
+  be distinct and absent from the 64 development and 16 training matrices.
+  The runner aborts on an overlap rather than replacing or screening examples.
+  No case is excluded for difficulty, noise, Babai success, or box coverage.
+
+Frozen methods and controls
+  Full fixed QAOA and 75% pruning retain EXP-003 shared angles.
+  The 90% method retains the global angles trained in EXP-006 on the original
+  16 training cases. No fresh example is used for fitting. A secondary 75%
+  method likewise retains its EXP-006 globally trained angles.
+  All methods retain p=1, 16 qubits, the same initial state/mixer, full objective
+  and original normalization, and the [-2,-1,0,1] Babai-centered coefficient
+  box. Pruning deletes the weakest floor(fraction * nonzero terms), with
+  lexicographic ties, from the phase operator only.
+  Public solver inputs exclude planted secrets, errors, and exact references.
+  References certify global CVP via bounded secret enumeration with optimal
+  modular lifts; they are used only for evaluation. Missing box optima count
+  as failures instead of causing a new box or sample selection.
+  Keep Babai's answer unless a sampled candidate has strictly lower full cost.
+  Compare with greedy one- and two-coordinate classical refinement (up to
+  1024 candidate evaluations), uniform box sampling, and CBD secret sampling.
+  CBD uses the known small-secret prior and can propose points outside the box.
+
+Measurements and validation
+  Every QAOA distribution is computed independently by NumPy and by Qiskit/Aer
+  after all-to-all compilation into rz/sx/x/cx. The exact distributions must
+  agree. Analytic p=1 full-objective expectations supply another check.
+  Independently seeded NumPy categorical draws from the verified distribution
+  simulate 16384 measurements for every method and example. These are ideal
+  simulation samples, not actual QPU measurements or repeated hardware runs.
+  Prefixes give budgets 1, 256, 1024, 4096, 8192 and 16384. All draws are saved.
+  Exact expectations, rather than a fortunate sampled batch, drive comparisons.
+  Increasing shots changes best-of-budget success, not single-shot probability.
+  Direct original-basis costs verify each returned candidate. New cost-PMF
+  expectations are checked against the older independent order-statistic code
+  at both 1024 and 16384 shots, including expected distance itself.
+
+Analysis fixed before outcomes
+  The primary budget is 1024, matching earlier work. The two primary candidates
+  are 75% with unchanged angles and 90% with previously retrained angles.
+  Define extra benefit as mean(Babai distance - expected hybrid distance).
+  The primary quality criterion is retention of at least 95% of full QAOA's
+  extra benefit. Compute a paired bootstrap over the 512 independent groups
+  (20000 replicates). Require the 2.5th percentile of the retention ratio to
+  exceed 0.95, rather than accepting a favorable point estimate alone.
+  These are approximate one-sided 97.5% bounds, allowing Bonferroni accounting
+  for two primary retention claims. The bootstrap is not an exact coverage
+  guarantee. Other metrics/budgets/75%-trained are secondary, without a blanket
+  multiplicity-adjusted superiority claim.
+  Report exact-optimum probabilities, strict improvements, mean distance and
+  squared distance, outcomes conditional on Babai failures, individual losses,
+  observed sample outcomes, planted-secret recovery and compiled resources.
+  Paired bootstrap intervals quantify instance variability under this generator.
+  Poisson-binomial prediction intervals separately quantify shot variability
+  on this fixed cohort. These describe neither hardware noise nor larger sizes.
+
+Limits
+  Tiny Module-LWE-style algebra is preserved; this is not a full ML-KEM KEM,
+  cryptanalytic attack, demonstration of scaling, or proof of quantum advantage.
+  The extra distance includes the secret-length term, as in previous runs.
+  Gate counts exclude routing and device noise. No QPU time or credits are used.
+  If these fresh outcomes motivate new method choices, further independent data
+  will be needed to evaluate those new choices without adapting to this cohort.
+
+Completed run and results
+  Run: experiments/runs/EXP-007_20261020T044846904050+0530
+  All 512 unique fresh groups passed the overlap audit. All 512 boxes contain
+  at least one global CVP optimum; no examples were removed or replaced.
+  Babai finds a global optimum in 441/512 (86.1328125%), leaving 71 cases
+  eligible for improvement. The planted vector is a CVP optimum in 404/512;
+  Babai recovers the planted secret in 353/512. These are different quantities.
+
+  Method                  Mean CX   QAOA only @1024   Hybrid @1024   Hybrid @16384
+  Full fixed               203.391       21.7263%         89.2701%        99.5941%
+  75% same angles           50.848       25.3064%         89.6022%        99.5309%
+  90% previously trained    21.121       23.8833%         89.2596%        99.0778%
+  75% previously trained    50.848       27.0415%         89.9421%        99.6018%
+  These are exact ideal expected success fractions, not a single observed run.
+  Nominal 75% removes exactly 75% of compiled CX gates; nominal 90% removes
+  89.6155% because discrete interaction deletions are floored. Mean total depth
+  is 87.898 for full, 44.047 for both 75% methods, and 22.625 for 90%.
+
+  Extra mean-distance benefit retained at the primary 1024-shot budget:
+    75% same angles:       107.465% [99.065%, 116.422%], criterion PASSES.
+    90% previously trained:97.892% [86.422%, 108.732%], criterion DOES NOT PASS.
+    75% previously trained:117.355% [108.237%,127.131%], secondary result.
+  Intervals are paired instance-bootstrap 95% two-sided percentile intervals;
+  their lower endpoints serve as the prespecified one-sided bounds. No zero
+  denominators occurred in bootstrap samples.
+  The 75% same-angle primary result supports preservation within the chosen
+  5% margin under this generator. Its distance-change interval includes zero,
+  so superiority in mean distance is not established. The trained 75% method
+  has a favorable secondary distance difference, without a blanket adjusted
+  superiority claim across all secondary comparisons.
+  Failure of the 90% retention criterion means insufficient evidence for the
+  chosen margin, not proof that its mean loss exceeds 5% at 1024 shots.
+
+  At 16384 shots, retained benefits are respectively 99.428% [98.255%,100.363%],
+  96.334% [92.867%,98.724%], and 99.969% [99.065%,100.740%]. The 90% method is
+  worse than full in this secondary comparison: hybrid exact success falls
+  0.516 percentage points, paired interval [-0.898,-0.203] percentage points.
+  Increasing shots cannot make pruning uniformly beneficial; rankings depend
+  on how the per-instance probability distributions saturate.
+
+  Per-instance behavior remains heterogeneous. Against full QAOA, single-shot
+  optimum probability loses over 5% in 148/512 (75% same), 214/512 (90% trained),
+  and 127/512 (75% trained) cases. Worst retention ratios are 0.4576, 0.0733 and
+  0.4446. Overall success hides many individual losses because Babai already
+  solves 441 cases. At 1024 shots, expected additional exact optima recovered
+  among the 71 failures are 16.063, 17.763, 16.009 and 19.503, respectively.
+
+Classical context and observed samples
+  One/two-coordinate refinement solves 497/512 (97.0703%), with 129/129/513
+  minimum/median/maximum public candidate evaluations. CBD secret sampling plus
+  Babai gives 97.0507% exact success at 1024 samples. Both exceed all the QAOA
+  hybrids at that budget. At 16384, QAOA hybrids can exceed the deterministic
+  refinement's success, using many more candidates; CBD and QAOA differ by
+  quality metric and support. Equal sample counts are not equal computational
+  effort, and there is no end-to-end quantum advantage result.
+  Observed hybrid exact counts at 1024 are 460,458,457,462; at 16384 they are
+  511,510,507,511. These finite sampled batches fluctuate and do not replace
+  the exact expectation comparison. For example, 75% same-angle has a lower
+  observed count than full at 1024 despite a higher expected success rate.
+
+Validation and reproducibility
+  58 mathematical tests passed (64 installed IBM-plugin deprecation warnings).
+  2048 compiled ideal circuits matched independent statevectors, maximum
+  probability discrepancy 1.02e-17. Analytic energy discrepancy <=3.56e-15.
+  33554432 binary costs, 6144 independent order-statistic evaluations and
+  18432 returned-candidate checks passed. All 512 seeds were reproduced.
+  Saved draws: 33554432 simulated quantum measurements and 16777216 classical
+  samples. The post-run audit independently decoded and rescored all 50331648
+  draws in the original embedding basis, checked every recorded budget outcome,
+  and rechecked all 36 method/budget aggregate sets and all run hashes.
+  The core run took 148.52 seconds; plot and independent audit time are extra.
+  QPU use remains zero. Sources, frozen config, seeds, package versions, input
+  hashes, sample codebooks, raw results, audit and SVG/300-dpi PNG are saved.
+
+Interpretation and next step
+  The primary 75% resource/quality trade-off carries over to this larger fresh
+  cohort. Its previously trained variant is a promising secondary candidate.
+  The 90% method remains a smaller-circuit option with a less reliable quality
+  trade-off; it should not be described as equivalently validated.
+  Next evaluate backend routing, noise and usage estimates for a small paired
+  full-versus-75% hardware study before spending any of the 600-second budget.

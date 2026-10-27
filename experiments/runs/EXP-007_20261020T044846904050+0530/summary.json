@@ -1,0 +1,2868 @@
+{
+  "experiment_id": "EXP-007",
+  "run_id": "EXP-007_20261020T044846904050+0530",
+  "count": 512,
+  "parameters": {
+    "n": 2,
+    "k": 2,
+    "q": 17,
+    "eta": 2
+  },
+  "qubits": 16,
+  "depth_p": 1,
+  "shots": 16384,
+  "primary_budget": 1024,
+  "cohort": "512 fresh independent public A groups, same tiny parameter distribution; frozen methods",
+  "babai": {
+    "solved_count": 441,
+    "success": {
+      "mean": 0.861328125,
+      "ci95": [
+        0.83203125,
+        0.890625
+      ]
+    },
+    "mean_distance": 2.6899081631811015,
+    "secret_recovered_count": 353
+  },
+  "reference": {
+    "mean_distance": 2.6263049809005508,
+    "secret_vectors_examined": 191056,
+    "planted_is_optimum_count": 404
+  },
+  "box_covers_optimum_count": 512,
+  "box_misses_optimum_ids": [],
+  "methods": {
+    "full_fixed": {
+      "by_budget": {
+        "1": {
+          "standalone_success": {
+            "mean": 0.00024287778726962562,
+            "ci95": [
+              0.00023542043215500782,
+              0.00025096354694954483
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8613632779986639,
+            "ci95": [
+              0.8320723215877787,
+              0.890652951682893
+            ]
+          },
+          "strict_improvement": {
+            "mean": 4.703070125089401e-05,
+            "ci95": [
+              3.5618953358847084e-05,
+              5.916266455585464e-05
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.585799766993495,
+            "ci95": [
+              7.306536212782183,
+              7.867016813260569
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.689887904709348,
+            "ci95": [
+              2.638369841592414,
+              2.7408661466806916
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 11.312614922766649,
+            "ci95": [
+              11.257581292192206,
+              11.370779525152384
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.0002534976805053689,
+          "expected_recovered_count": 0.01799833531588119,
+          "measurement_only_solved_count_interval95": [
+            441,
+            441
+          ],
+          "observed": {
+            "standalone_solved_count": 0,
+            "hybrid_solved_count": 441,
+            "strict_improvement_count": 0,
+            "hybrid_mean_distance": 2.6899081631811015,
+            "hybrid_planted_secret_recovered_count": 353
+          }
+        },
+        "256": {
+          "standalone_success": {
+            "mean": 0.060053427141782495,
+            "ci95": [
+              0.05831474419455225,
+              0.061912752448246386
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8700168102439196,
+            "ci95": [
+              0.8421936824951057,
+              0.8975328425162341
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.011389287157530698,
+            "ci95": [
+              0.008675935945610074,
+              0.014239184601184356
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.552496254102768,
+            "ci95": [
+              7.279412387903841,
+              7.827634499825778
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.684979170407366,
+            "ci95": [
+              2.6342663704415332,
+              2.7354980017739527
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 4.631119984306557,
+            "ci95": [
+              4.615208678898376,
+              4.6468710313333155
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.06265643443502622,
+          "expected_recovered_count": 4.448606844886862,
+          "measurement_only_solved_count_interval95": [
+            442,
+            450
+          ],
+          "observed": {
+            "standalone_solved_count": 32,
+            "hybrid_solved_count": 447,
+            "strict_improvement_count": 8,
+            "hybrid_mean_distance": 2.6812143028278124,
+            "hybrid_planted_secret_recovered_count": 354
+          }
+        },
+        "1024": {
+          "standalone_success": {
+            "mean": 0.21726329353490542,
+            "ci95": [
+              0.2118972788565035,
+              0.22292239273418404
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8927005639009578,
+            "ci95": [
+              0.869397957523537,
+              0.9155576677678161
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.039069378384575866,
+            "ci95": [
+              0.03012868183662357,
+              0.0484316228866146
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.470524063004136,
+            "ci95": [
+              7.210380274442814,
+              7.733680869184527
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6728068505729836,
+            "ci95": [
+              2.6240579411816785,
+              2.7215659662296483
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 3.7456884858701995,
+            "ci95": [
+              3.7241552275175875,
+              3.766869734679309
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.22623505235620256,
+          "expected_recovered_count": 16.06268871729038,
+          "measurement_only_solved_count_interval95": [
+            451,
+            464
+          ],
+          "observed": {
+            "standalone_solved_count": 99,
+            "hybrid_solved_count": 460,
+            "strict_improvement_count": 21,
+            "hybrid_mean_distance": 2.673118637682665,
+            "hybrid_planted_secret_recovered_count": 361
+          }
+        },
+        "4096": {
+          "standalone_success": {
+            "mean": 0.6114087742152418,
+            "ci95": [
+              0.6024269430837125,
+              0.620602079741467
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9485494968349248,
+            "ci95": [
+              0.936831653431996,
+              0.9599156676419528
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.09693072027767179,
+            "ci95": [
+              0.07595850979639311,
+              0.11835621554516966
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.296369517585858,
+            "ci95": [
+              7.055989241305757,
+              7.539620144242855
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6464903010390355,
+            "ci95": [
+              2.5999982886267348,
+              2.692578565099691
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 3.0058791231363022,
+            "ci95": [
+              2.9730558482781704,
+              3.0385455929997183
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.6289766532321348,
+          "expected_recovered_count": 44.65734237948157,
+          "measurement_only_solved_count_interval95": [
+            478,
+            493
+          ],
+          "observed": {
+            "standalone_solved_count": 300,
+            "hybrid_solved_count": 486,
+            "strict_improvement_count": 52,
+            "hybrid_mean_distance": 2.6469533776901013,
+            "hybrid_planted_secret_recovered_count": 375
+          }
+        },
+        "8192": {
+          "standalone_success": {
+            "mean": 0.8382407225154527,
+            "ci95": [
+              0.8314344542950511,
+              0.8450228739338953
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9793098871827701,
+            "ci95": [
+              0.9739920695386706,
+              0.9843505586248759
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.12357533973615606,
+            "ci95": [
+              0.09710023089329299,
+              0.15040715334514948
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.214589494187089,
+            "ci95": [
+              6.9825064170025275,
+              7.4506222852820265
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6338984076282657,
+            "ci95": [
+              2.588276758451405,
+              2.6791152998130396
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.763820101025394,
+            "ci95": [
+              2.724106866018797,
+              2.8037946604009325
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.8507980596842015,
+          "expected_recovered_count": 60.40666223757831,
+          "measurement_only_solved_count_interval95": [
+            495,
+            507
+          ],
+          "observed": {
+            "standalone_solved_count": 428,
+            "hybrid_solved_count": 503,
+            "strict_improvement_count": 65,
+            "hybrid_mean_distance": 2.6326491312305436,
+            "hybrid_planted_secret_recovered_count": 387
+          }
+        },
+        "16384": {
+          "standalone_success": {
+            "mean": 0.9677310372095025,
+            "ci95": [
+              0.9650235240756788,
+              0.9702851004234826
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9959406181649442,
+            "ci95": [
+              0.9944267342745156,
+              0.9972542829283652
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.1361457436836126,
+            "ci95": [
+              0.10731763267549113,
+              0.16537284520077175
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.174719583730074,
+            "ci95": [
+              6.944570637916413,
+              7.409463584258566
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6276876300901817,
+            "ci95": [
+              2.582502193180777,
+              2.6725213944341712
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.651132095696576,
+            "ci95": [
+              2.60695612871079,
+              2.6950424472574728
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.970726711273964,
+          "expected_recovered_count": 68.92159650045144,
+          "measurement_only_solved_count_interval95": [
+            507,
+            512
+          ],
+          "observed": {
+            "standalone_solved_count": 492,
+            "hybrid_solved_count": 511,
+            "strict_improvement_count": 71,
+            "hybrid_mean_distance": 2.627170749680425,
+            "hybrid_planted_secret_recovered_count": 395
+          }
+        }
+      },
+      "single_shot_success": {
+        "mean": 0.00024287778726962562,
+        "ci95": [
+          0.00023542043215500782,
+          0.00025096354694954483
+        ]
+      },
+      "compiled_cx": {
+        "mean": 203.390625,
+        "min": 144,
+        "median": 208.0,
+        "max": 240
+      },
+      "compiled_depth": {
+        "mean": 87.8984375,
+        "min": 59,
+        "median": 89.0,
+        "max": 95
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 53.265625,
+        "min": 34,
+        "median": 54.0,
+        "max": 58
+      },
+      "logical_rzz": {
+        "mean": 101.6953125,
+        "min": 72,
+        "median": 104.0,
+        "max": 120
+      }
+    },
+    "weak75_frozen": {
+      "by_budget": {
+        "1": {
+          "standalone_success": {
+            "mean": 0.0002950036463984087,
+            "ci95": [
+              0.00028252420104960625,
+              0.0003078644035748632
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8613681290556698,
+            "ci95": [
+              0.8320778300758217,
+              0.8906570830754028
+            ]
+          },
+          "strict_improvement": {
+            "mean": 5.3263864695541963e-05,
+            "ci95": [
+              4.0005219320212355e-05,
+              6.754276711756001e-05
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.5857853011877,
+            "ci95": [
+              7.30652491043585,
+              7.866990540700209
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6898856794905517,
+            "ci95": [
+              2.63836969741202,
+              2.7408621864062592
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 11.272257136214701,
+            "ci95": [
+              11.214703474826495,
+              11.33265859338669
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.0002884799507459325,
+          "expected_recovered_count": 0.02048207650296121,
+          "measurement_only_solved_count_interval95": [
+            441,
+            441
+          ],
+          "observed": {
+            "standalone_solved_count": 1,
+            "hybrid_solved_count": 441,
+            "strict_improvement_count": 0,
+            "hybrid_mean_distance": 2.6899081631811015,
+            "hybrid_planted_secret_recovered_count": 353
+          }
+        },
+        "256": {
+          "standalone_success": {
+            "mean": 0.07211343237343229,
+            "ci95": [
+              0.06923531475284339,
+              0.07506931323969966
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8711394774177657,
+            "ci95": [
+              0.8434767590692003,
+              0.8984865352218838
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.012756407414317366,
+            "ci95": [
+              0.009655286134858927,
+              0.01607534332087978
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.5493301845646705,
+            "ci95": [
+              7.276625053018109,
+              7.824836366355994
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6844882219958004,
+            "ci95": [
+              2.6338961397545333,
+              2.734959910373464
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 4.558702392452449,
+            "ci95": [
+              4.538629807810744,
+              4.579298916063585
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.07075228785769015,
+          "expected_recovered_count": 5.023412437896001,
+          "measurement_only_solved_count_interval95": [
+            442,
+            451
+          ],
+          "observed": {
+            "standalone_solved_count": 44,
+            "hybrid_solved_count": 443,
+            "strict_improvement_count": 4,
+            "hybrid_mean_distance": 2.688431545259556,
+            "hybrid_planted_secret_recovered_count": 356
+          }
+        },
+        "1024": {
+          "standalone_success": {
+            "mean": 0.2530640499195357,
+            "ci95": [
+              0.24450283589281868,
+              0.26181206769994814
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8960221118597257,
+            "ci95": [
+              0.8732868364675493,
+              0.918318145152431
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.04259943551619138,
+            "ci95": [
+              0.032675146679733084,
+              0.052968169516563475
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.4624788674926315,
+            "ci95": [
+              7.202964112444734,
+              7.725997841110499
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.671530188637158,
+            "ci95": [
+              2.622736315945102,
+              2.7202546351678683
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 3.6658555666091885,
+            "ci95": [
+              3.639892491522143,
+              3.6919008151708126
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.2501876235518245,
+          "expected_recovered_count": 17.76332127217954,
+          "measurement_only_solved_count_interval95": [
+            452,
+            466
+          ],
+          "observed": {
+            "standalone_solved_count": 143,
+            "hybrid_solved_count": 458,
+            "strict_improvement_count": 21,
+            "hybrid_mean_distance": 2.675583999543501,
+            "hybrid_planted_secret_recovered_count": 365
+          }
+        },
+        "4096": {
+          "standalone_success": {
+            "mean": 0.6578850043475044,
+            "ci95": [
+              0.6448721191728164,
+              0.6709986037542055
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9525486900328108,
+            "ci95": [
+              0.9410317391589081,
+              0.9635431136180792
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.1000223638995553,
+            "ci95": [
+              0.0780498435372737,
+              0.12234515065606423
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.290564097775992,
+            "ci95": [
+              7.050347472052481,
+              7.533261052964079
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6454770751838925,
+            "ci95": [
+              2.5990170789728237,
+              2.691394446306604
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.9556049744462842,
+            "ci95": [
+              2.919526542152878,
+              2.992108723200674
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.6578159055887197,
+          "expected_recovered_count": 46.7049292967991,
+          "measurement_only_solved_count_interval95": [
+            480,
+            495
+          ],
+          "observed": {
+            "standalone_solved_count": 360,
+            "hybrid_solved_count": 486,
+            "strict_improvement_count": 49,
+            "hybrid_mean_distance": 2.6432377852325875,
+            "hybrid_planted_secret_recovered_count": 378
+          }
+        },
+        "8192": {
+          "standalone_success": {
+            "mean": 0.860113020016164,
+            "ci95": [
+              0.8504359075811604,
+              0.8696540330971817
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9806167016958252,
+            "ci95": [
+              0.9747238635197915,
+              0.9859750497843208
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.12422604546066408,
+            "ci95": [
+              0.09752033747772988,
+              0.15152570267584045
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.214762511754474,
+            "ci95": [
+              6.981525349870176,
+              7.450827643810021
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6338479861469106,
+            "ci95": [
+              2.5882084950512194,
+              2.6789984846460966
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.7442292389631353,
+            "ci95": [
+              2.7026337334893134,
+              2.785781161414932
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.8602218488487667,
+          "expected_recovered_count": 61.07575126826244,
+          "measurement_only_solved_count_interval95": [
+            496,
+            507
+          ],
+          "observed": {
+            "standalone_solved_count": 456,
+            "hybrid_solved_count": 504,
+            "strict_improvement_count": 66,
+            "hybrid_mean_distance": 2.632283969191203,
+            "hybrid_planted_secret_recovered_count": 392
+          }
+        },
+        "16384": {
+          "standalone_success": {
+            "mean": 0.9680643723683893,
+            "ci95": [
+              0.9637836304994081,
+              0.9721196788350334
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.995308631292609,
+            "ci95": [
+              0.9930681896436053,
+              0.9972094145570779
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.1354531551905971,
+            "ci95": [
+              0.1068111030865935,
+              0.16479988616177937
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.177095066851824,
+            "ci95": [
+              6.94690457835311,
+              7.411277787260929
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.628043310088305,
+            "ci95": [
+              2.5828446962827942,
+              2.6730411306668103
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.6504358465304367,
+            "ci95": [
+              2.6063076151332023,
+              2.6947327684367766
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.9661692848143077,
+          "expected_recovered_count": 68.59801922181585,
+          "measurement_only_solved_count_interval95": [
+            506,
+            512
+          ],
+          "observed": {
+            "standalone_solved_count": 502,
+            "hybrid_solved_count": 510,
+            "strict_improvement_count": 69,
+            "hybrid_mean_distance": 2.6280436705319454,
+            "hybrid_planted_secret_recovered_count": 394
+          }
+        }
+      },
+      "single_shot_success": {
+        "mean": 0.0002950036463984087,
+        "ci95": [
+          0.00028252420104960625,
+          0.0003078644035748632
+        ]
+      },
+      "compiled_cx": {
+        "mean": 50.84765625,
+        "min": 36,
+        "median": 52.0,
+        "max": 60
+      },
+      "compiled_depth": {
+        "mean": 44.046875,
+        "min": 26,
+        "median": 44.0,
+        "max": 59
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 24.03125,
+        "min": 12,
+        "median": 24.0,
+        "max": 34
+      },
+      "logical_rzz": {
+        "mean": 25.423828125,
+        "min": 18,
+        "median": 26.0,
+        "max": 30
+      }
+    },
+    "weak90_retrained": {
+      "by_budget": {
+        "1": {
+          "standalone_success": {
+            "mean": 0.00028106768021795246,
+            "ci95": [
+              0.00026572251471291414,
+              0.000297221954445287
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8613640480468436,
+            "ci95": [
+              0.8320720489045832,
+              0.8906542506874623
+            ]
+          },
+          "strict_improvement": {
+            "mean": 5.041437274983737e-05,
+            "ci95": [
+              3.707465732187033e-05,
+              6.496335901294029e-05
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.585796466241213,
+            "ci95": [
+              7.306534530290663,
+              7.867005532741861
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6898875119098915,
+            "ci95": [
+              2.6383673988443745,
+              2.7408651413725558
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 11.428962019604027,
+            "ci95": [
+              11.350849007317413,
+              11.51136749081685
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.0002590507039990996,
+          "expected_recovered_count": 0.018392599983936074,
+          "measurement_only_solved_count_interval95": [
+            441,
+            441
+          ],
+          "observed": {
+            "standalone_solved_count": 0,
+            "hybrid_solved_count": 441,
+            "strict_improvement_count": 0,
+            "hybrid_mean_distance": 2.6899081631811015,
+            "hybrid_planted_secret_recovered_count": 353
+          }
+        },
+        "256": {
+          "standalone_success": {
+            "mean": 0.06848248138552333,
+            "ci95": [
+              0.06498806644555451,
+              0.07212552927566064
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8701459283326107,
+            "ci95": [
+              0.8421201595607533,
+              0.8978009511439017
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.012037690787937979,
+            "ci95": [
+              0.008952575928886436,
+              0.015371342104014278
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.5521444899034265,
+            "ci95": [
+              7.279237431758411,
+              7.828004613585663
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6849456284094244,
+            "ci95": [
+              2.634183919054589,
+              2.7354329866530587
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 4.580823122065493,
+            "ci95": [
+              4.554555120926758,
+              4.607182189534883
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.06358753952530595,
+          "expected_recovered_count": 4.514715306296722,
+          "measurement_only_solved_count_interval95": [
+            442,
+            450
+          ],
+          "observed": {
+            "standalone_solved_count": 35,
+            "hybrid_solved_count": 446,
+            "strict_improvement_count": 8,
+            "hybrid_mean_distance": 2.6834902604167796,
+            "hybrid_planted_secret_recovered_count": 357
+          }
+        },
+        "1024": {
+          "standalone_success": {
+            "mean": 0.2388330071850454,
+            "ci95": [
+              0.22859411293535245,
+              0.2493469208703017
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.892596384869812,
+            "ci95": [
+              0.8691159269570938,
+              0.9155955035593017
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.03999650393305823,
+            "ci95": [
+              0.03036611197220258,
+              0.050239378624217124
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.472718186872453,
+            "ci95": [
+              7.212819308794025,
+              7.735766504982256
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.673167429030474,
+            "ci95": [
+              2.624425655314404,
+              2.721947769871383
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 3.6964972596648447,
+            "ci95": [
+              3.666088989287094,
+              3.7267354225888596
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.22548378948371386,
+          "expected_recovered_count": 16.009349053343684,
+          "measurement_only_solved_count_interval95": [
+            451,
+            464
+          ],
+          "observed": {
+            "standalone_solved_count": 118,
+            "hybrid_solved_count": 457,
+            "strict_improvement_count": 20,
+            "hybrid_mean_distance": 2.6750241749975343,
+            "hybrid_planted_secret_recovered_count": 365
+          }
+        },
+        "4096": {
+          "standalone_success": {
+            "mean": 0.6209137243214451,
+            "ci95": [
+              0.6055142250611372,
+              0.6366720738431999
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9447937252437106,
+            "ci95": [
+              0.9314219589167627,
+              0.9578344784960362
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.09426863176689708,
+            "ci95": [
+              0.07350185944883836,
+              0.11600841093678853
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.3136110322481,
+            "ci95": [
+              7.072857663755375,
+              7.558127553681648
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6491233752479326,
+            "ci95": [
+              2.602430879115086,
+              2.6954084470564497
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.9977619605982024,
+            "ci95": [
+              2.9601770912165923,
+              3.0345262332685827
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.6018927792222516,
+          "expected_recovered_count": 42.73438732477986,
+          "measurement_only_solved_count_interval95": [
+            476,
+            491
+          ],
+          "observed": {
+            "standalone_solved_count": 313,
+            "hybrid_solved_count": 487,
+            "strict_improvement_count": 53,
+            "hybrid_mean_distance": 2.645903033429772,
+            "hybrid_planted_secret_recovered_count": 390
+          }
+        },
+        "8192": {
+          "standalone_success": {
+            "mean": 0.8237252907016408,
+            "ci95": [
+              0.8113098523036733,
+              0.836160471868155
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9730049000805868,
+            "ci95": [
+              0.9649291129571258,
+              0.980675458950272
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.11909575894068965,
+            "ci95": [
+              0.09348847051735389,
+              0.14551090934568497
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.236016947130802,
+            "ci95": [
+              7.002084845461048,
+              7.47230851899201
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6372270188855085,
+            "ci95": [
+              2.591614664953187,
+              2.6827327253263493
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.777170946687206,
+            "ci95": [
+              2.7360724790947195,
+              2.8184305496114046
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.8053311104402878,
+          "expected_recovered_count": 57.17850884126044,
+          "measurement_only_solved_count_interval95": [
+            492,
+            504
+          ],
+          "observed": {
+            "standalone_solved_count": 414,
+            "hybrid_solved_count": 497,
+            "strict_improvement_count": 64,
+            "hybrid_mean_distance": 2.638983121142718,
+            "hybrid_planted_secret_recovered_count": 391
+          }
+        },
+        "16384": {
+          "standalone_success": {
+            "mean": 0.9481958056105264,
+            "ci95": [
+              0.9409987716744687,
+              0.9549969814113386
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9907781633119657,
+            "ci95": [
+              0.9864775979390811,
+              0.9944898805833965
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.13283911356112094,
+            "ci95": [
+              0.10443159889039433,
+              0.16168716759828006
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.189103489362832,
+            "ci95": [
+              6.958127607693924,
+              7.423281742684267
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6299688774762373,
+            "ci95": [
+              2.584713428254301,
+              2.675019522441899
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.6659836042054645,
+            "ci95": [
+              2.6221672244981105,
+              2.7099239072800674
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.9334988678271333,
+          "expected_recovered_count": 66.27841961572646,
+          "measurement_only_solved_count_interval95": [
+            503,
+            511
+          ],
+          "observed": {
+            "standalone_solved_count": 480,
+            "hybrid_solved_count": 507,
+            "strict_improvement_count": 68,
+            "hybrid_mean_distance": 2.6299138930329993,
+            "hybrid_planted_secret_recovered_count": 390
+          }
+        }
+      },
+      "single_shot_success": {
+        "mean": 0.0002810676802179524,
+        "ci95": [
+          0.00026572251471291414,
+          0.000297221954445287
+        ]
+      },
+      "compiled_cx": {
+        "mean": 21.12109375,
+        "min": 16,
+        "median": 22.0,
+        "max": 24
+      },
+      "compiled_depth": {
+        "mean": 22.625,
+        "min": 11,
+        "median": 23.0,
+        "max": 41
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 9.75,
+        "min": 2,
+        "median": 10.0,
+        "max": 22
+      },
+      "logical_rzz": {
+        "mean": 10.560546875,
+        "min": 8,
+        "median": 11.0,
+        "max": 12
+      }
+    },
+    "weak75_retrained": {
+      "by_budget": {
+        "1": {
+          "standalone_success": {
+            "mean": 0.00032099285935415536,
+            "ci95": [
+              0.00030670198365450625,
+              0.000335722947587038
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8613729927368885,
+            "ci95": [
+              0.8320832451695912,
+              0.8906609504453177
+            ]
+          },
+          "strict_improvement": {
+            "mean": 5.9444507038596095e-05,
+            "ci95": [
+              4.4528974382306094e-05,
+              7.548048259326547e-05
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.585766905869894,
+            "ci95": [
+              7.306511155841236,
+              7.866967638082229
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.689882967896134,
+            "ci95": [
+              2.6383671997428553,
+              2.740858700664202
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 11.193587158354152,
+            "ci95": [
+              11.12966614915665,
+              11.261177936373658
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.0003235532575618089,
+          "expected_recovered_count": 0.02297228128688843,
+          "measurement_only_solved_count_interval95": [
+            441,
+            441
+          ],
+          "observed": {
+            "standalone_solved_count": 0,
+            "hybrid_solved_count": 441,
+            "strict_improvement_count": 0,
+            "hybrid_mean_distance": 2.6899081631811015,
+            "hybrid_planted_secret_recovered_count": 353
+          }
+        },
+        "256": {
+          "standalone_success": {
+            "mean": 0.07807206545435383,
+            "ci95": [
+              0.07480163497602925,
+              0.08144728906587345
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8722693551576494,
+            "ci95": [
+              0.8447458867041087,
+              0.8993922268539954
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.014120482299720525,
+            "ci95": [
+              0.010675500607742446,
+              0.01781137222683886
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.54521915113158,
+            "ci95": [
+              7.273101801816771,
+              7.820317315899753
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.683879493252659,
+            "ci95": [
+              2.6333797629528526,
+              2.7342462094130284
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 4.504161835168497,
+            "ci95": [
+              4.48334639174539,
+              4.525301294276709
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.07890013860164027,
+          "expected_recovered_count": 5.601909840716459,
+          "measurement_only_solved_count_interval95": [
+            443,
+            451
+          ],
+          "observed": {
+            "standalone_solved_count": 42,
+            "hybrid_solved_count": 450,
+            "strict_improvement_count": 9,
+            "hybrid_mean_distance": 2.682527195550442,
+            "hybrid_planted_secret_recovered_count": 358
+          }
+        },
+        "1024": {
+          "standalone_success": {
+            "mean": 0.2704152470520358,
+            "ci95": [
+              0.26092090173241406,
+              0.2800806201490666
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8994206262936122,
+            "ci95": [
+              0.8774124222122335,
+              0.9209816172144392
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.04623967614149331,
+            "ci95": [
+              0.03546217423469317,
+              0.057446486815843086
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.451177829465264,
+            "ci95": [
+              7.193718681069563,
+              7.713420821497984
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6698389898660904,
+            "ci95": [
+              2.621191232880551,
+              2.7183591790108297
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 3.619784769099206,
+            "ci95": [
+              3.5931120495468285,
+              3.6467151675825566
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.2746952205961887,
+          "expected_recovered_count": 19.5033606623294,
+          "measurement_only_solved_count_interval95": [
+            454,
+            468
+          ],
+          "observed": {
+            "standalone_solved_count": 137,
+            "hybrid_solved_count": 462,
+            "strict_improvement_count": 24,
+            "hybrid_mean_distance": 2.665708334549639,
+            "hybrid_planted_secret_recovered_count": 367
+          }
+        },
+        "4096": {
+          "standalone_success": {
+            "mean": 0.6807276246511876,
+            "ci95": [
+              0.6670349744127979,
+              0.6943516376287616
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9573123264872399,
+            "ci95": [
+              0.9465915676877289,
+              0.9674482842158842
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.1041646007047941,
+            "ci95": [
+              0.08136735171115654,
+              0.12737321514356176
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.276800057347753,
+            "ci95": [
+              7.037609871736766,
+              7.5175010887434315
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.643383910795142,
+            "ci95": [
+              2.597058792651321,
+              2.6891878718537012
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.929304592583721,
+            "ci95": [
+              2.8925473972300337,
+              2.96669206746083
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.692167762837561,
+          "expected_recovered_count": 49.14391116146683,
+          "measurement_only_solved_count_interval95": [
+            483,
+            497
+          ],
+          "observed": {
+            "standalone_solved_count": 347,
+            "hybrid_solved_count": 491,
+            "strict_improvement_count": 54,
+            "hybrid_mean_distance": 2.6406713774048045,
+            "hybrid_planted_secret_recovered_count": 385
+          }
+        },
+        "8192": {
+          "standalone_success": {
+            "mean": 0.8732089285763944,
+            "ci95": [
+              0.8634103947524735,
+              0.8828519173163084
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9834026681690996,
+            "ci95": [
+              0.9779386224735699,
+              0.988323115704701
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.12646727999255158,
+            "ci95": [
+              0.09932300873828069,
+              0.15417738055845312
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.20676830961362,
+            "ci95": [
+              6.9748355569235345,
+              7.442750367375752
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6326325014714884,
+            "ci95": [
+              2.5871738256431343,
+              2.6776897028297992
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.7316705759050692,
+            "ci95": [
+              2.689583917738762,
+              2.773752744733302
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.8803121986278732,
+          "expected_recovered_count": 62.502166102579004,
+          "measurement_only_solved_count_interval95": [
+            498,
+            508
+          ],
+          "observed": {
+            "standalone_solved_count": 462,
+            "hybrid_solved_count": 506,
+            "strict_improvement_count": 66,
+            "hybrid_mean_distance": 2.633139422755394,
+            "hybrid_planted_secret_recovered_count": 389
+          }
+        },
+        "16384": {
+          "standalone_success": {
+            "mean": 0.9712578694908443,
+            "ci95": [
+              0.9669332766826096,
+              0.9753184711929226
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9960177554530767,
+            "ci95": [
+              0.993885192590406,
+              0.9978083311867725
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.13603874821403594,
+            "ci95": [
+              0.10727226861661217,
+              0.16549007517073952
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.174868563250541,
+            "ci95": [
+              6.944478252465631,
+              7.409133798952843
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6277071167115955,
+            "ci95": [
+              2.5824487994734966,
+              2.6725686887038655
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.6473669002731244,
+            "ci95": [
+              2.6030797945191018,
+              2.6916592115286173
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.9712829689010599,
+          "expected_recovered_count": 68.96109079197525,
+          "measurement_only_solved_count_interval95": [
+            507,
+            512
+          ],
+          "observed": {
+            "standalone_solved_count": 497,
+            "hybrid_solved_count": 511,
+            "strict_improvement_count": 70,
+            "hybrid_mean_distance": 2.627380196246677,
+            "hybrid_planted_secret_recovered_count": 392
+          }
+        }
+      },
+      "single_shot_success": {
+        "mean": 0.00032099285935415536,
+        "ci95": [
+          0.0003067019836545062,
+          0.0003357229475870381
+        ]
+      },
+      "compiled_cx": {
+        "mean": 50.84765625,
+        "min": 36,
+        "median": 52.0,
+        "max": 60
+      },
+      "compiled_depth": {
+        "mean": 44.046875,
+        "min": 26,
+        "median": 44.0,
+        "max": 59
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 24.03125,
+        "min": 12,
+        "median": 24.0,
+        "max": 34
+      },
+      "logical_rzz": {
+        "mean": 25.423828125,
+        "min": 18,
+        "median": 26.0,
+        "max": 30
+      }
+    },
+    "uniform_box": {
+      "by_budget": {
+        "1": {
+          "standalone_success": {
+            "mean": 1.6570091247558594e-05,
+            "ci95": [
+              1.615285873413086e-05,
+              1.7017126083374023e-05
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8613303601741791,
+            "ci95": [
+              0.8320339024066925,
+              0.8906267583370209
+            ]
+          },
+          "strict_improvement": {
+            "mean": 3.129243850708008e-06,
+            "ci95": [
+              2.3543834686279297e-06,
+              3.933906555175781e-06
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.585928648710251,
+            "ci95": [
+              7.3066338583827015,
+              7.867175998538732
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6899068639368764,
+            "ci95": [
+              2.6383892080847917,
+              2.7408888150600954
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 16.261782856178463,
+            "ci95": [
+              16.19358585680456,
+              16.331877035189326
+            ]
+          },
+          "babai_failures_recovered_fraction": 1.6118439150528168e-05,
+          "expected_recovered_count": 0.0011444091796875,
+          "measurement_only_solved_count_interval95": [
+            441,
+            441
+          ],
+          "observed": {
+            "standalone_solved_count": 0,
+            "hybrid_solved_count": 441,
+            "strict_improvement_count": 0,
+            "hybrid_mean_distance": 2.6899081631811015,
+            "hybrid_planted_secret_recovered_count": 353
+          }
+        },
+        "256": {
+          "standalone_success": {
+            "mean": 0.004232194458085299,
+            "ci95": [
+              0.004126210205034989,
+              0.004345969452443694
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8618990995206803,
+            "ci95": [
+              0.8327088580820814,
+              0.8910741709600316
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.0007980244284065327,
+            "ci95": [
+              0.0006009010894237482,
+              0.0010030577383555769
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.583679368142027,
+            "ci95": [
+              7.30491388909155,
+              7.864253263580954
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6895766528913283,
+            "ci95": [
+              2.6380723670323403,
+              2.740519237120273
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 6.551357041462123,
+            "ci95": [
+              6.543146338891065,
+              6.558952485200252
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.004117450064624294,
+          "expected_recovered_count": 0.2923389545883249,
+          "measurement_only_solved_count_interval95": [
+            441,
+            443
+          ],
+          "observed": {
+            "standalone_solved_count": 0,
+            "hybrid_solved_count": 441,
+            "strict_improvement_count": 0,
+            "hybrid_mean_distance": 2.6899081631811015,
+            "hybrid_planted_secret_recovered_count": 353
+          }
+        },
+        "1024": {
+          "standalone_success": {
+            "mean": 0.016812187660216506,
+            "ci95": [
+              0.016398028833997175,
+              0.01725936189876545
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8635972958881049,
+            "ci95": [
+              0.8347248186576577,
+              0.8924101498867456
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.0031557123352075156,
+            "ci95": [
+              0.0023818870293281923,
+              0.003964453889563816
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.57699777242386,
+            "ci95": [
+              7.299734378290102,
+              7.856141590952351
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6885951739392535,
+            "ci95": [
+              2.637216994327106,
+              2.739517475709121
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 5.44722633076521,
+            "ci95": [
+              5.435184433596456,
+              5.4581564720470315
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.016363598517038485,
+          "expected_recovered_count": 1.1618154947097323,
+          "measurement_only_solved_count_interval95": [
+            441,
+            445
+          ],
+          "observed": {
+            "standalone_solved_count": 9,
+            "hybrid_solved_count": 441,
+            "strict_improvement_count": 0,
+            "hybrid_mean_distance": 2.6899081631811015,
+            "hybrid_planted_secret_recovered_count": 353
+          }
+        },
+        "4096": {
+          "standalone_success": {
+            "mean": 0.06543319332733985,
+            "ci95": [
+              0.06392238878290893,
+              0.06708886876657362
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8701745584510884,
+            "ci95": [
+              0.8425415377118913,
+              0.89758524561396
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.012069383614684893,
+            "ci95": [
+              0.009175071600201784,
+              0.01511060257025622
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.551597635910323,
+            "ci95": [
+              7.27871945571122,
+              7.826902014559455
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.684856169202228,
+            "ci95": [
+              2.63418970885061,
+              2.7352666100169425
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 4.506286722297951,
+            "ci95": [
+              4.489632565762456,
+              4.521610120041793
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.06379399897122819,
+          "expected_recovered_count": 4.529373926957201,
+          "measurement_only_solved_count_interval95": [
+            442,
+            450
+          ],
+          "observed": {
+            "standalone_solved_count": 32,
+            "hybrid_solved_count": 446,
+            "strict_improvement_count": 7,
+            "hybrid_mean_distance": 2.685869525044933,
+            "hybrid_planted_secret_recovered_count": 355
+          }
+        },
+        "8192": {
+          "standalone_success": {
+            "mean": 0.12625978577969982,
+            "ci95": [
+              0.1235800083058353,
+              0.1291896919282098
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8784327591153309,
+            "ci95": [
+              0.8523758466870859,
+              0.9040846002590667
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.02279260794882994,
+            "ci95": [
+              0.017402358263997563,
+              0.0284131827926729
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.520742292909156,
+            "ci95": [
+              7.252568629658509,
+              7.791325764682269
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6802968872779265,
+            "ci95": [
+              2.6303436672020117,
+              2.7301399892230296
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 4.074796969037132,
+            "ci95": [
+              4.055916681673155,
+              4.0924522423380045
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.12334609390210469,
+          "expected_recovered_count": 8.757572667049432,
+          "measurement_only_solved_count_interval95": [
+            445,
+            455
+          ],
+          "observed": {
+            "standalone_solved_count": 59,
+            "hybrid_solved_count": 450,
+            "strict_improvement_count": 13,
+            "hybrid_mean_distance": 2.6820002601074915,
+            "hybrid_planted_secret_recovered_count": 356
+          }
+        },
+        "16384": {
+          "standalone_success": {
+            "mean": 0.2355466654790149,
+            "ci95": [
+              0.23124696474935763,
+              0.2402093882965162
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8933483260375478,
+            "ci95": [
+              0.870195469143729,
+              0.9158282404882467
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.04094423864096905,
+            "ci95": [
+              0.03154315797244832,
+              0.05070968675888432
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.4677420806302734,
+            "ci95": [
+              7.207971456624085,
+              7.7300978760213646
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.672419423060597,
+            "ci95": [
+              2.6236749511528554,
+              2.721171423292837
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 3.6640828925789446,
+            "ci95": [
+              3.642494019257911,
+              3.684660950252848
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.2309062384679496,
+          "expected_recovered_count": 16.394342931224422,
+          "measurement_only_solved_count_interval95": [
+            451,
+            465
+          ],
+          "observed": {
+            "standalone_solved_count": 126,
+            "hybrid_solved_count": 461,
+            "strict_improvement_count": 24,
+            "hybrid_mean_distance": 2.67139239492512,
+            "hybrid_planted_secret_recovered_count": 360
+          }
+        }
+      },
+      "single_shot_success": {
+        "mean": 1.6570091247558594e-05,
+        "ci95": [
+          1.615285873413086e-05,
+          1.7017126083374023e-05
+        ]
+      }
+    },
+    "cbd_secret": {
+      "by_budget": {
+        "1": {
+          "standalone_success": {
+            "mean": 0.006682395935058594,
+            "ci95": [
+              0.006273028254508972,
+              0.007105711102485656
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.8618016242980957,
+            "ci95": [
+              0.8325352370738983,
+              0.8910045862197876
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.0006330609321594238,
+            "ci95": [
+              0.00044596195220947266,
+              0.0008347660303115842
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.584132611751556,
+            "ci95": [
+              7.305233630537987,
+              7.864934016764164
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6896292344188466,
+            "ci95": [
+              2.638108646667319,
+              2.740598962632856
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 9.679364433863913,
+            "ci95": [
+              9.656326374787236,
+              9.700832901540391
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.0034145301496478872,
+          "expected_recovered_count": 0.242431640625,
+          "measurement_only_solved_count_interval95": [
+            441,
+            442
+          ],
+          "observed": {
+            "standalone_solved_count": 4,
+            "hybrid_solved_count": 441,
+            "strict_improvement_count": 0,
+            "hybrid_mean_distance": 2.6899081631811015,
+            "hybrid_planted_secret_recovered_count": 353
+          }
+        },
+        "256": {
+          "standalone_success": {
+            "mean": 0.6902525202581455,
+            "ci95": [
+              0.6664281918956781,
+              0.7137294284734865
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9254410152414017,
+            "ci95": [
+              0.9064621663032352,
+              0.9434052270622145
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.0750873440720427,
+            "ci95": [
+              0.0569066340657883,
+              0.09398172910651968
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.35917402958675,
+            "ci95": [
+              7.109497896597228,
+              7.612516751295011
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.655141837101549,
+            "ci95": [
+              2.607398852624678,
+              2.7024279595635536
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.9081755995919236,
+            "ci95": [
+              2.852435835112174,
+              2.9636391109336855
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.4623352085013756,
+          "expected_recovered_count": 32.82579980359767,
+          "measurement_only_solved_count_interval95": [
+            467,
+            481
+          ],
+          "observed": {
+            "standalone_solved_count": 337,
+            "hybrid_solved_count": 474,
+            "strict_improvement_count": 40,
+            "hybrid_mean_distance": 2.654751950055479,
+            "hybrid_planted_secret_recovered_count": 375
+          }
+        },
+        "1024": {
+          "standalone_success": {
+            "mean": 0.9170527698207671,
+            "ci95": [
+              0.901714756195293,
+              0.931189165111528
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9705073784324897,
+            "ci95": [
+              0.9590811781826396,
+              0.9804527349092048
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.11629801781219629,
+            "ci95": [
+              0.09078298899300534,
+              0.14238861818208515
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.232745650723528,
+            "ci95": [
+              6.993562686406021,
+              7.475496543214569
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6359802952059335,
+            "ci95": [
+              2.5897687712691613,
+              2.68185741855904
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.6704191175960883,
+            "ci95": [
+              2.6215691369402063,
+              2.7193549794836294
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.7873208134849959,
+          "expected_recovered_count": 55.89977775743471,
+          "measurement_only_solved_count_interval95": [
+            492,
+            502
+          ],
+          "observed": {
+            "standalone_solved_count": 471,
+            "hybrid_solved_count": 498,
+            "strict_improvement_count": 59,
+            "hybrid_mean_distance": 2.6358502949855254,
+            "hybrid_planted_secret_recovered_count": 385
+          }
+        },
+        "4096": {
+          "standalone_success": {
+            "mean": 0.9826227912622546,
+            "ci95": [
+              0.9728561492922487,
+              0.9906326174449142
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9908966471408156,
+            "ci95": [
+              0.9833704105391128,
+              0.9967598794431719
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.13278683356648463,
+            "ci95": [
+              0.10409238637059579,
+              0.1618321860664084
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.182808440110266,
+            "ci95": [
+              6.949952863562798,
+              7.42040136076987
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.628603695435695,
+            "ci95": [
+              2.583075364185933,
+              2.6740291062731854
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.631933448470975,
+            "ci95": [
+              2.5859491521990816,
+              2.6774940281210444
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.9343532864239097,
+          "expected_recovered_count": 66.33908333609759,
+          "measurement_only_solved_count_interval95": [
+            505,
+            509
+          ],
+          "observed": {
+            "standalone_solved_count": 502,
+            "hybrid_solved_count": 507,
+            "strict_improvement_count": 67,
+            "hybrid_mean_distance": 2.6291926475635083,
+            "hybrid_planted_secret_recovered_count": 391
+          }
+        },
+        "8192": {
+          "standalone_success": {
+            "mean": 0.9891785975533105,
+            "ci95": [
+              0.9802169083739113,
+              0.996263354798842
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.9939660999744699,
+            "ci95": [
+              0.9872179667079198,
+              0.9990638782482126
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.13496461174960925,
+            "ci95": [
+              0.10583494866390637,
+              0.16435004213170373
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.176147890001098,
+            "ci95": [
+              6.944775047779901,
+              7.411899080707837
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6276804149319384,
+            "ci95": [
+              2.5823221629557356,
+              2.672866381943471
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.629268418927423,
+            "ci95": [
+              2.583603914025391,
+              2.6746072968320886
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.956487932210262,
+          "expected_recovered_count": 67.9106431869286,
+          "measurement_only_solved_count_interval95": [
+            507,
+            510
+          ],
+          "observed": {
+            "standalone_solved_count": 507,
+            "hybrid_solved_count": 509,
+            "strict_improvement_count": 69,
+            "hybrid_mean_distance": 2.6278697021627497,
+            "hybrid_planted_secret_recovered_count": 393
+          }
+        },
+        "16384": {
+          "standalone_success": {
+            "mean": 0.9913128955213846,
+            "ci95": [
+              0.9823614553515221,
+              0.9979120172658782
+            ]
+          },
+          "hybrid_success": {
+            "mean": 0.995284161129766,
+            "ci95": [
+              0.9887420417379658,
+              0.9999091861603401
+            ]
+          },
+          "strict_improvement": {
+            "mean": 0.13594993944442085,
+            "ci95": [
+              0.10668887437561854,
+              0.16529218681963184
+            ]
+          },
+          "hybrid_expected_cost": {
+            "mean": 7.172911657681972,
+            "ci95": [
+              6.941613085398864,
+              7.408395599913204
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6272470110255894,
+            "ci95": [
+              2.5820660306739236,
+              2.672428717820541
+            ]
+          },
+          "standalone_expected_distance": {
+            "mean": 2.6284693155531587,
+            "ci95": [
+              2.5829726527856733,
+              2.673660559542882
+            ]
+          },
+          "babai_failures_recovered_fraction": 0.9659928239216931,
+          "expected_recovered_count": 68.58549049844021,
+          "measurement_only_solved_count_interval95": [
+            509,
+            510
+          ],
+          "observed": {
+            "standalone_solved_count": 507,
+            "hybrid_solved_count": 509,
+            "strict_improvement_count": 69,
+            "hybrid_mean_distance": 2.6278697021627497,
+            "hybrid_planted_secret_recovered_count": 393
+          }
+        }
+      },
+      "single_shot_success": {
+        "mean": 0.006682395935058594,
+        "ci95": [
+          0.006273028254508972,
+          0.007105711102485656
+        ]
+      }
+    }
+  },
+  "comparisons_to_full": {
+    "weak75_frozen": {
+      "by_budget": {
+        "1": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.1098413949186485,
+            "ci95": [
+              1.0039055486348558,
+              1.2234149449429144
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -2.225218796313329e-06,
+            "ci95": [
+              -4.55473294048304e-06,
+              -8.01584174510673e-08
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 4.85105700601567e-06,
+            "ci95": [
+              1.3962952988056604e-06,
+              8.53399577310671e-06
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            43,
+            441,
+            28
+          ]
+        },
+        "256": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.099604205991478,
+            "ci95": [
+              1.0001069068752995,
+              1.206251299420045
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -0.0004909484115656537,
+            "ci95": [
+              -0.0010178656841573943,
+              -5.182090438595747e-07
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 0.0011226671738459762,
+            "ci95": [
+              0.0003161108683150205,
+              0.0019785123452505317
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            43,
+            441,
+            28
+          ]
+        },
+        "1024": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.0746528623317502,
+            "ci95": [
+              0.9906468596121889,
+              1.1642163900464249
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -0.0012766619358260249,
+            "ci95": [
+              -0.002769480336792824,
+              0.00015709265088270378
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 0.0033215479587678826,
+            "ci95": [
+              0.0008366688937137765,
+              0.005916586142619191
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            42,
+            441,
+            29
+          ]
+        },
+        "4096": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.023336613208346,
+            "ci95": [
+              0.9746127093439044,
+              1.0728335074290218
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -0.0010132258551426945,
+            "ci95": [
+              -0.0030804986510709637,
+              0.0011300441122091454
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 0.003999193197885793,
+            "ci95": [
+              6.516297247850415e-05,
+              0.008047911448532001
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            41,
+            441,
+            30
+          ]
+        },
+        "8192": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.000900226770447,
+            "ci95": [
+              0.9728515754267272,
+              1.0276575069130365
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -5.0421481354864534e-05,
+            "ci95": [
+              -0.0014813036087162608,
+              0.0015908653373219674
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 0.0013068145130549344,
+            "ci95": [
+              -0.00155426432062942,
+              0.004191346766960426
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            41,
+            441,
+            30
+          ]
+        },
+        "16384": {
+          "extra_distance_improvement_retention": {
+            "estimate": 0.9942835591330683,
+            "ci95": [
+              0.9825467011942142,
+              1.0036348938488069
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": 0.0003556799981232076,
+            "ci95": [
+              -0.00021686888270596035,
+              0.0011516226061070729
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": -0.0006319868723351683,
+            "ci95": [
+              -0.0019356959002898048,
+              0.0005449646190220346
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            41,
+            441,
+            30
+          ]
+        }
+      },
+      "role": "primary",
+      "single_shot_ratio_min_median_max": [
+        0.4575760814329082,
+        1.121309649132809,
+        3.9152143163899416
+      ],
+      "single_shot_loss_over_5pct_count": 148,
+      "undefined_single_shot_ratios": 0,
+      "cx_reduction_fraction": 0.75,
+      "passes_prespecified_primary_retention_criterion": true
+    },
+    "weak90_retrained": {
+      "by_budget": {
+        "1": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.0193893923189752,
+            "ci95": [
+              0.8800429557610995,
+              1.151314432842329
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -3.9279945660952026e-07,
+            "ci95": [
+              -3.124889786205456e-06,
+              2.3771786082469806e-06
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 7.700481797946984e-07,
+            "ci95": [
+              -3.27436929176599e-06,
+              4.7689996294679804e-06
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            41,
+            441,
+            30
+          ]
+        },
+        "256": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.0068050410056295,
+            "ci95": [
+              0.8746929319382701,
+              1.1320142003730467
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -3.3541997941721226e-05,
+            "ci95": [
+              -0.0006559598940308859,
+              0.0006083138330692447
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 0.00012911808869112818,
+            "ci95": [
+              -0.000832520870751206,
+              0.0010681378336908102
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            41,
+            441,
+            30
+          ]
+        },
+        "1024": {
+          "extra_distance_improvement_retention": {
+            "estimate": 0.9789151589849684,
+            "ci95": [
+              0.8642198606450378,
+              1.087319249038042
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": 0.00036057845749051494,
+            "ci95": [
+              -0.0014769344854334186,
+              0.002314750146676175
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": -0.00010417903114589677,
+            "ci95": [
+              -0.003201000244480765,
+              0.002848608183006173
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            41,
+            441,
+            30
+          ]
+        },
+        "4096": {
+          "extra_distance_improvement_retention": {
+            "estimate": 0.9393550470015861,
+            "ci95": [
+              0.8624517725026966,
+              1.007890642588051
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": 0.0026330742088972433,
+            "ci95": [
+              -0.00032300711387324064,
+              0.006152791523052931
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": -0.0037557715912142835,
+            "ci95": [
+              -0.00950392087569603,
+              0.0014806840314064147
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            39,
+            441,
+            32
+          ]
+        },
+        "8192": {
+          "extra_distance_improvement_retention": {
+            "estimate": 0.9405708661930683,
+            "ci95": [
+              0.8864377039239257,
+              0.9840251984364705
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": 0.0033286112572430237,
+            "ci95": [
+              0.0008298318510490898,
+              0.006611981761255728
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": -0.006304987102183334,
+            "ci95": [
+              -0.011709349474755779,
+              -0.0016475002201563837
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            38,
+            441,
+            33
+          ]
+        },
+        "16384": {
+          "extra_distance_improvement_retention": {
+            "estimate": 0.9633361002754115,
+            "ci95": [
+              0.9286673049186659,
+              0.9872397968431269
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": 0.002281247386055921,
+            "ci95": [
+              0.0007381482210999079,
+              0.004520468576653857
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": -0.005162454852978499,
+            "ci95": [
+              -0.008976267227874464,
+              -0.0020326792482048754
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            37,
+            441,
+            34
+          ]
+        }
+      },
+      "role": "primary",
+      "single_shot_ratio_min_median_max": [
+        0.07329744685585778,
+        1.0286415824469475,
+        3.720272323299233
+      ],
+      "single_shot_loss_over_5pct_count": 214,
+      "undefined_single_shot_ratios": 0,
+      "cx_reduction_fraction": 0.896155028040255,
+      "passes_prespecified_primary_retention_criterion": false
+    },
+    "weak75_retrained": {
+      "by_budget": {
+        "1": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.2436912948887278,
+            "ci95": [
+              1.1237557689740132,
+              1.373554327211476
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -4.936813214052394e-06,
+            "ci95": [
+              -7.903512400133522e-06,
+              -2.324789036060314e-06
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 9.714738224623516e-06,
+            "ci95": [
+              5.422912255850248e-06,
+              1.4383495561470246e-05
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            48,
+            441,
+            23
+          ]
+        },
+        "256": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.223103827736742,
+            "ci95": [
+              1.1117313978279315,
+              1.3435177386846684
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -0.0010996771547071241,
+            "ci95": [
+              -0.0017559365656718896,
+              -0.0005126751178619877
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 0.0022525449137296774,
+            "ci95": [
+              0.0012564132286929039,
+              0.003333873801526699
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            49,
+            441,
+            22
+          ]
+        },
+        "1024": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.1735457841689074,
+            "ci95": [
+              1.082372241277934,
+              1.2713106754217527
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -0.002967860706893387,
+            "ci95": [
+              -0.004732400484284125,
+              -0.001334937614900337
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 0.006720062392654325,
+            "ci95": [
+              0.0037322986547660354,
+              0.009918614484116413
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            49,
+            441,
+            22
+          ]
+        },
+        "4096": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.0715463657268283,
+            "ci95": [
+              1.0238114011173414,
+              1.121179808495204
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -0.0031063902438932993,
+            "ci95": [
+              -0.005278794665177152,
+              -0.0010059390913369874
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 0.008762829652314988,
+            "ci95": [
+              0.004450692592492381,
+              0.013344503175911158
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            47,
+            441,
+            24
+          ]
+        },
+        "8192": {
+          "extra_distance_improvement_retention": {
+            "estimate": 1.0226015297564115,
+            "ci95": [
+              0.9975193935440418,
+              1.0471691072278773
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": -0.0012659061567767583,
+            "ci95": [
+              -0.0026174864715071615,
+              0.00014535991921970715
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 0.004092780986329492,
+            "ci95": [
+              0.0012045825433567275,
+              0.007069378000729607
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            48,
+            441,
+            23
+          ]
+        },
+        "16384": {
+          "extra_distance_improvement_retention": {
+            "estimate": 0.9996868136538587,
+            "ci95": [
+              0.9906450437779964,
+              1.0074013432582636
+            ],
+            "undefined_bootstraps": 0
+          },
+          "paired_hybrid_distance_change": {
+            "mean": 1.948662141371257e-05,
+            "ci95": [
+              -0.00044262501161272097,
+              0.0006035123476882427
+            ]
+          },
+          "paired_hybrid_success_change": {
+            "mean": 7.713728813243579e-05,
+            "ci95": [
+              -0.0010825994309713136,
+              0.001161743207624732
+            ]
+          },
+          "distance_better_tied_worse_count": [
+            49,
+            441,
+            22
+          ]
+        }
+      },
+      "role": "secondary",
+      "single_shot_ratio_min_median_max": [
+        0.4446463313527303,
+        1.2043547262679506,
+        4.655546973276202
+      ],
+      "single_shot_loss_over_5pct_count": 127,
+      "undefined_single_shot_ratios": 0,
+      "cx_reduction_fraction": 0.75,
+      "passes_prespecified_primary_retention_criterion": null
+    }
+  },
+  "classical_refinement": {
+    "refine_1": {
+      "solved_count": 471,
+      "strict_improved_count": 38,
+      "mean_distance": 2.6607300274421637,
+      "secret_recovered_count": 370,
+      "candidate_evaluations_min_median_max": [
+        17,
+        17.0,
+        49
+      ],
+      "evaluation_cap_reached_count": 0
+    },
+    "refine_2": {
+      "solved_count": 497,
+      "strict_improved_count": 58,
+      "mean_distance": 2.639696070132038,
+      "secret_recovered_count": 384,
+      "candidate_evaluations_min_median_max": [
+        129,
+        129.0,
+        513
+      ],
+      "evaluation_cap_reached_count": 0
+    }
+  },
+  "validation": {
+    "prior_manifest_hashes": 41,
+    "unique_fresh_groups": 512,
+    "overlap_with_training_or_development": 0,
+    "binary_costs_checked": 33554432,
+    "compiled_circuits_verified": 2048,
+    "order_statistic_checks": 6144,
+    "returned_candidates_verified": 18432,
+    "max_probability_discrepancy": 1.0191500421363742e-17,
+    "max_analytic_energy_discrepancy": 3.552713678800501e-15
+  },
+  "new_simulated_quantum_measurements": 33554432,
+  "classical_candidate_samples": 16777216,
+  "bootstrap_replicates": 20000,
+  "qpu_seconds": 0,
+  "timing_seconds": 148.51649599999655,
+  "limitations": [
+    "Independent examples from the SAME tiny parameter distribution, not larger lattices or secure ML-KEM.",
+    "Selected methods were developed on earlier data; all choices are frozen for this fresh evaluation. Reusing these outcomes to select further changes makes this cohort development data for those later changes.",
+    "Ideal probabilities are exact up to floating-point error. Instance bootstrap describes population uncertainty under this generator; shot prediction intervals describe measurement variability on the fixed cohort.",
+    "The 1024-shot primary comparison matches prior experiments; larger budgets and the trained 75% method are secondary. More shots do not improve single-shot probability or demonstrate scaling.",
+    "Retaining Babai guarantees no worsening relative to Babai, not superiority to full QAOA or classical refinement.",
+    "Classical CBD sampling uses the known secret distribution and is not confined to the QAOA box. Equal candidate counts are not equal runtime.",
+    "All-to-all compiled CX resources exclude device routing, noise and QPU duration. No hardware or quantum-advantage claim."
+  ]
+}

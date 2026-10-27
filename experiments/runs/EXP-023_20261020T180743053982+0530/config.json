@@ -1,0 +1,44 @@
+{
+  "experiment_id": "EXP-023",
+  "purpose": "Fresh validation and controlled CPU timing of cached exact objective-guided pruning.",
+  "comparison_run": "experiments/runs/EXP-021_20261020T175520818890+0530",
+  "development_run": "experiments/runs/EXP-022_20261020T175823569264+0530",
+  "training_run": "experiments/runs/EXP-003_20261020T014441792732+0530",
+  "parameters": {
+    "n": 2,
+    "k": 2,
+    "q": 17,
+    "eta": 2
+  },
+  "fresh_count": 128,
+  "fresh_first_seed": 2026102023000,
+  "logical_budget": 24,
+  "selection_angles": [
+    1.3393885543560986,
+    -0.3516024709404892
+  ],
+  "budgets": [
+    256,
+    1024,
+    4096,
+    16384
+  ],
+  "timing_count": 32,
+  "timing_repetitions": 5,
+  "cheap_timing_inner_repetitions": 50,
+  "timing_order_seed": 20261020231,
+  "bootstrap_seed": 20261020232,
+  "bootstrap_replicates": 10000,
+  "exact_reference_candidate_cap": 1000000,
+  "primary_quality": "Exact same final mask, greedy deletion path and angles on all128 held-out groups; independently recompute original and cached statevector distributions and metrics. Any mismatch is a failure, not evidence of statistical equivalence.",
+  "primary_cost": "First32 freshly generated groups fixed in advance; five repetitions per method with randomized interleaved method order, one BLAS thread, one warmup on a training input. Report per-case medians, paired bootstrap ratio of means and median ratios. No competing research experiment is run during this benchmark.",
+  "timing_scope": "Selector only on the same precomputed public h,J; includes cache construction and near-tie checks, excludes shared LLL/Babai/encoding, angle training, statevector evaluation and circuit compilation. Cheap controls batch50 calls per repetition to improve timer resolution and amortize instrumentation.",
+  "training": "No new training: same residual global angles frozen in EXP017, loaded through EXP021 frozen models. Implementation developed using64 old examples and mathematical correctness tests only.",
+  "limitations": [
+    "Implementation acceleration of the existing p=1 algorithm, not a new pruning rule or novelty claim.",
+    "Analytic expectation call count need not decrease; speed comes from caching and vectorization.",
+    "Single CPU environment and tiny same-distribution16-qubit examples; no scaling or end-to-end quantum advantage.",
+    "Ideal probabilities only; no noise simulation, cloud calls or QPU usage."
+  ],
+  "qpu_seconds": 0
+}

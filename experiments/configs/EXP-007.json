@@ -1,0 +1,43 @@
+{
+  "id": "EXP-007",
+  "name": "Frozen pruning methods on 512 fresh toy Module-LWE lattice groups",
+  "parameters": {"n": 2, "k": 2, "q": 17, "eta": 2},
+  "count": 512,
+  "first_seed": 2026102400,
+  "development_run": "experiments/runs/EXP-001_20261018T120321801881+0530",
+  "training_run": "experiments/runs/EXP-003_20261020T014441792732+0530",
+  "angle_run": "experiments/runs/EXP-006_20261020T043458637893+0530",
+  "methods": {
+    "full_fixed": {"fraction": 0.0, "angles": [1.3393885543560986, -0.3516024709404892], "role": "baseline"},
+    "weak75_frozen": {"fraction": 0.75, "angles": [1.3393885543560986, -0.3516024709404892], "role": "primary"},
+    "weak90_retrained": {"fraction": 0.9, "angles": [1.5761152886101966, -0.4034192067394315], "role": "primary"},
+    "weak75_retrained": {"fraction": 0.75, "angles": [1.4414467519942051, -0.37736552328564704], "role": "secondary"}
+  },
+  "rule": "Remove floor(fraction * nonzero ZZ terms) by ascending magnitude with lexicographic ties. Keep all fields, original normalization, encoding, objective and mixer. No new fitting or instance selection.",
+  "primary_budget": 1024,
+  "shots": 16384,
+  "budgets": [1, 256, 1024, 4096, 8192, 16384],
+  "primary_quality_criterion": "Retain at least 95% of the full fixed QAOA mean extra distance improvement over Babai at 1024 shots. Require the paired instance-bootstrap 2.5th percentile of the retention ratio to exceed 0.95 for each primary candidate. These are approximate one-sided 97.5% bounds (Bonferroni for the two prespecified primary candidates); report bounds even if the criterion fails.",
+  "secondary_metrics": ["Exact optimum success, standalone and with Babai", "Mean returned distance and squared distance", "Strict improvement and recovery conditional on Babai failures", "Individual losses", "Shot-budget curves", "Observed sampled outcomes and planted-secret recovery", "Compiled resources"],
+  "cohort_policy": "One example per fresh A modulo q. Assert all 512 matrices differ from each other and from all 64 development and 16 training matrices. Abort on overlap; never filter by outcomes, coverage, error, or difficulty. Keep box failures.",
+  "exact_reference_candidate_cap": 1000000,
+  "classical_refinement_evaluation_cap": 1024,
+  "classical_controls": ["LLL+Babai", "Greedy one-coordinate refinement", "Greedy one/two-coordinate refinement", "Uniform sampling in the identical box", "CBD secret sampling with optimal public modular lift"],
+  "measurement_seed": 2026102020,
+  "sampling": "Independent NumPy categorical draws from ideal statevector probabilities, checked against every compiled Qiskit/Aer circuit. Store 16384 draws per instance/method; smaller budgets use prefixes.",
+  "bootstrap_seed": 2026102021,
+  "bootstrap_replicates": 20000,
+  "compilation": {"basis_gates": ["rz", "sx", "x", "cx"], "optimization_level": 3, "seed": 2026102011, "topology": "all-to-all"},
+  "depth_p": 1,
+  "qubits": 16,
+  "hardware": "none",
+  "limitations": [
+    "Independent examples from the SAME tiny parameter distribution, not larger lattices or secure ML-KEM.",
+    "Selected methods were developed on earlier data; all choices are frozen for this fresh evaluation. Reusing these outcomes to select further changes makes this cohort development data for those later changes.",
+    "Ideal probabilities are exact up to floating-point error. Instance bootstrap describes population uncertainty under this generator; shot prediction intervals describe measurement variability on the fixed cohort.",
+    "The 1024-shot primary comparison matches prior experiments; larger budgets and the trained 75% method are secondary. More shots do not improve single-shot probability or demonstrate scaling.",
+    "Retaining Babai guarantees no worsening relative to Babai, not superiority to full QAOA or classical refinement.",
+    "Classical CBD sampling uses the known secret distribution and is not confined to the QAOA box. Equal candidate counts are not equal runtime.",
+    "All-to-all compiled CX resources exclude device routing, noise and QPU duration. No hardware or quantum-advantage claim."
+  ]
+}

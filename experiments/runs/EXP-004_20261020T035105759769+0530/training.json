@@ -1,0 +1,48 @@
+{
+  "frozen_angles": [
+    1.3393885543560986,
+    -0.3516024709404892
+  ],
+  "retraining": {
+    "0.1": {
+      "angles": [
+        1.3400211269214415,
+        -0.35190236044229134
+      ],
+      "training_expected_original_energy": -1.1036040255068744,
+      "frozen_training_expected_original_energy": -1.103602851863332,
+      "objective_evaluations": 527,
+      "instance_energy_evaluations": 8432,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "seconds": 0.6023612999997567
+    },
+    "0.25": {
+      "angles": [
+        1.3436170836211874,
+        -0.3530008805636662
+      ],
+      "training_expected_original_energy": -1.1042688191321215,
+      "frozen_training_expected_original_energy": -1.1042379454344537,
+      "objective_evaluations": 553,
+      "instance_energy_evaluations": 8848,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "seconds": 0.6879426999948919
+    },
+    "0.5": {
+      "angles": [
+        1.3649932110427812,
+        -0.3589841671447029
+      ],
+      "training_expected_original_energy": -1.107865155754355,
+      "frozen_training_expected_original_energy": -1.1069570422062998,
+      "objective_evaluations": 533,
+      "instance_energy_evaluations": 8528,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "seconds": 0.943072599999141
+    }
+  },
+  "training_inputs": "16 public instances snapshotted from EXP-003; no hidden answers or secrets used."
+}

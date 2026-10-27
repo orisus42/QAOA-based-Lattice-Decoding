@@ -1,0 +1,178 @@
+{
+  "experiment_id": "EXP-025",
+  "count": 4,
+  "matching": [
+    {
+      "128": {
+        "native_cz": {
+          "cached": 105,
+          "incumbent": 104
+        },
+        "logical_k": {
+          "cached": 15,
+          "incumbent": 13
+        },
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        },
+        "absolute_cz_gap": 1,
+        "slack": {
+          "cached": 23,
+          "incumbent": 24
+        }
+      },
+      "160": {
+        "native_cz": {
+          "cached": 149,
+          "incumbent": 149
+        },
+        "logical_k": {
+          "cached": 19,
+          "incumbent": 20
+        },
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        },
+        "absolute_cz_gap": 0,
+        "slack": {
+          "cached": 11,
+          "incumbent": 11
+        }
+      }
+    },
+    {
+      "128": {
+        "native_cz": {
+          "cached": 114,
+          "incumbent": 116
+        },
+        "logical_k": {
+          "cached": 16,
+          "incumbent": 13
+        },
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        },
+        "absolute_cz_gap": 2,
+        "slack": {
+          "cached": 14,
+          "incumbent": 12
+        }
+      },
+      "160": {
+        "native_cz": {
+          "cached": 130,
+          "incumbent": 131
+        },
+        "logical_k": {
+          "cached": 18,
+          "incumbent": 17
+        },
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        },
+        "absolute_cz_gap": 1,
+        "slack": {
+          "cached": 30,
+          "incumbent": 29
+        }
+      }
+    },
+    {
+      "128": {
+        "native_cz": {
+          "cached": 113,
+          "incumbent": 112
+        },
+        "logical_k": {
+          "cached": 18,
+          "incumbent": 16
+        },
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        },
+        "absolute_cz_gap": 1,
+        "slack": {
+          "cached": 15,
+          "incumbent": 16
+        }
+      },
+      "160": {
+        "native_cz": {
+          "cached": 140,
+          "incumbent": 140
+        },
+        "logical_k": {
+          "cached": 21,
+          "incumbent": 22
+        },
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        },
+        "absolute_cz_gap": 0,
+        "slack": {
+          "cached": 20,
+          "incumbent": 20
+        }
+      }
+    },
+    {
+      "128": {
+        "native_cz": {
+          "cached": 74,
+          "incumbent": 75
+        },
+        "logical_k": {
+          "cached": 13,
+          "incumbent": 12
+        },
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        },
+        "absolute_cz_gap": 1,
+        "slack": {
+          "cached": 54,
+          "incumbent": 53
+        }
+      },
+      "160": {
+        "native_cz": {
+          "cached": 152,
+          "incumbent": 150
+        },
+        "logical_k": {
+          "cached": 21,
+          "incumbent": 22
+        },
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        },
+        "absolute_cz_gap": 2,
+        "slack": {
+          "cached": 8,
+          "incumbent": 10
+        }
+      }
+    }
+  ],
+  "profile": {
+    "seconds": 4.2310706000007485,
+    "trajectories": 32,
+    "max_norm_deviation": 6.439293542825908e-15,
+    "ideal_verified": true
+  },
+  "qpu_seconds": 0,
+  "limitations": [
+    "Feasibility and numerical/runtime profile only on old development public data; no quality-driven choice.",
+    "Symbolic compilation fixes counts before angle binding.",
+    "Saved-calibration noise simulation only, no cloud calls."
+  ]
+}

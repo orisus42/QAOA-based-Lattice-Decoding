@@ -1,0 +1,265 @@
+{
+  "scope": "Runtime profiling on old development MLWE-000; not a new quality evaluation",
+  "started_at": "2026-10-20T05:03:46.872372+05:30",
+  "calibration": "research\\calibrations\\ibm_fez_20261020T050035937321+0530",
+  "qpu_seconds": 0,
+  "cases": [
+    {
+      "fraction": 0.0,
+      "cz": 560,
+      "depth": 610,
+      "duration_s": 2.0824000000000016e-05,
+      "idle_delays": 320,
+      "probability_error": 1.2522535092207576e-17,
+      "trajectories": 16,
+      "seconds": 1.305376400006935,
+      "seconds_per_trajectory": 0.08158602500043344,
+      "simulation_metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 1,
+        "method": "statevector",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 16,
+        "num_clbits": 0,
+        "time_taken": 0.9641701,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "max_memory_mb": 2048,
+        "measure_sampling": false,
+        "noise": "kraus",
+        "parallel_shots": 4,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": true,
+          "cost_factor": 1.8,
+          "threshold": 14,
+          "method": "kraus",
+          "max_fused_qubits": 2,
+          "time_taken": 0.0982705,
+          "parallelization": 1,
+          "applied": true
+        },
+        "result_types": {
+          "probabilities": "save_probabilities"
+        },
+        "result_subtypes": {
+          "probabilities": "list"
+        }
+      }
+    },
+    {
+      "fraction": 0.75,
+      "cz": 157,
+      "depth": 232,
+      "duration_s": 7.696000000000009e-06,
+      "idle_delays": 96,
+      "probability_error": 3.496552006265752e-18,
+      "trajectories": 16,
+      "seconds": 0.5524928999948315,
+      "seconds_per_trajectory": 0.03453080624967697,
+      "simulation_metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 1,
+        "method": "statevector",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 16,
+        "num_clbits": 0,
+        "time_taken": 0.3002973,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "max_memory_mb": 2048,
+        "measure_sampling": false,
+        "noise": "kraus",
+        "parallel_shots": 4,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": true,
+          "cost_factor": 1.8,
+          "threshold": 14,
+          "method": "kraus",
+          "max_fused_qubits": 2,
+          "time_taken": 0.032322,
+          "parallelization": 1,
+          "applied": true
+        },
+        "result_types": {
+          "probabilities": "save_probabilities"
+        },
+        "result_subtypes": {
+          "probabilities": "list"
+        }
+      }
+    }
+  ],
+  "finished_at": "2026-10-20T05:03:50.504964+05:30"
+}

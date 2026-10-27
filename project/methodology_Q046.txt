@@ -1,0 +1,83 @@
+Q-046: fresh incumbent-informed comparison and exact selection acceleration
+
+Purpose
+Compare the frozen objective-guided pruning candidate with the cheap
+incumbent-informed prior-art adaptation, then reduce selection overhead
+without changing solution quality. QAOA remains central. All work is local.
+
+Stage 1: EXP-021
+256 new Module-LWE matrix groups, n=2, k=2, q=17, eta=2, seed sequence
+2026102021000 onward. Exclude every training/development/previous validation
+group recorded in EXP-017, including its completed128 fresh cases.
+
+Reuse existing EXP-017 full/magnitude24/residual24 global angles and EXP-019
+incumbent24 angles. No refitting or selection on this new cohort. The primary
+comparison is residual24 minus incumbent24 hybrid global-optimum success
+with1024 ideal independent samples. Use paired two-sided95% bootstrap
+intervals across256 groups and10000 resamples. Positive evidence requires
+the lower bound to exceed zero. Other shot budgets and same-angle controls
+are secondary. Include original full QAOA, magnitude pruning, uniform box
+sampling, centered-binomial prior sampling and classical two-coordinate
+refinement. Compare original lattice costs and retain Babai.
+
+Exact ideal probabilities determine expected finite-shot success; separately
+saved random samples give observed simulated counts. Neither is hardware
+evidence. Route four primary policies using the existing IBM Fez snapshot
+and fixed seed. Report logical interactions and native CZ cost separately.
+
+Stage 2 development: EXP-022
+Use only the old64 development examples and synthetic mathematical tests.
+The acceleration caches all fixed-angle trigonometric factors once. An edge
+coefficient during deletion is either its original value or zero; products
+for both/one/neither of a pair of incident edges can therefore reuse cached
+values. Batch boolean masks replace repeated construction of analytic models.
+
+The greedy deletion policy, full-original-cost score, fixed angles, tie order,
+logical budget and magnitude fallback are unchanged. Near-tied candidate
+scores are recomputed with the original evaluator, and fallback decisions
+also use the original evaluator. No codebook, secret or exact optimum enters
+selection. No extra fit is needed. This is an implementation acceleration,
+not a claimed new pruning algorithm.
+
+All64 development removal paths and final masks must match the original.
+Tests additionally compare analytic energies with Qiskit statevectors,
+symmetric ties, zero interactions, full/empty budgets and zero cosine
+factors. Development timings overlap an independent validation run and are
+diagnostic only. No performance claim is based on those overlapping timings.
+
+Stage 2 fresh confirmation: EXP-023
+After development passes, freeze the source and all settings before generating
+128 different groups, seeds2026102023000 onward. Exclude all historical groups
+and all256 EXP-021 groups. Both preceding runs must be completed.
+
+Require identical full deletion paths, selected masks, frozen angles and
+recomputed ideal probability vectors on every fresh case. A changed path or
+mask is a failure, even if success rates look similar. This is an exact
+implementation-equivalence check on the tested cases, not a statistical
+non-inferiority claim or an all-input floating-point proof.
+
+Controlled timing:
+- Prespecify the first32 fresh cases for five repetitions per selector.
+- Randomize/interleave original, cached, incumbent and magnitude method order.
+- Use one BLAS thread and one training-input warmup.
+- Cheap methods use50 internal repetitions per timed observation.
+- Start timing with the same public h,J inputs. Include cache setup and tie
+  checks; exclude shared LLL/Babai/encoding, old angle fitting, reference
+  enumeration, evaluation simulation and circuit compilation.
+- Use each case's median across repetitions. Report mean case medians and
+  paired-bootstrap ratio of original/cached mean medians with95% interval.
+- Do not run another research computation during the controlled benchmark.
+
+Interpretation
+Unchanged circuits and angles give unchanged ideal quantum sampling. The
+optimization reduces classical CPU work per analytic score; analytic call
+counts need not decrease. Lower selector cost alone does not establish
+end-to-end superiority over cheap pruning or classical lattice refinement.
+This study covers one small16-qubit family. No new noise or QPU experiment,
+scaling result, secure ML-KEM attack or novelty claim is implied.
+
+Provenance
+Every run has configuration, seed, source snapshot, package versions, copied
+inputs, checks and output hashes. New runs never overwrite old runs. Runtime
+checks are supplemented by a separate hash/probability/mask/bootstrap audit.
+No IBM quota or credits are consumed. User authors the poster text.

@@ -1,0 +1,122 @@
+{
+  "experiment_id": "EXP-025",
+  "count": 4,
+  "matching": [
+    {
+      "128": {
+        "native_cz": 47,
+        "logical_k": {
+          "cached": 7,
+          "incumbent": 7
+        },
+        "slack": 81,
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102033
+        }
+      },
+      "160": {
+        "native_cz": 149,
+        "logical_k": {
+          "cached": 19,
+          "incumbent": 20
+        },
+        "slack": 11,
+        "routing_seed": {
+          "cached": 2026102033,
+          "incumbent": 2026102032
+        }
+      }
+    },
+    {
+      "128": {
+        "native_cz": 67,
+        "logical_k": {
+          "cached": 8,
+          "incumbent": 8
+        },
+        "slack": 61,
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        }
+      },
+      "160": {
+        "native_cz": 67,
+        "logical_k": {
+          "cached": 8,
+          "incumbent": 8
+        },
+        "slack": 93,
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        }
+      }
+    },
+    {
+      "128": {
+        "native_cz": 51,
+        "logical_k": {
+          "cached": 10,
+          "incumbent": 9
+        },
+        "slack": 77,
+        "routing_seed": {
+          "cached": 2026102033,
+          "incumbent": 2026102033
+        }
+      },
+      "160": {
+        "native_cz": 140,
+        "logical_k": {
+          "cached": 21,
+          "incumbent": 22
+        },
+        "slack": 20,
+        "routing_seed": {
+          "cached": 2026102032,
+          "incumbent": 2026102033
+        }
+      }
+    },
+    {
+      "128": {
+        "native_cz": 61,
+        "logical_k": {
+          "cached": 11,
+          "incumbent": 8
+        },
+        "slack": 67,
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102031
+        }
+      },
+      "160": {
+        "native_cz": 146,
+        "logical_k": {
+          "cached": 20,
+          "incumbent": 20
+        },
+        "slack": 14,
+        "routing_seed": {
+          "cached": 2026102031,
+          "incumbent": 2026102032
+        }
+      }
+    }
+  ],
+  "profile": {
+    "seconds": 4.22219000000041,
+    "trajectories": 32,
+    "max_norm_deviation": 1.1102230246251565e-14,
+    "ideal_verified": true
+  },
+  "qpu_seconds": 0,
+  "limitations": [
+    "Feasibility and numerical/runtime profile only on old development public data; no quality-driven choice.",
+    "Symbolic compilation fixes counts before angle binding.",
+    "Saved-calibration noise simulation only, no cloud calls."
+  ]
+}

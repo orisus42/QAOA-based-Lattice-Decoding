@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+*credentials*.json
+qiskit-ibm.json
+*.joblib
+tmp/
+build/
+dist/
+*.egg-info/
+local_outputs/
+deliverables/
+!outputs/selector.joblib

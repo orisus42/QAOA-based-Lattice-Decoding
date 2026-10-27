@@ -1,0 +1,1352 @@
+{
+  "experiment_id": "EXP-004",
+  "run_id": "EXP-004_20261020T035105759769+0530",
+  "count": 64,
+  "qubits": 16,
+  "depth_p": 1,
+  "cohort": "All 64 previously inspected toy Module-LWE development examples; exploratory, not a fresh final holdout",
+  "box_optimum_coverage_count": 64,
+  "primary_method": "weak25_frozen",
+  "primary_thresholds": {
+    "single_shot_retention_at_least_95pct": true,
+    "solved_fraction_retention_at_least_95pct": true,
+    "compiled_cx_reduction_at_least_20pct": true
+  },
+  "primary_hypothesis_met": true,
+  "methods": {
+    "full_fixed": {
+      "mean_single_shot_optimum_probability": 0.0002503671854267569,
+      "single_shot_probability_retention_ratio": 1.0,
+      "single_shot_retention_bootstrap_95pct": [
+        1.0,
+        1.0
+      ],
+      "expected_solved_fraction_1024": 0.22345990314554653,
+      "solved_fraction_retention_ratio_1024": 1.0,
+      "solved_retention_bootstrap_95pct": [
+        1.0,
+        1.0
+      ],
+      "by_budget": [
+        {
+          "shots": 1,
+          "expected_solved_fraction": 0.0002503671854267569,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            0
+          ]
+        },
+        {
+          "shots": 10,
+          "expected_solved_fraction": 0.002500536519988048,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            1
+          ]
+        },
+        {
+          "shots": 100,
+          "expected_solved_fraction": 0.024695086837547696,
+          "observed_solved_count": 1,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            4
+          ]
+        },
+        {
+          "shots": 256,
+          "expected_solved_fraction": 0.0618776816008136,
+          "observed_solved_count": 2,
+          "measurement_only_95pct_solved_count_interval": [
+            1,
+            8
+          ]
+        },
+        {
+          "shots": 1024,
+          "expected_solved_fraction": 0.22345990314554653,
+          "observed_solved_count": 12,
+          "measurement_only_95pct_solved_count_interval": [
+            8,
+            21
+          ]
+        }
+      ],
+      "mean_expected_cost": 134.97533312427456,
+      "mean_expected_best_cost_1024": 14.662934495375396,
+      "mean_expected_hybrid_best_cost_1024": 7.862598669155037,
+      "expected_hybrid_solved_fraction_1024": 0.8690696121000407,
+      "expected_recovered_babai_failures_1024": 2.6204551744026077,
+      "observed_solved_count_1024": 12,
+      "observed_hybrid_solved_count_1024": 55,
+      "observed_returned_secret_recovered_1024": 10,
+      "compiled_cx": {
+        "mean": 202.875,
+        "min": 160.0,
+        "median": 208.0,
+        "max": 240.0
+      },
+      "compiled_cx_total": 12984,
+      "compiled_depth": {
+        "mean": 88.34375,
+        "min": 77.0,
+        "median": 89.0,
+        "max": 95.0
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 53.5625,
+        "min": 46.0,
+        "median": 54.0,
+        "max": 58.0
+      },
+      "mean_compiled_cx_reduction": 0.0,
+      "logical_rzz": {
+        "mean": 101.4375,
+        "min": 80.0,
+        "median": 104.0,
+        "max": 120.0
+      },
+      "per_instance_probability_retention": {
+        "mean": 1.0,
+        "min": 1.0,
+        "median": 1.0,
+        "max": 1.0
+      },
+      "instances_retaining_95pct_probability": 64,
+      "instances_improved_probability": 0,
+      "worst_retention_instances": [
+        {
+          "id": "MLWE-000",
+          "retention": 1.0
+        },
+        {
+          "id": "MLWE-001",
+          "retention": 1.0
+        },
+        {
+          "id": "MLWE-002",
+          "retention": 1.0
+        },
+        {
+          "id": "MLWE-003",
+          "retention": 1.0
+        },
+        {
+          "id": "MLWE-004",
+          "retention": 1.0
+        }
+      ],
+      "phase_ground_set_overlaps_original_optimum_count": 64,
+      "phase_ground_set_equals_original_optimum_count": 64
+    },
+    "full_tuned": {
+      "mean_single_shot_optimum_probability": 0.000252019674880659,
+      "single_shot_probability_retention_ratio": 1.0066002637329863,
+      "single_shot_retention_bootstrap_95pct": [
+        0.9960727245495388,
+        1.0168200924889923
+      ],
+      "expected_solved_fraction_1024": 0.22433821871170614,
+      "solved_fraction_retention_ratio_1024": 1.0039305287158722,
+      "solved_retention_bootstrap_95pct": [
+        0.994892062685829,
+        1.0126277235784704
+      ],
+      "by_budget": [
+        {
+          "shots": 1,
+          "expected_solved_fraction": 0.00025201967488065887,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            0
+          ]
+        },
+        {
+          "shots": 10,
+          "expected_solved_fraction": 0.0025169730334066998,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            1
+          ]
+        },
+        {
+          "shots": 100,
+          "expected_solved_fraction": 0.024850821177550803,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            4
+          ]
+        },
+        {
+          "shots": 256,
+          "expected_solved_fraction": 0.062240259490371576,
+          "observed_solved_count": 3,
+          "measurement_only_95pct_solved_count_interval": [
+            1,
+            8
+          ]
+        },
+        {
+          "shots": 1024,
+          "expected_solved_fraction": 0.22433821871170614,
+          "observed_solved_count": 10,
+          "measurement_only_95pct_solved_count_interval": [
+            8,
+            21
+          ]
+        }
+      ],
+      "mean_expected_cost": 133.2452966396166,
+      "mean_expected_best_cost_1024": 14.684229888190602,
+      "mean_expected_hybrid_best_cost_1024": 7.864847851534423,
+      "expected_hybrid_solved_fraction_1024": 0.8696511096051842,
+      "expected_recovered_babai_failures_1024": 2.6576710147317915,
+      "observed_solved_count_1024": 10,
+      "observed_hybrid_solved_count_1024": 54,
+      "observed_returned_secret_recovered_1024": 8,
+      "compiled_cx": {
+        "mean": 202.875,
+        "min": 160.0,
+        "median": 208.0,
+        "max": 240.0
+      },
+      "compiled_cx_total": 12984,
+      "compiled_depth": {
+        "mean": 88.34375,
+        "min": 77.0,
+        "median": 89.0,
+        "max": 95.0
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 53.5625,
+        "min": 46.0,
+        "median": 54.0,
+        "max": 58.0
+      },
+      "mean_compiled_cx_reduction": 0.0,
+      "logical_rzz": {
+        "mean": 101.4375,
+        "min": 80.0,
+        "median": 104.0,
+        "max": 120.0
+      },
+      "per_instance_probability_retention": {
+        "mean": 0.9999181225072712,
+        "min": 0.8812910326434699,
+        "median": 1.0050178412945676,
+        "max": 1.1017795810419655
+      },
+      "instances_retaining_95pct_probability": 57,
+      "instances_improved_probability": 36,
+      "worst_retention_instances": [
+        {
+          "id": "MLWE-009",
+          "retention": 0.8812910326434699
+        },
+        {
+          "id": "MLWE-017",
+          "retention": 0.9038348564469026
+        },
+        {
+          "id": "MLWE-025",
+          "retention": 0.929722769632919
+        },
+        {
+          "id": "MLWE-038",
+          "retention": 0.9315578931321821
+        },
+        {
+          "id": "MLWE-060",
+          "retention": 0.9331728833280521
+        }
+      ],
+      "phase_ground_set_overlaps_original_optimum_count": 64,
+      "phase_ground_set_equals_original_optimum_count": 64
+    },
+    "weak10_frozen": {
+      "mean_single_shot_optimum_probability": 0.0002517034611236043,
+      "single_shot_probability_retention_ratio": 1.0053372637255544,
+      "single_shot_retention_bootstrap_95pct": [
+        0.9903188272647006,
+        1.0196836072848976
+      ],
+      "expected_solved_fraction_1024": 0.2241911346559513,
+      "solved_fraction_retention_ratio_1024": 1.0032723164205817,
+      "solved_retention_bootstrap_95pct": [
+        0.9906481260885159,
+        1.0150067552393385
+      ],
+      "by_budget": [
+        {
+          "shots": 1,
+          "expected_solved_fraction": 0.0002517034611236043,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            0
+          ]
+        },
+        {
+          "shots": 10,
+          "expected_solved_fraction": 0.0025138268772414716,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            1
+          ]
+        },
+        {
+          "shots": 100,
+          "expected_solved_fraction": 0.024820954299572533,
+          "observed_solved_count": 3,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            4
+          ]
+        },
+        {
+          "shots": 256,
+          "expected_solved_fraction": 0.06217082236621674,
+          "observed_solved_count": 4,
+          "measurement_only_95pct_solved_count_interval": [
+            1,
+            8
+          ]
+        },
+        {
+          "shots": 1024,
+          "expected_solved_fraction": 0.2241911346559513,
+          "observed_solved_count": 20,
+          "measurement_only_95pct_solved_count_interval": [
+            8,
+            21
+          ]
+        }
+      ],
+      "mean_expected_cost": 134.9438075958799,
+      "mean_expected_best_cost_1024": 14.646375187718144,
+      "mean_expected_hybrid_best_cost_1024": 7.862429667395166,
+      "expected_hybrid_solved_fraction_1024": 0.8692704644295655,
+      "expected_recovered_babai_failures_1024": 2.6333097234921903,
+      "observed_solved_count_1024": 20,
+      "observed_hybrid_solved_count_1024": 56,
+      "observed_returned_secret_recovered_1024": 17,
+      "compiled_cx": {
+        "mean": 183.5625,
+        "min": 144.0,
+        "median": 188.0,
+        "max": 216.0
+      },
+      "compiled_cx_total": 11748,
+      "compiled_depth": {
+        "mean": 86.28125,
+        "min": 74.0,
+        "median": 89.0,
+        "max": 95.0
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 52.1875,
+        "min": 44.0,
+        "median": 54.0,
+        "max": 58.0
+      },
+      "mean_compiled_cx_reduction": 0.09519408502772642,
+      "logical_rzz": {
+        "mean": 91.78125,
+        "min": 72.0,
+        "median": 94.0,
+        "max": 108.0
+      },
+      "per_instance_probability_retention": {
+        "mean": 1.003566732824229,
+        "min": 0.7709504369439923,
+        "median": 0.9994869037599532,
+        "max": 1.1472358514881753
+      },
+      "instances_retaining_95pct_probability": 59,
+      "instances_improved_probability": 31,
+      "worst_retention_instances": [
+        {
+          "id": "MLWE-029",
+          "retention": 0.7709504369439923
+        },
+        {
+          "id": "MLWE-018",
+          "retention": 0.9029733948268788
+        },
+        {
+          "id": "MLWE-063",
+          "retention": 0.9354445767340646
+        },
+        {
+          "id": "MLWE-036",
+          "retention": 0.9364488752607895
+        },
+        {
+          "id": "MLWE-010",
+          "retention": 0.9375228521429033
+        }
+      ],
+      "phase_ground_set_overlaps_original_optimum_count": 55,
+      "phase_ground_set_equals_original_optimum_count": 45
+    },
+    "weak10_retrained": {
+      "mean_single_shot_optimum_probability": 0.0002517630848414671,
+      "single_shot_probability_retention_ratio": 1.0055754088233682,
+      "single_shot_retention_bootstrap_95pct": [
+        0.9905447354039518,
+        1.0199024452179712
+      ],
+      "expected_solved_fraction_1024": 0.22423457827779966,
+      "solved_fraction_retention_ratio_1024": 1.0034667299204392,
+      "solved_retention_bootstrap_95pct": [
+        0.9908550563107319,
+        1.0151987316282685
+      ],
+      "by_budget": [
+        {
+          "shots": 1,
+          "expected_solved_fraction": 0.0002517630848414671,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            0
+          ]
+        },
+        {
+          "shots": 10,
+          "expected_solved_fraction": 0.002514421291511867,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            1
+          ]
+        },
+        {
+          "shots": 100,
+          "expected_solved_fraction": 0.02482671959089046,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            4
+          ]
+        },
+        {
+          "shots": 256,
+          "expected_solved_fraction": 0.06218482443461032,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            1,
+            8
+          ]
+        },
+        {
+          "shots": 1024,
+          "expected_solved_fraction": 0.22423457827779966,
+          "observed_solved_count": 12,
+          "measurement_only_95pct_solved_count_interval": [
+            8,
+            21
+          ]
+        }
+      ],
+      "mean_expected_cost": 134.95281385270246,
+      "mean_expected_best_cost_1024": 14.645229641091536,
+      "mean_expected_hybrid_best_cost_1024": 7.8623261912201,
+      "expected_hybrid_solved_fraction_1024": 0.8692853485192524,
+      "expected_recovered_babai_failures_1024": 2.6342623052321548,
+      "observed_solved_count_1024": 12,
+      "observed_hybrid_solved_count_1024": 58,
+      "observed_returned_secret_recovered_1024": 9,
+      "compiled_cx": {
+        "mean": 183.5625,
+        "min": 144.0,
+        "median": 188.0,
+        "max": 216.0
+      },
+      "compiled_cx_total": 11748,
+      "compiled_depth": {
+        "mean": 86.28125,
+        "min": 74.0,
+        "median": 89.0,
+        "max": 95.0
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 52.1875,
+        "min": 44.0,
+        "median": 54.0,
+        "max": 58.0
+      },
+      "mean_compiled_cx_reduction": 0.09519408502772642,
+      "logical_rzz": {
+        "mean": 91.78125,
+        "min": 72.0,
+        "median": 94.0,
+        "max": 108.0
+      },
+      "per_instance_probability_retention": {
+        "mean": 1.0037646645182485,
+        "min": 0.771022576913138,
+        "median": 0.9997039929484692,
+        "max": 1.147635368845999
+      },
+      "instances_retaining_95pct_probability": 59,
+      "instances_improved_probability": 32,
+      "worst_retention_instances": [
+        {
+          "id": "MLWE-029",
+          "retention": 0.771022576913138
+        },
+        {
+          "id": "MLWE-018",
+          "retention": 0.9032510252166706
+        },
+        {
+          "id": "MLWE-063",
+          "retention": 0.9357953351595638
+        },
+        {
+          "id": "MLWE-036",
+          "retention": 0.9363862338041185
+        },
+        {
+          "id": "MLWE-010",
+          "retention": 0.9376922046390913
+        }
+      ],
+      "phase_ground_set_overlaps_original_optimum_count": 55,
+      "phase_ground_set_equals_original_optimum_count": 45
+    },
+    "weak25_frozen": {
+      "mean_single_shot_optimum_probability": 0.0002536319295726101,
+      "single_shot_probability_retention_ratio": 1.0130398244493917,
+      "single_shot_retention_bootstrap_95pct": [
+        0.985040127610875,
+        1.0410634324330852
+      ],
+      "expected_solved_fraction_1024": 0.22527348470574626,
+      "solved_fraction_retention_ratio_1024": 1.0081159149121195,
+      "solved_retention_bootstrap_95pct": [
+        0.9838902847974291,
+        1.0321420534369552
+      ],
+      "by_budget": [
+        {
+          "shots": 1,
+          "expected_solved_fraction": 0.0002536319295726101,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            0
+          ]
+        },
+        {
+          "shots": 10,
+          "expected_solved_fraction": 0.002533017295552477,
+          "observed_solved_count": 2,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            1
+          ]
+        },
+        {
+          "shots": 100,
+          "expected_solved_fraction": 0.025003625166689792,
+          "observed_solved_count": 4,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            4
+          ]
+        },
+        {
+          "shots": 256,
+          "expected_solved_fraction": 0.06259954935412704,
+          "observed_solved_count": 6,
+          "measurement_only_95pct_solved_count_interval": [
+            1,
+            8
+          ]
+        },
+        {
+          "shots": 1024,
+          "expected_solved_fraction": 0.22527348470574626,
+          "observed_solved_count": 22,
+          "measurement_only_95pct_solved_count_interval": [
+            8,
+            21
+          ]
+        }
+      ],
+      "mean_expected_cost": 134.7588304671835,
+      "mean_expected_best_cost_1024": 14.618024953032666,
+      "mean_expected_hybrid_best_cost_1024": 7.8694298103796125,
+      "expected_hybrid_solved_fraction_1024": 0.8682697746762598,
+      "expected_recovered_babai_failures_1024": 2.569265579280626,
+      "observed_solved_count_1024": 22,
+      "observed_hybrid_solved_count_1024": 56,
+      "observed_returned_secret_recovered_1024": 18,
+      "compiled_cx": {
+        "mean": 152.15625,
+        "min": 120.0,
+        "median": 156.0,
+        "max": 180.0
+      },
+      "compiled_cx_total": 9738,
+      "compiled_depth": {
+        "mean": 80.75,
+        "min": 68.0,
+        "median": 80.0,
+        "max": 95.0
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 48.5,
+        "min": 40.0,
+        "median": 48.0,
+        "max": 58.0
+      },
+      "mean_compiled_cx_reduction": 0.25,
+      "logical_rzz": {
+        "mean": 76.078125,
+        "min": 60.0,
+        "median": 78.0,
+        "max": 90.0
+      },
+      "per_instance_probability_retention": {
+        "mean": 1.0074874119597879,
+        "min": 0.6870785193034387,
+        "median": 1.0096114803253458,
+        "max": 1.3249345510279456
+      },
+      "instances_retaining_95pct_probability": 46,
+      "instances_improved_probability": 33,
+      "worst_retention_instances": [
+        {
+          "id": "MLWE-004",
+          "retention": 0.6870785193034387
+        },
+        {
+          "id": "MLWE-027",
+          "retention": 0.7565597622456396
+        },
+        {
+          "id": "MLWE-016",
+          "retention": 0.7645407391387237
+        },
+        {
+          "id": "MLWE-045",
+          "retention": 0.8260797280839259
+        },
+        {
+          "id": "MLWE-030",
+          "retention": 0.871239214368954
+        }
+      ],
+      "phase_ground_set_overlaps_original_optimum_count": 33,
+      "phase_ground_set_equals_original_optimum_count": 24
+    },
+    "weak25_retrained": {
+      "mean_single_shot_optimum_probability": 0.0002541307477934651,
+      "single_shot_probability_retention_ratio": 1.0150321710902055,
+      "single_shot_retention_bootstrap_95pct": [
+        0.9867630662422059,
+        1.0434034311497964
+      ],
+      "expected_solved_fraction_1024": 0.2256336866567665,
+      "solved_fraction_retention_ratio_1024": 1.0097278459384462,
+      "solved_retention_bootstrap_95pct": [
+        0.9853513211059796,
+        1.0340436787794793
+      ],
+      "by_budget": [
+        {
+          "shots": 1,
+          "expected_solved_fraction": 0.0002541307477934651,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            0
+          ]
+        },
+        {
+          "shots": 10,
+          "expected_solved_fraction": 0.002537989839444999,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            1
+          ]
+        },
+        {
+          "shots": 100,
+          "expected_solved_fraction": 0.02505181676846114,
+          "observed_solved_count": 1,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            4
+          ]
+        },
+        {
+          "shots": 256,
+          "expected_solved_fraction": 0.06271643236842864,
+          "observed_solved_count": 2,
+          "measurement_only_95pct_solved_count_interval": [
+            1,
+            8
+          ]
+        },
+        {
+          "shots": 1024,
+          "expected_solved_fraction": 0.2256336866567665,
+          "observed_solved_count": 11,
+          "measurement_only_95pct_solved_count_interval": [
+            8,
+            21
+          ]
+        }
+      ],
+      "mean_expected_cost": 134.79855851518028,
+      "mean_expected_best_cost_1024": 14.609530464787806,
+      "mean_expected_hybrid_best_cost_1024": 7.868775640421978,
+      "expected_hybrid_solved_fraction_1024": 0.8683688233945283,
+      "expected_recovered_babai_failures_1024": 2.5756046972498057,
+      "observed_solved_count_1024": 11,
+      "observed_hybrid_solved_count_1024": 55,
+      "observed_returned_secret_recovered_1024": 10,
+      "compiled_cx": {
+        "mean": 152.15625,
+        "min": 120.0,
+        "median": 156.0,
+        "max": 180.0
+      },
+      "compiled_cx_total": 9738,
+      "compiled_depth": {
+        "mean": 80.75,
+        "min": 68.0,
+        "median": 80.0,
+        "max": 95.0
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 48.5,
+        "min": 40.0,
+        "median": 48.0,
+        "max": 58.0
+      },
+      "mean_compiled_cx_reduction": 0.25,
+      "logical_rzz": {
+        "mean": 76.078125,
+        "min": 60.0,
+        "median": 78.0,
+        "max": 90.0
+      },
+      "per_instance_probability_retention": {
+        "mean": 1.0092135088309733,
+        "min": 0.6858887767228444,
+        "median": 1.012053921797912,
+        "max": 1.332390222622179
+      },
+      "instances_retaining_95pct_probability": 46,
+      "instances_improved_probability": 33,
+      "worst_retention_instances": [
+        {
+          "id": "MLWE-004",
+          "retention": 0.6858887767228444
+        },
+        {
+          "id": "MLWE-027",
+          "retention": 0.7550814206471989
+        },
+        {
+          "id": "MLWE-016",
+          "retention": 0.7645423450327019
+        },
+        {
+          "id": "MLWE-045",
+          "retention": 0.8266839288165895
+        },
+        {
+          "id": "MLWE-030",
+          "retention": 0.8710362545210675
+        }
+      ],
+      "phase_ground_set_overlaps_original_optimum_count": 33,
+      "phase_ground_set_equals_original_optimum_count": 24
+    },
+    "weak50_frozen": {
+      "mean_single_shot_optimum_probability": 0.0002686461368370884,
+      "single_shot_probability_retention_ratio": 1.0730085749023963,
+      "single_shot_retention_bootstrap_95pct": [
+        1.0199154066210427,
+        1.1278777746416266
+      ],
+      "expected_solved_fraction_1024": 0.23683025140424036,
+      "solved_fraction_retention_ratio_1024": 1.0598333216406404,
+      "solved_retention_bootstrap_95pct": [
+        1.014741277971965,
+        1.106062036786575
+      ],
+      "by_budget": [
+        {
+          "shots": 1,
+          "expected_solved_fraction": 0.0002686461368370884,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            0
+          ]
+        },
+        {
+          "shots": 10,
+          "expected_solved_fraction": 0.0026827835160534853,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            1
+          ]
+        },
+        {
+          "shots": 100,
+          "expected_solved_fraction": 0.026464205940588514,
+          "observed_solved_count": 2,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            5
+          ]
+        },
+        {
+          "shots": 256,
+          "expected_solved_fraction": 0.06617953314676354,
+          "observed_solved_count": 5,
+          "measurement_only_95pct_solved_count_interval": [
+            1,
+            8
+          ]
+        },
+        {
+          "shots": 1024,
+          "expected_solved_fraction": 0.23683025140424036,
+          "observed_solved_count": 18,
+          "measurement_only_95pct_solved_count_interval": [
+            9,
+            22
+          ]
+        }
+      ],
+      "mean_expected_cost": 134.0175930036267,
+      "mean_expected_best_cost_1024": 14.406117781560772,
+      "mean_expected_hybrid_best_cost_1024": 7.835351033905171,
+      "expected_hybrid_solved_fraction_1024": 0.8710356269977078,
+      "expected_recovered_babai_failures_1024": 2.7462801278533013,
+      "observed_solved_count_1024": 18,
+      "observed_hybrid_solved_count_1024": 57,
+      "observed_returned_secret_recovered_1024": 14,
+      "compiled_cx": {
+        "mean": 101.4375,
+        "min": 80.0,
+        "median": 104.0,
+        "max": 120.0
+      },
+      "compiled_cx_total": 6492,
+      "compiled_depth": {
+        "mean": 66.171875,
+        "min": 50.0,
+        "median": 65.0,
+        "max": 86.0
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 38.78125,
+        "min": 28.0,
+        "median": 38.0,
+        "max": 52.0
+      },
+      "mean_compiled_cx_reduction": 0.5,
+      "logical_rzz": {
+        "mean": 50.71875,
+        "min": 40.0,
+        "median": 52.0,
+        "max": 60.0
+      },
+      "per_instance_probability_retention": {
+        "mean": 1.079460857099418,
+        "min": 0.584217575437952,
+        "median": 1.0764532850260125,
+        "max": 1.7456243740079271
+      },
+      "instances_retaining_95pct_probability": 43,
+      "instances_improved_probability": 38,
+      "worst_retention_instances": [
+        {
+          "id": "MLWE-031",
+          "retention": 0.584217575437952
+        },
+        {
+          "id": "MLWE-040",
+          "retention": 0.6472633920208698
+        },
+        {
+          "id": "MLWE-019",
+          "retention": 0.7160384682880744
+        },
+        {
+          "id": "MLWE-020",
+          "retention": 0.7501370610358717
+        },
+        {
+          "id": "MLWE-028",
+          "retention": 0.7658740390734224
+        }
+      ],
+      "phase_ground_set_overlaps_original_optimum_count": 9,
+      "phase_ground_set_equals_original_optimum_count": 7
+    },
+    "weak50_retrained": {
+      "mean_single_shot_optimum_probability": 0.000272999603674867,
+      "single_shot_probability_retention_ratio": 1.0903969032903917,
+      "single_shot_retention_bootstrap_95pct": [
+        1.034522456591557,
+        1.1477560125371264
+      ],
+      "expected_solved_fraction_1024": 0.2399472887977685,
+      "solved_fraction_retention_ratio_1024": 1.0737823001806424,
+      "solved_retention_bootstrap_95pct": [
+        1.0267973043192151,
+        1.1220598558281634
+      ],
+      "by_budget": [
+        {
+          "shots": 1,
+          "expected_solved_fraction": 0.000272999603674867,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            0
+          ]
+        },
+        {
+          "shots": 10,
+          "expected_solved_fraction": 0.00272617894351411,
+          "observed_solved_count": 0,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            1
+          ]
+        },
+        {
+          "shots": 100,
+          "expected_solved_fraction": 0.026884502151456432,
+          "observed_solved_count": 1,
+          "measurement_only_95pct_solved_count_interval": [
+            0,
+            5
+          ]
+        },
+        {
+          "shots": 256,
+          "expected_solved_fraction": 0.06719771553822941,
+          "observed_solved_count": 1,
+          "measurement_only_95pct_solved_count_interval": [
+            1,
+            9
+          ]
+        },
+        {
+          "shots": 1024,
+          "expected_solved_fraction": 0.2399472887977685,
+          "observed_solved_count": 11,
+          "measurement_only_95pct_solved_count_interval": [
+            9,
+            22
+          ]
+        }
+      ],
+      "mean_expected_cost": 134.10746723851446,
+      "mean_expected_best_cost_1024": 14.34174838818177,
+      "mean_expected_hybrid_best_cost_1024": 7.829900281329754,
+      "expected_hybrid_solved_fraction_1024": 0.8718148173828945,
+      "expected_recovered_babai_failures_1024": 2.796148312505241,
+      "observed_solved_count_1024": 11,
+      "observed_hybrid_solved_count_1024": 55,
+      "observed_returned_secret_recovered_1024": 9,
+      "compiled_cx": {
+        "mean": 101.4375,
+        "min": 80.0,
+        "median": 104.0,
+        "max": 120.0
+      },
+      "compiled_cx_total": 6492,
+      "compiled_depth": {
+        "mean": 66.171875,
+        "min": 50.0,
+        "median": 65.0,
+        "max": 86.0
+      },
+      "compiled_two_qubit_depth": {
+        "mean": 38.78125,
+        "min": 28.0,
+        "median": 38.0,
+        "max": 52.0
+      },
+      "mean_compiled_cx_reduction": 0.5,
+      "logical_rzz": {
+        "mean": 50.71875,
+        "min": 40.0,
+        "median": 52.0,
+        "max": 60.0
+      },
+      "per_instance_probability_retention": {
+        "mean": 1.0957320270213313,
+        "min": 0.5749721977139639,
+        "median": 1.0802026573918329,
+        "max": 1.8260769868828874
+      },
+      "instances_retaining_95pct_probability": 44,
+      "instances_improved_probability": 38,
+      "worst_retention_instances": [
+        {
+          "id": "MLWE-031",
+          "retention": 0.5749721977139639
+        },
+        {
+          "id": "MLWE-040",
+          "retention": 0.6478239923558436
+        },
+        {
+          "id": "MLWE-019",
+          "retention": 0.7160317795207979
+        },
+        {
+          "id": "MLWE-020",
+          "retention": 0.748460262431197
+        },
+        {
+          "id": "MLWE-028",
+          "retention": 0.7670640054318595
+        }
+      ],
+      "phase_ground_set_overlaps_original_optimum_count": 9,
+      "phase_ground_set_equals_original_optimum_count": 7
+    }
+  },
+  "random25_control": {
+    "replicates_per_instance": 5,
+    "mean_single_shot_probability": 0.00015887565239892492,
+    "mean_expected_solved_fraction_1024": 0.14630021764617931,
+    "replicate_cohort_mean_single_shot_probabilities": [
+      0.00017717381299267354,
+      0.00014338489137652842,
+      0.00016289286263076308,
+      0.00015982869287617428,
+      0.00015109800211848538
+    ],
+    "note": "Unchanged full-trained angles, same number of removed interactions; exact distributions, no measured shots."
+  },
+  "classical_controls_from_EXP003": {
+    "babai": {
+      "solved_count": 53,
+      "solved_fraction": 0.828125,
+      "planted_secret_recovered_count": 48
+    },
+    "local_refinement": {
+      "refine_1": {
+        "solved_count": 56,
+        "secret_recovered_count": 49,
+        "evaluations_min_median_max": [
+          17,
+          17.0,
+          33
+        ],
+        "evaluation_budget_reached_count": 0
+      },
+      "refine_2": {
+        "solved_count": 61,
+        "secret_recovered_count": 52,
+        "evaluations_min_median_max": [
+          129,
+          129.0,
+          385
+        ],
+        "evaluation_budget_reached_count": 0
+      }
+    },
+    "uniform_box": {
+      "mean_single_shot_probability": 1.621246337890625e-05,
+      "single_shot_probability_min_max": [
+        1.52587890625e-05,
+        3.0517578125e-05
+      ],
+      "observed_successful_samples": 1,
+      "samples_total": 65536,
+      "observed_single_shot_fraction": 1.52587890625e-05,
+      "by_budget": [
+        {
+          "shots_or_samples": 1,
+          "expected_solved_fraction": 1.621246337890625e-05,
+          "observed_solved_count": 0,
+          "observed_solved_fraction": 0.0,
+          "measurement_only_95pct_count_interval": [
+            0,
+            0
+          ],
+          "expected_hybrid_solved_fraction": 0.8281278610229492,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 10,
+          "expected_solved_fraction": 0.00016211219251436327,
+          "observed_solved_count": 0,
+          "observed_solved_fraction": 0.0,
+          "measurement_only_95pct_count_interval": [
+            0,
+            0
+          ],
+          "expected_hybrid_solved_fraction": 0.8281536079376854,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 50,
+          "expected_solved_fraction": 0.0008102845731918964,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            1
+          ],
+          "expected_hybrid_solved_fraction": 0.8282679887757036,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 47
+        },
+        {
+          "shots_or_samples": 100,
+          "expected_solved_fraction": 0.0016198785556578157,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            1
+          ],
+          "expected_hybrid_solved_fraction": 0.8284108503444749,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 47
+        },
+        {
+          "shots_or_samples": 256,
+          "expected_solved_fraction": 0.004141380204282775,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            2
+          ],
+          "expected_hybrid_solved_fraction": 0.8288557622216708,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 47
+        },
+        {
+          "shots_or_samples": 1024,
+          "expected_solved_fraction": 0.016457652065803706,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            3
+          ],
+          "expected_hybrid_solved_fraction": 0.8310281879885681,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 0,
+          "hybrid_returned_secret_recovered_count": 47
+        }
+      ]
+    },
+    "small_secret_sampling": {
+      "mean_single_shot_probability": 0.0065250396728515625,
+      "single_shot_probability_min_max": [
+        0.000244140625,
+        0.019775390625
+      ],
+      "observed_successful_samples": 427,
+      "samples_total": 65536,
+      "observed_single_shot_fraction": 0.0065155029296875,
+      "by_budget": [
+        {
+          "shots_or_samples": 1,
+          "expected_solved_fraction": 0.0065250396728515625,
+          "observed_solved_count": 1,
+          "observed_solved_fraction": 0.015625,
+          "measurement_only_95pct_count_interval": [
+            0,
+            2
+          ],
+          "expected_hybrid_solved_fraction": 0.8290138244628906,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 1,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 10,
+          "expected_solved_fraction": 0.06237950893208798,
+          "observed_solved_count": 6,
+          "observed_solved_fraction": 0.09375,
+          "measurement_only_95pct_count_interval": [
+            1,
+            8
+          ],
+          "expected_hybrid_solved_fraction": 0.8367341223460075,
+          "observed_hybrid_solved_count": 53,
+          "babai_failures_recovered": 0,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 4,
+          "hybrid_returned_secret_recovered_count": 48
+        },
+        {
+          "shots_or_samples": 50,
+          "expected_solved_fraction": 0.25882853827652796,
+          "observed_solved_count": 17,
+          "observed_solved_fraction": 0.265625,
+          "measurement_only_95pct_count_interval": [
+            10,
+            23
+          ],
+          "expected_hybrid_solved_fraction": 0.8656999951726334,
+          "observed_hybrid_solved_count": 54,
+          "babai_failures_recovered": 1,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 15,
+          "hybrid_returned_secret_recovered_count": 49
+        },
+        {
+          "shots_or_samples": 100,
+          "expected_solved_fraction": 0.42154766833659546,
+          "observed_solved_count": 26,
+          "observed_solved_fraction": 0.40625,
+          "measurement_only_95pct_count_interval": [
+            20,
+            34
+          ],
+          "expected_hybrid_solved_fraction": 0.8923595495258776,
+          "observed_hybrid_solved_count": 55,
+          "babai_failures_recovered": 2,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 25,
+          "hybrid_returned_secret_recovered_count": 50
+        },
+        {
+          "shots_or_samples": 256,
+          "expected_solved_fraction": 0.6605122073578349,
+          "observed_solved_count": 41,
+          "observed_solved_fraction": 0.640625,
+          "measurement_only_95pct_count_interval": [
+            37,
+            48
+          ],
+          "expected_hybrid_solved_fraction": 0.937408328152728,
+          "observed_hybrid_solved_count": 60,
+          "babai_failures_recovered": 7,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 37,
+          "hybrid_returned_secret_recovered_count": 52
+        },
+        {
+          "shots_or_samples": 1024,
+          "expected_solved_fraction": 0.8797840711355878,
+          "observed_solved_count": 57,
+          "observed_solved_fraction": 0.890625,
+          "measurement_only_95pct_count_interval": [
+            52,
+            60
+          ],
+          "expected_hybrid_solved_fraction": 0.9803782129501004,
+          "observed_hybrid_solved_count": 63,
+          "babai_failures_recovered": 10,
+          "babai_failures_total": 11,
+          "returned_candidate_secret_recovered_count": 51,
+          "hybrid_returned_secret_recovered_count": 54
+        }
+      ]
+    }
+  },
+  "training": {
+    "0.1": {
+      "angles": [
+        1.3400211269214415,
+        -0.35190236044229134
+      ],
+      "training_expected_original_energy": -1.1036040255068744,
+      "frozen_training_expected_original_energy": -1.103602851863332,
+      "objective_evaluations": 527,
+      "instance_energy_evaluations": 8432,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "seconds": 0.6023612999997567
+    },
+    "0.25": {
+      "angles": [
+        1.3436170836211874,
+        -0.3530008805636662
+      ],
+      "training_expected_original_energy": -1.1042688191321215,
+      "frozen_training_expected_original_energy": -1.1042379454344537,
+      "objective_evaluations": 553,
+      "instance_energy_evaluations": 8848,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "seconds": 0.6879426999948919
+    },
+    "0.5": {
+      "angles": [
+        1.3649932110427812,
+        -0.3589841671447029
+      ],
+      "training_expected_original_energy": -1.107865155754355,
+      "frozen_training_expected_original_energy": -1.1069570422062998,
+      "objective_evaluations": 533,
+      "instance_energy_evaluations": 8528,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "seconds": 0.943072599999141
+    }
+  },
+  "validation": {
+    "original_binary_costs_checked": 4194304,
+    "compiled_circuits_verified": 512,
+    "max_probability_discrepancy": 6.667843360785852e-18,
+    "max_analytic_energy_discrepancy": 3.3306690738754696e-15,
+    "baseline_reproduced": 128
+  },
+  "actual_ideal_measurements": 524288,
+  "timing_seconds": 48.69282209999801,
+  "qpu_seconds": 0,
+  "limitations": [
+    "One toy parameter set and one QAOA layer; all 64 examples are already inspected development data.",
+    "Magnitude pruning is inspired by sparsified-phase QAOA literature, not a reproduction of a ground-state-preserving construction. No optimum-preservation guarantee.",
+    "The scored objective and candidate box remain unchanged, but the quantum phase operator is approximated.",
+    "All-to-all compiled CX count excludes physical-device routing, durations, calibration, and noise. No hardware or quantum advantage claim.",
+    "Aggregate retention can conceal losses on individual instances; paired distributions and worst cases are reported.",
+    "Separate global retraining costs are recorded; the primary candidate uses unchanged angles and no retraining.",
+    "Bootstrap intervals describe this development cohort under instance resampling and are not confirmatory population claims."
+  ]
+}

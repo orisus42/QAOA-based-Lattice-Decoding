@@ -1,0 +1,3920 @@
+{
+  "simulation512": {
+    "experiment_id": "EXP-008",
+    "run_id": "EXP-008_20261020T050837222393+0530",
+    "count": 512,
+    "backend": "ibm_fez",
+    "calibration_last_update": "2026-10-20T03:37:33+05:30",
+    "calibration_fetched_at": "2026-10-20T05:00:43.997481+05:30",
+    "physical_qubits": [
+      91,
+      92,
+      93,
+      94,
+      95,
+      98,
+      99,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      118,
+      129
+    ],
+    "qubits": 16,
+    "depth_p": 1,
+    "primary_budget": 1024,
+    "babai": {
+      "solved_count": 441,
+      "success": {
+        "mean": 0.861328125,
+        "ci95": [
+          0.83203125,
+          0.890625
+        ]
+      },
+      "mean_distance": 2.6899081631811015,
+      "secret_recovered_count": 353
+    },
+    "classical_refinement": {
+      "refine_1": {
+        "solved_count": 471,
+        "strict_improved_count": 38,
+        "mean_distance": 2.6607300274421637,
+        "secret_recovered_count": 370,
+        "candidate_evaluations_min_median_max": [
+          17,
+          17.0,
+          49
+        ],
+        "evaluation_cap_reached_count": 0
+      },
+      "refine_2": {
+        "solved_count": 497,
+        "strict_improved_count": 58,
+        "mean_distance": 2.639696070132038,
+        "secret_recovered_count": 384,
+        "candidate_evaluations_min_median_max": [
+          129,
+          129.0,
+          513
+        ],
+        "evaluation_cap_reached_count": 0
+      }
+    },
+    "noise_union_count": 101,
+    "babai_failure_count": 71,
+    "random_subset_count": 32,
+    "trajectories_per_circuit": 64,
+    "methods": {
+      "full_fixed": {
+        "resources": {
+          "native_cz": {
+            "mean": 559.751953125,
+            "min": 349.0,
+            "median": 562.0,
+            "max": 694.0
+          },
+          "depth": {
+            "mean": 669.42578125,
+            "min": 394.0,
+            "median": 668.0,
+            "max": 858.0
+          },
+          "two_qubit_depth": {
+            "mean": 238.8984375,
+            "min": 136.0,
+            "median": 240.0,
+            "max": 315.0
+          },
+          "duration_unitary_s": {
+            "mean": 2.278342968750001e-05,
+            "min": 1.3088000000000018e-05,
+            "median": 2.286800000000002e-05,
+            "max": 2.9987999999999998e-05
+          },
+          "duration_with_readout_s": {
+            "mean": 2.444342968750001e-05,
+            "min": 1.4748000000000017e-05,
+            "median": 2.452800000000002e-05,
+            "max": 3.1648e-05
+          },
+          "idle_delay_count": {
+            "mean": 318.13671875,
+            "min": 204.0,
+            "median": 320.0,
+            "max": 386.0
+          }
+        },
+        "by_budget": {
+          "256": {
+            "hybrid_distance": {
+              "estimate": 2.688426503648398,
+              "fixed_cohort_mc_ci95": [
+                2.688362153032233,
+                2.6884876580535364
+              ],
+              "group_and_mc_ci95": [
+                2.6365859929514577,
+                2.739979197872528
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.8639172741425136,
+              "fixed_cohort_mc_ci95": [
+                0.863824617422491,
+                0.8640134741528582
+              ],
+              "group_and_mc_ci95": [
+                0.833345751461631,
+                0.8926355255539176
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.003561570542419251,
+              "fixed_cohort_mc_ci95": [
+                0.0034390648399758284,
+                0.0036858229575206865
+              ],
+              "group_and_mc_ci95": [
+                0.0026867456554942673,
+                0.00450013091965743
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.0014816595327036275,
+              "fixed_cohort_mc_ci95": [
+                0.001420505127565108,
+                0.0015460101488687372
+              ],
+              "group_and_mc_ci95": [
+                0.0010501153970722931,
+                0.00196685568078363
+              ]
+            },
+            "expected_recovered_count": 1.325644360966976,
+            "jackknife_bias_check": {
+              "distance_correction": -4.0715186333528663e-07,
+              "success_correction": 5.758430287050587e-07
+            },
+            "ideal_hybrid_success": 0.8700168102439196,
+            "ideal_hybrid_distance": 2.684979170407366
+          },
+          "1024": {
+            "hybrid_distance": {
+              "estimate": 2.6842504173285255,
+              "fixed_cohort_mc_ci95": [
+                2.68402535514117,
+                2.684474882069977
+              ],
+              "group_and_mc_ci95": [
+                2.633038552157633,
+                2.734865912530656
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.8713733206157162,
+              "fixed_cohort_mc_ci95": [
+                0.8710218781960035,
+                0.871725965569933
+              ],
+              "group_and_mc_ci95": [
+                0.842726537706483,
+                0.8984324272136418
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.013526247711789865,
+              "fixed_cohort_mc_ci95": [
+                0.01307765762222104,
+                0.013949995560989923
+              ],
+              "group_and_mc_ci95": [
+                0.010278918365510785,
+                0.017015337057750057
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.005657745852575946,
+              "fixed_cohort_mc_ci95": [
+                0.0054332811111244324,
+                0.005882808039931376
+              ],
+              "group_and_mc_ci95": [
+                0.004024177835545528,
+                0.007467806927517994
+              ]
+            },
+            "expected_recovered_count": 5.14314015524667,
+            "jackknife_bias_check": {
+              "distance_correction": -5.843017681694818e-06,
+              "success_correction": 8.67108461855004e-06
+            },
+            "ideal_hybrid_success": 0.8927005639009578,
+            "ideal_hybrid_distance": 2.6728068505729836
+          },
+          "4096": {
+            "hybrid_distance": {
+              "estimate": 2.670787438157921,
+              "fixed_cohort_mc_ci95": [
+                2.6702176891081,
+                2.671487445397176
+              ],
+              "group_and_mc_ci95": [
+                2.621397968400833,
+                2.719601009140956
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.8970388109018863,
+              "fixed_cohort_mc_ci95": [
+                0.8958558099378683,
+                0.8980465198932496
+              ],
+              "group_and_mc_ci95": [
+                0.8739831755624174,
+                0.9184761150572236
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.04492044506209529,
+              "fixed_cohort_mc_ci95": [
+                0.04359617279238797,
+                0.045958931828368986
+              ],
+              "group_and_mc_ci95": [
+                0.03462017966114512,
+                0.055688871303541713
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.01912072502318063,
+              "fixed_cohort_mc_ci95": [
+                0.018420717783925587,
+                0.019690474073001316
+              ],
+              "group_and_mc_ci95": [
+                0.013854008314661603,
+                0.024882969209548012
+              ]
+            },
+            "expected_recovered_count": 18.28387118176579,
+            "jackknife_bias_check": {
+              "distance_correction": -6.268285854016398e-05,
+              "success_correction": 0.00010801914188329764
+            },
+            "ideal_hybrid_success": 0.9485494968349248,
+            "ideal_hybrid_distance": 2.6464903010390355
+          },
+          "16384": {
+            "hybrid_distance": {
+              "estimate": 2.6438760674956048,
+              "fixed_cohort_mc_ci95": [
+                2.643245952876968,
+                2.645118515704192
+              ],
+              "group_and_mc_ci95": [
+                2.5983312452772998,
+                2.6897017056542563
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.9559568771390342,
+              "fixed_cohort_mc_ci95": [
+                0.9535283816957407,
+                0.9570903149688536
+              ],
+              "group_and_mc_ci95": [
+                0.944414416393021,
+                0.9652810398636681
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.1041481128860175,
+              "fixed_cohort_mc_ci95": [
+                0.1019387758407639,
+                0.10509775174809843
+              ],
+              "group_and_mc_ci95": [
+                0.08173014188782496,
+                0.1267601264511607
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.04603209568549671,
+              "fixed_cohort_mc_ci95": [
+                0.044789647476909465,
+                0.04666221030413372
+              ],
+              "group_and_mc_ci95": [
+                0.033880479708572574,
+                0.05876361500708608
+              ]
+            },
+            "expected_recovered_count": 48.449921095185516,
+            "jackknife_bias_check": {
+              "distance_correction": -0.0002998355029926181,
+              "success_correction": 0.0006656557038187128
+            },
+            "ideal_hybrid_success": 0.9959406181649442,
+            "ideal_hybrid_distance": 2.6276876300901817
+          }
+        },
+        "random_subset_qaoa_only": {
+          "256": {
+            "count": 32,
+            "estimated_success": 0.022486334421374276,
+            "fixed_subset_mc_ci95": [
+              0.02128987545211546,
+              0.02364890361753355
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          },
+          "1024": {
+            "count": 32,
+            "estimated_success": 0.08629711876768455,
+            "fixed_subset_mc_ci95": [
+              0.0819137736851867,
+              0.09041430822253284
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          },
+          "4096": {
+            "count": 32,
+            "estimated_success": 0.29619519381572734,
+            "fixed_subset_mc_ci95": [
+              0.2827189404040463,
+              0.30728725192856565
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          },
+          "16384": {
+            "count": 32,
+            "estimated_success": 0.7302579934766688,
+            "fixed_subset_mc_ci95": [
+              0.7061047441041318,
+              0.7433503707337219
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          }
+        }
+      },
+      "weak75_frozen": {
+        "resources": {
+          "native_cz": {
+            "mean": 165.548828125,
+            "min": 97.0,
+            "median": 166.0,
+            "max": 231.0
+          },
+          "depth": {
+            "mean": 222.70703125,
+            "min": 131.0,
+            "median": 221.5,
+            "max": 363.0
+          },
+          "two_qubit_depth": {
+            "mean": 76.779296875,
+            "min": 43.0,
+            "median": 76.0,
+            "max": 134.0
+          },
+          "duration_unitary_s": {
+            "mean": 7.404195312500009e-06,
+            "min": 4.220000000000004e-06,
+            "median": 7.3060000000000085e-06,
+            "max": 1.2760000000000017e-05
+          },
+          "duration_with_readout_s": {
+            "mean": 9.064195312500009e-06,
+            "min": 5.880000000000004e-06,
+            "median": 8.966000000000009e-06,
+            "max": 1.4420000000000016e-05
+          },
+          "idle_delay_count": {
+            "mean": 98.4375,
+            "min": 69.0,
+            "median": 99.0,
+            "max": 124.0
+          }
+        },
+        "by_budget": {
+          "256": {
+            "hybrid_distance": {
+              "estimate": 2.686511001727618,
+              "fixed_cohort_mc_ci95": [
+                2.6864408005593288,
+                2.686583842606681
+              ],
+              "group_and_mc_ci95": [
+                2.634839283708157,
+                2.737657264696044
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.8674938108894212,
+              "fixed_cohort_mc_ci95": [
+                0.8673837883981049,
+                0.8676006534780552
+              ],
+              "group_and_mc_ci95": [
+                0.8378489015201334,
+                0.8952807571728172
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.008118379666459377,
+              "fixed_cohort_mc_ci95": [
+                0.00797147289438411,
+                0.008257037918643151
+              ],
+              "group_and_mc_ci95": [
+                0.006198347803459804,
+                0.010163299815708548
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.003397161453483566,
+              "fixed_cohort_mc_ci95": [
+                0.003324320574420625,
+                0.0034673626217726627
+              ],
+              "group_and_mc_ci95": [
+                0.0024434235819663975,
+                0.004440270468557294
+              ]
+            },
+            "expected_recovered_count": 3.1568311753836724,
+            "jackknife_bias_check": {
+              "distance_correction": -6.048533527369671e-07,
+              "success_correction": 8.67764508361013e-07
+            },
+            "ideal_hybrid_success": 0.8711394774177657,
+            "ideal_hybrid_distance": 2.6844882219958004
+          },
+          "1024": {
+            "hybrid_distance": {
+              "estimate": 2.6776338621318616,
+              "fixed_cohort_mc_ci95": [
+                2.677418762465557,
+                2.6778713617928176
+              ],
+              "group_and_mc_ci95": [
+                2.6272793805209163,
+                2.727310034309231
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.88416806868976,
+              "fixed_cohort_mc_ci95": [
+                0.8837918692701716,
+                0.8845184561597427
+              ],
+              "group_and_mc_ci95": [
+                0.8583626451932755,
+                0.9081862504578256
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.02903166919243371,
+              "fixed_cohort_mc_ci95": [
+                0.02856272808991841,
+                0.02944033614583927
+              ],
+              "group_and_mc_ci95": [
+                0.022346972043483914,
+                0.036063581242569
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.012274301049239877,
+              "fixed_cohort_mc_ci95": [
+                0.01203680138828378,
+                0.01248940071554433
+              ],
+              "group_and_mc_ci95": [
+                0.008936886609898387,
+                0.01593673475505416
+              ]
+            },
+            "expected_recovered_count": 11.694051169157092,
+            "jackknife_bias_check": {
+              "distance_correction": -7.521877428029455e-06,
+              "success_correction": 1.1709606131171668e-05
+            },
+            "ideal_hybrid_success": 0.8960221118597257,
+            "ideal_hybrid_distance": 2.671530188637158
+          },
+          "4096": {
+            "hybrid_distance": {
+              "estimate": 2.655123428662255,
+              "fixed_cohort_mc_ci95": [
+                2.654746172542558,
+                2.6556195585524542
+              ],
+              "group_and_mc_ci95": [
+                2.6079282626999767,
+                2.702221678483206
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.9305581762309899,
+              "fixed_cohort_mc_ci95": [
+                0.9296687867870331,
+                0.9312457453162057
+              ],
+              "group_and_mc_ci95": [
+                0.914328666991641,
+                0.945213545715149
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.07996480421636831,
+              "fixed_cohort_mc_ci95": [
+                0.07907421016026733,
+                0.08061432126069983
+              ],
+              "group_and_mc_ci95": [
+                0.06231764313300159,
+                0.09806600592919738
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.03478473451884634,
+              "fixed_cohort_mc_ci95": [
+                0.034288604628647225,
+                0.035161990638543514
+              ],
+              "group_and_mc_ci95": [
+                0.02566325882936359,
+                0.04459043416069467
+              ]
+            },
+            "expected_recovered_count": 35.44578623026683,
+            "jackknife_bias_check": {
+              "distance_correction": -5.025189878571368e-05,
+              "success_correction": 9.782594932350452e-05
+            },
+            "ideal_hybrid_success": 0.9525486900328108,
+            "ideal_hybrid_distance": 2.6454770751838925
+          },
+          "16384": {
+            "hybrid_distance": {
+              "estimate": 2.631101654505037,
+              "fixed_cohort_mc_ci95": [
+                2.630871075712929,
+                2.63149712499064
+              ],
+              "group_and_mc_ci95": [
+                2.5854577468216546,
+                2.675497899548058
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.9877074624660004,
+              "fixed_cohort_mc_ci95": [
+                0.9870242106279572,
+                0.9880405150646396
+              ],
+              "group_and_mc_ci95": [
+                0.9836589661907136,
+                0.99104309801829
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.1298137570336352,
+              "fixed_cohort_mc_ci95": [
+                0.12923734524673158,
+                0.1301069108011513
+              ],
+              "group_and_mc_ci95": [
+                0.10231251617129532,
+                0.15836966867812463
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.05880650867606452,
+              "fixed_cohort_mc_ci95": [
+                0.05841103819046143,
+                0.05903708746817243
+              ],
+              "group_and_mc_ci95": [
+                0.04377644416763027,
+                0.07499296820404655
+              ]
+            },
+            "expected_recovered_count": 64.7062207825922,
+            "jackknife_bias_check": {
+              "distance_correction": -7.310586429154498e-05,
+              "success_correction": 0.0001762360709075539
+            },
+            "ideal_hybrid_success": 0.995308631292609,
+            "ideal_hybrid_distance": 2.628043310088305
+          }
+        },
+        "random_subset_qaoa_only": {
+          "256": {
+            "count": 32,
+            "estimated_success": 0.04845984916787216,
+            "fixed_subset_mc_ci95": [
+              0.047053135078488635,
+              0.04985022986165445
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          },
+          "1024": {
+            "count": 32,
+            "estimated_success": 0.1759465595138393,
+            "fixed_subset_mc_ci95": [
+              0.17146597229856664,
+              0.1801712099777469
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          },
+          "4096": {
+            "count": 32,
+            "estimated_success": 0.5131294675430268,
+            "fixed_subset_mc_ci95": [
+              0.5035909218901613,
+              0.521235253536848
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          },
+          "16384": {
+            "count": 32,
+            "estimated_success": 0.9169045153680295,
+            "fixed_subset_mc_ci95": [
+              0.909992542740173,
+              0.9211845240010723
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          }
+        }
+      },
+      "weak75_retrained": {
+        "resources": {
+          "native_cz": {
+            "mean": 165.548828125,
+            "min": 97.0,
+            "median": 166.0,
+            "max": 231.0
+          },
+          "depth": {
+            "mean": 222.73046875,
+            "min": 133.0,
+            "median": 221.0,
+            "max": 362.0
+          },
+          "two_qubit_depth": {
+            "mean": 76.779296875,
+            "min": 43.0,
+            "median": 76.0,
+            "max": 134.0
+          },
+          "duration_unitary_s": {
+            "mean": 7.402851562500009e-06,
+            "min": 4.220000000000004e-06,
+            "median": 7.302000000000008e-06,
+            "max": 1.2736000000000017e-05
+          },
+          "duration_with_readout_s": {
+            "mean": 9.062851562500008e-06,
+            "min": 5.880000000000004e-06,
+            "median": 8.962000000000007e-06,
+            "max": 1.4396000000000016e-05
+          },
+          "idle_delay_count": {
+            "mean": 98.4609375,
+            "min": 69.0,
+            "median": 99.0,
+            "max": 124.0
+          }
+        },
+        "by_budget": {
+          "256": {
+            "hybrid_distance": {
+              "estimate": 2.686124191057004,
+              "fixed_cohort_mc_ci95": [
+                2.686042376343785,
+                2.6862044115657877
+              ],
+              "group_and_mc_ci95": [
+                2.6345378741731236,
+                2.7371367034271796
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.8681735383229285,
+              "fixed_cohort_mc_ci95": [
+                0.8680461442425349,
+                0.8682957747454129
+              ],
+              "group_and_mc_ci95": [
+                0.8388475382009963,
+                0.8957254618523532
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.008976210967986615,
+              "fixed_cohort_mc_ci95": [
+                0.00881077992106814,
+                0.009135389872836816
+              ],
+              "group_and_mc_ci95": [
+                0.006833677922318248,
+                0.011261016944003152
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.0037839721240975344,
+              "fixed_cohort_mc_ci95": [
+                0.0037037516153136775,
+                0.003865786837316587
+              ],
+              "group_and_mc_ci95": [
+                0.002712458888984026,
+                0.004963739111778753
+              ]
+            },
+            "expected_recovered_count": 3.5048516213394123,
+            "jackknife_bias_check": {
+              "distance_correction": -7.642993771206363e-07,
+              "success_correction": 1.123611142683778e-06
+            },
+            "ideal_hybrid_success": 0.8722693551576494,
+            "ideal_hybrid_distance": 2.683879493252659
+          },
+          "1024": {
+            "hybrid_distance": {
+              "estimate": 2.6764015152191325,
+              "fixed_cohort_mc_ci95": [
+                2.676154216553888,
+                2.6766562643094596
+              ],
+              "group_and_mc_ci95": [
+                2.626262621805098,
+                2.7259000866284877
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.8864575847467269,
+              "fixed_cohort_mc_ci95": [
+                0.8860272001889714,
+                0.8868495674524111
+              ],
+              "group_and_mc_ci95": [
+                0.8611678758257308,
+                0.909846081346836
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.03168561783249498,
+              "fixed_cohort_mc_ci95": [
+                0.031185668428111605,
+                0.03213789636732592
+              ],
+              "group_and_mc_ci95": [
+                0.0243893562635172,
+                0.03940446635940689
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.013506647961968987,
+              "fixed_cohort_mc_ci95": [
+                0.013251898871642053,
+                0.01375394662721341
+              ],
+              "group_and_mc_ci95": [
+                0.009785034299327611,
+                0.017576640195913724
+              ]
+            },
+            "expected_recovered_count": 12.866283390324156,
+            "jackknife_bias_check": {
+              "distance_correction": -9.225667477075206e-06,
+              "success_correction": 1.4841012072053239e-05
+            },
+            "ideal_hybrid_success": 0.8994206262936122,
+            "ideal_hybrid_distance": 2.6698389898660904
+          },
+          "4096": {
+            "hybrid_distance": {
+              "estimate": 2.65289893954219,
+              "fixed_cohort_mc_ci95": [
+                2.6525031117941342,
+                2.653388142980946
+              ],
+              "group_and_mc_ci95": [
+                2.605889589625206,
+                2.6995416107828727
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.935332451502816,
+              "fixed_cohort_mc_ci95": [
+                0.9343765887690754,
+                0.9360620900871165
+              ],
+              "group_and_mc_ci95": [
+                0.9200281130087087,
+                0.9489694979806239
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.08440227181616464,
+              "fixed_cohort_mc_ci95": [
+                0.08346986093018176,
+                0.08507492357841594
+              ],
+              "group_and_mc_ci95": [
+                0.0657577519013628,
+                0.10364568689481198
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.03700922363891168,
+              "fixed_cohort_mc_ci95": [
+                0.0365200202001557,
+                0.03740505138696708
+              ],
+              "group_and_mc_ci95": [
+                0.0274235723234584,
+                0.047371253577094444
+              ]
+            },
+            "expected_recovered_count": 37.890215169441774,
+            "jackknife_bias_check": {
+              "distance_correction": -5.6604613146937766e-05,
+              "success_correction": 0.00011489646772167017
+            },
+            "ideal_hybrid_success": 0.9573123264872399,
+            "ideal_hybrid_distance": 2.643383910795142
+          },
+          "16384": {
+            "hybrid_distance": {
+              "estimate": 2.6302480005458015,
+              "fixed_cohort_mc_ci95": [
+                2.630026367648485,
+                2.6306336500285354
+              ],
+              "group_and_mc_ci95": [
+                2.5847308783347285,
+                2.674629596583587
+              ]
+            },
+            "hybrid_success": {
+              "estimate": 0.989765041007482,
+              "fixed_cohort_mc_ci95": [
+                0.9891063522432781,
+                0.9900752262863289
+              ],
+              "group_and_mc_ci95": [
+                0.9860177242757391,
+                0.9928295451748503
+              ]
+            },
+            "strict_improved_fraction": {
+              "estimate": 0.1313859963092995,
+              "fixed_cohort_mc_ci95": [
+                0.1308247657804287,
+                0.13165371127343226
+              ],
+              "group_and_mc_ci95": [
+                0.10356098219841066,
+                0.1602801217975496
+              ]
+            },
+            "extra_distance_improvement": {
+              "estimate": 0.05966016263529994,
+              "fixed_cohort_mc_ci95": [
+                0.05927451315256603,
+                0.059881795532616376
+              ],
+              "group_and_mc_ci95": [
+                0.04436022951252895,
+                0.07591494660301289
+              ]
+            },
+            "expected_recovered_count": 65.75970099583077,
+            "jackknife_bias_check": {
+              "distance_correction": -6.925921372546995e-05,
+              "success_correction": 0.00016777952974134092
+            },
+            "ideal_hybrid_success": 0.9960177554530767,
+            "ideal_hybrid_distance": 2.6277071167115955
+          }
+        },
+        "random_subset_qaoa_only": {
+          "256": {
+            "count": 32,
+            "estimated_success": 0.050811669877981934,
+            "fixed_subset_mc_ci95": [
+              0.04937967456129524,
+              0.05232105990706528
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          },
+          "1024": {
+            "count": 32,
+            "estimated_success": 0.18385689546719194,
+            "fixed_subset_mc_ci95": [
+              0.17924864689363168,
+              0.18850451549104688
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          },
+          "4096": {
+            "count": 32,
+            "estimated_success": 0.5290656732916587,
+            "fixed_subset_mc_ci95": [
+              0.519080351510078,
+              0.5377446946790487
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          },
+          "16384": {
+            "count": 32,
+            "estimated_success": 0.9223212616474129,
+            "fixed_subset_mc_ci95": [
+              0.9152689734261235,
+              0.9266383836081072
+            ],
+            "note": "Not an all512 standalone estimate; this subset is outcome-independent."
+          }
+        }
+      }
+    },
+    "comparisons_to_full": {
+      "weak75_frozen": {
+        "256": {
+          "paired_success_difference": {
+            "estimate": 0.0035765367469076104,
+            "fixed_cohort_mc_ci95": [
+              0.0034336584712615524,
+              0.0037191285612786836
+            ],
+            "group_and_mc_ci95": [
+              0.0026860712885730664,
+              0.004554624079322666
+            ]
+          },
+          "paired_distance_difference": {
+            "estimate": -0.0019155019207799384,
+            "fixed_cohort_mc_ci95": [
+              -0.0020074419859057334,
+              -0.0018204842153053292
+            ],
+            "group_and_mc_ci95": [
+              -0.0025512520718330655,
+              -0.001349429551511672
+            ]
+          },
+          "extra_distance_benefit_ratio": {
+            "estimate": 2.292808420895903,
+            "fixed_cohort_mc_ci95": [
+              2.185993649182825,
+              2.4012283249436193
+            ],
+            "group_and_mc_ci95": [
+              2.0333414288850222,
+              2.600198589418049
+            ]
+          }
+        },
+        "1024": {
+          "paired_success_difference": {
+            "estimate": 0.012794748074043794,
+            "fixed_cohort_mc_ci95": [
+              0.01228620976700839,
+              0.01329263905695396
+            ],
+            "group_and_mc_ci95": [
+              0.009651871319129937,
+              0.016236076684262347
+            ]
+          },
+          "paired_distance_difference": {
+            "estimate": -0.006616555196663931,
+            "fixed_cohort_mc_ci95": [
+              -0.006922841881441022,
+              -0.006293602070245807
+            ],
+            "group_and_mc_ci95": [
+              -0.008739343949986222,
+              -0.00467354350006386
+            ]
+          },
+          "extra_distance_benefit_ratio": {
+            "estimate": 2.169468436559667,
+            "fixed_cohort_mc_ci95": [
+              2.076358174236147,
+              2.264856590146905
+            ],
+            "group_and_mc_ci95": [
+              1.9375287055996884,
+              2.4438584638594785
+            ]
+          }
+        },
+        "4096": {
+          "paired_success_difference": {
+            "estimate": 0.0335193653291036,
+            "fixed_cohort_mc_ci95": [
+              0.032168467765388016,
+              0.03486037364413122
+            ],
+            "group_and_mc_ci95": [
+              0.025465462641688693,
+              0.04227060694019872
+            ]
+          },
+          "paired_distance_difference": {
+            "estimate": -0.01566400949566571,
+            "fixed_cohort_mc_ci95": [
+              -0.016433835818299002,
+              -0.014908604800022185
+            ],
+            "group_and_mc_ci95": [
+              -0.020559429385737647,
+              -0.011292215562068497
+            ]
+          },
+          "extra_distance_benefit_ratio": {
+            "estimate": 1.819216294187368,
+            "fixed_cohort_mc_ci95": [
+              1.760023059395575,
+              1.8883622289080086
+            ],
+            "group_and_mc_ci95": [
+              1.6616418738492054,
+              2.013232245820917
+            ]
+          }
+        },
+        "16384": {
+          "paired_success_difference": {
+            "estimate": 0.031750585326966174,
+            "fixed_cohort_mc_ci95": [
+              0.030386711525655315,
+              0.03404965843388251
+            ],
+            "group_and_mc_ci95": [
+              0.024405067665458288,
+              0.040661267906982636
+            ]
+          },
+          "paired_distance_difference": {
+            "estimate": -0.012774412990567807,
+            "fixed_cohort_mc_ci95": [
+              -0.013989015995289822,
+              -0.012026886962658856
+            ],
+            "group_and_mc_ci95": [
+              -0.017383405042949152,
+              -0.009151997321615458
+            ]
+          },
+          "extra_distance_benefit_ratio": {
+            "estimate": 1.2775110018419742,
+            "fixed_cohort_mc_ci95": [
+              1.2579391573928205,
+              1.3119924935739302
+            ],
+            "group_and_mc_ci95": [
+              1.2246545005518807,
+              1.3548030233837878
+            ]
+          }
+        }
+      },
+      "weak75_retrained": {
+        "256": {
+          "paired_success_difference": {
+            "estimate": 0.004256264180414915,
+            "fixed_cohort_mc_ci95": [
+              0.004099231231050102,
+              0.004410890065732406
+            ],
+            "group_and_mc_ci95": [
+              0.0031771765763543265,
+              0.005404589194641776
+            ]
+          },
+          "paired_distance_difference": {
+            "estimate": -0.002302312591393907,
+            "fixed_cohort_mc_ci95": [
+              -0.0024063218708821775,
+              -0.0021989738375303713
+            ],
+            "group_and_mc_ci95": [
+              -0.00306976629023773,
+              -0.0016113497946750213
+            ]
+          },
+          "extra_distance_benefit_ratio": {
+            "estimate": 2.5538742474749307,
+            "fixed_cohort_mc_ci95": [
+              2.436867571549494,
+              2.6770454208059036
+            ],
+            "group_and_mc_ci95": [
+              2.253419084825336,
+              2.8994351594611447
+            ]
+          }
+        },
+        "1024": {
+          "paired_success_difference": {
+            "estimate": 0.015084264131010716,
+            "fixed_cohort_mc_ci95": [
+              0.014527134634333697,
+              0.015629542069654345
+            ],
+            "group_and_mc_ci95": [
+              0.011318247262995906,
+              0.019097369003702413
+            ]
+          },
+          "paired_distance_difference": {
+            "estimate": -0.007848902109393041,
+            "fixed_cohort_mc_ci95": [
+              -0.008189685555517879,
+              -0.007508478133959696
+            ],
+            "group_and_mc_ci95": [
+              -0.010406630711399412,
+              -0.005550467340885413
+            ]
+          },
+          "extra_distance_benefit_ratio": {
+            "estimate": 2.3872843202773897,
+            "fixed_cohort_mc_ci95": [
+              2.28618110512781,
+              2.495374050620615
+            ],
+            "group_and_mc_ci95": [
+              2.125634958396854,
+              2.6984191516375944
+            ]
+          }
+        },
+        "4096": {
+          "paired_success_difference": {
+            "estimate": 0.03829364060092966,
+            "fixed_cohort_mc_ci95": [
+              0.03686739368707287,
+              0.039712060971944144
+            ],
+            "group_and_mc_ci95": [
+              0.02912183806451149,
+              0.047920264083104985
+            ]
+          },
+          "paired_distance_difference": {
+            "estimate": -0.017888498615731052,
+            "fixed_cohort_mc_ci95": [
+              -0.018667618568028288,
+              -0.017116148725888125
+            ],
+            "group_and_mc_ci95": [
+              -0.02342140633947798,
+              -0.012887241070972257
+            ]
+          },
+          "extra_distance_benefit_ratio": {
+            "estimate": 1.935555455875459,
+            "fixed_cohort_mc_ci95": [
+              1.8728515268179946,
+              2.0098890302124817
+            ],
+            "group_and_mc_ci95": [
+              1.7641825132521487,
+              2.148439449605092
+            ]
+          }
+        },
+        "16384": {
+          "paired_success_difference": {
+            "estimate": 0.03380816386844776,
+            "fixed_cohort_mc_ci95": [
+              0.03241763503259273,
+              0.03615568673221558
+            ],
+            "group_and_mc_ci95": [
+              0.026018095255258954,
+              0.04312414840274767
+            ]
+          },
+          "paired_distance_difference": {
+            "estimate": -0.01362806694980323,
+            "fixed_cohort_mc_ci95": [
+              -0.014867008053321274,
+              -0.012876385186518959
+            ],
+            "group_and_mc_ci95": [
+              -0.01845826846851002,
+              -0.00975659793504885
+            ]
+          },
+          "extra_distance_benefit_ratio": {
+            "estimate": 1.2960557573331821,
+            "fixed_cohort_mc_ci95": [
+              1.2760605934391194,
+              1.3315727567157933
+            ],
+            "group_and_mc_ci95": [
+              1.2411532374835776,
+              1.3733710499223026
+            ]
+          }
+        }
+      }
+    },
+    "planning": {
+      "reset_duration_s": 1.684e-06,
+      "default_rep_delay_s": 0.00025,
+      "reserve_seconds": 120,
+      "estimates": [
+        {
+          "cases": 16,
+          "methods": 3,
+          "shots_per_circuit": 1024,
+          "total_executions": 49152,
+          "single_job_2s_overhead_estimate_seconds": 15.068246656,
+          "one_job_per_circuit_2s_overhead_estimate_seconds": 109.068246656,
+          "note": "Two overhead scenarios, not bounds or a guarantee. Actual quota and calibration must be refreshed before execution."
+        },
+        {
+          "cases": 16,
+          "methods": 3,
+          "shots_per_circuit": 4096,
+          "total_executions": 196608,
+          "single_job_2s_overhead_estimate_seconds": 54.272986624,
+          "one_job_per_circuit_2s_overhead_estimate_seconds": 148.272986624,
+          "note": "Two overhead scenarios, not bounds or a guarantee. Actual quota and calibration must be refreshed before execution."
+        },
+        {
+          "cases": 16,
+          "methods": 3,
+          "shots_per_circuit": 8192,
+          "total_executions": 393216,
+          "single_job_2s_overhead_estimate_seconds": 106.545973248,
+          "one_job_per_circuit_2s_overhead_estimate_seconds": 200.545973248,
+          "note": "Two overhead scenarios, not bounds or a guarantee. Actual quota and calibration must be refreshed before execution."
+        },
+        {
+          "cases": 16,
+          "methods": 3,
+          "shots_per_circuit": 16384,
+          "total_executions": 786432,
+          "single_job_2s_overhead_estimate_seconds": 211.091946496,
+          "one_job_per_circuit_2s_overhead_estimate_seconds": 305.091946496,
+          "note": "Two overhead scenarios, not bounds or a guarantee. Actual quota and calibration must be refreshed before execution."
+        }
+      ]
+    },
+    "validation": {
+      "input_manifest_hashes": 38,
+      "routed_ideal_circuits_verified": 1536,
+      "native_two_qubit_edges_verified": 456115,
+      "max_routed_probability_discrepancy": 5.355958732078392e-17,
+      "noisy_circuits_completed": 303,
+      "noise_trajectories": 19392,
+      "readout_normalization_checks": 19392,
+      "low_cost_mass_agreement_checks": 303,
+      "manifest_hashes_before_analysis": 858
+    },
+    "qpu_jobs_submitted": 0,
+    "qpu_seconds": 0,
+    "limitations": [
+      "One currently accessible IBM device, one calibration snapshot, one connected 16-qubit patch and one fixed routing seed. Not a claim about every IBM processor or placement.",
+      "Calibration-based Markovian noise is an approximation, not an experiment on the device. Calibration drift, crosstalk, leakage and coherent errors are excluded.",
+      "64 noise trajectories per circuit give Monte Carlo uncertainty; displayed best-of-shot results are nonlinear plug-in estimates with a finite-trajectory bias check, not exact predictions.",
+      "All 512 examples contribute to hybrid metrics. QAOA-only noisy population summaries use only the separate random 32-case subset, never the enriched union.",
+      "No new fitting; this is a follow-up on the existing fresh-validation cohort. Any new changes motivated by these outcomes need new evaluation.",
+      "Fewer native gates need not translate proportionally into QPU usage because readout, reset, repetition delay and job overhead also consume time.",
+      "Small Module-LWE parameters, no secure ML-KEM attack, no end-to-end quantum advantage, and no real QPU execution."
+    ],
+    "timing": {
+      "routing_seconds": 173.70827040000586,
+      "simulation_and_routing_seconds": 1075.0917581000103
+    }
+  },
+  "cache128": {
+    "experiment_id": "EXP-023",
+    "count": 128,
+    "timing_count": 32,
+    "identical_mask_count": 128,
+    "identical_path_count": 128,
+    "max_probability_difference": 0.0,
+    "quality_preservation_passed": true,
+    "babai_optimum_count": 116,
+    "box_coverage_count": 128,
+    "hybrid_success": {
+      "256": {
+        "mean": 0.9141337089597751,
+        "ci95": [
+          0.8638349233218902,
+          0.9573670832844746
+        ]
+      },
+      "1024": {
+        "mean": 0.9333313947997546,
+        "ci95": [
+          0.8938871031922707,
+          0.9676056493973684
+        ]
+      },
+      "4096": {
+        "mean": 0.972043620116438,
+        "ci95": [
+          0.9521212745128135,
+          0.9884370791916983
+        ]
+      },
+      "16384": {
+        "mean": 0.9963782332320354,
+        "ci95": [
+          0.9908195490645031,
+          0.9997142537727204
+        ]
+      }
+    },
+    "timing": {
+      "original": {
+        "mean": 2.0223651218751115,
+        "ci95": [
+          1.9264949042969917,
+          2.119888318593881
+        ]
+      },
+      "cached": {
+        "mean": 0.14427272187515428,
+        "ci95": [
+          0.1356785567970249,
+          0.15324804632834202
+        ]
+      },
+      "incumbent": {
+        "mean": 0.00013525562499694388,
+        "ci95": [
+          0.0001283544968683259,
+          0.0001433629593716148
+        ]
+      },
+      "magnitude": {
+        "mean": 0.00011797887499938042,
+        "ci95": [
+          0.00011135731093767731,
+          0.00012577866249861814
+        ]
+      }
+    },
+    "speedup_ratio_of_mean_medians": {
+      "ratio": 14.017654173220324,
+      "ci95": [
+        13.630826127305786,
+        14.400918309841838
+      ]
+    },
+    "median_per_instance_speedup": 14.306631748495892,
+    "selection_calls": {
+      "original": {
+        "mean": 4998.015625,
+        "ci95": [
+          4870.840234375,
+          5127.470703125
+        ]
+      },
+      "cached": {
+        "mean": 4998.015625,
+        "ci95": [
+          4870.840234375,
+          5127.470703125
+        ]
+      }
+    },
+    "tie_recomputations": 0,
+    "limitations": [
+      "Implementation acceleration of the existing p=1 algorithm, not a new pruning rule or novelty claim.",
+      "Analytic expectation call count need not decrease; speed comes from caching and vectorization.",
+      "Single CPU environment and tiny same-distribution16-qubit examples; no scaling or end-to-end quantum advantage.",
+      "Ideal probabilities only; no noise simulation, cloud calls or QPU usage."
+    ],
+    "qpu_seconds": 0
+  },
+  "matched_noise128": {
+    "methods": {
+      "cached_cap128": {
+        "channels": {
+          "ideal": {
+            "256": {
+              "hybrid_success": 0.8026029955065126,
+              "hybrid_mean_distance": 2.712591082824062,
+              "group_plus_mc_ci95": [
+                0.7379788873247254,
+                0.8648454213471477
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8026029955065126,
+                0.8026029955065126
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8522826719889686,
+              "hybrid_mean_distance": 2.684790331239552,
+              "group_plus_mc_ci95": [
+                0.8025569555903985,
+                0.8988778777606009
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8522826719889687,
+                0.8522826719889687
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.94484771457713,
+              "hybrid_mean_distance": 2.6413051878088343,
+              "group_plus_mc_ci95": [
+                0.9217834549695292,
+                0.964984800869474
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.94484771457713,
+                0.94484771457713
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9966372040997211,
+              "hybrid_mean_distance": 2.6219964035676226,
+              "group_plus_mc_ci95": [
+                0.9937768732091146,
+                0.9987842347255352
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9966372040997211,
+                0.9966372040997211
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "readout_only": {
+            "256": {
+              "hybrid_success": 0.7996533892036344,
+              "hybrid_mean_distance": 2.714170738085348,
+              "group_plus_mc_ci95": [
+                0.7341690806945502,
+                0.862977501512802
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7996533892036343,
+                0.7996533892036343
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8442586830200062,
+              "hybrid_mean_distance": 2.688478567597476,
+              "group_plus_mc_ci95": [
+                0.7925604422884264,
+                0.8931346957081306
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8442586830200061,
+                0.8442586830200061
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.935612062937144,
+              "hybrid_mean_distance": 2.6446505193360057,
+              "group_plus_mc_ci95": [
+                0.9102367103655995,
+                0.9581819443688617
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.935612062937144,
+                0.935612062937144
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9952600644136426,
+              "hybrid_mean_distance": 2.6223136752542047,
+              "group_plus_mc_ci95": [
+                0.9917878611591978,
+                0.9980500209538269
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9952600644136422,
+                0.9952600644136422
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "gate_idle": {
+            "256": {
+              "hybrid_success": 0.7981106820004198,
+              "hybrid_mean_distance": 2.715229186025655,
+              "group_plus_mc_ci95": [
+                0.7317760837849415,
+                0.8619971521640686
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7976763693402488,
+                0.7985464748639319
+              ],
+              "jackknife_success_correction": 3.4608126921991246e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8397024228024526,
+              "hybrid_mean_distance": 2.69135345224157,
+              "group_plus_mc_ci95": [
+                0.7861040539972357,
+                0.8900168597203542
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.838442638818178,
+                0.8409026896190714
+              ],
+              "jackknife_success_correction": 3.8524498448623914e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9292001564415547,
+              "hybrid_mean_distance": 2.647993804931205,
+              "group_plus_mc_ci95": [
+                0.9016882550056875,
+                0.9533707718245849
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9272308688855462,
+                0.9308472026237611
+              ],
+              "jackknife_success_correction": 0.00018536454984690144
+            },
+            "16384": {
+              "hybrid_success": 0.9937539728727995,
+              "hybrid_mean_distance": 2.6227686816611824,
+              "group_plus_mc_ci95": [
+                0.9887759101490547,
+                0.9973782172232137
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9929159999181294,
+                0.9942982231396207
+              ],
+              "jackknife_success_correction": 0.00012075200753844904
+            }
+          },
+          "gate_idle_readout": {
+            "256": {
+              "hybrid_success": 0.7958489328675322,
+              "hybrid_mean_distance": 2.716468847064152,
+              "group_plus_mc_ci95": [
+                0.729128570649088,
+                0.8607323811091631
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7954870751900671,
+                0.796211640128288
+              ],
+              "jackknife_success_correction": 2.3836274550650992e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8329633609689937,
+              "hybrid_mean_distance": 2.694538233517335,
+              "group_plus_mc_ci95": [
+                0.7775809112003024,
+                0.8851884942198219
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8318584879786646,
+                0.8340291064832027
+              ],
+              "jackknife_success_correction": 2.830184574791853e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9193514509690232,
+              "hybrid_mean_distance": 2.6518044254198774,
+              "group_plus_mc_ci95": [
+                0.8894310166230474,
+                0.9464306571497959
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9174057316582485,
+                0.9209995093439668
+              ],
+              "jackknife_success_correction": 0.0001605835175111951
+            },
+            "16384": {
+              "hybrid_success": 0.991569962501778,
+              "hybrid_mean_distance": 2.6233321875124807,
+              "group_plus_mc_ci95": [
+                0.9856860676411275,
+                0.9960118322689318
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9906595556484601,
+                0.992175054801127
+              ],
+              "jackknife_success_correction": 0.00013410937913310283
+            }
+          }
+        },
+        "resources": {
+          "logical_k": {
+            "mean": 16.8515625,
+            "min": 9.0,
+            "max": 23.0,
+            "ci95": [
+              16.453125,
+              17.2421875
+            ]
+          },
+          "native_cz": {
+            "mean": 112.9296875,
+            "min": 57.0,
+            "max": 128.0,
+            "ci95": [
+              110.2966796875,
+              115.3205078125
+            ]
+          },
+          "duration_unitary_s": {
+            "mean": 4.946718750000004e-06,
+            "min": 1.8920000000000003e-06,
+            "max": 7.304000000000008e-06,
+            "ci95": [
+              4.771716406250005e-06,
+              5.123221093750005e-06
+            ]
+          },
+          "depth": {
+            "mean": 162.375,
+            "min": 68.0,
+            "max": 235.0,
+            "ci95": [
+              157.0779296875,
+              167.6953125
+            ]
+          }
+        }
+      },
+      "incumbent_cap128": {
+        "channels": {
+          "ideal": {
+            "256": {
+              "hybrid_success": 0.804767788223751,
+              "hybrid_mean_distance": 2.7134884030836535,
+              "group_plus_mc_ci95": [
+                0.739894858972717,
+                0.866235119895376
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.804767788223751,
+                0.804767788223751
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8574983432178804,
+              "hybrid_mean_distance": 2.6860842925358495,
+              "group_plus_mc_ci95": [
+                0.809041583971442,
+                0.903531858971853
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.85749834321788,
+                0.85749834321788
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.9484109651100583,
+              "hybrid_mean_distance": 2.6422287910993774,
+              "group_plus_mc_ci95": [
+                0.925246679833967,
+                0.9682556044946659
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9484109651100585,
+                0.9484109651100585
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9964355765733673,
+              "hybrid_mean_distance": 2.6222213950602242,
+              "group_plus_mc_ci95": [
+                0.9934080749865893,
+                0.9987037101384735
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9964355765733671,
+                0.9964355765733671
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "readout_only": {
+            "256": {
+              "hybrid_success": 0.8019351471483089,
+              "hybrid_mean_distance": 2.715031101301176,
+              "group_plus_mc_ci95": [
+                0.7362884441683673,
+                0.8644037288797045
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8019351471483089,
+                0.8019351471483089
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8499883853322074,
+              "hybrid_mean_distance": 2.689897908656244,
+              "group_plus_mc_ci95": [
+                0.7988177412528482,
+                0.8976972796862484
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8499883853322076,
+                0.8499883853322076
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.9400022817580409,
+              "hybrid_mean_distance": 2.646029432339346,
+              "group_plus_mc_ci95": [
+                0.914113611562419,
+                0.9623952406553271
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9400022817580409,
+                0.9400022817580409
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9946916689997757,
+              "hybrid_mean_distance": 2.6228145726263676,
+              "group_plus_mc_ci95": [
+                0.9904067284421084,
+                0.9980056289825548
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9946916689997758,
+                0.9946916689997758
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "gate_idle": {
+            "256": {
+              "hybrid_success": 0.8000354892448206,
+              "hybrid_mean_distance": 2.7160885491742857,
+              "group_plus_mc_ci95": [
+                0.7336625108408529,
+                0.8631277079464026
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7995632560481263,
+                0.8005121835725224
+              ],
+              "jackknife_success_correction": 4.370570091980121e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8444775366396796,
+              "hybrid_mean_distance": 2.692701719311646,
+              "group_plus_mc_ci95": [
+                0.791648036272407,
+                0.8941257470740052
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8431404301956104,
+                0.8457267622220387
+              ],
+              "jackknife_success_correction": 4.570239489495116e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9332705692943613,
+              "hybrid_mean_distance": 2.6488422434811785,
+              "group_plus_mc_ci95": [
+                0.9056080540328946,
+                0.9575792679700251
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9312663915064374,
+                0.9348972453185098
+              ],
+              "jackknife_success_correction": 0.0002006706389930564
+            },
+            "16384": {
+              "hybrid_success": 0.9935306021047093,
+              "hybrid_mean_distance": 2.6231005049353544,
+              "group_plus_mc_ci95": [
+                0.9877385155728199,
+                0.9974487657701216
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9925343511598611,
+                0.9941956281557784
+              ],
+              "jackknife_success_correction": 0.0001306104240185518
+            }
+          },
+          "gate_idle_readout": {
+            "256": {
+              "hybrid_success": 0.7978239717134609,
+              "hybrid_mean_distance": 2.717297366092936,
+              "group_plus_mc_ci95": [
+                0.7309055554674646,
+                0.8617045023727092
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7974170616515821,
+                0.7982391168401312
+              ],
+              "jackknife_success_correction": 3.223984936184159e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8381334741362128,
+              "hybrid_mean_distance": 2.6960244670468225,
+              "group_plus_mc_ci95": [
+                0.7832613311102925,
+                0.8892864565801907
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8369189548748294,
+                0.839267239846902
+              ],
+              "jackknife_success_correction": 3.5444118995317e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9242868888934989,
+              "hybrid_mean_distance": 2.653034314404938,
+              "group_plus_mc_ci95": [
+                0.8939195922257311,
+                0.9509273993595098
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9223125832724438,
+                0.9258946246125639
+              ],
+              "jackknife_success_correction": 0.00017607662097898812
+            },
+            "16384": {
+              "hybrid_success": 0.9910477293979234,
+              "hybrid_mean_distance": 2.6240043597461593,
+              "group_plus_mc_ci95": [
+                0.9836270911556529,
+                0.996264055935015
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.989967479160038,
+                0.9917985390216837
+              ],
+              "jackknife_success_correction": 0.00014065054887762302
+            }
+          }
+        },
+        "resources": {
+          "logical_k": {
+            "mean": 16.546875,
+            "min": 9.0,
+            "max": 21.0,
+            "ci95": [
+              16.1171875,
+              16.96875
+            ]
+          },
+          "native_cz": {
+            "mean": 112.9140625,
+            "min": 57.0,
+            "max": 128.0,
+            "ci95": [
+              110.304296875,
+              115.3359375
+            ]
+          },
+          "duration_unitary_s": {
+            "mean": 4.8602812500000045e-06,
+            "min": 1.8920000000000003e-06,
+            "max": 7.780000000000009e-06,
+            "ci95": [
+              4.695145312500004e-06,
+              5.027754687500004e-06
+            ]
+          },
+          "depth": {
+            "mean": 157.3984375,
+            "min": 68.0,
+            "max": 233.0,
+            "ci95": [
+              152.1638671875,
+              162.5939453125
+            ]
+          }
+        }
+      },
+      "cached_cap160": {
+        "channels": {
+          "ideal": {
+            "256": {
+              "hybrid_success": 0.8043143162776057,
+              "hybrid_mean_distance": 2.7123057572426124,
+              "group_plus_mc_ci95": [
+                0.7402742783353404,
+                0.8656928126556646
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8043143162776059,
+                0.8043143162776059
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8557249175866645,
+              "hybrid_mean_distance": 2.6842846443064348,
+              "group_plus_mc_ci95": [
+                0.8066100379602492,
+                0.9016882490614374
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8557249175866646,
+                0.8557249175866646
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.9472118236853837,
+              "hybrid_mean_distance": 2.641312711098181,
+              "group_plus_mc_ci95": [
+                0.9253373834813072,
+                0.9668556633786883
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9472118236853833,
+                0.9472118236853833
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9969830722465987,
+              "hybrid_mean_distance": 2.621959951989746,
+              "group_plus_mc_ci95": [
+                0.9943167529429344,
+                0.9990058926126495
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9969830722465988,
+                0.9969830722465988
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "readout_only": {
+            "256": {
+              "hybrid_success": 0.8015109002711753,
+              "hybrid_mean_distance": 2.714041054600149,
+              "group_plus_mc_ci95": [
+                0.7363518595767564,
+                0.8640091398401126
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8015109002711753,
+                0.8015109002711753
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8482876206224998,
+              "hybrid_mean_distance": 2.6881079293776797,
+              "group_plus_mc_ci95": [
+                0.7970825272850851,
+                0.896501506077408
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8482876206224997,
+                0.8482876206224997
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.9380842932740385,
+              "hybrid_mean_distance": 2.644726860216716,
+              "group_plus_mc_ci95": [
+                0.9130647640781766,
+                0.960227993178015
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9380842932740383,
+                0.9380842932740383
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.995347075094935,
+              "hybrid_mean_distance": 2.6223423700957698,
+              "group_plus_mc_ci95": [
+                0.9916837303117568,
+                0.9981977214947815
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9953470750949349,
+                0.9953470750949349
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "gate_idle": {
+            "256": {
+              "hybrid_success": 0.7977057711640514,
+              "hybrid_mean_distance": 2.715821223191563,
+              "group_plus_mc_ci95": [
+                0.7313868985851617,
+                0.8616310092036796
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7971593376745809,
+                0.7982348288266875
+              ],
+              "jackknife_success_correction": 5.829407213931494e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8380227511271295,
+              "hybrid_mean_distance": 2.6930840476113973,
+              "group_plus_mc_ci95": [
+                0.7844156432872503,
+                0.8888248044607772
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8364793171405372,
+                0.8394253933203089
+              ],
+              "jackknife_success_correction": 6.026392228886113e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9258175783255334,
+              "hybrid_mean_distance": 2.6508365308987294,
+              "group_plus_mc_ci95": [
+                0.897505506896775,
+                0.9509044683208382
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9234164958041174,
+                0.9276788647204922
+              ],
+              "jackknife_success_correction": 0.0002680758846162557
+            },
+            "16384": {
+              "hybrid_success": 0.9933855701336938,
+              "hybrid_mean_distance": 2.623261969451576,
+              "group_plus_mc_ci95": [
+                0.9883590962453722,
+                0.9969723286294577
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.992441752651757,
+                0.9939201547770931
+              ],
+              "jackknife_success_correction": 0.00017006460762936885
+            }
+          },
+          "gate_idle_readout": {
+            "256": {
+              "hybrid_success": 0.7958018572835008,
+              "hybrid_mean_distance": 2.717086775765833,
+              "group_plus_mc_ci95": [
+                0.7290347673334834,
+                0.860501950157407
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7953258074063181,
+                0.7962664263916571
+              ],
+              "jackknife_success_correction": 4.3732843631107295e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8322672712867852,
+              "hybrid_mean_distance": 2.696230781639744,
+              "group_plus_mc_ci95": [
+                0.7767005358435524,
+                0.884692595385175
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8308762839565131,
+                0.8335398775835744
+              ],
+              "jackknife_success_correction": 4.742596709613985e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9162910887765633,
+              "hybrid_mean_distance": 2.6546545541669957,
+              "group_plus_mc_ci95": [
+                0.8850334316775117,
+                0.9443593297700519
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.91395951082215,
+                0.9181394497660799
+              ],
+              "jackknife_success_correction": 0.00023205974445951244
+            },
+            "16384": {
+              "hybrid_success": 0.9904313163724539,
+              "hybrid_mean_distance": 2.624051172964111,
+              "group_plus_mc_ci95": [
+                0.9839239628698594,
+                0.995247781222826
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9893271356335313,
+                0.9910623021808727
+              ],
+              "jackknife_success_correction": 0.00019455014501428957
+            }
+          }
+        },
+        "resources": {
+          "logical_k": {
+            "mean": 21.6171875,
+            "min": 14.0,
+            "max": 28.0,
+            "ci95": [
+              21.1484375,
+              22.0625
+            ]
+          },
+          "native_cz": {
+            "mean": 146.265625,
+            "min": 89.0,
+            "max": 160.0,
+            "ci95": [
+              143.8513671875,
+              148.5001953125
+            ]
+          },
+          "duration_unitary_s": {
+            "mean": 6.228781250000006e-06,
+            "min": 3.528000000000003e-06,
+            "max": 8.70800000000001e-06,
+            "ci95": [
+              6.084996875000005e-06,
+              6.372221875000006e-06
+            ]
+          },
+          "depth": {
+            "mean": 206.6640625,
+            "min": 119.0,
+            "max": 273.0,
+            "ci95": [
+              202.0546875,
+              211.22714843749998
+            ]
+          }
+        }
+      },
+      "incumbent_cap160": {
+        "channels": {
+          "ideal": {
+            "256": {
+              "hybrid_success": 0.8078300058690672,
+              "hybrid_mean_distance": 2.7120488606280917,
+              "group_plus_mc_ci95": [
+                0.7440422241336765,
+                0.8682585011599894
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8078300058690668,
+                0.8078300058690668
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8640538957572206,
+              "hybrid_mean_distance": 2.6828634183977935,
+              "group_plus_mc_ci95": [
+                0.8166322487537441,
+                0.9081708887514239
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8640538957572205,
+                0.8640538957572205
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.9510523746133217,
+              "hybrid_mean_distance": 2.6404120123876993,
+              "group_plus_mc_ci95": [
+                0.9265828154285111,
+                0.9719832635641774
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9510523746133217,
+                0.9510523746133217
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.994891694010833,
+              "hybrid_mean_distance": 2.622715810556935,
+              "group_plus_mc_ci95": [
+                0.9894602409077171,
+                0.9986156604509021
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9948916940108332,
+                0.9948916940108332
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "readout_only": {
+            "256": {
+              "hybrid_success": 0.8045881307750713,
+              "hybrid_mean_distance": 2.713809876548172,
+              "group_plus_mc_ci95": [
+                0.739897754403707,
+                0.8659964730054382
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8045881307750711,
+                0.8045881307750711
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8559569203368868,
+              "hybrid_mean_distance": 2.6868818035840474,
+              "group_plus_mc_ci95": [
+                0.8063123956544991,
+                0.9024485941239042
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8559569203368868,
+                0.8559569203368868
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.9441859888407322,
+              "hybrid_mean_distance": 2.6434462830500114,
+              "group_plus_mc_ci95": [
+                0.9182814175842212,
+                0.9664648392477063
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9441859888407322,
+                0.9441859888407322
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9940123201525152,
+              "hybrid_mean_distance": 2.6228994521493645,
+              "group_plus_mc_ci95": [
+                0.9884273518906251,
+                0.998046635521969
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9940123201525153,
+                0.9940123201525153
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "gate_idle": {
+            "256": {
+              "hybrid_success": 0.8007247422395398,
+              "hybrid_mean_distance": 2.7152966068449453,
+              "group_plus_mc_ci95": [
+                0.7347413187716358,
+                0.8634647897323892
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8000737277833823,
+                0.8013739303634554
+              ],
+              "jackknife_success_correction": 8.440369483613268e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8463243466272791,
+              "hybrid_mean_distance": 2.6909012873408784,
+              "group_plus_mc_ci95": [
+                0.7943389835426089,
+                0.8949578254473283
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8446071630169545,
+                0.8479006406348475
+              ],
+              "jackknife_success_correction": 8.080967489666139e-05
+            },
+            "4096": {
+              "hybrid_success": 0.934290374932773,
+              "hybrid_mean_distance": 2.6477656441344792,
+              "group_plus_mc_ci95": [
+                0.9055945136981253,
+                0.9588556382777877
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9320514000165997,
+                0.935944950180181
+              ],
+              "jackknife_success_correction": 0.0002881622622247417
+            },
+            "16384": {
+              "hybrid_success": 0.9916935698378151,
+              "hybrid_mean_distance": 2.6236344716903224,
+              "group_plus_mc_ci95": [
+                0.9834480703932122,
+                0.9972518308374195
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9905956658293955,
+                0.992438334030022
+              ],
+              "jackknife_success_correction": 0.00014774040596019986
+            }
+          },
+          "gate_idle_readout": {
+            "256": {
+              "hybrid_success": 0.7984223732259292,
+              "hybrid_mean_distance": 2.7166437959377587,
+              "group_plus_mc_ci95": [
+                0.7318577349558371,
+                0.8619694710454187
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7978604316854637,
+                0.7989795527683082
+              ],
+              "jackknife_success_correction": 6.255849445836723e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8396893393000244,
+              "hybrid_mean_distance": 2.694376631419643,
+              "group_plus_mc_ci95": [
+                0.7856042651625066,
+                0.8906379917375918
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8381746560053953,
+                0.8411230835981971
+              ],
+              "jackknife_success_correction": 6.159508344810304e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9258517060247968,
+              "hybrid_mean_distance": 2.6515278415146843,
+              "group_plus_mc_ci95": [
+                0.8958939907495429,
+                0.9523793256395625
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9236002342657006,
+                0.9275443143955165
+              ],
+              "jackknife_success_correction": 0.0002560833038007012
+            },
+            "16384": {
+              "hybrid_success": 0.9900025126350853,
+              "hybrid_mean_distance": 2.6241828609762803,
+              "group_plus_mc_ci95": [
+                0.9811070411833324,
+                0.9962610353444241
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9888805719501057,
+                0.9907623197496813
+              ],
+              "jackknife_success_correction": 0.000153331849577853
+            }
+          }
+        },
+        "resources": {
+          "logical_k": {
+            "mean": 21.15625,
+            "min": 13.0,
+            "max": 29.0,
+            "ci95": [
+              20.6875,
+              21.609375
+            ]
+          },
+          "native_cz": {
+            "mean": 146.203125,
+            "min": 90.0,
+            "max": 160.0,
+            "ci95": [
+              143.7732421875,
+              148.4064453125
+            ]
+          },
+          "duration_unitary_s": {
+            "mean": 6.041187500000007e-06,
+            "min": 3.3840000000000027e-06,
+            "max": 8.72800000000001e-06,
+            "ci95": [
+              5.881367187500006e-06,
+              6.201729687500006e-06
+            ]
+          },
+          "depth": {
+            "mean": 195.890625,
+            "min": 103.0,
+            "max": 272.0,
+            "ci95": [
+              190.7265625,
+              201.0236328125
+            ]
+          }
+        }
+      },
+      "cached24": {
+        "channels": {
+          "ideal": {
+            "256": {
+              "hybrid_success": 0.8050720015245914,
+              "hybrid_mean_distance": 2.7120489247996353,
+              "group_plus_mc_ci95": [
+                0.7409674811957168,
+                0.8662574356682634
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8050720015245912,
+                0.8050720015245912
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8583171716233766,
+              "hybrid_mean_distance": 2.6835811450521767,
+              "group_plus_mc_ci95": [
+                0.8101482674513576,
+                0.9036679455461885
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8583171716233767,
+                0.8583171716233767
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.9519533442408521,
+              "hybrid_mean_distance": 2.63998443400778,
+              "group_plus_mc_ci95": [
+                0.9327910535065906,
+                0.9693248514794512
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9519533442408523,
+                0.9519533442408523
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9983850080867551,
+              "hybrid_mean_distance": 2.6216412234302293,
+              "group_plus_mc_ci95": [
+                0.9973222547859036,
+                0.9992859067937115
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9983850080867549,
+                0.9983850080867549
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "readout_only": {
+            "256": {
+              "hybrid_success": 0.8018556609266541,
+              "hybrid_mean_distance": 2.7139638245930406,
+              "group_plus_mc_ci95": [
+                0.7365504365822697,
+                0.8640882161485961
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.801855660926654,
+                0.801855660926654
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8496170175858182,
+              "hybrid_mean_distance": 2.6880660898179025,
+              "group_plus_mc_ci95": [
+                0.7990902182323749,
+                0.8974655787082244
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8496170175858182,
+                0.8496170175858182
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.9413225583409686,
+              "hybrid_mean_distance": 2.6444503073802537,
+              "group_plus_mc_ci95": [
+                0.9181402415443918,
+                0.9623466850862726
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9413225583409683,
+                0.9413225583409683
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9969331724190602,
+              "hybrid_mean_distance": 2.6220613489477227,
+              "group_plus_mc_ci95": [
+                0.9949824208773322,
+                0.9985643161113308
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9969331724190601,
+                0.9969331724190601
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "gate_idle": {
+            "256": {
+              "hybrid_success": 0.7983657503550879,
+              "hybrid_mean_distance": 2.715822135474763,
+              "group_plus_mc_ci95": [
+                0.7322647372570598,
+                0.8621467737367641
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7977821503447245,
+                0.7989393962188821
+              ],
+              "jackknife_success_correction": 6.551581445574236e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8401120764902155,
+              "hybrid_mean_distance": 2.692722417760199,
+              "group_plus_mc_ci95": [
+                0.7868790416795379,
+                0.8903642206359146
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8384579212178243,
+                0.8416232561118259
+              ],
+              "jackknife_success_correction": 6.886935745073898e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9291855810875362,
+              "hybrid_mean_distance": 2.649743330105583,
+              "group_plus_mc_ci95": [
+                0.9022274041926102,
+                0.9530737122937595
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9265434395991516,
+                0.9311938667543742
+              ],
+              "jackknife_success_correction": 0.0003122888093611267
+            },
+            "16384": {
+              "hybrid_success": 0.9946103845852938,
+              "hybrid_mean_distance": 2.622918961586369,
+              "group_plus_mc_ci95": [
+                0.9907308807015861,
+                0.9972766029074317
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9935600077317522,
+                0.9951473483305652
+              ],
+              "jackknife_success_correction": 0.00020178152409235615
+            }
+          },
+          "gate_idle_readout": {
+            "256": {
+              "hybrid_success": 0.796135253260493,
+              "hybrid_mean_distance": 2.7171858134070135,
+              "group_plus_mc_ci95": [
+                0.7294068141685306,
+                0.8606057859744738
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.7956318698532441,
+                0.7966308945829935
+              ],
+              "jackknife_success_correction": 4.755640612177133e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8333448772895797,
+              "hybrid_mean_distance": 2.6963908823053915,
+              "group_plus_mc_ci95": [
+                0.7779152556885875,
+                0.8858807393864813
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8318827868888595,
+                0.8347063909935021
+              ],
+              "jackknife_success_correction": 5.234300598159689e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9182070185051097,
+              "hybrid_mean_distance": 2.654598595300165,
+              "group_plus_mc_ci95": [
+                0.8876061653713573,
+                0.9455317388457186
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9156359636548128,
+                0.920205971350547
+              ],
+              "jackknife_success_correction": 0.00026564975527998153
+            },
+            "16384": {
+              "hybrid_success": 0.9916151379440798,
+              "hybrid_mean_distance": 2.623845030566675,
+              "group_plus_mc_ci95": [
+                0.9861850777623936,
+                0.995489985577206
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9903981122000091,
+                0.9922827096436416
+              ],
+              "jackknife_success_correction": 0.00023693788875728608
+            }
+          }
+        },
+        "resources": {
+          "logical_k": {
+            "mean": 24.0,
+            "min": 24.0,
+            "max": 24.0,
+            "ci95": [
+              24.0,
+              24.0
+            ]
+          },
+          "native_cz": {
+            "mean": 163.28125,
+            "min": 131.0,
+            "max": 205.0,
+            "ci95": [
+              161.0623046875,
+              165.5625
+            ]
+          },
+          "duration_unitary_s": {
+            "mean": 6.772500000000007e-06,
+            "min": 4.636000000000004e-06,
+            "max": 9.764000000000012e-06,
+            "ci95": [
+              6.610432031250007e-06,
+              6.9381054687500075e-06
+            ]
+          },
+          "depth": {
+            "mean": 224.09375,
+            "min": 168.0,
+            "max": 290.0,
+            "ci95": [
+              219.655859375,
+              228.5859375
+            ]
+          }
+        }
+      },
+      "incumbent24": {
+        "channels": {
+          "ideal": {
+            "256": {
+              "hybrid_success": 0.8092119636005928,
+              "hybrid_mean_distance": 2.711909458057884,
+              "group_plus_mc_ci95": [
+                0.7457437479517868,
+                0.8692719544900577
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.809211963600593,
+                0.809211963600593
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8674119126265021,
+              "hybrid_mean_distance": 2.68239832662129,
+              "group_plus_mc_ci95": [
+                0.820387549725747,
+                0.9107388072463037
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8674119126265017,
+                0.8674119126265017
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.9545980418107487,
+              "hybrid_mean_distance": 2.640357594443315,
+              "group_plus_mc_ci95": [
+                0.9315636912907893,
+                0.974040845077862
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9545980418107484,
+                0.9545980418107484
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9960124188782411,
+              "hybrid_mean_distance": 2.6226549236617087,
+              "group_plus_mc_ci95": [
+                0.9920695862894686,
+                0.9989765006149108
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9960124188782413,
+                0.9960124188782413
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "readout_only": {
+            "256": {
+              "hybrid_success": 0.805468136441248,
+              "hybrid_mean_distance": 2.713566824057632,
+              "group_plus_mc_ci95": [
+                0.7411886269485234,
+                0.8665262447733575
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.805468136441248,
+                0.805468136441248
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "1024": {
+              "hybrid_success": 0.8583436307980191,
+              "hybrid_mean_distance": 2.6863680015974953,
+              "group_plus_mc_ci95": [
+                0.8092139820053483,
+                0.9037517508873081
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8583436307980193,
+                0.8583436307980193
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "4096": {
+              "hybrid_success": 0.946564200031237,
+              "hybrid_mean_distance": 2.64353958828004,
+              "group_plus_mc_ci95": [
+                0.9214393269690204,
+                0.968191021565291
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9465642000312368,
+                0.9465642000312368
+              ],
+              "jackknife_success_correction": 0.0
+            },
+            "16384": {
+              "hybrid_success": 0.9945162802590083,
+              "hybrid_mean_distance": 2.6230433484712776,
+              "group_plus_mc_ci95": [
+                0.989228987236016,
+                0.9983338173087242
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9945162802590084,
+                0.9945162802590084
+              ],
+              "jackknife_success_correction": 0.0
+            }
+          },
+          "gate_idle": {
+            "256": {
+              "hybrid_success": 0.8008517880606029,
+              "hybrid_mean_distance": 2.7156339110437684,
+              "group_plus_mc_ci95": [
+                0.7349140278234267,
+                0.863480340009359
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8001583788434171,
+                0.8015305484340531
+              ],
+              "jackknife_success_correction": 9.98804163412204e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8465021307929748,
+              "hybrid_mean_distance": 2.691823835422076,
+              "group_plus_mc_ci95": [
+                0.7942592654239663,
+                0.8952339389580702
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8446692407203619,
+                0.8481360121022364
+              ],
+              "jackknife_success_correction": 9.215099337092864e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9339265098507182,
+              "hybrid_mean_distance": 2.649529723521467,
+              "group_plus_mc_ci95": [
+                0.9053959726817523,
+                0.9588126445689253
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9314944209541404,
+                0.9357960924555119
+              ],
+              "jackknife_success_correction": 0.0003177291150025304
+            },
+            "16384": {
+              "hybrid_success": 0.992141778604654,
+              "hybrid_mean_distance": 2.6240495560953825,
+              "group_plus_mc_ci95": [
+                0.9848016298604905,
+                0.9970542760599692
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9909901470401128,
+                0.9928898303898064
+              ],
+              "jackknife_success_correction": 0.00018521188394170652
+            }
+          },
+          "gate_idle_readout": {
+            "256": {
+              "hybrid_success": 0.7982648048716317,
+              "hybrid_mean_distance": 2.7168111378687607,
+              "group_plus_mc_ci95": [
+                0.7315556791916954,
+                0.8619643891276463
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.797674565432717,
+                0.7988502951956696
+              ],
+              "jackknife_success_correction": 7.154415328031766e-06
+            },
+            "1024": {
+              "hybrid_success": 0.8392277732760083,
+              "hybrid_mean_distance": 2.695051564144424,
+              "group_plus_mc_ci95": [
+                0.784837553406607,
+                0.8899960400391441
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.8375994647908401,
+                0.8406957003328223
+              ],
+              "jackknife_success_correction": 7.026598163511241e-05
+            },
+            "4096": {
+              "hybrid_success": 0.9245080850958196,
+              "hybrid_mean_distance": 2.65336093475719,
+              "group_plus_mc_ci95": [
+                0.8933609600807988,
+                0.9517448803117845
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9221241284582331,
+                0.9264055700343278
+              ],
+              "jackknife_success_correction": 0.0002827401100108629
+            },
+            "16384": {
+              "hybrid_success": 0.9895445111085885,
+              "hybrid_mean_distance": 2.624856954060099,
+              "group_plus_mc_ci95": [
+                0.980338396568363,
+                0.9957243824831994
+              ],
+              "fixed_cohort_mc_ci95": [
+                0.9883358568394387,
+                0.9903402669483451
+              ],
+              "jackknife_success_correction": 0.00019564903525776198
+            }
+          }
+        },
+        "resources": {
+          "logical_k": {
+            "mean": 24.0,
+            "min": 24.0,
+            "max": 24.0,
+            "ci95": [
+              24.0,
+              24.0
+            ]
+          },
+          "native_cz": {
+            "mean": 169.8984375,
+            "min": 134.0,
+            "max": 208.0,
+            "ci95": [
+              167.125,
+              172.6875
+            ]
+          },
+          "duration_unitary_s": {
+            "mean": 6.607781250000007e-06,
+            "min": 4.680000000000004e-06,
+            "max": 9.968000000000012e-06,
+            "ci95": [
+              6.430806250000007e-06,
+              6.786312500000007e-06
+            ]
+          },
+          "depth": {
+            "mean": 214.453125,
+            "min": 155.0,
+            "max": 315.0,
+            "ci95": [
+              209.1484375,
+              219.8828125
+            ]
+          }
+        }
+      }
+    },
+    "paired": {
+      "cap128": {
+        "ideal": {
+          "256": {
+            "success_difference": -0.002164792717238375,
+            "group_plus_mc_ci95": [
+              -0.005769905990097299,
+              0.0013521656886941824
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0021647927172383508,
+              -0.0021647927172383508
+            ],
+            "mean_distance_difference": -0.0008973202595920597,
+            "distance_group_plus_mc_ci95": [
+              -0.0034889580967328747,
+              0.0013072479019059391
+            ]
+          },
+          "1024": {
+            "success_difference": -0.005215671228911776,
+            "group_plus_mc_ci95": [
+              -0.014765791909626094,
+              0.004427019611018135
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.005215671228911312,
+              -0.005215671228911312
+            ],
+            "mean_distance_difference": -0.0012939612962972816,
+            "distance_group_plus_mc_ci95": [
+              -0.0076650878413208725,
+              0.003957250428183362
+            ]
+          },
+          "4096": {
+            "success_difference": -0.0035632505329282757,
+            "group_plus_mc_ci95": [
+              -0.014532080976124153,
+              0.008210288602154187
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.003563250532928497,
+              -0.003563250532928497
+            ],
+            "mean_distance_difference": -0.0009236032905432234,
+            "distance_group_plus_mc_ci95": [
+              -0.007486971184349556,
+              0.004768051667351514
+            ]
+          },
+          "16384": {
+            "success_difference": 0.00020162752635378544,
+            "group_plus_mc_ci95": [
+              -0.002069400519507494,
+              0.0025476243239929055
+            ],
+            "fixed_cohort_mc_ci95": [
+              0.00020162752635399794,
+              0.00020162752635399794
+            ],
+            "mean_distance_difference": -0.00022499149260205367,
+            "distance_group_plus_mc_ci95": [
+              -0.0008519495242634622,
+              0.000356381146400486
+            ]
+          }
+        },
+        "readout_only": {
+          "256": {
+            "success_difference": -0.002281757944674637,
+            "group_plus_mc_ci95": [
+              -0.00554804390521269,
+              0.0007959900276872765
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.002281757944674667,
+              -0.002281757944674667
+            ],
+            "mean_distance_difference": -0.0008603632158279521,
+            "distance_group_plus_mc_ci95": [
+              -0.0032799488822578436,
+              0.0011746791757784574
+            ]
+          },
+          "1024": {
+            "success_difference": -0.005729702312201225,
+            "group_plus_mc_ci95": [
+              -0.014721828786056943,
+              0.0031511942696761685
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.00572970231220149,
+              -0.00572970231220149
+            ],
+            "mean_distance_difference": -0.0014193410587679117,
+            "distance_group_plus_mc_ci95": [
+              -0.0072767829387607175,
+              0.003547129791262182
+            ]
+          },
+          "4096": {
+            "success_difference": -0.004390218820896773,
+            "group_plus_mc_ci95": [
+              -0.016342512385389963,
+              0.00818999445777871
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.004390218820896852,
+              -0.004390218820896852
+            ],
+            "mean_distance_difference": -0.0013789130033402645,
+            "distance_group_plus_mc_ci95": [
+              -0.008741219668226908,
+              0.004530472996708456
+            ]
+          },
+          "16384": {
+            "success_difference": 0.0005683954138668706,
+            "group_plus_mc_ci95": [
+              -0.0024574483703891925,
+              0.004028420970135806
+            ],
+            "fixed_cohort_mc_ci95": [
+              0.0005683954138664404,
+              0.0005683954138664404
+            ],
+            "mean_distance_difference": -0.0005008973721627487,
+            "distance_group_plus_mc_ci95": [
+              -0.001465317769062757,
+              0.0003225494113665345
+            ]
+          }
+        },
+        "gate_idle": {
+          "256": {
+            "success_difference": -0.001924807244400724,
+            "group_plus_mc_ci95": [
+              -0.004879304188793751,
+              0.0007312084216323936
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0025687048263918987,
+              -0.0013118446458151966
+            ],
+            "mean_distance_difference": -0.0008593631486304015,
+            "distance_group_plus_mc_ci95": [
+              -0.0033716247194724436,
+              0.001012335917171013
+            ]
+          },
+          "1024": {
+            "success_difference": -0.004775113837227058,
+            "group_plus_mc_ci95": [
+              -0.012577480615831605,
+              0.0027107164950096758
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.006583183581547228,
+              -0.0030059229083045564
+            ],
+            "mean_distance_difference": -0.0013482670700759383,
+            "distance_group_plus_mc_ci95": [
+              -0.0065276317791275185,
+              0.003037657720940253
+            ]
+          },
+          "4096": {
+            "success_difference": -0.004070412852806462,
+            "group_plus_mc_ci95": [
+              -0.014896735847921758,
+              0.007612981873599566
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.006603833848370188,
+              -0.0015473503434598912
+            ],
+            "mean_distance_difference": -0.000848438549973414,
+            "distance_group_plus_mc_ci95": [
+              -0.007190932995280408,
+              0.004407373444009749
+            ]
+          },
+          "16384": {
+            "success_difference": 0.00022337076809012674,
+            "group_plus_mc_ci95": [
+              -0.004034641686185042,
+              0.005068124491764795
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0008254081351458109,
+              0.0013465367074636297
+            ],
+            "mean_distance_difference": -0.0003318232741718885,
+            "distance_group_plus_mc_ci95": [
+              -0.001554658328691616,
+              0.0006643983047417416
+            ]
+          }
+        },
+        "gate_idle_readout": {
+          "256": {
+            "success_difference": -0.0019750388459287126,
+            "group_plus_mc_ci95": [
+              -0.00466831334349938,
+              0.00037068106449213015
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.002520877199242952,
+              -0.0014437894879928115
+            ],
+            "mean_distance_difference": -0.0008285190287841554,
+            "distance_group_plus_mc_ci95": [
+              -0.003322647872399276,
+              0.0009653832296925399
+            ]
+          },
+          "1024": {
+            "success_difference": -0.005170113167219005,
+            "group_plus_mc_ci95": [
+              -0.01261403524512493,
+              0.0018449698833639088
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.006791019848699948,
+              -0.0035843612597600922
+            ],
+            "mean_distance_difference": -0.001486233529487492,
+            "distance_group_plus_mc_ci95": [
+              -0.006664946656039538,
+              0.002791773404886798
+            ]
+          },
+          "4096": {
+            "success_difference": -0.004935437924475669,
+            "group_plus_mc_ci95": [
+              -0.016356048776522084,
+              0.007117471901446453
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.00742358066614845,
+              -0.002439441841455149
+            ],
+            "mean_distance_difference": -0.0012298889850603165,
+            "distance_group_plus_mc_ci95": [
+              -0.007820228873701884,
+              0.004118659459141372
+            ]
+          },
+          "16384": {
+            "success_difference": 0.0005222331038545556,
+            "group_plus_mc_ci95": [
+              -0.004570647024540672,
+              0.006651497359721225
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0006526454156775441,
+              0.0017528376111721332
+            ],
+            "mean_distance_difference": -0.0006721722336783462,
+            "distance_group_plus_mc_ci95": [
+              -0.002336280737054075,
+              0.0006031502332496481
+            ]
+          }
+        },
+        "differential_noise_effect": {
+          "256": {
+            "success_difference_change": 0.0001897538713096623,
+            "group_plus_mc_ci95": [
+              -0.0016779895946257561,
+              0.002099094794390671
+            ]
+          },
+          "1024": {
+            "success_difference_change": 4.555806169277037e-05,
+            "group_plus_mc_ci95": [
+              -0.0049315125484448025,
+              0.004933810231439585
+            ]
+          },
+          "4096": {
+            "success_difference_change": -0.001372187391547393,
+            "group_plus_mc_ci95": [
+              -0.007012943238059918,
+              0.0043984526049551985
+            ]
+          },
+          "16384": {
+            "success_difference_change": 0.00032060557750077014,
+            "group_plus_mc_ci95": [
+              -0.0030194659452791816,
+              0.004613375908407813
+            ]
+          }
+        }
+      },
+      "cap160": {
+        "ideal": {
+          "256": {
+            "success_difference": -0.0035156895914614894,
+            "group_plus_mc_ci95": [
+              -0.0086389913051862,
+              0.0014898454536855393
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.00351568959146098,
+              -0.00351568959146098
+            ],
+            "mean_distance_difference": 0.0002568966145211453,
+            "distance_group_plus_mc_ci95": [
+              -0.0026584432388667588,
+              0.002982594659545033
+            ]
+          },
+          "1024": {
+            "success_difference": -0.008328978170556027,
+            "group_plus_mc_ci95": [
+              -0.021071102463309857,
+              0.004453485750665941
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.00832897817055589,
+              -0.00832897817055589
+            ],
+            "mean_distance_difference": 0.0014212259086410772,
+            "distance_group_plus_mc_ci95": [
+              -0.005836744020511297,
+              0.008466706184446941
+            ]
+          },
+          "4096": {
+            "success_difference": -0.003840550927938113,
+            "group_plus_mc_ci95": [
+              -0.017511398990315032,
+              0.010931412680198592
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0038405509279384464,
+              -0.0038405509279384464
+            ],
+            "mean_distance_difference": 0.0009006987104815921,
+            "distance_group_plus_mc_ci95": [
+              -0.006780888105732119,
+              0.008652140188555394
+            ]
+          },
+          "16384": {
+            "success_difference": 0.0020913782357656584,
+            "group_plus_mc_ci95": [
+              -0.0017746308485214355,
+              0.007372518641890834
+            ],
+            "fixed_cohort_mc_ci95": [
+              0.002091378235765551,
+              0.002091378235765551
+            ],
+            "mean_distance_difference": -0.0007558585671893041,
+            "distance_group_plus_mc_ci95": [
+              -0.0023529202851584998,
+              0.00045518505968550305
+            ]
+          }
+        },
+        "readout_only": {
+          "256": {
+            "success_difference": -0.003077230503895939,
+            "group_plus_mc_ci95": [
+              -0.007651972784046138,
+              0.001427778853133287
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.003077230503895745,
+              -0.003077230503895745
+            ],
+            "mean_distance_difference": 0.00023117805197720234,
+            "distance_group_plus_mc_ci95": [
+              -0.002153607274929403,
+              0.002498502468712915
+            ]
+          },
+          "1024": {
+            "success_difference": -0.00766929971438684,
+            "group_plus_mc_ci95": [
+              -0.01922658353438838,
+              0.004004628457507253
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.007669299714387012,
+              -0.007669299714387012
+            ],
+            "mean_distance_difference": 0.0012261257936321476,
+            "distance_group_plus_mc_ci95": [
+              -0.005025608843915197,
+              0.007160909470802709
+            ]
+          },
+          "4096": {
+            "success_difference": -0.006101695566693675,
+            "group_plus_mc_ci95": [
+              -0.020152856273630927,
+              0.00876124378306835
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.006101695566693932,
+              -0.006101695566693932
+            ],
+            "mean_distance_difference": 0.001280577166704891,
+            "distance_group_plus_mc_ci95": [
+              -0.006017278596983411,
+              0.008241520337222025
+            ]
+          },
+          "16384": {
+            "success_difference": 0.0013347549424199308,
+            "group_plus_mc_ci95": [
+              -0.002764049684667466,
+              0.006330762311630672
+            ],
+            "fixed_cohort_mc_ci95": [
+              0.0013347549424196359,
+              0.0013347549424196359
+            ],
+            "mean_distance_difference": -0.0005570820535949761,
+            "distance_group_plus_mc_ci95": [
+              -0.0019986493528368677,
+              0.0005989711003078546
+            ]
+          }
+        },
+        "gate_idle": {
+          "256": {
+            "success_difference": -0.0030189710754884116,
+            "group_plus_mc_ci95": [
+              -0.006521823431733497,
+              7.848706028813556e-05
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.003859239050898161,
+              -0.002188055270180431
+            ],
+            "mean_distance_difference": 0.0005246163466172821,
+            "distance_group_plus_mc_ci95": [
+              -0.001655341576767111,
+              0.0027263096900643534
+            ]
+          },
+          "1024": {
+            "success_difference": -0.008301595500149514,
+            "group_plus_mc_ci95": [
+              -0.018376185597229592,
+              0.0009173231655518672
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.010490039134072007,
+              -0.006094778018617837
+            ],
+            "mean_distance_difference": 0.002182760270519394,
+            "distance_group_plus_mc_ci95": [
+              -0.003829539993682385,
+              0.00840252969276771
+            ]
+          },
+          "4096": {
+            "success_difference": -0.008472796607239479,
+            "group_plus_mc_ci95": [
+              -0.023202574238625515,
+              0.006393879060624443
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.011399628200144455,
+              -0.005502760619185621
+            ],
+            "mean_distance_difference": 0.003070886764250144,
+            "distance_group_plus_mc_ci95": [
+              -0.005687255517944201,
+              0.012370166876224652
+            ]
+          },
+          "16384": {
+            "success_difference": 0.0016920002958787138,
+            "group_plus_mc_ci95": [
+              -0.004412218897125367,
+              0.00908993614843983
+            ],
+            "fixed_cohort_mc_ci95": [
+              0.00046600714203947903,
+              0.0028567209440864658
+            ],
+            "mean_distance_difference": -0.00037250223874563115,
+            "distance_group_plus_mc_ci95": [
+              -0.0026560467016469858,
+              0.0017071973883228512
+            ]
+          }
+        },
+        "gate_idle_readout": {
+          "256": {
+            "success_difference": -0.0026205159424283744,
+            "group_plus_mc_ci95": [
+              -0.005645286930518317,
+              0.0001996620948955918
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0033554616572200463,
+              -0.0018994513166729122
+            ],
+            "mean_distance_difference": 0.0004429798280741991,
+            "distance_group_plus_mc_ci95": [
+              -0.0014090366799390573,
+              0.0022397232610145332
+            ]
+          },
+          "1024": {
+            "success_difference": -0.007422068013239111,
+            "group_plus_mc_ci95": [
+              -0.016267884308358044,
+              0.0008320275457864311
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.009399529535554623,
+              -0.005417131695564826
+            ],
+            "mean_distance_difference": 0.0018541502201018245,
+            "distance_group_plus_mc_ci95": [
+              -0.0033098687905852354,
+              0.007196863524323857
+            ]
+          },
+          "4096": {
+            "success_difference": -0.009560617248233564,
+            "group_plus_mc_ci95": [
+              -0.023781332089566683,
+              0.00450840961347486
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.01245985661167888,
+              -0.00663560692288909
+            ],
+            "mean_distance_difference": 0.00312671265231141,
+            "distance_group_plus_mc_ci95": [
+              -0.004959216159251223,
+              0.011419594995030435
+            ]
+          },
+          "16384": {
+            "success_difference": 0.0004288037373684009,
+            "group_plus_mc_ci95": [
+              -0.006183391799260349,
+              0.007928034466081322
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0009121054043593979,
+              0.0016765106220707642
+            ],
+            "mean_distance_difference": -0.0001316880121691663,
+            "distance_group_plus_mc_ci95": [
+              -0.0024342435712026655,
+              0.002043538990740221
+            ]
+          }
+        },
+        "differential_noise_effect": {
+          "256": {
+            "success_difference_change": 0.0008951736490331148,
+            "group_plus_mc_ci95": [
+              -0.0018788823037410695,
+              0.003688099795705018
+            ]
+          },
+          "1024": {
+            "success_difference_change": 0.0009069101573169168,
+            "group_plus_mc_ci95": [
+              -0.005292809602107757,
+              0.0072492364205766395
+            ]
+          },
+          "4096": {
+            "success_difference_change": -0.00572006632029545,
+            "group_plus_mc_ci95": [
+              -0.011924993306973991,
+              0.0001367837459904077
+            ]
+          },
+          "16384": {
+            "success_difference_change": -0.0016625744983972575,
+            "group_plus_mc_ci95": [
+              -0.005636343206780009,
+              0.002656018139477026
+            ]
+          }
+        }
+      },
+      "24": {
+        "ideal": {
+          "256": {
+            "success_difference": -0.004139962076001449,
+            "group_plus_mc_ci95": [
+              -0.009139873418055186,
+              0.0005873386281833047
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0041399620760017575,
+              -0.0041399620760017575
+            ],
+            "mean_distance_difference": 0.00013946674175172383,
+            "distance_group_plus_mc_ci95": [
+              -0.0027692594890801224,
+              0.002939202955369123
+            ]
+          },
+          "1024": {
+            "success_difference": -0.009094741003125344,
+            "group_plus_mc_ci95": [
+              -0.02149595953393197,
+              0.0028852491868944464
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.009094741003125018,
+              -0.009094741003125018
+            ],
+            "mean_distance_difference": 0.0011828184308868284,
+            "distance_group_plus_mc_ci95": [
+              -0.005479211057866229,
+              0.007725441443713583
+            ]
+          },
+          "4096": {
+            "success_difference": -0.0026446975698964977,
+            "group_plus_mc_ci95": [
+              -0.015249689562997559,
+              0.011152360220706363
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0026446975698960484,
+              -0.0026446975698960484
+            ],
+            "mean_distance_difference": -0.0003731604355348035,
+            "distance_group_plus_mc_ci95": [
+              -0.007366455077995215,
+              0.005842876240709321
+            ]
+          },
+          "16384": {
+            "success_difference": 0.0023725892085139757,
+            "group_plus_mc_ci95": [
+              -0.0003439329205517011,
+              0.005987797116649127
+            ],
+            "fixed_cohort_mc_ci95": [
+              0.002372589208513576,
+              0.002372589208513576
+            ],
+            "mean_distance_difference": -0.0010137002314798832,
+            "distance_group_plus_mc_ci95": [
+              -0.002578877152952963,
+              5.238448014078799e-05
+            ]
+          }
+        },
+        "readout_only": {
+          "256": {
+            "success_difference": -0.003612475514593908,
+            "group_plus_mc_ci95": [
+              -0.00808007022825738,
+              0.0005635705650671663
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0036124755145940934,
+              -0.0036124755145940934
+            ],
+            "mean_distance_difference": 0.00039700053540870153,
+            "distance_group_plus_mc_ci95": [
+              -0.0019581765418905106,
+              0.002736687318584925
+            ]
+          },
+          "1024": {
+            "success_difference": -0.008726613212200923,
+            "group_plus_mc_ci95": [
+              -0.020191645010478387,
+              0.0019368533130168226
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.00872661321220114,
+              -0.00872661321220114
+            ],
+            "mean_distance_difference": 0.0016980882204069778,
+            "distance_group_plus_mc_ci95": [
+              -0.004166734065931465,
+              0.007571719882833893
+            ]
+          },
+          "4096": {
+            "success_difference": -0.005241641690268355,
+            "group_plus_mc_ci95": [
+              -0.01806232514300551,
+              0.008193506393224428
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.005241641690268417,
+              -0.005241641690268417
+            ],
+            "mean_distance_difference": 0.0009107191002143793,
+            "distance_group_plus_mc_ci95": [
+              -0.006088740549406468,
+              0.00758583882936857
+            ]
+          },
+          "16384": {
+            "success_difference": 0.0024168921600519894,
+            "group_plus_mc_ci95": [
+              -0.0007912892708036967,
+              0.006740392584873688
+            ],
+            "fixed_cohort_mc_ci95": [
+              0.002416892160051698,
+              0.002416892160051698
+            ],
+            "mean_distance_difference": -0.0009819995235551132,
+            "distance_group_plus_mc_ci95": [
+              -0.00251990926264245,
+              0.0001725585849480346
+            ]
+          }
+        },
+        "gate_idle": {
+          "256": {
+            "success_difference": -0.00248603770551484,
+            "group_plus_mc_ci95": [
+              -0.005819306629515941,
+              0.0005197335906999442
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.003388409406483342,
+              -0.0015866922588604175
+            ],
+            "mean_distance_difference": 0.00018822443099443878,
+            "distance_group_plus_mc_ci95": [
+              -0.0018942886219298738,
+              0.002262599150716826
+            ]
+          },
+          "1024": {
+            "success_difference": -0.006390054302759296,
+            "group_plus_mc_ci95": [
+              -0.015549200090145468,
+              0.0023003769968263565
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.008650876177388217,
+              -0.004040874042591948
+            ],
+            "mean_distance_difference": 0.0008985823381231495,
+            "distance_group_plus_mc_ci95": [
+              -0.004734747531344096,
+              0.006528971581174725
+            ]
+          },
+          "4096": {
+            "success_difference": -0.00474092876318194,
+            "group_plus_mc_ci95": [
+              -0.018115455968068333,
+              0.00897309416052109
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.007972582144689036,
+              -0.00165911541812993
+            ],
+            "mean_distance_difference": 0.00021360658411570532,
+            "distance_group_plus_mc_ci95": [
+              -0.007733745340503928,
+              0.007412087148186584
+            ]
+          },
+          "16384": {
+            "success_difference": 0.002468605980639798,
+            "group_plus_mc_ci95": [
+              -0.002535965055303216,
+              0.008585875967118786
+            ],
+            "fixed_cohort_mc_ci95": [
+              0.0012075488021988186,
+              0.003671353775495264
+            ],
+            "mean_distance_difference": -0.0011305945090131254,
+            "distance_group_plus_mc_ci95": [
+              -0.0032058602990128193,
+              0.0005020712548172918
+            ]
+          }
+        },
+        "gate_idle_readout": {
+          "256": {
+            "success_difference": -0.0021295516111386496,
+            "group_plus_mc_ci95": [
+              -0.005043250228450149,
+              0.0005366918704383581
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.0029113947648988225,
+              -0.0013620103724364951
+            ],
+            "mean_distance_difference": 0.00037467553825322464,
+            "distance_group_plus_mc_ci95": [
+              -0.0013263747024391704,
+              0.0021198885714712617
+            ]
+          },
+          "1024": {
+            "success_difference": -0.00588289598642864,
+            "group_plus_mc_ci95": [
+              -0.014195921999318559,
+              0.0019771980115294145
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.007914825267855623,
+              -0.003783391164456059
+            ],
+            "mean_distance_difference": 0.0013393181609669784,
+            "distance_group_plus_mc_ci95": [
+              -0.0034734576741759725,
+              0.006432669502017596
+            ]
+          },
+          "4096": {
+            "success_difference": -0.006301066590709947,
+            "group_plus_mc_ci95": [
+              -0.019279527593879214,
+              0.006686134560639389
+            ],
+            "fixed_cohort_mc_ci95": [
+              -0.00943076973436956,
+              -0.0032149617343806797
+            ],
+            "mean_distance_difference": 0.0012376605429755827,
+            "distance_group_plus_mc_ci95": [
+              -0.0064621263753190435,
+              0.008508852326364147
+            ]
+          },
+          "16384": {
+            "success_difference": 0.0020706268354912976,
+            "group_plus_mc_ci95": [
+              -0.003651567714347223,
+              0.008962256415966121
+            ],
+            "fixed_cohort_mc_ci95": [
+              0.000614621180743738,
+              0.0033919698791022024
+            ],
+            "mean_distance_difference": -0.0010119234934237303,
+            "distance_group_plus_mc_ci95": [
+              -0.003362963512724204,
+              0.0008887489366330872
+            ]
+          }
+        },
+        "differential_noise_effect": {
+          "256": {
+            "success_difference_change": 0.002010410464862799,
+            "group_plus_mc_ci95": [
+              -0.0007374215857704313,
+              0.004947384154402761
+            ]
+          },
+          "1024": {
+            "success_difference_change": 0.0032118450166967035,
+            "group_plus_mc_ci95": [
+              -0.0034028281023528394,
+              0.010225649101248055
+            ]
+          },
+          "4096": {
+            "success_difference_change": -0.0036563690208134495,
+            "group_plus_mc_ci95": [
+              -0.010835974821858534,
+              0.0028956512472713106
+            ]
+          },
+          "16384": {
+            "success_difference_change": -0.0003019623730226781,
+            "group_plus_mc_ci95": [
+              -0.004593295018622265,
+              0.004331163776247271
+            ]
+          }
+        }
+      }
+    },
+    "primary_improvement_supported": false,
+    "experiment_id": "EXP-026",
+    "count": 128,
+    "training_count": 16,
+    "noise_count": 32,
+    "babai_optimum_count": 100,
+    "box_coverage_count": 128,
+    "classical_refine2_optimum_count": 120,
+    "classical_prior_success1024": 0.9666415290331501,
+    "backend": "ibm_fez",
+    "calibration_fetched_at": "2026-10-20T05:00:43.997481+05:30",
+    "checks": {
+      "routed_ideal_circuits": 768,
+      "max_routed_probability_error": 4.119968255444917e-17,
+      "native_edges_checked": 108991,
+      "near_match_pairs": 256,
+      "max_native_cz_gap": 2,
+      "noisy_circuits": 192,
+      "trajectories": 12288,
+      "max_trajectory_norm_deviation": 6.460609824898711e-12,
+      "group_overlap": 0
+    },
+    "physical_qubits": [
+      91,
+      92,
+      93,
+      94,
+      95,
+      98,
+      99,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      118,
+      129
+    ],
+    "trajectories_per_circuit": 64,
+    "qpu_seconds": 0,
+    "qpu_jobs_submitted": 0,
+    "limitations": [
+      "One small16-qubit toy Module-LWE family and one frozen calibration; no secure ML-KEM or scaling claim.",
+      "Near-matched within2 CZ under common caps; duration, gate placement and error exposure need not be equal.",
+      "All matching/compiler search cost is counted; this is a comparison protocol rather than a new standalone decoder.",
+      "Finite64-trajectory noisy probabilities imply Monte Carlo uncertainty and nonlinear plug-in bias; report separate MC and group intervals and jackknife sensitivity.",
+      "Caching changes CPU implementation cost only; any quantum/noise effect comes from the selected masks and circuits.",
+      "No quantum hardware, cloud jobs, purchases or repository publication."
+    ],
+    "resource_matching": {
+      "128": {
+        "mean_native_gap_cached_minus_incumbent": 0.015625,
+        "exact_equal_count": 46,
+        "zero_gate_pair_count": 0
+      },
+      "160": {
+        "mean_native_gap_cached_minus_incumbent": 0.0625,
+        "exact_equal_count": 48,
+        "zero_gate_pair_count": 0
+      }
+    },
+    "classical_overhead": {
+      "mean_preprocess_seconds": 0.0028710023438378585,
+      "mean_both_families_masks_and_compile_seconds": 1.0691847804687882,
+      "compiled_candidates_per_instance": 66
+    }
+  },
+  "hardware_run": "experiments\\runs\\EXP-028_20261020T221336422019+0530"
+}

@@ -1,0 +1,91 @@
+{
+  "experiment_id": "EXP-011",
+  "purpose": "Development-only exhaustive edge-count sweep and prespecified mechanism controls.",
+  "development_run": "experiments/runs/EXP-001_20261018T120321801881+0530",
+  "training_run": "experiments/runs/EXP-003_20261020T014441792732+0530",
+  "angles": [
+    1.3393885543560986,
+    -0.3516024709404892
+  ],
+  "budgets": [
+    1024,
+    16384
+  ],
+  "sweep": "Every distinct number of weakest nonzero interactions removed, including zero and all. Fields and original normalization unchanged; scoring always full original objective.",
+  "trained_percentages": [
+    0,
+    25,
+    50,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    95,
+    100
+  ],
+  "optimizer": {
+    "seed": 2026102041,
+    "population": 24,
+    "generations": 31,
+    "polish": false,
+    "evaluation_budget": 768,
+    "gamma_bounds": [
+      0,
+      12.566370614359172
+    ],
+    "beta_bounds": [
+      -1.5707963267948966,
+      0
+    ]
+  },
+  "training_objective": "Mean full original normalized energy on the same 16 separate training groups. All 2-angle and split-field/coupling 3-angle fits use exactly 768 objective evaluations and include the original angles in the initial population.",
+  "controls": [
+    "weak75",
+    "random75_5seeds",
+    "strong75",
+    "protect_coordinate75",
+    "drop_coordinate75",
+    "random_ties75_5seeds",
+    "full_couplings_scaled_to_weak75_squared_weight",
+    "full_separate_field_and_pair_angles",
+    "retain90percent_pair_squared_weight",
+    "no_pairs100"
+  ],
+  "control_seed": 2026102042,
+  "bootstrap_seed": 2026102043,
+  "bootstrap_replicates": 3000,
+  "limitations": [
+    "Exploratory selection on old development cases, not final validation.",
+    "Pointwise paired uncertainty does not correct the many sparsity comparisons; do not declare an optimal percentage from the maximum.",
+    "Ideal probabilities are exact statevector results; finite-shot success is a mathematical expectation, not an observed count.",
+    "No secure ML-KEM or quantum-advantage claim."
+  ],
+  "qpu_seconds": 0
+}

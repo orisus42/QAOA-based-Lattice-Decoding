@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-27T12:05:48.868434+05:30",
+  "platform": "Windows",
+  "python": "3.14.3",
+  "tests": {
+    "passed": 88,
+    "existing_deprecation_warnings": 66,
+    "command": "python -m pytest -q --basetemp=local_outputs/pytest-suite-confirmation",
+    "initial_issue": "Default sandbox temp directory inaccessible; a repository-local directory resolved it. No solver changes required."
+  },
+  "demo": "passed; one illustrative Babai-optimal instance, not a performance benchmark",
+  "hardware_audit": {
+    "shots_independently_rescored": 983040,
+    "measurement_maps": 80,
+    "pooled_case_method_rows": 40,
+    "frozen_files_checked_via_export_provenance": 296,
+    "omitted_account_metadata_digests_only": 3,
+    "recorded_QPU_seconds": 280,
+    "additional_QPU_seconds": 0
+  },
+  "local_document_links": "passed",
+  "common_credential_pattern_scan": "no matches",
+  "local_profile_path_scan": "no matches",
+  "scope": "Release verification; no new scientific benchmark or hardware job."
+}

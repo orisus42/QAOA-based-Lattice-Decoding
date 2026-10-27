@@ -1,0 +1,333 @@
+{
+  "experiment_id": "EXP-010",
+  "nist_keygen_vectors_verified": 75,
+  "families": {
+    "n2_k2_q17_eta2": {
+      "count": 32,
+      "babai_optimum_count": 26,
+      "babai_secret_count": 18,
+      "planted_secret_in_optimum_count": 24,
+      "box_coverage_count": 32,
+      "box_secret_coverage_count": 32,
+      "classical_refine2_optimum_count": 32,
+      "methods": {
+        "0": {
+          "1024": {
+            "hybrid_success": 0.8498721717930064,
+            "hybrid_expected_distance": 2.763824847176187,
+            "hybrid_returned_secret_probability": 0.5972288811981863,
+            "any_sample_secret_probability": 0.20314123939456502
+          },
+          "16384": {
+            "hybrid_success": 0.9929810245268611,
+            "hybrid_expected_distance": 2.6548550519826666,
+            "hybrid_returned_secret_probability": 0.7121541399439575,
+            "any_sample_secret_probability": 0.9614958889156648
+          }
+        },
+        "0.75": {
+          "1024": {
+            "hybrid_success": 0.8656480843785195,
+            "hybrid_expected_distance": 2.7553457763799933,
+            "hybrid_returned_secret_probability": 0.6101112823039063,
+            "any_sample_secret_probability": 0.2592281569435285
+          },
+          "16384": {
+            "hybrid_success": 0.9948455447528174,
+            "hybrid_expected_distance": 2.6535517827427517,
+            "hybrid_returned_secret_probability": 0.7136826640536269,
+            "any_sample_secret_probability": 0.9689307610408897
+          }
+        },
+        "0.9": {
+          "1024": {
+            "hybrid_success": 0.8489836915774494,
+            "hybrid_expected_distance": 2.7661338783644576,
+            "hybrid_returned_secret_probability": 0.5908978865182817,
+            "any_sample_secret_probability": 0.20329018151525413
+          },
+          "16384": {
+            "hybrid_success": 0.9779954193477363,
+            "hybrid_expected_distance": 2.663594617430957,
+            "hybrid_returned_secret_probability": 0.696757163712881,
+            "any_sample_secret_probability": 0.9335475155651468
+          }
+        }
+      }
+    },
+    "n2_k2_q17_eta3": {
+      "count": 32,
+      "babai_optimum_count": 27,
+      "babai_secret_count": 19,
+      "planted_secret_in_optimum_count": 17,
+      "box_coverage_count": 32,
+      "box_secret_coverage_count": 32,
+      "classical_refine2_optimum_count": 30,
+      "methods": {
+        "0": {
+          "1024": {
+            "hybrid_success": 0.886412923678366,
+            "hybrid_expected_distance": 2.98936201142985,
+            "hybrid_returned_secret_probability": 0.5679025134434721,
+            "any_sample_secret_probability": 0.2012158240721515
+          },
+          "16384": {
+            "hybrid_success": 0.998627693603817,
+            "hybrid_expected_distance": 2.9425115143113114,
+            "hybrid_returned_secret_probability": 0.5009329763444341,
+            "any_sample_secret_probability": 0.9595521291284707
+          }
+        },
+        "0.75": {
+          "1024": {
+            "hybrid_success": 0.8853966747246615,
+            "hybrid_expected_distance": 2.9890642535936762,
+            "hybrid_returned_secret_probability": 0.569254117301166,
+            "any_sample_secret_probability": 0.22521933384972548
+          },
+          "16384": {
+            "hybrid_success": 0.9985774453985261,
+            "hybrid_expected_distance": 2.9426235543185575,
+            "hybrid_returned_secret_probability": 0.500878058690871,
+            "any_sample_secret_probability": 0.9620176666448937
+          }
+        },
+        "0.9": {
+          "1024": {
+            "hybrid_success": 0.878722826512688,
+            "hybrid_expected_distance": 2.991798344159921,
+            "hybrid_returned_secret_probability": 0.5719945773911388,
+            "any_sample_secret_probability": 0.19273041689942436
+          },
+          "16384": {
+            "hybrid_success": 0.9962884003629415,
+            "hybrid_expected_distance": 2.9431006329151375,
+            "hybrid_returned_secret_probability": 0.5019185120445789,
+            "any_sample_secret_probability": 0.9234607324267423
+          }
+        }
+      }
+    },
+    "n2_k2_q97_eta2": {
+      "count": 32,
+      "babai_optimum_count": 32,
+      "babai_secret_count": 32,
+      "planted_secret_in_optimum_count": 32,
+      "box_coverage_count": 32,
+      "box_secret_coverage_count": 32,
+      "classical_refine2_optimum_count": 32,
+      "methods": {
+        "0": {
+          "1024": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 2.674470571081384,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.22989993960183658
+          },
+          "16384": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 2.674470571081384,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.9771629820079066
+          }
+        },
+        "0.75": {
+          "1024": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 2.674470571081384,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.29186763437280144
+          },
+          "16384": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 2.674470571081384,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.9873446222950268
+          }
+        },
+        "0.9": {
+          "1024": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 2.674470571081384,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.2618781672705145
+          },
+          "16384": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 2.674470571081384,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.9683992039414062
+          }
+        }
+      }
+    },
+    "n2_k2_q3329_eta3": {
+      "count": 32,
+      "babai_optimum_count": 32,
+      "babai_secret_count": 32,
+      "planted_secret_in_optimum_count": 32,
+      "box_coverage_count": 32,
+      "box_secret_coverage_count": 32,
+      "classical_refine2_optimum_count": 32,
+      "methods": {
+        "0": {
+          "1024": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.3194043648905334,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.21454813861368618
+          },
+          "16384": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.319404364890533,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.9632538980546543
+          }
+        },
+        "0.75": {
+          "1024": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.319404364890533,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.2558685008946644
+          },
+          "16384": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.319404364890533,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.9688405376346422
+          }
+        },
+        "0.9": {
+          "1024": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.319404364890533,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.22997923936281234
+          },
+          "16384": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.319404364890533,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.9254898270795073
+          }
+        }
+      }
+    },
+    "n4_k1_q17_eta2": {
+      "count": 32,
+      "babai_optimum_count": 25,
+      "babai_secret_count": 21,
+      "planted_secret_in_optimum_count": 29,
+      "box_coverage_count": 32,
+      "box_secret_coverage_count": 32,
+      "classical_refine2_optimum_count": 29,
+      "methods": {
+        "0": {
+          "1024": {
+            "hybrid_success": 0.8320513628722537,
+            "hybrid_expected_distance": 2.742436310854019,
+            "hybrid_returned_secret_probability": 0.7070513628722321,
+            "any_sample_secret_probability": 0.20776497177642245
+          },
+          "16384": {
+            "hybrid_success": 0.9943862127997604,
+            "hybrid_expected_distance": 2.675259061190581,
+            "hybrid_returned_secret_probability": 0.8693862127997632,
+            "any_sample_secret_probability": 0.9624877793432414
+          }
+        },
+        "0.75": {
+          "1024": {
+            "hybrid_success": 0.8427902625354661,
+            "hybrid_expected_distance": 2.737819739328101,
+            "hybrid_returned_secret_probability": 0.7177902625354848,
+            "any_sample_secret_probability": 0.24497393043627902
+          },
+          "16384": {
+            "hybrid_success": 0.9980769183033993,
+            "hybrid_expected_distance": 2.6736471624182636,
+            "hybrid_returned_secret_probability": 0.8730769183034046,
+            "any_sample_secret_probability": 0.9646689339994008
+          }
+        },
+        "0.9": {
+          "1024": {
+            "hybrid_success": 0.8356160913350142,
+            "hybrid_expected_distance": 2.7420947465863597,
+            "hybrid_returned_secret_probability": 0.7106160913349848,
+            "any_sample_secret_probability": 0.23105295415142563
+          },
+          "16384": {
+            "hybrid_success": 0.9924107885499445,
+            "hybrid_expected_distance": 2.676365819240883,
+            "hybrid_returned_secret_probability": 0.8674107885499382,
+            "any_sample_secret_probability": 0.947833530375682
+          }
+        }
+      }
+    },
+    "n4_k1_q3329_eta3": {
+      "count": 32,
+      "babai_optimum_count": 32,
+      "babai_secret_count": 32,
+      "planted_secret_in_optimum_count": 32,
+      "box_coverage_count": 32,
+      "box_secret_coverage_count": 32,
+      "classical_refine2_optimum_count": 32,
+      "methods": {
+        "0": {
+          "1024": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.312878600038095,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.20805283458093377
+          },
+          "16384": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.312878600038095,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.9636943416332483
+          }
+        },
+        "0.75": {
+          "1024": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.312878600038095,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.23602632715180874
+          },
+          "16384": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.312878600038095,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.9640968210770995
+          }
+        },
+        "0.9": {
+          "1024": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.312878600038095,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.2311393141763085
+          },
+          "16384": {
+            "hybrid_success": 1.0,
+            "hybrid_expected_distance": 3.312878600038095,
+            "hybrid_returned_secret_probability": 1.0,
+            "any_sample_secret_probability": 0.9330104537070457
+          }
+        }
+      }
+    }
+  },
+  "max_analytic_discrepancy": 3.774758283725532e-15,
+  "qpu_seconds": 0,
+  "limits": [
+    "KAT agreement is not a certification or secure decoding experiment.",
+    "Tiny lower-degree analogues preserve negacyclic module algebra but do not inherit ML-KEM security.",
+    "Euclidean objective is a surrogate for CBD likelihood.",
+    "Parameter transfer is exploratory; all QAOA angles remain fixed from prior training.",
+    "Secret output retains Babai on cost ties and otherwise uses the first sample attaining the minimum cost."
+  ]
+}

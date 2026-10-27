@@ -1,0 +1,53 @@
+{
+  "run_id": "EXP-002_20261020T013110176959+0530",
+  "status": "completed",
+  "started_at": "2026-10-20T01:31:10.176959+05:30",
+  "command": "python experiments/run_ideal_sampling.py",
+  "python": "3.14.3",
+  "packages": {
+    "numpy": "2.4.6",
+    "qiskit": "2.4.2",
+    "qiskit-aer": "0.17.2",
+    "scipy": "1.18.0",
+    "sympy": "1.14.0",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2"
+  },
+  "source_sha256": {
+    "experiments/run_ideal_sampling.py": "3a72a27540d7c62990eb043ba71fce88d7f73e0187d0a8fa633cfbb50d3a1f5c",
+    "src/lattice_qaoa/sampling.py": "44efe1f908da13c7f424c6888f68aa21ee244cce9a1659845b1fad5a9c23f99c",
+    "tests/test_sampling.py": "b9a99e8f883479aaed6cb95a92429d7402e4184b414ae93d04c8d5779cbae6fb",
+    "pilot/feasibility.py": "0cd652be65af6569710914425737148ef9cbd0c27ab9a5a91d61e7a47e946133",
+    "pilot/hardware_readiness.py": "854684db75112844f2c90621b945be85a39efb3c70cf11e5171092699224a76b",
+    "scripts/plot_ideal_sampling.py": "2a4a71dd953f56fd178bc5bfdbd60609a590bfae917b502f235d98e914e796ae",
+    "experiments/configs/EXP-002.json": "9667ca2c42c046207a9d7bf7a97edae62485c9afd57f1362e17e326beb90cb9e"
+  },
+  "input_sha256": {
+    "outputs/replication_instances.json": "bc1a6df11bb54d915675cb09c31c2de2fdf691039a5e3892d154ea3188163ef3",
+    "outputs/pilot_results.json": "00724a564ae8b01af3bc4af1b42a160e1d39addcccbf0c65668db511ba82f12b",
+    "outputs/controls.json": "fd1f8cf9859a849274f96e6228b20f85874631e40f106683fe69d130bc141c7a",
+    "outputs/noise_arrays.npz": "315a46136a543cb954129f9087c31a6aca7531a04623490931d7dfaaae361ee9"
+  },
+  "qpu_seconds": 0,
+  "finished_at": "2026-10-20T01:31:12.352325+05:30",
+  "output_sha256": {
+    "config.json": "d9901bc636d6b2a6519c8f78352081ab4a95ad1c69202a5a0f5399db4ebe6590",
+    "summary.json": "f02a76644f0f14426b482a838b43e93aac71599d0b282a744e5953f6c655f4cf",
+    "per_instance.json": "1e69ea4f04e2bc591fc6118463c331e364fc1118da914142acd3f74fd50b1ffe",
+    "measurement_samples.npz": "b9584a2e9b470faec8343ad00c1af3926074701dd7fe1c2c754158ea39253d36",
+    "figures/ideal_success.png": "67eacd4aac52b93350be442f028c0f866bcbf4fab9ac8e9e4466ea1e74ab1320",
+    "figures/ideal_success.svg": "94a2a7cd3fe6e20c95f598f1685f27bbdfb44a231db215cfb0750422bf95c7b7",
+    "figures-v2/ideal_success.png": "ab177d2b4400ae67048d83a4bec27b586d6eb8198b16198ff2f4f3389480fb37",
+    "figures-v2/ideal_success.svg": "ca5f0ec2211d876531d2a61f6798280748ad7f75350e757d76cee73ebe021a71",
+    "figures-v2/plot_source.py": "69bca59ebe3bc8bec9c2963cca91508046db016495dcd682fa1ded2811edc28d"
+  },
+  "latest_figure": "figures-v2/ideal_success.png",
+  "figure_revisions": [
+    {
+      "revision": 2,
+      "source": "figures-v2/plot_source.py",
+      "note": "Layout revision; simulation results unchanged."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "experiment_id": "DIAG-013",
+  "results": [
+    {
+      "settings": {
+        "fusion_enable": true,
+        "fusion_max_qubit": 2
+      },
+      "seconds": 5.083340199998929,
+      "max_norm_deviation": 2.414560656305298e-06,
+      "fusion": {
+        "enabled": true,
+        "cost_factor": 1.8,
+        "threshold": 14,
+        "method": "kraus",
+        "max_fused_qubits": 2,
+        "time_taken": 0.0688328,
+        "parallelization": 1,
+        "applied": true
+      }
+    },
+    {
+      "settings": {
+        "fusion_enable": true,
+        "fusion_max_qubit": 1
+      },
+      "seconds": 16.315339499997208,
+      "max_norm_deviation": 1.0436096431476471e-14,
+      "fusion": {
+        "enabled": true,
+        "cost_factor": 1.8,
+        "threshold": 14,
+        "method": "kraus",
+        "max_fused_qubits": 1,
+        "time_taken": 0.0282926,
+        "parallelization": 1,
+        "applied": true
+      }
+    },
+    {
+      "settings": {
+        "fusion_enable": false
+      },
+      "seconds": 24.407586100001936,
+      "max_norm_deviation": 9.325873406851315e-15,
+      "fusion": {
+        "enabled": false
+      }
+    }
+  ],
+  "qpu_seconds": 0,
+  "limits": "One reproducible circuit/seed; identifies an association with fusion settings, not a complete upstream root-cause analysis."
+}

@@ -1,0 +1,432 @@
+{
+  "run_id": "EXP-002_20261020T013110176959+0530",
+  "experiment_id": "EXP-002",
+  "count": 200,
+  "cohort": "Existing 200-instance generic q-ary replication cohort from EXP-000; NOT the 64 Module-LWE instances",
+  "depth_p": 1,
+  "qubits": [
+    6,
+    8
+  ],
+  "methods": {
+    "fixed": {
+      "exact_mean_single_shot_probability": 0.029493768692854524,
+      "exact_single_shot_quantiles": {
+        "min": 0.006061278975616782,
+        "q25": 0.015127345753995845,
+        "median": 0.02641873783871035,
+        "q75": 0.040598556188666916,
+        "max": 0.07887261676958636
+      },
+      "observed_successful_measurements": 6043,
+      "total_measurements": 204800,
+      "observed_single_shot_success_fraction": 0.0295068359375,
+      "by_shot_budget": [
+        {
+          "shots": 1,
+          "exact_expected_solved_fraction": 0.029493768692854524,
+          "exact_expected_solved_count": 5.898753738570905,
+          "measurement_only_95pct_count_interval": [
+            2,
+            11
+          ],
+          "observed_solved_count": 4,
+          "observed_solved_fraction": 0.02,
+          "exact_expected_hybrid_solved_fraction": 0.9661141354861382,
+          "observed_hybrid_solved_count": 193,
+          "babai_failures_recovered_count": 0,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 10,
+          "exact_expected_solved_fraction": 0.2497887133416355,
+          "exact_expected_solved_count": 49.9577426683271,
+          "measurement_only_95pct_count_interval": [
+            39,
+            62
+          ],
+          "observed_solved_count": 50,
+          "observed_solved_fraction": 0.25,
+          "exact_expected_hybrid_solved_fraction": 0.9743997019906775,
+          "observed_hybrid_solved_count": 194,
+          "babai_failures_recovered_count": 1,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 25,
+          "exact_expected_solved_fraction": 0.4897931059064307,
+          "exact_expected_solved_count": 97.95862118128615,
+          "measurement_only_95pct_count_interval": [
+            85,
+            111
+          ],
+          "observed_solved_count": 96,
+          "observed_solved_fraction": 0.48,
+          "exact_expected_hybrid_solved_fraction": 0.9833308310650152,
+          "observed_hybrid_solved_count": 197,
+          "babai_failures_recovered_count": 4,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 50,
+          "exact_expected_solved_fraction": 0.7044211230925173,
+          "exact_expected_solved_count": 140.88422461850345,
+          "measurement_only_95pct_count_interval": [
+            129,
+            152
+          ],
+          "observed_solved_count": 137,
+          "observed_solved_fraction": 0.685,
+          "exact_expected_hybrid_solved_fraction": 0.9911446372793459,
+          "observed_hybrid_solved_count": 197,
+          "babai_failures_recovered_count": 4,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 100,
+          "exact_expected_solved_fraction": 0.875834963069494,
+          "exact_expected_solved_count": 175.1669926138988,
+          "measurement_only_95pct_count_interval": [
+            167,
+            183
+          ],
+          "observed_solved_count": 172,
+          "observed_solved_fraction": 0.86,
+          "exact_expected_hybrid_solved_fraction": 0.9969752785120499,
+          "observed_hybrid_solved_count": 199,
+          "babai_failures_recovered_count": 6,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 256,
+          "exact_expected_solved_fraction": 0.9834021123032173,
+          "exact_expected_solved_count": 196.68042246064346,
+          "measurement_only_95pct_count_interval": [
+            193,
+            200
+          ],
+          "observed_solved_count": 197,
+          "observed_solved_fraction": 0.985,
+          "exact_expected_hybrid_solved_fraction": 0.9998134537638245,
+          "observed_hybrid_solved_count": 200,
+          "babai_failures_recovered_count": 7,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 1024,
+          "exact_expected_solved_fraction": 0.9999717366039067,
+          "exact_expected_solved_count": 199.99434732078134,
+          "measurement_only_95pct_count_interval": [
+            200,
+            200
+          ],
+          "observed_solved_count": 200,
+          "observed_solved_fraction": 1.0,
+          "exact_expected_hybrid_solved_fraction": 0.9999999993227846,
+          "observed_hybrid_solved_count": 200,
+          "babai_failures_recovered_count": 7,
+          "babai_failure_denominator": 7
+        }
+      ],
+      "by_qubits": {
+        "6": {
+          "count": 100,
+          "mean_single_shot_probability": 0.04314327754791246
+        },
+        "8": {
+          "count": 100,
+          "mean_single_shot_probability": 0.0158442598377966
+        }
+      }
+    },
+    "learned": {
+      "exact_mean_single_shot_probability": 0.036148651855724946,
+      "exact_single_shot_quantiles": {
+        "min": 0.000880260481444933,
+        "q25": 0.016356512024288235,
+        "median": 0.03178006440941467,
+        "q75": 0.05420621276033807,
+        "max": 0.09343689609250817
+      },
+      "observed_successful_measurements": 7386,
+      "total_measurements": 204800,
+      "observed_single_shot_success_fraction": 0.036064453125,
+      "by_shot_budget": [
+        {
+          "shots": 1,
+          "exact_expected_solved_fraction": 0.03614865185572495,
+          "exact_expected_solved_count": 7.22973037114499,
+          "measurement_only_95pct_count_interval": [
+            3,
+            13
+          ],
+          "observed_solved_count": 9,
+          "observed_solved_fraction": 0.045,
+          "exact_expected_hybrid_solved_fraction": 0.9662551817457696,
+          "observed_hybrid_solved_count": 193,
+          "babai_failures_recovered_count": 0,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 10,
+          "exact_expected_solved_fraction": 0.29257837733140873,
+          "exact_expected_solved_count": 58.51567546628174,
+          "measurement_only_95pct_count_interval": [
+            47,
+            71
+          ],
+          "observed_solved_count": 61,
+          "observed_solved_fraction": 0.305,
+          "exact_expected_hybrid_solved_fraction": 0.9752351449459041,
+          "observed_hybrid_solved_count": 196,
+          "babai_failures_recovered_count": 3,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 25,
+          "exact_expected_solved_fraction": 0.5443749140907189,
+          "exact_expected_solved_count": 108.87498281814378,
+          "measurement_only_95pct_count_interval": [
+            96,
+            121
+          ],
+          "observed_solved_count": 113,
+          "observed_solved_fraction": 0.565,
+          "exact_expected_hybrid_solved_fraction": 0.9842029893498427,
+          "observed_hybrid_solved_count": 199,
+          "babai_failures_recovered_count": 6,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 50,
+          "exact_expected_solved_fraction": 0.746788057094712,
+          "exact_expected_solved_count": 149.35761141894238,
+          "measurement_only_95pct_count_interval": [
+            138,
+            160
+          ],
+          "observed_solved_count": 149,
+          "observed_solved_fraction": 0.745,
+          "exact_expected_hybrid_solved_fraction": 0.9915363599396408,
+          "observed_hybrid_solved_count": 199,
+          "babai_failures_recovered_count": 6,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 100,
+          "exact_expected_solved_fraction": 0.8977767237999171,
+          "exact_expected_solved_count": 179.55534475998343,
+          "measurement_only_95pct_count_interval": [
+            172,
+            187
+          ],
+          "observed_solved_count": 180,
+          "observed_solved_fraction": 0.9,
+          "exact_expected_hybrid_solved_fraction": 0.9969722254176702,
+          "observed_hybrid_solved_count": 199,
+          "babai_failures_recovered_count": 6,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 256,
+          "exact_expected_solved_fraction": 0.9868647627636955,
+          "exact_expected_solved_count": 197.3729525527391,
+          "measurement_only_95pct_count_interval": [
+            194,
+            200
+          ],
+          "observed_solved_count": 198,
+          "observed_solved_fraction": 0.99,
+          "exact_expected_hybrid_solved_fraction": 0.9998013878556918,
+          "observed_hybrid_solved_count": 199,
+          "babai_failures_recovered_count": 6,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 1024,
+          "exact_expected_solved_fraction": 0.9979698261536559,
+          "exact_expected_solved_count": 199.5939652307312,
+          "measurement_only_95pct_count_interval": [
+            199,
+            200
+          ],
+          "observed_solved_count": 200,
+          "observed_solved_fraction": 1.0,
+          "exact_expected_hybrid_solved_fraction": 0.9999999991496753,
+          "observed_hybrid_solved_count": 200,
+          "babai_failures_recovered_count": 7,
+          "babai_failure_denominator": 7
+        }
+      ],
+      "by_qubits": {
+        "6": {
+          "count": 100,
+          "mean_single_shot_probability": 0.05449899580186592
+        },
+        "8": {
+          "count": 100,
+          "mean_single_shot_probability": 0.01779830790958398
+        }
+      }
+    },
+    "uniform": {
+      "exact_mean_single_shot_probability": 0.00994140625,
+      "exact_single_shot_quantiles": {
+        "min": 0.00390625,
+        "q25": 0.00390625,
+        "median": 0.01171875,
+        "q75": 0.015625,
+        "max": 0.03125
+      },
+      "observed_successful_measurements": 2034,
+      "total_measurements": 204800,
+      "observed_single_shot_success_fraction": 0.009931640625,
+      "by_shot_budget": [
+        {
+          "shots": 1,
+          "exact_expected_solved_fraction": 0.00994140625,
+          "exact_expected_solved_count": 1.98828125,
+          "measurement_only_95pct_count_interval": [
+            0,
+            5
+          ],
+          "observed_solved_count": 3,
+          "observed_solved_fraction": 0.015,
+          "exact_expected_hybrid_solved_fraction": 0.96533203125,
+          "observed_hybrid_solved_count": 193,
+          "babai_failures_recovered_count": 0,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 10,
+          "exact_expected_solved_fraction": 0.09360392540073406,
+          "exact_expected_solved_count": 18.72078508014681,
+          "measurement_only_95pct_count_interval": [
+            11,
+            27
+          ],
+          "observed_solved_count": 23,
+          "observed_solved_fraction": 0.115,
+          "exact_expected_hybrid_solved_fraction": 0.9681385559463104,
+          "observed_hybrid_solved_count": 194,
+          "babai_failures_recovered_count": 1,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 25,
+          "exact_expected_solved_fraction": 0.21256417102716674,
+          "exact_expected_solved_count": 42.51283420543335,
+          "measurement_only_95pct_count_interval": [
+            32,
+            54
+          ],
+          "observed_solved_count": 42,
+          "observed_solved_fraction": 0.21,
+          "exact_expected_hybrid_solved_fraction": 0.9721702018036342,
+          "observed_hybrid_solved_count": 195,
+          "babai_failures_recovered_count": 2,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 50,
+          "exact_expected_solved_fraction": 0.3662788901560559,
+          "exact_expected_solved_count": 73.25577803121118,
+          "measurement_only_95pct_count_interval": [
+            61,
+            86
+          ],
+          "observed_solved_count": 77,
+          "observed_solved_fraction": 0.385,
+          "exact_expected_hybrid_solved_fraction": 0.9774627978402686,
+          "observed_hybrid_solved_count": 196,
+          "babai_failures_recovered_count": 3,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 100,
+          "exact_expected_solved_fraction": 0.5647393305135863,
+          "exact_expected_solved_count": 112.94786610271726,
+          "measurement_only_95pct_count_interval": [
+            101,
+            125
+          ],
+          "observed_solved_count": 110,
+          "observed_solved_fraction": 0.55,
+          "exact_expected_hybrid_solved_fraction": 0.9844704745241728,
+          "observed_hybrid_solved_count": 199,
+          "babai_failures_recovered_count": 6,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 256,
+          "exact_expected_solved_fraction": 0.8134563167413509,
+          "exact_expected_solved_count": 162.69126334827018,
+          "measurement_only_95pct_count_interval": [
+            153,
+            172
+          ],
+          "observed_solved_count": 173,
+          "observed_solved_fraction": 0.865,
+          "exact_expected_hybrid_solved_fraction": 0.9935550264840605,
+          "observed_hybrid_solved_count": 200,
+          "babai_failures_recovered_count": 7,
+          "babai_failure_denominator": 7
+        },
+        {
+          "shots": 1024,
+          "exact_expected_solved_fraction": 0.9913597747435725,
+          "exact_expected_solved_count": 198.2719549487145,
+          "measurement_only_95pct_count_interval": [
+            195,
+            200
+          ],
+          "observed_solved_count": 200,
+          "observed_solved_fraction": 1.0,
+          "exact_expected_hybrid_solved_fraction": 0.9997257820511742,
+          "observed_hybrid_solved_count": 200,
+          "babai_failures_recovered_count": 7,
+          "babai_failure_denominator": 7
+        }
+      ],
+      "by_qubits": {
+        "6": {
+          "count": 100,
+          "mean_single_shot_probability": 0.01578125
+        },
+        "8": {
+          "count": 100,
+          "mean_single_shot_probability": 0.0041015625
+        }
+      }
+    }
+  },
+  "babai": {
+    "solved_count": 193,
+    "solved_fraction": 0.965
+  },
+  "exhaustive_box": {
+    "solved_count": 200,
+    "candidate_evaluations_per_instance": [
+      64,
+      256
+    ],
+    "note": "Direct classical enumeration of these tiny boxes reaches an optimum on every instance; this is not a quantum advantage experiment."
+  },
+  "validation": {
+    "independent_circuits_checked": 400,
+    "maximum_statevector_probability_difference": 2.498001805406602e-16,
+    "global_optima_and_encoded_costs_rechecked": 200,
+    "matched_saved_ideal_results": true
+  },
+  "actual_circuit_shots_sampled": 409600,
+  "qpu_seconds": 0,
+  "limitations": [
+    "Ideal simulation only; no physical noise, connectivity cost, queue time, or hardware run.",
+    "One measured batch per circuit; exact probabilities predict repeated-batch performance on this fixed cohort.",
+    "Existing exploratory instances and trained policies, not a new independent holdout or a new optimized method.",
+    "Success refers to CVP optimality, not planted-secret recovery.",
+    "Both QAOA policies already use a search box centered on Babai.",
+    "A successful repeated-shot experiment does not establish quantum advantage."
+  ],
+  "elapsed_seconds": 1.9422485999966739
+}

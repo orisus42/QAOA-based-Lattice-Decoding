@@ -1,0 +1,24 @@
+{
+  "experiment_id": "EXP-010",
+  "purpose": "Verify FIPS203 key-generation provenance, then exploratory parameter-family transfer; no cryptanalytic claim.",
+  "kyber_source": "research/reference_sources/kyber_py_897923667b2f",
+  "acvp_source": "research/reference_sources/nist_acvp_975de31eb83d",
+  "acvp_cases": "all 25 cases in each of the three FIPS203 key-generation parameter groups",
+  "count_per_family": 32,
+  "first_seed": 202610204000,
+  "families": [
+    {"n":2,"k":2,"q":17,"eta":2},
+    {"n":2,"k":2,"q":17,"eta":3},
+    {"n":2,"k":2,"q":97,"eta":2},
+    {"n":2,"k":2,"q":3329,"eta":3},
+    {"n":4,"k":1,"q":17,"eta":2},
+    {"n":4,"k":1,"q":3329,"eta":3}
+  ],
+  "angles": [1.3393885543560986,-0.3516024709404892],
+  "fractions": [0,0.75,0.9],
+  "budgets": [1024,16384],
+  "exact_reference_candidate_cap": 1000000,
+  "reference_policy": "Public CBD-support exhaustive search supplies a feasible bound only to the evaluation reference; QAOA still starts at public Babai. No failures or uncovered cases discarded.",
+  "evaluation_policy": "Exploratory sensitivity, not a held-out validation or training cohort. Secret/optimum checks are evaluation only. Report any sampled planted-secret hit separately from the secret returned by the cost-minimizing decoder.",
+  "qpu_seconds": 0
+}

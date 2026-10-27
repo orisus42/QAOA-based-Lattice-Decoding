@@ -1,0 +1,56 @@
+{
+  "run_id": "EXP-003_20261020T014441792732+0530",
+  "status": "completed",
+  "started_at": "2026-10-20T01:44:41.792732+05:30",
+  "command": "python experiments/run_module_lwe_qaoa.py",
+  "python": "3.14.3",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "sympy": "1.14.0",
+    "qiskit": "2.4.2",
+    "qiskit-aer": "0.17.2",
+    "threadpoolctl": "3.6.0",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2"
+  },
+  "source_sha256": {
+    "src/lattice_qaoa/classical.py": "aba3bbbbec7b819dc36847285eb2b8961006a230d990599d3b1cc9acaa0d2ee3",
+    "src/lattice_qaoa/encoding.py": "db0b436458d3210cf994eb796c7235645ddd7932aedd543ceab4ba5707af201c",
+    "src/lattice_qaoa/instances.py": "4a3ba14e8b39674d0aabd63a8dabde14066210ddcfd1457480bb1c996bbe781b",
+    "src/lattice_qaoa/qaoa.py": "1b8548cbbec2baa49d2182b1d8a6e2057daafb958b0609113b385245795366b0",
+    "src/lattice_qaoa/reference.py": "db8d1b3e270d1c88cb5f7e70ade6aa4c4b04c537991c0479f222f9e91fbb098d",
+    "src/lattice_qaoa/sampling.py": "44efe1f908da13c7f424c6888f68aa21ee244cce9a1659845b1fad5a9c23f99c",
+    "src/lattice_qaoa/__init__.py": "c735051e3cdf56fb6f25aeaa155befc21569d17d8d35c8d626494b7673355e08",
+    "tests/test_module_lwe.py": "a1cd4c7b4a7385c2948ad80d9ad7ca538d03a5fa4afb013f13c822c8fbd68380",
+    "tests/test_qaoa_encoding.py": "afc94ea70dd24dc946b312314bd62141f379c717d03de3b15cdaeb9cd6129341",
+    "tests/test_sampling.py": "b9a99e8f883479aaed6cb95a92429d7402e4184b414ae93d04c8d5779cbae6fb",
+    "experiments/run_module_lwe_qaoa.py": "bf873840c2d80257e5b87b8e408b52cc1f928b749584a253f78c773b96e230e4",
+    "experiments/configs/EXP-003.json": "ea58a1ef3e61b315df15659ab3d631d87adb51caa315f03d809a0c576ff4175b",
+    "scripts/plot_module_lwe_qaoa.py": "0cebc2e2f675584e2d630a678da43d3cb8d6be4cedc6f69cb689b7848fda6c7f",
+    "requirements-research.txt": "077c2747bb5bdf476d8b0b6c94df162de73fb832aa170aa7b3e24a6bd61c00cf"
+  },
+  "input_sha256": {
+    "experiments/runs/EXP-001_20261018T120321801881+0530/instances.json": "c501984a2a5ec80fdecfe52a6972ae9d6951fc7a988d71d6336cba47e03cc929",
+    "experiments/runs/EXP-001_20261018T120321801881+0530/config.json": "78155c65176ac9294ea7f225efe384838f4cd95f5e85411e50875a32da1b02e3",
+    "experiments/runs/EXP-001_20261018T120321801881+0530/summary.json": "3af796e160762e38d73475f5d09373bd4fe17c4ec36aab8f74bc139583f0fc56"
+  },
+  "qpu_seconds": 0,
+  "finished_at": "2026-10-20T01:44:50.074907+05:30",
+  "output_sha256": {
+    "config.json": "7f717987f1f6806660247206cafdc6168e6d2b054fc32d334f2ffe9547eb4698",
+    "training.json": "d8d8dd6f50c5dd7613f1ed9c470848d4339f227b18d44fcbab2617294fd6f83d",
+    "prepared_instances.json": "fc7b47753b07e1a561bd4f2845204714c3b0d0ff7e35c17557f65c8b374f22b8",
+    "per_instance.json": "0ad1e2caf377858702f1a51d51fa940bb16483abb9e6faecac84aa30f545b00d",
+    "summary.json": "a27ae290009a7ed109e24516d1488e0b6530089b1901bdfffb9f01878bc47ed2",
+    "samples.npz": "a8e9df664aa613ba355dd2517a9a2e6f1013a9cffc3ec47fdcec1fcd3009773d",
+    "encoded_costs.npz": "e9ad1e07ce813d7d6231911085af7808668d4ffa45b233b46564035ab93a4ae0",
+    "figures/module_lwe_comparison.png": "e0a5c2334cd4a312e98f82a4ed376a55562df91fa06cd1a047e8d422bea5f1e1",
+    "figures/module_lwe_comparison.svg": "728ccce8dcfe5a17cf40600e1312241f81ba062549d5c5ef5d9cc4f1cd287088",
+    "figures/plot_source.py": "0cebc2e2f675584e2d630a678da43d3cb8d6be4cedc6f69cb689b7848fda6c7f",
+    "figures-v2/module_lwe_comparison.png": "fb8ffd5ce4725ee7136d78ced12a7582b28dd30e0b31544e74f578e841d985cc",
+    "figures-v2/module_lwe_comparison.svg": "f1f3650fcbb63e8c166fdfcfd051c44ce3ba693c25e1607b74d8c50a072d0cc0",
+    "figures-v2/plot_source.py": "fc1e26e80a456bbde8825a67893d7a426a86d1ab9fb364c8e323b5590429d45e"
+  },
+  "latest_figure": "figures-v2/module_lwe_comparison.png"
+}

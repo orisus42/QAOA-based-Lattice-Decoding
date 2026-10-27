@@ -1,0 +1,105 @@
+{
+  "recorded_at": "2026-10-20T19:36:56.058500+05:30",
+  "analysis_status": "Secondary post-protocol analysis; not a new confirmatory test.",
+  "shots": 1024,
+  "count": 128,
+  "noise_penalties": {
+    "cached_cap128": {
+      "difference": -0.01931931101997486,
+      "group_plus_mc_ci95": [
+        -0.027386770140411843,
+        -0.012167817330489893
+      ]
+    },
+    "incumbent_cap128": {
+      "difference": -0.01936486908166768,
+      "group_plus_mc_ci95": [
+        -0.02735541048598703,
+        -0.012274832662464727
+      ]
+    },
+    "cached_cap160": {
+      "difference": -0.02345764629987923,
+      "group_plus_mc_ci95": [
+        -0.033245321907855195,
+        -0.014801022579583992
+      ]
+    },
+    "incumbent_cap160": {
+      "difference": -0.02436455645719615,
+      "group_plus_mc_ci95": [
+        -0.034847955070638814,
+        -0.0150582934943371
+      ]
+    },
+    "cached24": {
+      "difference": -0.024972294333796885,
+      "group_plus_mc_ci95": [
+        -0.03497459638385312,
+        -0.016525576744168883
+      ]
+    },
+    "incumbent24": {
+      "difference": -0.028184139350493798,
+      "group_plus_mc_ci95": [
+        -0.03956229241413568,
+        -0.017983779030805135
+      ]
+    }
+  },
+  "lower_minus_higher_cap": {
+    "cached": {
+      "ideal": {
+        "difference": -0.003442245597695903,
+        "group_plus_mc_ci95": [
+          -0.007192732369464036,
+          1.9281595096719184e-05
+        ]
+      },
+      "noise": {
+        "difference": 0.0006960896822084672,
+        "group_plus_mc_ci95": [
+          -0.003389700530086906,
+          0.00459270673132973
+        ]
+      },
+      "change_in_noise_penalty": {
+        "difference": 0.0041383352799043704,
+        "group_plus_mc_ci95": [
+          0.0006799529321145553,
+          0.008107131453248267
+        ]
+      }
+    },
+    "incumbent": {
+      "ideal": {
+        "difference": -0.006555552539340148,
+        "group_plus_mc_ci95": [
+          -0.01168107688453304,
+          -0.0022044909508237964
+        ]
+      },
+      "noise": {
+        "difference": -0.001555865163811676,
+        "group_plus_mc_ci95": [
+          -0.005783615261337974,
+          0.002664006438757252
+        ]
+      },
+      "change_in_noise_penalty": {
+        "difference": 0.004999687375528472,
+        "group_plus_mc_ci95": [
+          0.000598769704055932,
+          0.010600947753743933
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Caps use separately trained global angles; this does not isolate gate deletion as a causal mechanism.",
+    "CZ counts are near matched across families, not durations or calibrated error exposure.",
+    "Intervals are descriptive and not adjusted for multiple comparisons.",
+    "Native-cap matching jointly profiles both families; this is a benchmark procedure, not a cheap standalone deployment rule.",
+    "Saved calibration noise is an approximation, not hardware evidence."
+  ]
+}

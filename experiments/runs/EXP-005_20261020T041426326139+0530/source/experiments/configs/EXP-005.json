@@ -1,0 +1,26 @@
+{
+  "id": "EXP-005",
+  "name": "Babai plus QAOA: distance refinement on all 64 toy Module-LWE examples",
+  "analysis_type": "Post-hoc deterministic reanalysis of saved EXP-004 methods and measurements; no refitting or new shots",
+  "input_run": "experiments/runs/EXP-001_20261018T120321801881+0530",
+  "qaoa_run": "experiments/runs/EXP-004_20261020T035105759769+0530",
+  "classical_run": "experiments/runs/EXP-003_20261020T014441792732+0530",
+  "shots": 1024,
+  "budgets": [1, 10, 100, 256, 1024],
+  "policy": "Start with LLL-Babai; retain the incumbent on ties; accept a measured candidate only for strictly smaller ORIGINAL squared lattice distance.",
+  "distance": "sqrt(||q*w + A*s - t||^2 + ||s||^2); augmented lattice distance, not the residual-only norm in Lv et al.",
+  "methods": ["full_fixed", "full_tuned", "weak10_frozen", "weak10_retrained", "weak25_frozen", "weak25_retrained", "weak50_frozen", "weak50_retrained"],
+  "classical_controls": ["refine_1", "refine_2", "uniform_box"],
+  "uncertainty": "Exact Poisson-binomial 95% prediction intervals describe shot variability on this fixed cohort, not unseen-instance generalization.",
+  "random_seed": null,
+  "seed_note": "No new randomness. Observed bitstrings retain the seeds recorded in EXP-004. Exact ideal distributions use saved angles and masks.",
+  "limitations": [
+    "Previously inspected development examples, not a final holdout; no new method selected or fitted here.",
+    "Babai retention guarantees no worsening of this objective; that alone is not evidence of quantum benefit.",
+    "Only 11/64 examples have a suboptimal Babai answer. All 64 are retained in the aggregate and the 11-case conditional view is explicitly identified.",
+    "An improvement in augmented lattice distance does not imply planted-secret recovery or improvement in the residual-only norm.",
+    "Exact ideal expectations are separated from one saved finite-shot batch. No physical hardware or noise is involved.",
+    "Classical local refinement has different per-candidate cost and domain from quantum sampling; no end-to-end speedup claim is made."
+  ],
+  "sources": ["https://doi.org/10.3390/e24101428"]
+}

@@ -1,0 +1,45 @@
+{
+  "description": "Actual hardware per-case strict-improvement frequencies with exact95% binomial intervals. Gate counts paired by case; curves would be inappropriate for these discrete policies. Conditional6-case cohort.",
+  "data": {
+    "full_fixed": {
+      "mean_native_cz": 527.75,
+      "failure_mean_p_improve": 2.712673611111111e-05,
+      "failure_improvement_counts": 4,
+      "failure_optimum_counts": 4,
+      "all_observed_optimum_with_babai": 4,
+      "all_observed_improved_over_babai": 2
+    },
+    "weak75_frozen": {
+      "mean_native_cz": 156.25,
+      "failure_mean_p_improve": 0.0002170138888888889,
+      "failure_improvement_counts": 32,
+      "failure_optimum_counts": 27,
+      "all_observed_optimum_with_babai": 7,
+      "all_observed_improved_over_babai": 5
+    },
+    "weak75_retrained": {
+      "mean_native_cz": 156.25,
+      "failure_mean_p_improve": 0.00019666883680555553,
+      "failure_improvement_counts": 29,
+      "failure_optimum_counts": 25,
+      "all_observed_optimum_with_babai": 7,
+      "all_observed_improved_over_babai": 5
+    },
+    "cached24": {
+      "mean_native_cz": 155.375,
+      "failure_mean_p_improve": 0.00018988715277777775,
+      "failure_improvement_counts": 28,
+      "failure_optimum_counts": 22,
+      "all_observed_optimum_with_babai": 7,
+      "all_observed_improved_over_babai": 5
+    },
+    "incumbent24": {
+      "mean_native_cz": 160.125,
+      "failure_mean_p_improve": 0.0002848307291666667,
+      "failure_improvement_counts": 42,
+      "failure_optimum_counts": 34,
+      "all_observed_optimum_with_babai": 8,
+      "all_observed_improved_over_babai": 6
+    }
+  }
+}

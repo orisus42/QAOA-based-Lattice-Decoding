@@ -1,0 +1,34 @@
+{
+  "experiment_id": "EXP-017",
+  "status": "paused_by_user",
+  "recorded_at": "2026-10-20T07:10:32.245530+05:30",
+  "count": 80,
+  "complete_development_count": 64,
+  "checkpointed_fresh_count": 16,
+  "planned_fresh_count": 128,
+  "development_1024_ideal_hybrid_success": {
+    "full_trained": 0.8690680595280387,
+    "magnitude24_trained": 0.8817131566453559,
+    "residual24_trained": 0.8989275357537178,
+    "geometry24_trained": 0.8910318162854225,
+    "magnitude24_effort": 0.8831432371437058,
+    "cbd_secret": 0.9803782129501005
+  },
+  "fresh_analysis": "Do not interpret16/128 as the planned completed validation; no primary conclusion calculated.",
+  "checks_so_far": {
+    "statevectors": 2000,
+    "independent_qiskit_checks": 100,
+    "routed_ideal_checks": 16,
+    "max_probability_error": 1.951563910473908e-17,
+    "max_analytic_error": 3.552713678800501e-15,
+    "order_statistic_checks": 300,
+    "cost_codebooks_checked": 5242880,
+    "fresh_overlap_count": 0
+  },
+  "qpu_seconds": 0,
+  "limitations": [
+    "Final independent audit and figures not completed.",
+    "Any per-case artifacts outside per_instance.json may belong to the interrupted in-flight case.",
+    "Frozen protocol must be preserved if completing the planned fresh evaluation later."
+  ]
+}

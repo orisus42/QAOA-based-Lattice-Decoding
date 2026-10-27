@@ -1,0 +1,59 @@
+{
+  "run_id": "EXP-016_20261020T063637444064+0530",
+  "started_at": "2026-10-20T06:36:37.444064+05:30",
+  "status": "completed",
+  "command": "python experiments/run_centered_pruning.py",
+  "python": "3.14.3",
+  "packages": {
+    "numpy": "2.4.6",
+    "sympy": "1.14.0",
+    "scipy": "1.18.0",
+    "qiskit": "2.4.2",
+    "qiskit-aer": "0.17.2",
+    "seaborn": "0.13.2",
+    "matplotlib": "3.10.9"
+  },
+  "source_sha256": {
+    "src/lattice_qaoa/centered.py": "592d54e878e905cd35efafc2accb21016790fdcbeb9320004452b12e81f3ba2f",
+    "src/lattice_qaoa/classical.py": "aba3bbbbec7b819dc36847285eb2b8961006a230d990599d3b1cc9acaa0d2ee3",
+    "src/lattice_qaoa/device.py": "25574a0a2ec26fe016ac586f3e87a9e3f5edbcd5e3d1ce2544b6e59c193d9123",
+    "src/lattice_qaoa/encoding.py": "db0b436458d3210cf994eb796c7235645ddd7932aedd543ceab4ba5707af201c",
+    "src/lattice_qaoa/evaluation.py": "96e6b3551ec659fb47db6f8b7d7da921c80fcc4e733f71bc4406345e0d800589",
+    "src/lattice_qaoa/instances.py": "4a3ba14e8b39674d0aabd63a8dabde14066210ddcfd1457480bb1c996bbe781b",
+    "src/lattice_qaoa/mechanisms.py": "096d19c12694991bdb2cd5a075f1cb87a2102122ea9015b7193f1bb9aabab554",
+    "src/lattice_qaoa/qaoa.py": "2276eb60558f345f9e95bef45e70551ef833d2c980552e88754e5d7fd87406a8",
+    "src/lattice_qaoa/reference.py": "db8d1b3e270d1c88cb5f7e70ade6aa4c4b04c537991c0479f222f9e91fbb098d",
+    "src/lattice_qaoa/sampling.py": "44efe1f908da13c7f424c6888f68aa21ee244cce9a1659845b1fad5a9c23f99c",
+    "src/lattice_qaoa/sparsify.py": "b5f86b3cb5e7ddf6e3b60c70b68b65448fa8bb809ade04ebca40230475c50f66",
+    "src/lattice_qaoa/__init__.py": "c735051e3cdf56fb6f25aeaa155befc21569d17d8d35c8d626494b7673355e08",
+    "tests/test_aggressive_pruning.py": "6dc86fb379627db75061438254d07c7c9c22134d72b4037faf76d6875e7deefc",
+    "tests/test_centered.py": "ace146c993434806461ad91d5f00873c680de82f1acae8daa669886ae50cc49b",
+    "tests/test_device_noise.py": "d5db8136c3efd46aacb87894ac87c307e7f134c6b077d7ae5727e3b1c22db1f3",
+    "tests/test_fresh_evaluation.py": "e0d89eddd66510291e8000428d47f57b5b7e4286f5ceaf4804e2608b63df60c4",
+    "tests/test_hybrid_quality.py": "573b09c2470ac53d20df6eb6aaa6a746f7fab73bef90153aa2bab2ac0660e3e0",
+    "tests/test_mechanisms.py": "6940c58b157196378d06e574a7b749e0507a8cf835082ae2454f10af0d04bd6f",
+    "tests/test_module_lwe.py": "a1cd4c7b4a7385c2948ad80d9ad7ca538d03a5fa4afb013f13c822c8fbd68380",
+    "tests/test_qaoa_encoding.py": "afc94ea70dd24dc946b312314bd62141f379c717d03de3b15cdaeb9cd6129341",
+    "tests/test_sampling.py": "b9a99e8f883479aaed6cb95a92429d7402e4184b414ae93d04c8d5779cbae6fb",
+    "tests/test_sparsification.py": "9cabf050322838decd63234595c38d3c1d09b85c20e5b923e1dc74efa7a7a9e3",
+    "experiments/run_centered_pruning.py": "d391b36e9a82630c1b6f3ed00b38b29cf24979c05e40ffb4164fc59e27c0eed5",
+    "experiments/research_run.py": "b53ee48b44654045bcc1250ced6c22f0661abbdafe1e24aca1a242726a3bd26e",
+    "experiments/configs/EXP-016.json": "871f121e8b8f83c23a67a0c5668ee52a014b9972d37536d0cba4e73aa5227edf"
+  },
+  "input_sha256": {
+    "experiments/runs/EXP-001_20261018T120321801881+0530/instances.json": "c501984a2a5ec80fdecfe52a6972ae9d6951fc7a988d71d6336cba47e03cc929",
+    "experiments/runs/EXP-003_20261020T014441792732+0530/training.json": "d8d8dd6f50c5dd7613f1ed9c470848d4339f227b18d44fcbab2617294fd6f83d"
+  },
+  "output_sha256": {
+    "config.json": "c6f361244cb31e96168d1b29d4857f0e1d9e9e65f0f1e72fe4768903e809908e",
+    "per_instance.json": "9df4f825edbee01fb226fc19f7493d11d0e801ac3938cfb07fa7942ec9b78c77",
+    "summary.json": "cad55ca1ee8e8124f5d94eacd30a3e7d7b8da1e114df93619d0b51f23a575328",
+    "training.json": "81a858b89537775a10595a0fd878c5fab02c94f0aa37e5c5de1bcb11fb8001f0",
+    "training_frozen_at.txt": "2bb29f332f5740ce30cce530a0d511e5323d8683310341ad109a024fc6e6b210",
+    "validation.json": "6f35bce4fbc0eb5ba0e63cc42aeaeee631ef6bf2c0d583de25362f1f434c4411"
+  },
+  "qpu_seconds": 0,
+  "qpu_jobs_submitted": 0,
+  "finished_at": "2026-10-20T06:37:07.656152+05:30",
+  "elapsed_seconds": 30.212113500005216
+}

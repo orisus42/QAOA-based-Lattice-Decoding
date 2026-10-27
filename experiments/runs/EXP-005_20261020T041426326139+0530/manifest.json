@@ -1,0 +1,54 @@
+{
+  "run_id": "EXP-005_20261020T041426326139+0530",
+  "status": "completed",
+  "started_at": "2026-10-20T04:14:26.326139+05:30",
+  "command": "python experiments/analyze_hybrid_refinement.py",
+  "python": "3.14.3",
+  "packages": {
+    "numpy": "2.4.6",
+    "sympy": "1.14.0",
+    "qiskit": "2.4.2",
+    "threadpoolctl": "3.6.0",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2"
+  },
+  "source_sha256": {
+    "src/lattice_qaoa/classical.py": "aba3bbbbec7b819dc36847285eb2b8961006a230d990599d3b1cc9acaa0d2ee3",
+    "src/lattice_qaoa/encoding.py": "db0b436458d3210cf994eb796c7235645ddd7932aedd543ceab4ba5707af201c",
+    "src/lattice_qaoa/instances.py": "4a3ba14e8b39674d0aabd63a8dabde14066210ddcfd1457480bb1c996bbe781b",
+    "src/lattice_qaoa/qaoa.py": "2276eb60558f345f9e95bef45e70551ef833d2c980552e88754e5d7fd87406a8",
+    "src/lattice_qaoa/reference.py": "db8d1b3e270d1c88cb5f7e70ade6aa4c4b04c537991c0479f222f9e91fbb098d",
+    "src/lattice_qaoa/sampling.py": "44efe1f908da13c7f424c6888f68aa21ee244cce9a1659845b1fad5a9c23f99c",
+    "src/lattice_qaoa/sparsify.py": "b5f86b3cb5e7ddf6e3b60c70b68b65448fa8bb809ade04ebca40230475c50f66",
+    "src/lattice_qaoa/__init__.py": "c735051e3cdf56fb6f25aeaa155befc21569d17d8d35c8d626494b7673355e08",
+    "tests/test_hybrid_quality.py": "573b09c2470ac53d20df6eb6aaa6a746f7fab73bef90153aa2bab2ac0660e3e0",
+    "tests/test_module_lwe.py": "a1cd4c7b4a7385c2948ad80d9ad7ca538d03a5fa4afb013f13c822c8fbd68380",
+    "tests/test_qaoa_encoding.py": "afc94ea70dd24dc946b312314bd62141f379c717d03de3b15cdaeb9cd6129341",
+    "tests/test_sampling.py": "b9a99e8f883479aaed6cb95a92429d7402e4184b414ae93d04c8d5779cbae6fb",
+    "tests/test_sparsification.py": "9cabf050322838decd63234595c38d3c1d09b85c20e5b923e1dc74efa7a7a9e3",
+    "experiments/analyze_hybrid_refinement.py": "bcf5f8613ee6d3b35da8f766b93a06514dcf0ce4c985e0c9670b29e7f71b0dec",
+    "experiments/configs/EXP-005.json": "b1df09124b0d2aa73db0afb15c7cc18f5d6d018a13dcc37eebd9c67829ab0b6f",
+    "scripts/plot_hybrid_refinement.py": "854941e90085c823e45db73872ba723913a3dceaa7924513fb6019b506415847",
+    "requirements-research.txt": "02707caf6bd56f11ac3e6e2ca22fd2f9d8678d44e675c967cee270b7197273e3"
+  },
+  "input_sha256": {
+    "experiments/runs/EXP-001_20261018T120321801881+0530/instances.json": "c501984a2a5ec80fdecfe52a6972ae9d6951fc7a988d71d6336cba47e03cc929",
+    "experiments/runs/EXP-004_20261020T035105759769+0530/per_instance.json": "12ef083600de116e6558aec77996e3e4f25c267cc0f415219f25ca75be46142b",
+    "experiments/runs/EXP-004_20261020T035105759769+0530/summary.json": "298c28ad2fd60272fdced0259ce6ce6b831a30e09802b1a86db0b23160d82943",
+    "experiments/runs/EXP-004_20261020T035105759769+0530/samples.npz": "025db409ed45cdfbd13630c34c971ab6c67f4eb2a9b851dffbd9dd7f07f0be8b",
+    "experiments/runs/EXP-004_20261020T035105759769+0530/manifest.json": "35696a03ff034bbcd1caad59222f989f9e7be49090f901c65f21af929fc2f0fa",
+    "experiments/runs/EXP-003_20261020T014441792732+0530/per_instance.json": "0ad1e2caf377858702f1a51d51fa940bb16483abb9e6faecac84aa30f545b00d"
+  },
+  "qpu_seconds": 0,
+  "new_shots": 0,
+  "finished_at": "2026-10-20T04:14:55.243233+05:30",
+  "output_sha256": {
+    "config.json": "3908000c48820cb432b8bfe05cc711c5b8413fa050eb3dc2ff64798f75f9c765",
+    "summary.json": "266b6e4bf6292c9ff29bbea75ab2cc6b57db5c91faafe59c8e09cdd085929c32",
+    "per_instance.json": "821f5094c7c2a5d0b107349874d6aee21a158a18e8d2ca76c0002b60c1086d00",
+    "figures/hybrid_refinement.png": "06e8fa65ec8f9dd5d2f389129dcff86e7350517e7b7e254aea6b6016cbb6d09f",
+    "figures/hybrid_refinement.svg": "d64cf1bc4f26d6cc8f889bfb0c167492ef63c80280abf31eefc27fbdc51c83a4",
+    "figures/plot_source.py": "854941e90085c823e45db73872ba723913a3dceaa7924513fb6019b506415847"
+  },
+  "latest_figure": "figures/hybrid_refinement.png"
+}

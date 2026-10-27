@@ -1,0 +1,57 @@
+{
+  "experiment_id": "EXP-029",
+  "frozen_at": "2026-10-20T22:19:14.593199+05:30",
+  "source_run": "experiments\\runs\\EXP-007_20261020T044846904050+0530",
+  "selection_seed": 20261020280,
+  "order_seed": 20261020291,
+  "routing_seed": 20261020282,
+  "source_indices": [
+    57,
+    134,
+    137,
+    200,
+    237,
+    411,
+    146,
+    496
+  ],
+  "conditional_failure_indices": [
+    57,
+    134,
+    137,
+    200,
+    237,
+    411
+  ],
+  "sentinel_indices": [
+    146,
+    496
+  ],
+  "cohort": "Six seeded random Babai-failure examples plus two random remaining sentinels from the earlier 512-case cohort. Hardware replication, not a new population validation. No selection by QAOA/pruning quality.",
+  "methods": [
+    "full_fixed",
+    "weak75_frozen",
+    "weak75_retrained",
+    "cached24",
+    "incumbent24"
+  ],
+  "blocks": 2,
+  "shots_per_block": 8192,
+  "shots_per_case_method": 16384,
+  "primary": "75% unchanged-angle pruning minus full QAOA: mean per-shot probability of strict improvement over Babai across the six fixed failure cases. Report individual Wilson intervals and fixed-cohort shot-bootstrap difference interval; no population generalization from this selected subset.",
+  "secondary": "Retrained75%, cached24 versus incumbent24, optimum and at-most-Babai masses, original cost distribution, observed best-of8192, circuit resources. Cached/cheap hardware comparison matches24 logical interactions, NOT native gates.",
+  "mitigation": "None; no dynamical decoupling, no gate or measurement twirling; standard initialization; default backend repetition delay.",
+  "project_budget_seconds": 600,
+  "reserve_seconds": 120,
+  "max_job_seconds": 360,
+  "limitations": [
+    "Small same-family conditional replication; no secure ML-KEM attack or quantum advantage.",
+    "Two ordered blocks permit a drift check but do not establish independent hardware replications.",
+    "All methods and angles fixed before hardware data; no adaptive favorable-case filtering.",
+    "Finite-shot estimates at rare optimum events may be imprecise; zero counts do not mean zero probability.",
+    "Classical retained Babai remains available; QAOA-only probability is distinct from hybrid success.",
+    "Cached selection changes implementation time, not quantum behavior relative to its uncached equivalent."
+  ],
+  "predecessor": "experiments\\runs\\EXP-028_20261020T221336422019+0530",
+  "extension_reason": "Prespecified fixed precision extension after EXP028 revealed rare improving events. Repeat all cases and all methods without tuning or favorable selection. Analyze repeat separately; any pooled analysis is explicitly post-initial-data descriptive. No optional stopping by success."
+}

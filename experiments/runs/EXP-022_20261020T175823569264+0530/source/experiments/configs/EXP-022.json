@@ -1,0 +1,11 @@
+{
+  "experiment_id": "EXP-022",
+  "purpose": "Development-only correctness check of cached exact greedy phase selection.",
+  "development_run": "experiments/runs/EXP-001_20261018T120321801881+0530",
+  "logical_budget": 24,
+  "selection_angles": [1.3393885543560986,-0.3516024709404892],
+  "count": 64,
+  "development_rule": "Cache fixed-angle trigonometric factors and batch masks; preserve original greedy policy and magnitude fallback. Recompute near ties with the original evaluator. No fitted hyperparameters or changed angles.",
+  "limitations": ["Development data only.","Timings during an independently running validation are diagnostic only and not the controlled performance result.","This is an implementation acceleration, not an algorithmic novelty claim."],
+  "qpu_seconds": 0
+}

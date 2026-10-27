@@ -1,0 +1,16 @@
+{
+  "experiment_id":"EXP-016",
+  "purpose":"Exploratory pilot of coordinate-centered phase linearization, with equal-gate and equal-training controls; no novelty claim.",
+  "development_run":"experiments/runs/EXP-001_20261018T120321801881+0530",
+  "training_run":"experiments/runs/EXP-003_20261020T014441792732+0530",
+  "angles":[1.3393885543560986,-0.3516024709404892],
+  "percentages":[50,75,85],
+  "budgets":[1024,16384],
+  "optimizer":{"seed":2026102041,"population":24,"generations":31,"evaluation_budget":768,"gamma_bounds":[0,12.566370614359172],"beta_bounds":[-1.5707963267948966,0]},
+  "bootstrap_seed":2026102016,
+  "bootstrap_replicates":3000,
+  "controls":["full","grouped_without_correction","magnitude_at_exact_same_gate_count"],
+  "training":"Separate original 16 groups; original full normalized energy, original normalization; 768 evaluations each; same and refitted angles. No secrets, optima or development labels used in training.",
+  "limitations":["Exploratory old64 development cases, not final validation.","The field linearization principle has prior art in quantum annealing and classical optimization; no new-algorithm priority claim.","Single-coordinate energy preservation does not guarantee useful sampling from the uniform initial state.","No QPU use or secure ML-KEM attack."],
+  "qpu_seconds":0
+}

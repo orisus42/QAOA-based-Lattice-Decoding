@@ -1,0 +1,35 @@
+{
+  "experiment_id": "EXP-012",
+  "purpose": "Development-only controlled removal of noise components on identical routed circuits.",
+  "development_run": "experiments/runs/EXP-001_20261018T120321801881+0530",
+  "calibration": "research/calibrations/ibm_fez_20261020T050035937321+0530",
+  "methods": {
+    "full": 0,
+    "weak75": 0.75
+  },
+  "angles": [
+    1.3393885543560986,
+    -0.3516024709404892
+  ],
+  "cohort": "All Babai-nonoptimal members of the 64 development cases. Remaining hybrid outputs are exactly optimal because Babai is retained. No standalone full-cohort claim.",
+  "channels": [
+    "ideal",
+    "readout_only",
+    "gate_channels",
+    "idle_only",
+    "gate_and_idle",
+    "gate_idle_readout"
+  ],
+  "channel_definition": "gate_channels includes calibrated depolarizing and gate-duration T1/T2; idle_only is explicit scheduled-delay relaxation; readout is the asymmetric independent channel. Interactions between channels are possible.",
+  "trajectories_per_circuit": 128,
+  "routing_seed": 2026102030,
+  "noise_seed": 2026102044,
+  "bootstrap_seed": 2026102045,
+  "bootstrap_replicates": 3000,
+  "optimization_level": 3,
+  "budgets": [
+    1024,
+    16384
+  ],
+  "qpu_seconds": 0
+}

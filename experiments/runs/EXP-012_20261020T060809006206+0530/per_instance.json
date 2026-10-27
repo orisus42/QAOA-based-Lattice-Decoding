@@ -1,0 +1,2752 @@
+[
+  {
+    "index": 9,
+    "id": "MLWE-009",
+    "method": "full",
+    "babai_cost": 17,
+    "optimum_cost": 7,
+    "native_cz": 565,
+    "duration_unitary_s": 2.4116000000000004e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      5,
+      0,
+      13,
+      1,
+      6,
+      2,
+      4,
+      3
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.6333115047445754,
+          "hybrid_expected_cost": 13.528232276487838,
+          "standalone_success": 0.21474568349353645,
+          "hybrid_success": 0.21474568349353645,
+          "strict_improvement": 0.5829724095459732
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.6629643168052746,
+          "hybrid_expected_cost": 7.105278861562334,
+          "standalone_success": 0.9790990840897857,
+          "hybrid_success": 0.9790990840897857,
+          "strict_improvement": 0.9999991631711966
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.677687730586416,
+          "hybrid_expected_cost": 13.842068851900855,
+          "standalone_success": 0.19500902911050916,
+          "hybrid_success": 0.19500902911050916,
+          "strict_improvement": 0.53646828598447
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.671455149330852,
+          "hybrid_expected_cost": 7.15731704489685,
+          "standalone_success": 0.9689074639379274,
+          "hybrid_success": 0.9689074639379274,
+          "strict_improvement": 0.9999954577477319
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.8681672453803,
+          "hybrid_expected_cost": 15.179400924100598,
+          "standalone_success": 0.10246473667860567,
+          "hybrid_success": 0.10246473667860567,
+          "strict_improvement": 0.3372121314521979
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.7990634929294504,
+          "hybrid_expected_cost": 7.9464441422871275,
+          "standalone_success": 0.8226528025976432,
+          "hybrid_success": 0.8226528025976432,
+          "strict_improvement": 0.9986132671289323
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.8308453635280206,
+          "hybrid_expected_cost": 14.91694207569128,
+          "standalone_success": 0.12111827128720923,
+          "hybrid_success": 0.12111827128720923,
+          "strict_improvement": 0.37768595324611937
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.7544761558980633,
+          "hybrid_expected_cost": 7.669902629496496,
+          "standalone_success": 0.8732677998406494,
+          "hybrid_success": 0.8732677998406494,
+          "strict_improvement": 0.999493996334934
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.9651171931754194,
+          "hybrid_expected_cost": 15.867000123640809,
+          "standalone_success": 0.06109209275457803,
+          "hybrid_success": 0.06109209275457803,
+          "strict_improvement": 0.22645165375986326
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.991083608138198,
+          "hybrid_expected_cost": 9.169039047217332,
+          "standalone_success": 0.635272973921047,
+          "hybrid_success": 0.635272973921047,
+          "strict_improvement": 0.9835638766520617
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.9744065967357542,
+          "hybrid_expected_cost": 15.935473002813735,
+          "standalone_success": 0.05887896990348488,
+          "hybrid_success": 0.05887896990348488,
+          "strict_improvement": 0.21209239989964931
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0114548296229566,
+          "hybrid_expected_cost": 9.30605249780038,
+          "standalone_success": 0.6212717937931486,
+          "hybrid_success": 0.6212717937931486,
+          "strict_improvement": 0.9779400443610993
+        }
+      }
+    }
+  },
+  {
+    "index": 9,
+    "id": "MLWE-009",
+    "method": "weak75",
+    "babai_cost": 17,
+    "optimum_cost": 7,
+    "native_cz": 147,
+    "duration_unitary_s": 6.960000000000008e-06,
+    "permutation": [
+      2,
+      3,
+      4,
+      6,
+      13,
+      8,
+      1,
+      7,
+      9,
+      0,
+      5,
+      12,
+      11,
+      10,
+      15,
+      14
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.6706730160031857,
+          "hybrid_expected_cost": 13.777339304692275,
+          "standalone_success": 0.18849426632998864,
+          "hybrid_success": 0.18849426632998864,
+          "strict_improvement": 0.5770189738229072
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.675002935633533,
+          "hybrid_expected_cost": 7.179026453616789,
+          "standalone_success": 0.96462752220029,
+          "hybrid_success": 0.96462752220029,
+          "strict_improvement": 0.9999989501332441
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.691062994261637,
+          "hybrid_expected_cost": 13.921996192982515,
+          "standalone_success": 0.1791281605869492,
+          "hybrid_success": 0.1791281605869492,
+          "strict_improvement": 0.541621916706202
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.6809773108854773,
+          "hybrid_expected_cost": 7.215670183665441,
+          "standalone_success": 0.957498357464634,
+          "hybrid_success": 0.957498357464634,
+          "strict_improvement": 0.9999962017678251
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.742156320620171,
+          "hybrid_expected_cost": 14.281515374738394,
+          "standalone_success": 0.15515654734162504,
+          "hybrid_success": 0.15515654734162504,
+          "strict_improvement": 0.49929912988013747
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.7018736063071085,
+          "hybrid_expected_cost": 7.343934781825722,
+          "standalone_success": 0.9326372382900592,
+          "hybrid_success": 0.9326372382900592,
+          "strict_improvement": 0.9999843953677621
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.726772293118291,
+          "hybrid_expected_cost": 14.17249433607326,
+          "standalone_success": 0.16286439342160852,
+          "hybrid_success": 0.16286439342160852,
+          "strict_improvement": 0.5203265897147555
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.6943286636169597,
+          "hybrid_expected_cost": 7.297782263203044,
+          "standalone_success": 0.9418254500173673,
+          "hybrid_success": 0.9418254500173673,
+          "strict_improvement": 0.9999921452870482
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.785578804342953,
+          "hybrid_expected_cost": 14.584509308666979,
+          "standalone_success": 0.13295881894664455,
+          "hybrid_success": 0.13295881894664455,
+          "strict_improvement": 0.4535172057505618
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.7315831993738207,
+          "hybrid_expected_cost": 7.526879764340016,
+          "standalone_success": 0.8979916779163519,
+          "hybrid_success": 0.8979916779163519,
+          "strict_improvement": 0.9999367262044134
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.80129071142454,
+          "hybrid_expected_cost": 14.697203328471014,
+          "standalone_success": 0.12653906182446475,
+          "hybrid_success": 0.12653906182446475,
+          "strict_improvement": 0.4229735235912921
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.7427329386097608,
+          "hybrid_expected_cost": 7.595749078663501,
+          "standalone_success": 0.8852121809382278,
+          "hybrid_success": 0.8852121809382278,
+          "strict_improvement": 0.9998489461308228
+        }
+      }
+    }
+  },
+  {
+    "index": 16,
+    "id": "MLWE-016",
+    "method": "full",
+    "babai_cost": 14,
+    "optimum_cost": 9,
+    "native_cz": 453,
+    "duration_unitary_s": 1.884800000000002e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      10,
+      11,
+      12,
+      8,
+      9,
+      5,
+      0,
+      2,
+      1,
+      13,
+      3,
+      6,
+      4
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.5491156843874965,
+          "hybrid_expected_cost": 12.7019498098444,
+          "standalone_success": 0.25961003803115423,
+          "hybrid_success": 0.25961003803115423,
+          "strict_improvement": 0.25961003803115423
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.006047441550504,
+          "hybrid_expected_cost": 9.04076977900004,
+          "standalone_success": 0.9918460441999974,
+          "hybrid_success": 0.9918460441999974,
+          "strict_improvement": 0.9918460441999974
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.5836006376995138,
+          "hybrid_expected_cost": 12.934435550072912,
+          "standalone_success": 0.21311288998541797,
+          "hybrid_success": 0.21311288998541797,
+          "strict_improvement": 0.21311288998541797
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0160251545165275,
+          "hybrid_expected_cost": 9.108036101320543,
+          "standalone_success": 0.9783927797358917,
+          "hybrid_success": 0.9783927797358917,
+          "strict_improvement": 0.9783927797358917
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.6167276252714107,
+          "hybrid_expected_cost": 13.157766350538559,
+          "standalone_success": 0.16844672989233264,
+          "hybrid_success": 0.16844672989233264,
+          "strict_improvement": 0.16844672989233264
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.038765424041295,
+          "hybrid_expected_cost": 9.261343207339424,
+          "standalone_success": 0.9477313585321594,
+          "hybrid_success": 0.9477313585321594,
+          "strict_improvement": 0.9477313585321594
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.6012627939577255,
+          "hybrid_expected_cost": 13.053507756277437,
+          "standalone_success": 0.18929844874454985,
+          "hybrid_success": 0.18929844874454985,
+          "strict_improvement": 0.18929844874454985
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.025821376552569,
+          "hybrid_expected_cost": 9.174078873972299,
+          "standalone_success": 0.9651842252055657,
+          "hybrid_success": 0.9651842252055657,
+          "strict_improvement": 0.9651842252055657
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.6515997373997773,
+          "hybrid_expected_cost": 13.392862182861172,
+          "standalone_success": 0.12142756342777153,
+          "hybrid_success": 0.12142756342777153,
+          "strict_improvement": 0.12142756342777153
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0934640317320907,
+          "hybrid_expected_cost": 9.630102479924322,
+          "standalone_success": 0.8739795040151479,
+          "hybrid_success": 0.8739795040151479,
+          "strict_improvement": 0.8739795040151479
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.6678029906927097,
+          "hybrid_expected_cost": 13.50209896511324,
+          "standalone_success": 0.09958020697731636,
+          "hybrid_success": 0.09958020697731636,
+          "strict_improvement": 0.09958020697731636
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.138459849766656,
+          "hybrid_expected_cost": 9.933448868950988,
+          "standalone_success": 0.8133102262096817,
+          "hybrid_success": 0.8133102262096817,
+          "strict_improvement": 0.8133102262096817
+        }
+      }
+    }
+  },
+  {
+    "index": 16,
+    "id": "MLWE-016",
+    "method": "weak75",
+    "babai_cost": 14,
+    "optimum_cost": 9,
+    "native_cz": 140,
+    "duration_unitary_s": 6.0840000000000065e-06,
+    "permutation": [
+      4,
+      7,
+      6,
+      0,
+      3,
+      9,
+      2,
+      1,
+      5,
+      10,
+      13,
+      12,
+      11,
+      8,
+      15,
+      14
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.4519486864866282,
+          "hybrid_expected_cost": 12.046883200695358,
+          "standalone_success": 0.39062335986089947,
+          "hybrid_success": 0.39062335986089947,
+          "strict_improvement": 0.39062335986089947
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0002681489852194,
+          "hybrid_expected_cost": 9.001807768586968,
+          "standalone_success": 0.9996384462826069,
+          "hybrid_success": 0.9996384462826069,
+          "strict_improvement": 0.9996384462826069
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.4717554341880343,
+          "hybrid_expected_cost": 12.180413507644504,
+          "standalone_success": 0.36391729847108495,
+          "hybrid_success": 0.36391729847108495,
+          "strict_improvement": 0.36391729847108495
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.000532623943741,
+          "hybrid_expected_cost": 9.00359076814469,
+          "standalone_success": 0.9992818463710615,
+          "hybrid_success": 0.9992818463710615,
+          "strict_improvement": 0.9992818463710615
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.500541850424882,
+          "hybrid_expected_cost": 12.374481663306401,
+          "standalone_success": 0.32510366733871465,
+          "hybrid_success": 0.32510366733871465,
+          "strict_improvement": 0.32510366733871465
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.001374030642585,
+          "hybrid_expected_cost": 9.009263243831237,
+          "standalone_success": 0.9981473512337518,
+          "hybrid_success": 0.9981473512337518,
+          "strict_improvement": 0.9981473512337518
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.4646394879246594,
+          "hybrid_expected_cost": 12.132440235954137,
+          "standalone_success": 0.3735119528091682,
+          "hybrid_success": 0.3735119528091682,
+          "strict_improvement": 0.3735119528091682
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.000417645645971,
+          "hybrid_expected_cost": 9.002815623854211,
+          "standalone_success": 0.9994368752291575,
+          "hybrid_success": 0.9994368752291575,
+          "strict_improvement": 0.9994368752291575
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.496945525944195,
+          "hybrid_expected_cost": 12.350236475805941,
+          "standalone_success": 0.3299527048388478,
+          "hybrid_success": 0.3299527048388478,
+          "strict_improvement": 0.3299527048388478
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.001224307924688,
+          "hybrid_expected_cost": 9.00825386456416,
+          "standalone_success": 0.9983492270871696,
+          "hybrid_success": 0.9983492270871696,
+          "strict_improvement": 0.9983492270871696
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.5136552154092704,
+          "hybrid_expected_cost": 12.462887477218866,
+          "standalone_success": 0.30742250455619324,
+          "hybrid_success": 0.30742250455619324,
+          "strict_improvement": 0.30742250455619324
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0020782478256325,
+          "hybrid_expected_cost": 9.014010834805225,
+          "standalone_success": 0.997197833038953,
+          "hybrid_success": 0.997197833038953,
+          "strict_improvement": 0.997197833038953
+        }
+      }
+    }
+  },
+  {
+    "index": 19,
+    "id": "MLWE-019",
+    "method": "full",
+    "babai_cost": 9,
+    "optimum_cost": 8,
+    "native_cz": 613,
+    "duration_unitary_s": 2.3768000000000017e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      5,
+      8,
+      10,
+      9,
+      12,
+      11,
+      6,
+      13,
+      0,
+      2,
+      1,
+      4,
+      3
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 2.965975715720049,
+          "hybrid_expected_cost": 8.801691938602655,
+          "standalone_success": 0.19830806139736532,
+          "hybrid_success": 0.19830806139736532,
+          "strict_improvement": 0.19830806139736532
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8334225089315987,
+          "hybrid_expected_cost": 8.029115232684763,
+          "standalone_success": 0.9708847673152498,
+          "hybrid_success": 0.9708847673152498,
+          "strict_improvement": 0.9708847673152498
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 2.9729142408799185,
+          "hybrid_expected_cost": 8.842132626850177,
+          "standalone_success": 0.15786737314982227,
+          "hybrid_success": 0.15786737314982227,
+          "strict_improvement": 0.15786737314982227
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8394054609602213,
+          "hybrid_expected_cost": 8.06398643257444,
+          "standalone_success": 0.9360135674255571,
+          "hybrid_success": 0.9360135674255571,
+          "strict_improvement": 0.9360135674255571
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 2.9817014269723625,
+          "hybrid_expected_cost": 8.893348100621568,
+          "standalone_success": 0.10665189937845787,
+          "hybrid_success": 0.10665189937845787,
+          "strict_improvement": 0.10665189937845787
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8566616261784077,
+          "hybrid_expected_cost": 8.16456273400122,
+          "standalone_success": 0.8354372659988556,
+          "hybrid_success": 0.8354372659988556,
+          "strict_improvement": 0.8354372659988556
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 2.978145466497792,
+          "hybrid_expected_cost": 8.872622444137058,
+          "standalone_success": 0.12737755586291163,
+          "hybrid_success": 0.12737755586291163,
+          "strict_improvement": 0.12737755586291163
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8478212721983223,
+          "hybrid_expected_cost": 8.113037375071332,
+          "standalone_success": 0.8869626249286034,
+          "hybrid_success": 0.8869626249286034,
+          "strict_improvement": 0.8869626249286034
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 2.990122037987247,
+          "hybrid_expected_cost": 8.94242701826766,
+          "standalone_success": 0.0575729817323617,
+          "hybrid_success": 0.0575729817323617,
+          "strict_improvement": 0.0575729817323617
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.894864471882322,
+          "hybrid_expected_cost": 8.387225236144412,
+          "standalone_success": 0.6127747638557255,
+          "hybrid_success": 0.6127747638557255,
+          "strict_improvement": 0.6127747638557255
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 2.992043869272582,
+          "hybrid_expected_cost": 8.95362827186029,
+          "standalone_success": 0.04637172813970052,
+          "hybrid_success": 0.04637172813970052,
+          "strict_improvement": 0.04637172813970052
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.908689963625326,
+          "hybrid_expected_cost": 8.467806107232288,
+          "standalone_success": 0.5321938927676485,
+          "hybrid_success": 0.5321938927676485,
+          "strict_improvement": 0.5321938927676485
+        }
+      }
+    }
+  },
+  {
+    "index": 19,
+    "id": "MLWE-019",
+    "method": "weak75",
+    "babai_cost": 9,
+    "optimum_cost": 8,
+    "native_cz": 176,
+    "duration_unitary_s": 8.940000000000011e-06,
+    "permutation": [
+      3,
+      15,
+      4,
+      0,
+      2,
+      5,
+      1,
+      14,
+      6,
+      9,
+      12,
+      11,
+      13,
+      10,
+      7,
+      8
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 2.9509043653290257,
+          "hybrid_expected_cost": 8.713849671177064,
+          "standalone_success": 0.2861503288229721,
+          "hybrid_success": 0.2861503288229721,
+          "strict_improvement": 0.2861503288229721
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8292072365517273,
+          "hybrid_expected_cost": 8.004546824807727,
+          "standalone_success": 0.9954531751922772,
+          "hybrid_success": 0.9954531751922772,
+          "strict_improvement": 0.9954531751922772
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 2.9533655484680095,
+          "hybrid_expected_cost": 8.728194497743285,
+          "standalone_success": 0.27180550225672656,
+          "hybrid_success": 0.27180550225672656,
+          "strict_improvement": 0.27180550225672656
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8294996484972956,
+          "hybrid_expected_cost": 8.006251126522876,
+          "standalone_success": 0.9937488734771254,
+          "hybrid_success": 0.9937488734771254,
+          "strict_improvement": 0.9937488734771254
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 2.9594214594073733,
+          "hybrid_expected_cost": 8.76349093332732,
+          "standalone_success": 0.2365090666726972,
+          "hybrid_success": 0.2365090666726972,
+          "strict_improvement": 0.2365090666726972
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8307143596726982,
+          "hybrid_expected_cost": 8.013330982086325,
+          "standalone_success": 0.9866690179136801,
+          "hybrid_success": 0.9866690179136801,
+          "strict_improvement": 0.9866690179136801
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 2.9571272165063998,
+          "hybrid_expected_cost": 8.75011910577253,
+          "standalone_success": 0.24988089422743714,
+          "hybrid_success": 0.24988089422743714,
+          "strict_improvement": 0.24988089422743714
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.830151104911482,
+          "hybrid_expected_cost": 8.010048092757911,
+          "standalone_success": 0.9899519072420819,
+          "hybrid_success": 0.9899519072420819,
+          "strict_improvement": 0.9899519072420819
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 2.9642040423512417,
+          "hybrid_expected_cost": 8.79136586948371,
+          "standalone_success": 0.20863413051631127,
+          "hybrid_success": 0.20863413051631127,
+          "strict_improvement": 0.20863413051631127
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8324867475402975,
+          "hybrid_expected_cost": 8.023661215609414,
+          "standalone_success": 0.9763387843905972,
+          "hybrid_success": 0.9763387843905972,
+          "strict_improvement": 0.9763387843905972
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 2.9659143413640368,
+          "hybrid_expected_cost": 8.801334222641312,
+          "standalone_success": 0.19866577735869373,
+          "hybrid_success": 0.19866577735869373,
+          "strict_improvement": 0.19866577735869373
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8333869648822096,
+          "hybrid_expected_cost": 8.02890806678318,
+          "standalone_success": 0.9710919332168244,
+          "hybrid_success": 0.9710919332168244,
+          "strict_improvement": 0.9710919332168244
+        }
+      }
+    }
+  },
+  {
+    "index": 21,
+    "id": "MLWE-021",
+    "method": "full",
+    "babai_cost": 17,
+    "optimum_cost": 10,
+    "native_cz": 645,
+    "duration_unitary_s": 2.6048000000000016e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      8,
+      6,
+      13,
+      12,
+      11,
+      9,
+      10,
+      5,
+      4,
+      0,
+      3,
+      1,
+      2
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.7139035385748373,
+          "hybrid_expected_cost": 13.959158444215253,
+          "standalone_success": 0.2132727723401578,
+          "hybrid_success": 0.2132727723401578,
+          "strict_improvement": 0.6165228869377506
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.165744879493824,
+          "hybrid_expected_cost": 10.022548356657909,
+          "standalone_success": 0.9784629164312442,
+          "hybrid_success": 0.9784629164312442,
+          "strict_improvement": 0.9999997813088606
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.7816637773835917,
+          "hybrid_expected_cost": 14.458700159281236,
+          "standalone_success": 0.17341688400785446,
+          "hybrid_success": 0.17341688400785446,
+          "strict_improvement": 0.539810037312673
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.17048328985369,
+          "hybrid_expected_cost": 10.053692972202843,
+          "standalone_success": 0.9525119342754874,
+          "hybrid_success": 0.9525119342754874,
+          "strict_improvement": 0.9999959542944526
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.9072998963913346,
+          "hybrid_expected_cost": 15.391300945090032,
+          "standalone_success": 0.10874944293020908,
+          "hybrid_success": 0.10874944293020908,
+          "strict_improvement": 0.351884953133608
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.200880015560892,
+          "hybrid_expected_cost": 10.25938311144773,
+          "standalone_success": 0.8415117649715069,
+          "hybrid_success": 0.8415117649715069,
+          "strict_improvement": 0.9990307547778429
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.8691903315155955,
+          "hybrid_expected_cost": 15.109629040392647,
+          "standalone_success": 0.1345545503611285,
+          "hybrid_success": 0.1345545503611285,
+          "strict_improvement": 0.4063111540722574
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1839717672234453,
+          "hybrid_expected_cost": 10.144644981195832,
+          "standalone_success": 0.9009544013775945,
+          "hybrid_success": 0.9009544013775945,
+          "strict_improvement": 0.9997617997387604
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.9511291712377417,
+          "hybrid_expected_cost": 15.718347984638573,
+          "standalone_success": 0.08026369959646622,
+          "hybrid_success": 0.08026369959646622,
+          "strict_improvement": 0.26427012882297746
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.233802497803877,
+          "hybrid_expected_cost": 10.485147175971486,
+          "standalone_success": 0.7378117391366454,
+          "hybrid_success": 0.7378117391366454,
+          "strict_improvement": 0.992629546251232
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.97796708792166,
+          "hybrid_expected_cost": 15.917668431438935,
+          "standalone_success": 0.06787954240280746,
+          "hybrid_success": 0.06787954240280746,
+          "strict_improvement": 0.2289072745062779
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.2656444100938917,
+          "hybrid_expected_cost": 10.708379563364192,
+          "standalone_success": 0.6752474011309741,
+          "hybrid_success": 0.6752474011309741,
+          "strict_improvement": 0.9843791128114793
+        }
+      }
+    }
+  },
+  {
+    "index": 21,
+    "id": "MLWE-021",
+    "method": "weak75",
+    "babai_cost": 17,
+    "optimum_cost": 10,
+    "native_cz": 172,
+    "duration_unitary_s": 7.192000000000008e-06,
+    "permutation": [
+      4,
+      6,
+      3,
+      8,
+      2,
+      7,
+      10,
+      11,
+      9,
+      5,
+      1,
+      0,
+      13,
+      12,
+      15,
+      14
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.7370873096907204,
+          "hybrid_expected_cost": 14.128731471683157,
+          "standalone_success": 0.2577918587853679,
+          "hybrid_success": 0.2577918587853679,
+          "strict_improvement": 0.6308175141284548
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1642541959213633,
+          "hybrid_expected_cost": 10.013195990909576,
+          "standalone_success": 0.9915196960118411,
+          "hybrid_success": 0.9915196960118411,
+          "strict_improvement": 0.999999880914897
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.7636985317365412,
+          "hybrid_expected_cost": 14.325450404914935,
+          "standalone_success": 0.2385280125863741,
+          "hybrid_success": 0.2385280125863741,
+          "strict_improvement": 0.5956021543262074
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1654509004205154,
+          "hybrid_expected_cost": 10.02126455909366,
+          "standalone_success": 0.9872219994552752,
+          "hybrid_success": 0.9872219994552752,
+          "strict_improvement": 0.9999994883872804
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.816585580680078,
+          "hybrid_expected_cost": 14.71650441033471,
+          "standalone_success": 0.19423568518739048,
+          "hybrid_success": 0.19423568518739048,
+          "strict_improvement": 0.5187481055662655
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1705605164303163,
+          "hybrid_expected_cost": 10.05570046793539,
+          "standalone_success": 0.9684260820940412,
+          "hybrid_success": 0.9684260820940412,
+          "strict_improvement": 0.9999917213554979
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.770029760277767,
+          "hybrid_expected_cost": 14.37354228333853,
+          "standalone_success": 0.23870537721994134,
+          "hybrid_success": 0.23870537721994134,
+          "strict_improvement": 0.5817219572483783
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.165609133646531,
+          "hybrid_expected_cost": 10.022388555515539,
+          "standalone_success": 0.987269537078211,
+          "hybrid_success": 0.987269537078211,
+          "strict_improvement": 0.9999991221080342
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.8479110177149183,
+          "hybrid_expected_cost": 14.94736105213831,
+          "standalone_success": 0.17215048683734038,
+          "hybrid_success": 0.17215048683734038,
+          "strict_improvement": 0.4812860813728929
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1764883115956914,
+          "hybrid_expected_cost": 10.096115792126998,
+          "standalone_success": 0.9513343684675091,
+          "hybrid_success": 0.9513343684675091,
+          "strict_improvement": 0.9999725307738493
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.8648820182578487,
+          "hybrid_expected_cost": 15.073564509033128,
+          "standalone_success": 0.16077232536678693,
+          "hybrid_success": 0.16077232536678693,
+          "strict_improvement": 0.4545125703027156
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.180748413556575,
+          "hybrid_expected_cost": 10.125242931342346,
+          "standalone_success": 0.9394552138410142,
+          "hybrid_success": 0.9394552138410142,
+          "strict_improvement": 0.9999385451796603
+        }
+      }
+    }
+  },
+  {
+    "index": 23,
+    "id": "MLWE-023",
+    "method": "full",
+    "babai_cost": 14,
+    "optimum_cost": 9,
+    "native_cz": 558,
+    "duration_unitary_s": 2.1028000000000016e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      11,
+      8,
+      10,
+      12,
+      4,
+      9,
+      5,
+      0,
+      3,
+      13,
+      6,
+      1,
+      2
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.468751252769566,
+          "hybrid_expected_cost": 12.129059656421115,
+          "standalone_success": 0.17054553450242377,
+          "hybrid_success": 0.17054553450242377,
+          "strict_improvement": 0.45307028652715636
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.008367569044768,
+          "hybrid_expected_cost": 9.051649253645015,
+          "standalone_success": 0.9498026496912884,
+          "hybrid_success": 0.9498026496912884,
+          "strict_improvement": 0.9999358931714522
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.518956566398308,
+          "hybrid_expected_cost": 12.47233993694889,
+          "standalone_success": 0.1362904328298417,
+          "hybrid_success": 0.1362904328298417,
+          "strict_improvement": 0.3728079761811381
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.016749399140228,
+          "hybrid_expected_cost": 9.103730721104927,
+          "standalone_success": 0.9040856288517539,
+          "hybrid_success": 0.9040856288517539,
+          "strict_improvement": 0.9994266650370289
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.5705233149289604,
+          "hybrid_expected_cost": 12.825719398388344,
+          "standalone_success": 0.10315248438543145,
+          "hybrid_success": 0.10315248438543145,
+          "strict_improvement": 0.2875866799970338
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0339716641252235,
+          "hybrid_expected_cost": 9.212182048996105,
+          "standalone_success": 0.8248146638635909,
+          "hybrid_success": 0.8248146638635909,
+          "strict_improvement": 0.9955973669034824
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.540101035580761,
+          "hybrid_expected_cost": 12.618025651519643,
+          "standalone_success": 0.13138627698550187,
+          "hybrid_success": 0.13138627698550187,
+          "strict_improvement": 0.33648492629511717
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0195074818159955,
+          "hybrid_expected_cost": 9.12133911968311,
+          "standalone_success": 0.8949908888825959,
+          "hybrid_success": 0.8949908888825959,
+          "strict_improvement": 0.9985887215904975
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.625905484447016,
+          "hybrid_expected_cost": 13.205249854419462,
+          "standalone_success": 0.07009611614729898,
+          "hybrid_success": 0.07009611614729898,
+          "strict_improvement": 0.19657033006138538
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0787194586119626,
+          "hybrid_expected_cost": 9.50137573205072,
+          "standalone_success": 0.6873855953588944,
+          "hybrid_success": 0.6873855953588944,
+          "strict_improvement": 0.9698584311883783
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.645131340571847,
+          "hybrid_expected_cost": 13.337046446849524,
+          "standalone_success": 0.05840220004189379,
+          "hybrid_success": 0.05840220004189379,
+          "strict_improvement": 0.16475378168795013
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1096016870814442,
+          "hybrid_expected_cost": 9.70429795420309,
+          "standalone_success": 0.618190296360871,
+          "hybrid_success": 0.618190296360871,
+          "strict_improvement": 0.9438910311050079
+        }
+      }
+    }
+  },
+  {
+    "index": 23,
+    "id": "MLWE-023",
+    "method": "weak75",
+    "babai_cost": 14,
+    "optimum_cost": 9,
+    "native_cz": 161,
+    "duration_unitary_s": 7.852000000000009e-06,
+    "permutation": [
+      2,
+      9,
+      3,
+      6,
+      4,
+      8,
+      1,
+      10,
+      7,
+      5,
+      0,
+      11,
+      13,
+      12,
+      15,
+      14
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.380920091298398,
+          "hybrid_expected_cost": 11.536604786400217,
+          "standalone_success": 0.29243756832449,
+          "hybrid_success": 0.29243756832449,
+          "strict_improvement": 0.5735480868336781
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0006516965678838,
+          "hybrid_expected_cost": 9.004019786236581,
+          "standalone_success": 0.9960532805783516,
+          "hybrid_success": 0.9960532805783516,
+          "strict_improvement": 0.9999988034769383
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.4111642200962327,
+          "hybrid_expected_cost": 11.743000459040907,
+          "standalone_success": 0.27148534144065023,
+          "hybrid_success": 0.27148534144065023,
+          "strict_improvement": 0.5267533052343925
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0010620950658216,
+          "hybrid_expected_cost": 9.006559312251321,
+          "standalone_success": 0.9937047538624489,
+          "hybrid_success": 0.9937047538624489,
+          "strict_improvement": 0.9999936700332119
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.430576793476732,
+          "hybrid_expected_cost": 11.87334544725783,
+          "standalone_success": 0.23843502219343798,
+          "hybrid_success": 0.23843502219343798,
+          "strict_improvement": 0.5012879345336039
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.002149594509601,
+          "hybrid_expected_cost": 9.013272786666569,
+          "standalone_success": 0.9871970095362528,
+          "hybrid_success": 0.9871970095362528,
+          "strict_improvement": 0.9999853580808153
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.413253441554441,
+          "hybrid_expected_cost": 11.756620319701337,
+          "standalone_success": 0.2629067533213556,
+          "hybrid_success": 0.2629067533213556,
+          "strict_improvement": 0.5246222800234375
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0012713850504924,
+          "hybrid_expected_cost": 9.007848766709092,
+          "standalone_success": 0.9924079525333731,
+          "hybrid_success": 0.9924079525333731,
+          "strict_improvement": 0.9999931982420424
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.449764920482137,
+          "hybrid_expected_cost": 12.004587447493908,
+          "standalone_success": 0.22541925056651377,
+          "hybrid_success": 0.22541925056651377,
+          "strict_improvement": 0.47045504218344136
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.002867544304362,
+          "hybrid_expected_cost": 9.017725233113174,
+          "standalone_success": 0.9832093623667303,
+          "hybrid_success": 0.9832093623667303,
+          "strict_improvement": 0.9999617663821911
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.4748904122806197,
+          "hybrid_expected_cost": 12.176364206913327,
+          "standalone_success": 0.20997524101031315,
+          "hybrid_success": 0.20997524101031315,
+          "strict_improvement": 0.43072115255027515
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.004100008075422,
+          "hybrid_expected_cost": 9.025410324358859,
+          "standalone_success": 0.9769722644551146,
+          "hybrid_success": 0.9769722644551146,
+          "strict_improvement": 0.9998783251682848
+        }
+      }
+    }
+  },
+  {
+    "index": 25,
+    "id": "MLWE-025",
+    "method": "full",
+    "babai_cost": 10,
+    "optimum_cost": 5,
+    "native_cz": 677,
+    "duration_unitary_s": 2.6504000000000016e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      5,
+      8,
+      10,
+      9,
+      12,
+      11,
+      13,
+      4,
+      6,
+      0,
+      3,
+      1,
+      2
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.017009724259959,
+          "hybrid_expected_cost": 9.215793471895722,
+          "standalone_success": 0.1568413056208259,
+          "hybrid_success": 0.1568413056208259,
+          "strict_improvement": 0.1568413056208259
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.29649879642945,
+          "hybrid_expected_cost": 5.32622644774965,
+          "standalone_success": 0.9347547104500331,
+          "hybrid_success": 0.9347547104500331,
+          "strict_improvement": 0.9347547104500331
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.0278541077730585,
+          "hybrid_expected_cost": 9.274335202326858,
+          "standalone_success": 0.14513295953467023,
+          "hybrid_success": 0.14513295953467023,
+          "strict_improvement": 0.14513295953467023
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.311418537899144,
+          "hybrid_expected_cost": 5.406768369027707,
+          "standalone_success": 0.9186463261945222,
+          "hybrid_success": 0.9186463261945222,
+          "strict_improvement": 0.9186463261945222
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.09567161840722,
+          "hybrid_expected_cost": 9.640437565016303,
+          "standalone_success": 0.07191248699678544,
+          "hybrid_success": 0.07191248699678544,
+          "strict_improvement": 0.07191248699678544
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.516696744717092,
+          "hybrid_expected_cost": 6.514931081311719,
+          "standalone_success": 0.6970137837378958,
+          "hybrid_success": 0.6970137837378958,
+          "strict_improvement": 0.6970137837378958
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.07140738707785,
+          "hybrid_expected_cost": 9.509450857668025,
+          "standalone_success": 0.09810982846641701,
+          "hybrid_success": 0.09810982846641701,
+          "strict_improvement": 0.09810982846641701
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.413555482143538,
+          "hybrid_expected_cost": 5.958138896434186,
+          "standalone_success": 0.8083722207132371,
+          "hybrid_success": 0.8083722207132371,
+          "strict_improvement": 0.8083722207132371
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.1186441786789896,
+          "hybrid_expected_cost": 9.764451385545476,
+          "standalone_success": 0.0471097228909271,
+          "hybrid_success": 0.0471097228909271,
+          "strict_improvement": 0.0471097228909271
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.664020555212305,
+          "hybrid_expected_cost": 7.310235931023201,
+          "standalone_success": 0.537952813795533,
+          "hybrid_success": 0.537952813795533,
+          "strict_improvement": 0.537952813795533
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.1195865589544742,
+          "hybrid_expected_cost": 9.769538679994664,
+          "standalone_success": 0.04609226400105438,
+          "hybrid_success": 0.04609226400105438,
+          "strict_improvement": 0.04609226400105438
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.6713906135220298,
+          "hybrid_expected_cost": 7.350022053148867,
+          "standalone_success": 0.5299955893701263,
+          "hybrid_success": 0.5299955893701263,
+          "strict_improvement": 0.5299955893701263
+        }
+      }
+    }
+  },
+  {
+    "index": 25,
+    "id": "MLWE-025",
+    "method": "weak75",
+    "babai_cost": 10,
+    "optimum_cost": 5,
+    "native_cz": 177,
+    "duration_unitary_s": 8.59600000000001e-06,
+    "permutation": [
+      10,
+      11,
+      4,
+      8,
+      6,
+      0,
+      3,
+      2,
+      9,
+      5,
+      1,
+      7,
+      13,
+      12,
+      15,
+      14
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 2.968844050472392,
+          "hybrid_expected_cost": 8.95577851691926,
+          "standalone_success": 0.20884429661611537,
+          "hybrid_success": 0.20884429661611537,
+          "strict_improvement": 0.20884429661611537
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.2578902878789875,
+          "hybrid_expected_cost": 5.117804374039383,
+          "standalone_success": 0.9764391251921078,
+          "hybrid_success": 0.9764391251921078,
+          "strict_improvement": 0.9764391251921078
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 2.9810483946949784,
+          "hybrid_expected_cost": 9.021661785313857,
+          "standalone_success": 0.19566764293723315,
+          "hybrid_success": 0.19566764293723315,
+          "strict_improvement": 0.19566764293723315
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.264491503869715,
+          "hybrid_expected_cost": 5.153440019586233,
+          "standalone_success": 0.9693119960827562,
+          "hybrid_success": 0.9693119960827562,
+          "strict_improvement": 0.9693119960827562
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.0183405688114155,
+          "hybrid_expected_cost": 9.222977830774488,
+          "standalone_success": 0.15540443384514288,
+          "hybrid_success": 0.15540443384514288,
+          "strict_improvement": 0.15540443384514288
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.298167758975179,
+          "hybrid_expected_cost": 5.335236084427813,
+          "standalone_success": 0.9329527831144886,
+          "hybrid_success": 0.9329527831144886,
+          "strict_improvement": 0.9329527831144886
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 2.9847199205065693,
+          "hybrid_expected_cost": 9.041481950662444,
+          "standalone_success": 0.1917036098675098,
+          "hybrid_success": 0.1917036098675098,
+          "strict_improvement": 0.1917036098675098
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.2668175827306216,
+          "hybrid_expected_cost": 5.165996997257879,
+          "standalone_success": 0.9668006005484233,
+          "hybrid_success": 0.9668006005484233,
+          "strict_improvement": 0.9668006005484233
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.032054773682573,
+          "hybrid_expected_cost": 9.297011848814794,
+          "standalone_success": 0.14059763023701782,
+          "hybrid_success": 0.14059763023701782,
+          "strict_improvement": 0.14059763023701782
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.318075570886436,
+          "hybrid_expected_cost": 5.442705334014465,
+          "standalone_success": 0.9114589331970684,
+          "hybrid_success": 0.9114589331970684,
+          "strict_improvement": 0.9114589331970684
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.038184166720355,
+          "hybrid_expected_cost": 9.330100430981851,
+          "standalone_success": 0.13397991380363122,
+          "hybrid_success": 0.13397991380363122,
+          "strict_improvement": 0.13397991380363122
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.3287844195014227,
+          "hybrid_expected_cost": 5.50051540021963,
+          "standalone_success": 0.8998969199560773,
+          "hybrid_success": 0.8998969199560773,
+          "strict_improvement": 0.8998969199560773
+        }
+      }
+    }
+  },
+  {
+    "index": 46,
+    "id": "MLWE-046",
+    "method": "full",
+    "babai_cost": 15,
+    "optimum_cost": 9,
+    "native_cz": 620,
+    "duration_unitary_s": 2.3492000000000008e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      4,
+      8,
+      6,
+      13,
+      12,
+      11,
+      10,
+      9,
+      3,
+      5,
+      2,
+      0,
+      1
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.671783362646584,
+          "hybrid_expected_cost": 13.617155863729181,
+          "standalone_success": 0.23047402271181358,
+          "hybrid_success": 0.23047402271181358,
+          "strict_improvement": 0.23047402271181358
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0132001394948236,
+          "hybrid_expected_cost": 9.090724338915539,
+          "standalone_success": 0.9848792768474135,
+          "hybrid_success": 0.9848792768474135,
+          "strict_improvement": 0.9848792768474135
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.7047758126924077,
+          "hybrid_expected_cost": 13.843912423444717,
+          "standalone_success": 0.19268126275922837,
+          "hybrid_success": 0.19268126275922837,
+          "strict_improvement": 0.19268126275922837
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.02842670185837,
+          "hybrid_expected_cost": 9.195376248460178,
+          "standalone_success": 0.9674372919233127,
+          "hybrid_success": 0.9674372919233127,
+          "strict_improvement": 0.9674372919233127
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.763089566886153,
+          "hybrid_expected_cost": 14.244701884873159,
+          "standalone_success": 0.12588301918778283,
+          "hybrid_success": 0.12588301918778283,
+          "strict_improvement": 0.12588301918778283
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1014188942661725,
+          "hybrid_expected_cost": 9.697050371282174,
+          "standalone_success": 0.8838249381195858,
+          "hybrid_success": 0.8838249381195858,
+          "strict_improvement": 0.8838249381195858
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.7329808709159695,
+          "hybrid_expected_cost": 14.037765318894067,
+          "standalone_success": 0.1603724468509918,
+          "hybrid_success": 0.1603724468509918,
+          "strict_improvement": 0.1603724468509918
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0532589830364674,
+          "hybrid_expected_cost": 9.366048103445578,
+          "standalone_success": 0.9389919827590728,
+          "hybrid_success": 0.9389919827590728,
+          "strict_improvement": 0.9389919827590728
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.7874962213601506,
+          "hybrid_expected_cost": 14.412448414609578,
+          "standalone_success": 0.09792526423176569,
+          "hybrid_success": 0.09792526423176569,
+          "strict_improvement": 0.09792526423176569
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1678364463232818,
+          "hybrid_expected_cost": 10.153537100466547,
+          "standalone_success": 0.8077438165890096,
+          "hybrid_success": 0.8077438165890096,
+          "strict_improvement": 0.8077438165890096
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.8015056110444845,
+          "hybrid_expected_cost": 14.508734716600536,
+          "standalone_success": 0.08187754723326986,
+          "hybrid_success": 0.08187754723326986,
+          "strict_improvement": 0.08187754723326986
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.2225438978924763,
+          "hybrid_expected_cost": 10.529540504015074,
+          "standalone_success": 0.7450765826642706,
+          "hybrid_success": 0.7450765826642706,
+          "strict_improvement": 0.7450765826642706
+        }
+      }
+    }
+  },
+  {
+    "index": 46,
+    "id": "MLWE-046",
+    "method": "weak75",
+    "babai_cost": 15,
+    "optimum_cost": 9,
+    "native_cz": 158,
+    "duration_unitary_s": 6.092000000000007e-06,
+    "permutation": [
+      4,
+      1,
+      6,
+      5,
+      2,
+      12,
+      3,
+      0,
+      15,
+      10,
+      13,
+      11,
+      9,
+      14,
+      7,
+      8
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.575712135776908,
+          "hybrid_expected_cost": 12.956859921404192,
+          "standalone_success": 0.340523346432624,
+          "hybrid_success": 0.340523346432624,
+          "strict_improvement": 0.340523346432624
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.001117369382169,
+          "hybrid_expected_cost": 9.007679661155205,
+          "standalone_success": 0.9987200564741319,
+          "hybrid_success": 0.9987200564741319,
+          "strict_improvement": 0.9987200564741319
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.59829295035998,
+          "hybrid_expected_cost": 13.112057483977445,
+          "standalone_success": 0.31465708600376374,
+          "hybrid_success": 0.31465708600376374,
+          "strict_improvement": 0.31465708600376374
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.002067915496628,
+          "hybrid_expected_cost": 9.01421274876969,
+          "standalone_success": 0.997631208538385,
+          "hybrid_success": 0.997631208538385,
+          "strict_improvement": 0.997631208538385
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.6314070210394656,
+          "hybrid_expected_cost": 13.339649940282687,
+          "standalone_success": 0.2767250099528652,
+          "hybrid_success": 0.2767250099528652,
+          "strict_improvement": 0.2767250099528652
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.004896222289812,
+          "hybrid_expected_cost": 9.03365165425721,
+          "standalone_success": 0.9943913909571299,
+          "hybrid_success": 0.9943913909571299,
+          "strict_improvement": 0.9943913909571299
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.6087851013160908,
+          "hybrid_expected_cost": 13.184169862764684,
+          "standalone_success": 0.30263835620589774,
+          "hybrid_success": 0.30263835620589774,
+          "strict_improvement": 0.30263835620589774
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.002731082791046,
+          "hybrid_expected_cost": 9.018770686539973,
+          "standalone_success": 0.9968715522433389,
+          "hybrid_success": 0.9968715522433389,
+          "strict_improvement": 0.9968715522433389
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.650627500866121,
+          "hybrid_expected_cost": 13.471751978037403,
+          "standalone_success": 0.25470800366046137,
+          "hybrid_success": 0.25470800366046137,
+          "strict_improvement": 0.25470800366046137
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.007910961609361,
+          "hybrid_expected_cost": 9.05437190739362,
+          "standalone_success": 0.9909380154344017,
+          "hybrid_success": 0.9909380154344017,
+          "strict_improvement": 0.9909380154344017
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.6664399934944867,
+          "hybrid_expected_cost": 13.580430976534185,
+          "standalone_success": 0.23659483724432573,
+          "hybrid_success": 0.23659483724432573,
+          "strict_improvement": 0.23659483724432573
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.011616824852176,
+          "hybrid_expected_cost": 9.079842243744807,
+          "standalone_success": 0.9866929593758712,
+          "hybrid_success": 0.9866929593758712,
+          "strict_improvement": 0.9866929593758712
+        }
+      }
+    }
+  },
+  {
+    "index": 47,
+    "id": "MLWE-047",
+    "method": "full",
+    "babai_cost": 12,
+    "optimum_cost": 10,
+    "native_cz": 539,
+    "duration_unitary_s": 1.9972000000000018e-05,
+    "permutation": [
+      15,
+      14,
+      5,
+      7,
+      9,
+      8,
+      12,
+      11,
+      10,
+      4,
+      3,
+      0,
+      13,
+      6,
+      2,
+      1
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.3927445763447297,
+          "hybrid_expected_cost": 11.527161196994687,
+          "standalone_success": 0.23641940150265892,
+          "hybrid_success": 0.23641940150265892,
+          "strict_improvement": 0.23641940150265892
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1663088371590375,
+          "hybrid_expected_cost": 10.026712107665986,
+          "standalone_success": 0.9866439461670078,
+          "hybrid_success": 0.9866439461670078,
+          "strict_improvement": 0.9866439461670078
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.3991698469152247,
+          "hybrid_expected_cost": 11.569737476741249,
+          "standalone_success": 0.2151312616294087,
+          "hybrid_success": 0.2151312616294087,
+          "strict_improvement": 0.2151312616294087
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1685366782552227,
+          "hybrid_expected_cost": 10.041474627734427,
+          "standalone_success": 0.9792626861328007,
+          "hybrid_success": 0.9792626861328007,
+          "strict_improvement": 0.9792626861328007
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.424979788717403,
+          "hybrid_expected_cost": 11.74076394019606,
+          "standalone_success": 0.1296180299019568,
+          "hybrid_success": 0.1296180299019568,
+          "strict_improvement": 0.1296180299019568
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1950201636743403,
+          "hybrid_expected_cost": 10.21696424665354,
+          "standalone_success": 0.8915178766732038,
+          "hybrid_success": 0.8915178766732038,
+          "strict_improvement": 0.8915178766732038
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.405168575830106,
+          "hybrid_expected_cost": 11.609487329700997,
+          "standalone_success": 0.1952563351494604,
+          "hybrid_success": 0.1952563351494604,
+          "strict_improvement": 0.1952563351494604
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.171616109559352,
+          "hybrid_expected_cost": 10.061880107507836,
+          "standalone_success": 0.9690599462460562,
+          "hybrid_success": 0.9690599462460562,
+          "strict_improvement": 0.9690599462460562
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.4273789316658654,
+          "hybrid_expected_cost": 11.75666157130825,
+          "standalone_success": 0.12166921434589424,
+          "hybrid_success": 0.12166921434589424,
+          "strict_improvement": 0.12166921434589424
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.200146620981577,
+          "hybrid_expected_cost": 10.250934097109951,
+          "standalone_success": 0.8745329514450664,
+          "hybrid_success": 0.8745329514450664,
+          "strict_improvement": 0.8745329514450664
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.4292083159997864,
+          "hybrid_expected_cost": 11.768783765745113,
+          "standalone_success": 0.11560811712748985,
+          "hybrid_success": 0.11560811712748985,
+          "strict_improvement": 0.11560811712748985
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.204551302803917,
+          "hybrid_expected_cost": 10.280121189451823,
+          "standalone_success": 0.8599394052742034,
+          "hybrid_success": 0.8599394052742034,
+          "strict_improvement": 0.8599394052742034
+        }
+      }
+    }
+  },
+  {
+    "index": 47,
+    "id": "MLWE-047",
+    "method": "weak75",
+    "babai_cost": 12,
+    "optimum_cost": 10,
+    "native_cz": 143,
+    "duration_unitary_s": 5.856000000000006e-06,
+    "permutation": [
+      3,
+      13,
+      4,
+      6,
+      2,
+      0,
+      1,
+      5,
+      8,
+      9,
+      10,
+      7,
+      12,
+      11,
+      15,
+      14
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.4105465425391785,
+          "hybrid_expected_cost": 11.645123776845278,
+          "standalone_success": 0.17743811157737532,
+          "hybrid_success": 0.17743811157737532,
+          "strict_improvement": 0.17743811157737532
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.175534836802848,
+          "hybrid_expected_cost": 10.087847080499714,
+          "standalone_success": 0.9560764597501552,
+          "hybrid_success": 0.9560764597501552,
+          "strict_improvement": 0.9560764597501552
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.414393014770618,
+          "hybrid_expected_cost": 11.67061196072273,
+          "standalone_success": 0.1646940196386172,
+          "hybrid_success": 0.1646940196386172,
+          "strict_improvement": 0.1646940196386172
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1792320887592727,
+          "hybrid_expected_cost": 10.112346474239352,
+          "standalone_success": 0.9438267628803053,
+          "hybrid_success": 0.9438267628803053,
+          "strict_improvement": 0.9438267628803053
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.4201235301557324,
+          "hybrid_expected_cost": 11.708584529107476,
+          "standalone_success": 0.1457077354462566,
+          "hybrid_success": 0.1457077354462566,
+          "strict_improvement": 0.1457077354462566
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1865693254622682,
+          "hybrid_expected_cost": 10.160965787466097,
+          "standalone_success": 0.9195171062669435,
+          "hybrid_success": 0.9195171062669435,
+          "strict_improvement": 0.9195171062669435
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.4106882041130557,
+          "hybrid_expected_cost": 11.646062480162527,
+          "standalone_success": 0.1769687599187112,
+          "hybrid_success": 0.1769687599187112,
+          "strict_improvement": 0.1769687599187112
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1756563883034947,
+          "hybrid_expected_cost": 10.08865252684448,
+          "standalone_success": 0.9556737365777379,
+          "hybrid_success": 0.9556737365777379,
+          "strict_improvement": 0.9556737365777379
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.422467293130526,
+          "hybrid_expected_cost": 11.724115191509881,
+          "standalone_success": 0.13794240424505907,
+          "hybrid_success": 0.13794240424505907,
+          "strict_improvement": 0.13794240424505907
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1903535953662203,
+          "hybrid_expected_cost": 10.18604179512981,
+          "standalone_success": 0.9069791024350925,
+          "hybrid_success": 0.9069791024350925,
+          "strict_improvement": 0.9069791024350925
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.4250863117780477,
+          "hybrid_expected_cost": 11.741469802397457,
+          "standalone_success": 0.12926509880126708,
+          "hybrid_success": 0.12926509880126708,
+          "strict_improvement": 0.12926509880126708
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.195233239002392,
+          "hybrid_expected_cost": 10.218376164591419,
+          "standalone_success": 0.8908119177042834,
+          "hybrid_success": 0.8908119177042834,
+          "strict_improvement": 0.8908119177042834
+        }
+      }
+    }
+  },
+  {
+    "index": 49,
+    "id": "MLWE-049",
+    "method": "full",
+    "babai_cost": 17,
+    "optimum_cost": 14,
+    "native_cz": 601,
+    "duration_unitary_s": 2.2300000000000017e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      8,
+      6,
+      13,
+      12,
+      11,
+      9,
+      10,
+      5,
+      0,
+      1,
+      4,
+      2,
+      3
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.9344124708739816,
+          "hybrid_expected_cost": 15.511973213710384,
+          "standalone_success": 0.45408638254012323,
+          "hybrid_success": 0.45408638254012323,
+          "strict_improvement": 0.5798540212093709
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.7416735788666506,
+          "hybrid_expected_cost": 14.000125397904883,
+          "standalone_success": 0.999937772429982,
+          "hybrid_success": 0.999937772429982,
+          "strict_improvement": 0.9999990572351534
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.947564123804743,
+          "hybrid_expected_cost": 15.615906715135566,
+          "standalone_success": 0.42467054156099215,
+          "hybrid_success": 0.42467054156099215,
+          "strict_improvement": 0.5347522017424385
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.7416952073347804,
+          "hybrid_expected_cost": 14.000293020112828,
+          "standalone_success": 0.9998558994008584,
+          "hybrid_success": 0.9998558994008584,
+          "strict_improvement": 0.9999951810854565
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 4.024843436538654,
+          "hybrid_expected_cost": 16.224388584564704,
+          "standalone_success": 0.2291631020299121,
+          "hybrid_success": 0.2291631020299121,
+          "strict_improvement": 0.317285211375375
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.745945783583267,
+          "hybrid_expected_cost": 14.033303901436552,
+          "standalone_success": 0.9844618281431416,
+          "hybrid_success": 0.9844618281431416,
+          "strict_improvement": 0.9977724422771419
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 4.006471683962536,
+          "hybrid_expected_cost": 16.079252489707805,
+          "standalone_success": 0.27076459899626326,
+          "hybrid_success": 0.27076459899626326,
+          "strict_improvement": 0.3792183122996423
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.743369535235716,
+          "hybrid_expected_cost": 14.013277708878025,
+          "standalone_success": 0.9936043616837497,
+          "hybrid_success": 0.9936043616837497,
+          "strict_improvement": 0.9995135677544754
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 4.057637927425592,
+          "hybrid_expected_cost": 16.482532096954188,
+          "standalone_success": 0.14544848730935603,
+          "hybrid_success": 0.14544848730935603,
+          "strict_improvement": 0.22657092842717255
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.764569126387086,
+          "hybrid_expected_cost": 14.178144750753772,
+          "standalone_success": 0.9191254352274935,
+          "hybrid_success": 0.9191254352274935,
+          "strict_improvement": 0.9836043787913724
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 4.060614574594226,
+          "hybrid_expected_cost": 16.50633562782595,
+          "standalone_success": 0.14163204783694777,
+          "hybrid_success": 0.14163204783694777,
+          "strict_improvement": 0.2104002765001097
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.766905296902901,
+          "hybrid_expected_cost": 14.196532745311462,
+          "standalone_success": 0.9131487821531935,
+          "hybrid_success": 0.9131487821531935,
+          "strict_improvement": 0.977169690382132
+        }
+      }
+    }
+  },
+  {
+    "index": 49,
+    "id": "MLWE-049",
+    "method": "weak75",
+    "babai_cost": 17,
+    "optimum_cost": 14,
+    "native_cz": 154,
+    "duration_unitary_s": 6.8880000000000076e-06,
+    "permutation": [
+      8,
+      15,
+      2,
+      0,
+      6,
+      5,
+      4,
+      3,
+      9,
+      1,
+      11,
+      12,
+      13,
+      10,
+      14,
+      7
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.9329754136051434,
+          "hybrid_expected_cost": 15.50146004069462,
+          "standalone_success": 0.465859712493941,
+          "hybrid_success": 0.465859712493941,
+          "strict_improvement": 0.566820534317487
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.741668917777778,
+          "hybrid_expected_cost": 14.000089341258107,
+          "standalone_success": 0.9999560978920268,
+          "hybrid_success": 0.9999560978920268,
+          "strict_improvement": 0.9999984629578392
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.9529226904208614,
+          "hybrid_expected_cost": 15.658572556159234,
+          "standalone_success": 0.41591954027381967,
+          "hybrid_success": 0.41591954027381967,
+          "strict_improvement": 0.509588363293155
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.741706162653401,
+          "hybrid_expected_cost": 14.000378131784338,
+          "standalone_success": 0.9998165309398535,
+          "hybrid_success": 0.9998165309398535,
+          "strict_improvement": 0.999988806335956
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.9623337717775953,
+          "hybrid_expected_cost": 15.732556648739445,
+          "standalone_success": 0.3909245434941191,
+          "hybrid_success": 0.3909245434941191,
+          "strict_improvement": 0.48559426427231855
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.741753014770733,
+          "hybrid_expected_cost": 14.00074144796007,
+          "standalone_success": 0.9996412948679698,
+          "hybrid_success": 0.9996412948679698,
+          "strict_improvement": 0.9999759623039894
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.952305461555782,
+          "hybrid_expected_cost": 15.65361328165996,
+          "standalone_success": 0.41647300452961455,
+          "hybrid_success": 0.41647300452961455,
+          "strict_improvement": 0.51344070928083
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.741705285768182,
+          "hybrid_expected_cost": 14.000371280927684,
+          "standalone_success": 0.9998192928906078,
+          "hybrid_success": 0.9998192928906078,
+          "strict_improvement": 0.999990133291099
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.9794884718543515,
+          "hybrid_expected_cost": 15.867772974420543,
+          "standalone_success": 0.34898286287715097,
+          "hybrid_success": 0.34898286287715097,
+          "strict_improvement": 0.4342612998251441
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.741939894794172,
+          "hybrid_expected_cost": 14.00219225122054,
+          "standalone_success": 0.9989589328696629,
+          "hybrid_success": 0.9989589328696629,
+          "strict_improvement": 0.999889883040133
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.995191109117242,
+          "hybrid_expected_cost": 15.991539191875262,
+          "standalone_success": 0.31054368076787664,
+          "hybrid_success": 0.31054368076787664,
+          "strict_improvement": 0.3873734465889783
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.742379297980308,
+          "hybrid_expected_cost": 14.005607275377999,
+          "standalone_success": 0.9973931976498713,
+          "hybrid_success": 0.9973931976498713,
+          "strict_improvement": 0.9996063293222569
+        }
+      }
+    }
+  },
+  {
+    "index": 50,
+    "id": "MLWE-050",
+    "method": "full",
+    "babai_cost": 13,
+    "optimum_cost": 8,
+    "native_cz": 537,
+    "duration_unitary_s": 2.358400000000001e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      10,
+      8,
+      5,
+      9,
+      0,
+      11,
+      12,
+      1,
+      2,
+      13,
+      3,
+      6,
+      4
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.445021173645312,
+          "hybrid_expected_cost": 11.967152792315094,
+          "standalone_success": 0.206569441536952,
+          "hybrid_success": 0.206569441536952,
+          "strict_improvement": 0.206569441536952
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8475976130071787,
+          "hybrid_expected_cost": 8.123342507392685,
+          "standalone_success": 0.9753314985214488,
+          "hybrid_success": 0.9753314985214488,
+          "strict_improvement": 0.9753314985214488
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.4754779922620567,
+          "hybrid_expected_cost": 12.163111305434342,
+          "standalone_success": 0.16737773891315616,
+          "hybrid_success": 0.16737773891315616,
+          "strict_improvement": 0.16737773891315616
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.869889931218544,
+          "hybrid_expected_cost": 8.266770801255216,
+          "standalone_success": 0.946645839748982,
+          "hybrid_success": 0.946645839748982,
+          "strict_improvement": 0.946645839748982
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.5148560548816317,
+          "hybrid_expected_cost": 12.41646890977081,
+          "standalone_success": 0.1167062180458588,
+          "hybrid_success": 0.1167062180458588,
+          "strict_improvement": 0.1167062180458588
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.9351292763020407,
+          "hybrid_expected_cost": 8.686519338366294,
+          "standalone_success": 0.8626961323267945,
+          "hybrid_success": 0.8626961323267945,
+          "strict_improvement": 0.8626961323267945
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.4985012268244873,
+          "hybrid_expected_cost": 12.311242299312,
+          "standalone_success": 0.1377515401376204,
+          "hybrid_success": 0.1377515401376204,
+          "strict_improvement": 0.1377515401376204
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.900972418347207,
+          "hybrid_expected_cost": 8.466754852065847,
+          "standalone_success": 0.9066490295868642,
+          "hybrid_success": 0.9066490295868642,
+          "strict_improvement": 0.9066490295868642
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.532217082724372,
+          "hybrid_expected_cost": 12.528169387916456,
+          "standalone_success": 0.09436612241671387,
+          "hybrid_success": 0.09436612241671387,
+          "strict_improvement": 0.09436612241671387
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.9875501279003,
+          "hybrid_expected_cost": 9.023793965270112,
+          "standalone_success": 0.7952412069459929,
+          "hybrid_success": 0.7952412069459929,
+          "strict_improvement": 0.7952412069459929
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.545711152265985,
+          "hybrid_expected_cost": 12.614989939878127,
+          "standalone_success": 0.07700201202438423,
+          "hybrid_success": 0.07700201202438423,
+          "strict_improvement": 0.07700201202438423
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.0440537941752175,
+          "hybrid_expected_cost": 9.38733733361562,
+          "standalone_success": 0.7225325332769221,
+          "hybrid_success": 0.7225325332769221,
+          "strict_improvement": 0.7225325332769221
+        }
+      }
+    }
+  },
+  {
+    "index": 50,
+    "id": "MLWE-050",
+    "method": "weak75",
+    "babai_cost": 13,
+    "optimum_cost": 8,
+    "native_cz": 166,
+    "duration_unitary_s": 7.90400000000001e-06,
+    "permutation": [
+      10,
+      15,
+      4,
+      6,
+      3,
+      2,
+      5,
+      9,
+      1,
+      0,
+      12,
+      11,
+      13,
+      8,
+      14,
+      7
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.3970670986165152,
+          "hybrid_expected_cost": 11.65861730937775,
+          "standalone_success": 0.268276538124421,
+          "hybrid_success": 0.268276538124421,
+          "strict_improvement": 0.268276538124421
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8336757080231556,
+          "hybrid_expected_cost": 8.033769271435702,
+          "standalone_success": 0.9932461457128559,
+          "hybrid_success": 0.9932461457128559,
+          "strict_improvement": 0.9932461457128559
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.4126559481286876,
+          "hybrid_expected_cost": 11.758915630423196,
+          "standalone_success": 0.24821687391533978,
+          "hybrid_success": 0.24821687391533978,
+          "strict_improvement": 0.24821687391533978
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8365175543691103,
+          "hybrid_expected_cost": 8.052053649442287,
+          "standalone_success": 0.9895892701115382,
+          "hybrid_success": 0.9895892701115382,
+          "strict_improvement": 0.9895892701115382
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.4284900939214356,
+          "hybrid_expected_cost": 11.860792182439514,
+          "standalone_success": 0.22784156351205698,
+          "hybrid_success": 0.22784156351205698,
+          "strict_improvement": 0.22784156351205698
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.840837735061162,
+          "hybrid_expected_cost": 8.079849598699955,
+          "standalone_success": 0.9840300802599962,
+          "hybrid_success": 0.9840300802599962,
+          "strict_improvement": 0.9840300802599962
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.4094342764804826,
+          "hybrid_expected_cost": 11.738187464626082,
+          "standalone_success": 0.2523625070747778,
+          "hybrid_success": 0.2523625070747778,
+          "strict_improvement": 0.2523625070747778
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8358325084409537,
+          "hybrid_expected_cost": 8.047646078737378,
+          "standalone_success": 0.990470784252524,
+          "hybrid_success": 0.990470784252524,
+          "strict_improvement": 0.990470784252524
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.449352005997149,
+          "hybrid_expected_cost": 11.99501727412174,
+          "standalone_success": 0.20099654517565577,
+          "hybrid_success": 0.20099654517565577,
+          "strict_improvement": 0.20099654517565577
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8498693039091223,
+          "hybrid_expected_cost": 8.137958517587746,
+          "standalone_success": 0.9724082964824537,
+          "hybrid_success": 0.9724082964824537,
+          "strict_improvement": 0.9724082964824537
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.45962061919035,
+          "hybrid_expected_cost": 12.061085309606902,
+          "standalone_success": 0.1877829380786429,
+          "hybrid_success": 0.1877829380786429,
+          "strict_improvement": 0.1877829380786429
+        },
+        "16384": {
+          "hybrid_expected_distance": 2.8563040030118203,
+          "hybrid_expected_cost": 8.179359232626357,
+          "standalone_success": 0.9641281534747459,
+          "hybrid_success": 0.9641281534747459,
+          "strict_improvement": 0.9641281534747459
+        }
+      }
+    }
+  },
+  {
+    "index": 53,
+    "id": "MLWE-053",
+    "method": "full",
+    "babai_cost": 15,
+    "optimum_cost": 10,
+    "native_cz": 599,
+    "duration_unitary_s": 2.5084000000000002e-05,
+    "permutation": [
+      15,
+      14,
+      7,
+      8,
+      9,
+      12,
+      11,
+      10,
+      6,
+      13,
+      1,
+      4,
+      5,
+      0,
+      2,
+      3
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.6267997293342153,
+          "hybrid_expected_cost": 13.246986161706019,
+          "standalone_success": 0.27958253072561723,
+          "hybrid_success": 0.27958253072561723,
+          "strict_improvement": 0.4571331230585738
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1646264400304696,
+          "hybrid_expected_cost": 10.015906954573426,
+          "standalone_success": 0.9947356135033707,
+          "hybrid_success": 0.9947356135033707,
+          "strict_improvement": 0.9999431024582307
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.668795753838605,
+          "hybrid_expected_cost": 13.5445232132053,
+          "standalone_success": 0.22710721007728824,
+          "hybrid_success": 0.22710721007728824,
+          "strict_improvement": 0.3870775782813407
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.169571291874143,
+          "hybrid_expected_cost": 10.049437455189166,
+          "standalone_success": 0.9837853307344835,
+          "hybrid_success": 0.9837853307344835,
+          "strict_improvement": 0.9996032763036725
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.7498048450474815,
+          "hybrid_expected_cost": 14.120436927577074,
+          "standalone_success": 0.13214829599634442,
+          "hybrid_success": 0.13214829599634442,
+          "strict_improvement": 0.24155909221692243
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.211382326625196,
+          "hybrid_expected_cost": 10.334610494241923,
+          "standalone_success": 0.8964551916907753,
+          "hybrid_success": 0.8964551916907753,
+          "strict_improvement": 0.9880119653427644
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.7371179326745576,
+          "hybrid_expected_cost": 14.031229794740879,
+          "standalone_success": 0.15015373398266096,
+          "hybrid_success": 0.15015373398266096,
+          "strict_improvement": 0.25915450165556103
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1972982862198913,
+          "hybrid_expected_cost": 10.238578719043591,
+          "standalone_success": 0.9259634915371721,
+          "hybrid_success": 0.9259634915371721,
+          "strict_improvement": 0.9917654031724453
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.7905354658612977,
+          "hybrid_expected_cost": 14.41053733285992,
+          "standalone_success": 0.0861062469528988,
+          "hybrid_success": 0.0861062469528988,
+          "strict_improvement": 0.16557196314059772
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.2820045588733264,
+          "hybrid_expected_cost": 10.820789626703709,
+          "standalone_success": 0.7632274566658714,
+          "hybrid_success": 0.7632274566658714,
+          "strict_improvement": 0.9447640016490592
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.803153711004934,
+          "hybrid_expected_cost": 14.500494585085553,
+          "standalone_success": 0.07211192297772497,
+          "hybrid_success": 0.07211192297772497,
+          "strict_improvement": 0.14158482299061936
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.319369680666405,
+          "hybrid_expected_cost": 11.079693878469639,
+          "standalone_success": 0.6980538419258626,
+          "hybrid_success": 0.6980538419258626,
+          "strict_improvement": 0.9130722978763066
+        }
+      }
+    }
+  },
+  {
+    "index": 53,
+    "id": "MLWE-053",
+    "method": "weak75",
+    "babai_cost": 15,
+    "optimum_cost": 10,
+    "native_cz": 167,
+    "duration_unitary_s": 5.764000000000005e-06,
+    "permutation": [
+      4,
+      2,
+      6,
+      15,
+      3,
+      5,
+      1,
+      9,
+      0,
+      8,
+      10,
+      11,
+      13,
+      12,
+      14,
+      7
+    ],
+    "channels": {
+      "ideal": {
+        "1024": {
+          "hybrid_expected_distance": 3.6803656232234747,
+          "hybrid_expected_cost": 13.628747504507475,
+          "standalone_success": 0.21980210977267084,
+          "hybrid_success": 0.21980210977267084,
+          "strict_improvement": 0.3559230830872959
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.170867234449086,
+          "hybrid_expected_cost": 10.058299458397004,
+          "standalone_success": 0.9811515194715225,
+          "hybrid_success": 0.9811515194715225,
+          "strict_improvement": 0.9991229915942356
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.6930068584821214,
+          "hybrid_expected_cost": 13.717977651036994,
+          "standalone_success": 0.20295403261246708,
+          "hybrid_success": 0.20295403261246708,
+          "strict_improvement": 0.3365801255627434
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.1744141741240095,
+          "hybrid_expected_cost": 10.082405470545535,
+          "standalone_success": 0.9734702045605604,
+          "hybrid_success": 0.9734702045605604,
+          "strict_improvement": 0.9985919578863771
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_expected_distance": 3.717897514985122,
+          "hybrid_expected_cost": 13.89551287281215,
+          "standalone_success": 0.17562260016721118,
+          "hybrid_success": 0.17562260016721118,
+          "strict_improvement": 0.28880966334309444
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.183592359538678,
+          "hybrid_expected_cost": 10.145068337417554,
+          "standalone_success": 0.9544993883718692,
+          "hybrid_success": 0.9544993883718692,
+          "strict_improvement": 0.9957167487333987
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_expected_distance": 3.682166796661422,
+          "hybrid_expected_cost": 13.6413496367284,
+          "standalone_success": 0.21704686046188792,
+          "hybrid_success": 0.21704686046188792,
+          "strict_improvement": 0.35375489094304197
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.171364992934857,
+          "hybrid_expected_cost": 10.061677411111669,
+          "standalone_success": 0.9800578343864189,
+          "hybrid_success": 0.9800578343864189,
+          "strict_improvement": 0.9990745428645632
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_expected_distance": 3.714934310301592,
+          "hybrid_expected_cost": 13.874640471639635,
+          "standalone_success": 0.1797110955564764,
+          "hybrid_success": 0.1797110955564764,
+          "strict_improvement": 0.2931131208455343
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.181944060514365,
+          "hybrid_expected_cost": 10.133837590997917,
+          "standalone_success": 0.9579787086617908,
+          "hybrid_success": 0.9579787086617908,
+          "strict_improvement": 0.9961131415083897
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_expected_distance": 3.7239214606839366,
+          "hybrid_expected_cost": 13.938098304926406,
+          "standalone_success": 0.1677985866818526,
+          "hybrid_success": 0.1677985866818526,
+          "strict_improvement": 0.27925296751401046
+        },
+        "16384": {
+          "hybrid_expected_distance": 3.187155815219652,
+          "hybrid_expected_cost": 10.169379024633544,
+          "standalone_success": 0.9470756924837065,
+          "hybrid_success": 0.9470756924837065,
+          "strict_improvement": 0.9946969489576438
+        }
+      }
+    }
+  }
+]

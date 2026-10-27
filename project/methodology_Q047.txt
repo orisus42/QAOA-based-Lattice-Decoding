@@ -1,0 +1,89 @@
+Q-047 — local IBM-calibrated noise with near-matched native gates
+This is a research protocol, not final poster prose.
+
+Primary question
+Does cached objective-guided phase selection improve noisy lattice-decoding
+quality relative to cheap incumbent-informed pruning when compiled two-qubit
+gate counts are nearly equal? Caching itself does not change the circuit.
+
+Development, preserved as EXP025 runs
+Four OLD development examples, public inputs only.
+One routing seed: exact CZ-count intersection often forced severe underfilling.
+Three routing seeds: exact intersections remained poor. Retain this null
+resource result and avoid spending further compilation effort without benefit.
+Final protocol: one fixed seed, common caps128 and160, at most2 CZ difference.
+This is NEAR matching, not exact equality; no dummy/no-op gates are inserted.
+The profile also checks symbolic-angle binding, routed ideal probabilities,
+strict normalization and local simulation runtime with saved IBM noise.
+
+Frozen family matching
+For each public h,J, generate cached objective-guided and incumbent-informed
+masks for logical K=0..32. Cached selection keeps its existing fixed-anchor
+original-objective greedy policy and magnitude fallback. Compile every mask
+using symbolic gamma/beta on the same16-qubit IBM Fez patch, initial mapping,
+optimization level3, routing seed2026102031 and ALAP schedule.
+
+For each cap, consider pairs with both CZ counts<=cap and absolute gap<=2.
+Choose the pair with the largest smaller CZ count. Resolve ties by smaller
+gap, larger total K, larger smaller K, shorter summed duration, then
+deterministic family K/seed order. No ideal/noisy quality, secret or reference
+optimum is used to choose the pair. Record every candidate, slack, exact
+intersection diagnostic, selected edges, compilation time and final circuit.
+
+This is a paired comparison protocol, not a new standalone decoder.
+Matching CZ does not match duration, gate locations, one-qubit operations or
+calibrated error exposure. Report these limits and actual resource use.
+
+Training and new evaluation
+Fit one global angle pair for each of four matched policies on the original
+16 separate training groups, using the same768 evaluations and original full
+energy. Binding into the symbolic compiled circuit fixes its CZ count.
+Two fixed24 controls reuse the previously frozen angles.
+Freeze all fits before generating128 new Module-LWE matrix groups:
+n=2, k=2, q=17, eta=2; seeds2026102026000 onward.
+Exclude all recorded previous groups, including EXP021 and EXP023.
+
+Local simulation only
+Use saved IBM Fez calibration fetched2026-10-20T05:00:43.997481+05:30.
+Include native calibrated depolarization and gate-time T1/T2 relaxation,
+scheduled idle-delay T1/T2 relaxation, and asymmetric per-qubit readout.
+Initial reset is ideal; temperature is zero. No crosstalk, leakage, drift,
+coherent calibration errors, mitigation or dynamical decoupling are modeled.
+
+Use64 independent noise trajectories per simulated circuit, apply readout
+analytically to each, and retain low-cost probability masses and mean full
+distributions before/after readout. Verify every trajectory sums to1 within
+1e-10 with zero relative tolerance. Do not renormalize failed simulations.
+Use one-qubit fusion, based on the earlier documented numerical diagnostic.
+
+Simulate every Babai-nonoptimal member plus4 prespecified random sentinel
+cases. All128 members enter hybrid statistics. When Babai is already optimal,
+retaining it makes hybrid success and returned distance deterministic even
+under noisy sampling. This shortcut is evaluation-only: reference labels
+never reach selection, and it does not justify a runtime or standalone claim.
+
+Analysis
+Primary: cached_cap160 minus incumbent_cap160, full-noise hybrid global-optimum
+success at1024 independent samples. Positive evidence requires the lower end
+of a paired two-sided95% group-plus-trajectory bootstrap interval to exceed0.
+Use5000 resamples and shared group draws; independent noise resampling across
+different circuits, shared draws for gate-idle and its readout transformation.
+Also report fixed-cohort Monte Carlo intervals and jackknife bias sensitivity.
+
+Secondary: cap128, fixed24, other sample budgets, mean returned distance,
+ideal/readout-only/gate-idle/full-noise comparisons, differential noise
+penalties, actual native resources and classical computational overhead.
+Secondary intervals are descriptive and not multiplicity-adjusted.
+Retain Babai, local two-coordinate refinement and public-prior sampling.
+Closest-vector success is distinct from secret recovery.
+
+Claim boundaries
+No hardware jobs, cloud account calls, spending or public repository changes.
+No secure-parameter ML-KEM decoding, quantum advantage, new-algorithm novelty
+or universal noise-tolerance claim. Preserve positive, negative and null data.
+The implementation speedup measured previously excludes compilation; the
+current resource-matching search adds compilation work that is reported.
+
+Primary documentation consulted
+https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.noise.NoiseModel.html
+https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.noise.RelaxationNoisePass.html

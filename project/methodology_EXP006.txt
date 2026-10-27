@@ -1,0 +1,98 @@
+EXP-006: aggressive phase pruning on the same 64 toy Module-LWE examples
+Internal research record, not final poster text or captions.
+
+Purpose and design
+  The user requested 75% and90% pruning after seeing EXP-004/005. These levels
+  are an adaptive development extension, not a new confirmatory holdout.
+  A100% endpoint was added as an explicit control: all pair interactions are
+  removed, leaving independent single-qubit operations and a product sampling
+  distribution. This control can be sampled classically without a QPU.
+  The primary comparison retains the saved full-circuit global angles. A
+  secondary comparison retrains one shared pair per pruning level on the same
+  16 public training examples, disjoint from all64 evaluation matrices.
+  Fields, normalization, original objective, encoding, mixer, initial state,
+  16 qubits and one QAOA layer are unchanged. No reference optima or secrets
+  enter training or the deterministic weakest-coefficient selection rule.
+
+Run and reproducibility
+  experiments/runs/EXP-006_20261020T043458637893+0530
+  python experiments/run_aggressive_pruning.py
+  python scripts/plot_aggressive_pruning.py <run-folder>
+  Config, versions, seeds, copied source/inputs and hashes reside in the run.
+  Old0%-50% observations are copied unchanged from EXP-004. Six new policies
+  produce384 new compiled circuits and393,216 measured bitstrings. The saved
+  sample file includes524,288 older observations, for917,504 retained values.
+  New measurements use seed2026102012 plus instance index; old observations
+  retain their EXP-004 provenance. Exact expectations are the primary outcome.
+
+Fixed-angle result at1024 shots per example
+  Nominal removed    Mean CX    QAOA-only exact success   Babai+QAOA exact success
+       0%             202.875          22.3460%                   86.9070%
+      25%             152.15625        22.5273%                   86.8270%
+      50%             101.4375         23.6830%                   87.1036%
+      75%              50.71875        25.7438%                   87.6504%
+      90%              21.0625         23.2527%                   86.5279%
+     100%               0              2.7353%                   83.3546%
+  Babai alone gives82.8125%. These are exact ideal expectations over the64
+  examples, not percentages inferred from a single observed measurement batch.
+  Actual compiled CX reduction for nominal90% is89.618%, because term-removal
+  counts are floored per instance. At75% the reduction is exactly75%.
+  Total compiled depth falls88.34375 ->44.234375 at75% (49.93% reduction), and
+  to22.4375 at90% (74.60% reduction). All-to-all connectivity is assumed.
+
+Quality of the returned hybrid answer
+  Mean expected distance: full2.731435;50%2.727595;75%2.727344;
+  90%2.736019;100%2.763294. Lower is better; Babai alone is2.769118.
+  Relative to full QAOA's EXTRA mean distance reduction beyond Babai,75%
+  retains110.85%,90% retains87.84%, and100% retains15.45%.
+  This avoids masking lost quantum refinement behind Babai's53 already solved
+  examples. The75% fixed-angle result is slightly better than50% in mean
+  distance but very similar; its mean SQUARED distance is slightly worse
+  (7.836719 versus7.835351). Do not say every quality metric improves.
+  The fixed-angle sweep's standalone success and mean-distance benefit peak
+  at75% among the tested levels and decline at90%; no exact optimal fraction
+  or continuous transition point has been identified.
+
+Global retraining as a secondary comparison
+  Fraction   QAOA-only success   Hybrid success   Retained extra distance benefit
+     75%           27.4770%          88.0775%                  120.26%
+     90%           26.3473%          87.1716%                  103.55%
+    100%            2.3164%          83.3114%                   15.38%
+  Retention is relative to full fixed-angle QAOA. Training minimizes the full
+  original expected energy, not the exact-optimum success or best-of-shots
+  metric, so success need not improve when retraining improves training energy.
+  Recorded instance-energy evaluations:9136,8176,7168 respectively; all three
+  optimizers report convergence. No per-evaluation-instance angle tuning.
+  Retrained90% thus offers similar aggregate refinement to full QAOA with
+  about21 versus203 CX gates, while75% offers greater aggregate quality.
+
+Individual losses and controls
+  With frozen angles,75% improves single-shot optimum probability on43/64,
+  but19/64 lose more than5%, with worst retention49.01% (50.99% loss).
+  At90%,22/64 lose more than5%, with worst retention46.71%.
+  Among the11 Babai failures,75% gives better expected distance than full QAOA
+  on7 and worse on4;90% gives better on4 and worse on7. The53 already optimal
+  Babai answers remain unchanged by the incumbent-retaining policy.
+  Retraining reduces but does not eliminate individual losses: at both75% and
+  90%,16 examples still lose over5% in single-shot optimum probability.
+  The100% control is substantially worse on every instance's standalone
+  optimum probability. Its128 new distributions agree with a direct product
+  formula to numerical precision. This supports the usefulness of some pair
+  interactions within our chosen circuit family, not necessity of entanglement
+  for solving the problem or superiority over classical methods.
+  Classical1/2-coordinate refinement still solves61/64 (95.31%) with mean
+  distance2.685261, better than all tested QAOA hybrids in this ideal study.
+
+Verification and interpretation
+  52 mathematical tests passed. New circuits independently match NumPy and
+  compiled-Aer distributions; max probability discrepancy2.52e-17. All
+  4,194,304 encoded costs checked,1920 order-statistic calculations verified,
+  and128 non-entangling distributions checked. Prior input manifests60 hashes
+  audited; the complete derived run41 hashes audited after figure revision.
+  No hardware, physical noise, routing, QPU credits or QPU time were used.
+  The new candidates are75% for average quality and retrained90% for circuit
+  cost. Freeze a comparison before fresh-group validation; preserve the25%
+  original hypothesis historically. Do not promote a development winner to a
+  confirmed final result. Hardware behavior may favor a different trade-off.
+  Figure: figures-v2/aggressive_pruning.png and.svg. Version1 is preserved;
+  version2 clarifies that interaction removals, not average counts, are rounded.

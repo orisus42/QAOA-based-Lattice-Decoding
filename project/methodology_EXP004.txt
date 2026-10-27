@@ -1,0 +1,110 @@
+EXP-004: weak-interaction phase sparsification
+Internal research explanation, not final poster prose or a poster caption.
+
+Question
+  Can a smaller QAOA phase circuit retain essentially the same average decoding
+  quality on the 64 toy Module-LWE development examples?
+
+Mechanism
+  Our binary decoding cost becomes an Ising expression with single-qubit fields
+  h_i and pair interactions J_ij. Each nonzero pair interaction contributes a
+  two-qubit ZZ rotation to the phase circuit. In the chosen CX gate basis, a
+  ZZ rotation normally requires two CX gates. Removing weak interactions can
+  therefore reduce circuit cost, but changes the sampling distribution.
+  For example, if four interaction magnitudes are 0.01, 0.04, 0.3, and 0.8,
+  removing the weakest 25% deletes the 0.01 interaction from the circuit only.
+  Every returned candidate is still scored using all four original terms.
+  A small coefficient alone does not guarantee a small effect on success.
+
+Prior work and scope of the adaptation
+  Liu, Shaydulin, Safro, Quantum Approximate Optimization Algorithm with
+  Sparsified Phase Operator (IEEE QCE 2022):
+  https://arxiv.org/abs/2205.00118
+  https://doi.org/10.1109/QCE53715.2022.00032
+  This establishes sparse phase operators with full-objective optimization on
+  MaxCut. Our magnitude rule is a simple adaptation, not their cut-based rule
+  and not a new general QAOA algorithm. No novelty or preservation theorem is
+  claimed. Ground-state agreement is a diagnostic, not a solver input.
+
+Protocol fixed before this run
+  Primary: remove the smallest-magnitude 25% of nonzero J entries and reuse the
+  previous frozen global angle pair. Keep fields, normalization, encoding,
+  mixer, initial state, number of qubits, and scored objective unchanged.
+  Success targets: at least 95% aggregate single-shot optimum probability,
+  at least 95% aggregate solved fraction at 1024 shots, and at least 20% fewer
+  mean compiled CX gates. All three targets passed on this development cohort.
+  Secondary: 10% and 50% removal; global retraining at each level; original full
+  per-instance tuned QAOA; five random 25% removals per example. Strong classical
+  controls from EXP-003 remain available and still perform better overall.
+  Retraining uses 16 separate public training examples and minimizes expected
+  ORIGINAL energy. No hidden secrets or optimum labels enter method selection.
+  These 64 evaluation examples were previously inspected; this is exploration,
+  not a fresh final holdout or a confirmatory statistical claim.
+
+Verified results: exact ideal probabilities, same 1024-shot budget per example
+  Method                  Mean compiled CX     Expected fraction solved
+  Full fixed QAOA             202.875                   22.3460%
+  Full per-instance tuned     202.875                   22.4338%
+  Weak 10%, frozen            183.5625                  22.4191%
+  Weak 25%, frozen            152.15625                 22.5273%
+  Weak 50%, frozen            101.4375                  23.6830%
+  Random 25%, frozen        same logical removal       14.6300%
+  Random control averages five independent masks per example; not retrained.
+
+  Expected solved fraction is mean_i[1-(1-p_i)^1024], not a calculation using
+  the mean probability. An optimum means the global CVP optimum of our stated
+  cost, not necessarily the planted secret. All 64 binary boxes cover one.
+  Weak 25% retains 101.30% of mean single-shot optimum probability; the paired
+  instance-bootstrap 95% interval is [98.50%,104.11%]. This supports preserved
+  average quality, not a robust claim of improved quality.
+  At 25% removal, mean circuit depth decreases 8.60%, not 25%. Gate count is
+  distinct from depth, physical duration, and IBM charged execution time.
+  No additional angle-training cost is incurred by the primary frozen method.
+
+What the average conceals
+  18/64 examples lose more than 5% of single-shot optimum probability; the worst
+  loses 31.29%. Only 33/64 sparse phase ground-state sets overlap an original
+  optimum. This is an approximate circuit change, not exact gate cancellation.
+  Keeping the Babai incumbent, expected hybrid success slightly decreases from
+  86.9070% to 86.8270%. It is not a demonstrated improvement in hybrid decoding.
+  Half-removal is a promising secondary result but has a worst loss of 41.58%.
+  We have not established performance at deeper QAOA, other parameter sizes,
+  actual device connectivity, physical noise, or secure cryptographic sizes.
+
+Execution and reproducibility
+  Run: experiments/runs/EXP-004_20261020T035105759769+0530
+  Commands and seeds: config.json and manifest.json in that directory.
+  46 mathematical tests passed. All 4,194,304 binary costs were checked; 512
+  compiled circuits were verified against independent statevectors. The two
+  full QAOA baselines reproduce all 128 saved EXP-003 probabilities.
+  524,288 actual noiseless Aer measurements are retained in samples.npz.
+  A single observed batch fluctuates; it is not the primary comparison.
+  Compilation: optimization level 3, rz/sx/x/cx, all-to-all connectivity.
+  No hardware used. The QPU budget remains unspent.
+  Latest graph: figures-v2/sparsification_tradeoff.svg and .png; plot source
+  is preserved alongside them. Original render preserved after layout repair.
+
+Why investigate QAOA for lattice decoding?
+  A bounded lattice-decoding task naturally gives a quadratic binary cost.
+  QAOA uses that cost to bias quantum samples toward better candidates. The
+  testable question is whether that search mechanism can become effective and
+  resource-efficient; the mapping itself does not imply a quantum speedup.
+  Priestley and Wallden study reusable angles and empirical refinement scaling
+  on prime lattices: https://doi.org/10.1088/2058-9565/ae4cc6
+  Their instance family, conditional refinement metric, and scaling comparisons
+  differ from ours; their results do not establish an ML-KEM attack or an
+  advantage over our strong classical baselines.
+  Lv et al. study QAOA refinement of Babai for LWE:
+  https://doi.org/10.3390/e24101428
+  Their section 5.1 explicitly omits actual QAOA complexity. Better distance in
+  small tests therefore does not establish a faster complete decoding method.
+  Our defensible aim is to measure and improve the resource/quality trade-off
+  of this candidate quantum heuristic. An open reproducible implementation can
+  help others test the same trade-offs, including failures.
+
+Next evidence required
+  Freeze the 25% primary rule and evaluate fresh lattice groups. Treat 50% as a
+  secondary option. Examine failures and deeper circuits on development data,
+  then compile for a specific backend and model noise and resource usage before
+  a small budgeted hardware comparison. Real hardware can test whether ideal
+  savings survive routing and noise; that benefit is not yet demonstrated.

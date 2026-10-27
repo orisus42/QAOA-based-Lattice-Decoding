@@ -1,0 +1,58 @@
+{
+  "run_id": "EXP-012_20261020T060456414172+0530",
+  "started_at": "2026-10-20T06:04:56.414172+05:30",
+  "status": "failed",
+  "command": "python experiments/run_noise_mechanisms.py",
+  "python": "3.14.3",
+  "packages": {
+    "numpy": "2.4.6",
+    "sympy": "1.14.0",
+    "scipy": "1.18.0",
+    "qiskit": "2.4.2",
+    "qiskit-aer": "0.17.2",
+    "seaborn": "0.13.2",
+    "matplotlib": "3.10.9"
+  },
+  "source_sha256": {
+    "src/lattice_qaoa/classical.py": "aba3bbbbec7b819dc36847285eb2b8961006a230d990599d3b1cc9acaa0d2ee3",
+    "src/lattice_qaoa/device.py": "25574a0a2ec26fe016ac586f3e87a9e3f5edbcd5e3d1ce2544b6e59c193d9123",
+    "src/lattice_qaoa/encoding.py": "db0b436458d3210cf994eb796c7235645ddd7932aedd543ceab4ba5707af201c",
+    "src/lattice_qaoa/evaluation.py": "96e6b3551ec659fb47db6f8b7d7da921c80fcc4e733f71bc4406345e0d800589",
+    "src/lattice_qaoa/instances.py": "4a3ba14e8b39674d0aabd63a8dabde14066210ddcfd1457480bb1c996bbe781b",
+    "src/lattice_qaoa/mechanisms.py": "da144aac3bd01452e8ec1ac987563e81f01231e67870b92f613a6d0a4425d97f",
+    "src/lattice_qaoa/qaoa.py": "2276eb60558f345f9e95bef45e70551ef833d2c980552e88754e5d7fd87406a8",
+    "src/lattice_qaoa/reference.py": "db8d1b3e270d1c88cb5f7e70ade6aa4c4b04c537991c0479f222f9e91fbb098d",
+    "src/lattice_qaoa/sampling.py": "44efe1f908da13c7f424c6888f68aa21ee244cce9a1659845b1fad5a9c23f99c",
+    "src/lattice_qaoa/sparsify.py": "b5f86b3cb5e7ddf6e3b60c70b68b65448fa8bb809ade04ebca40230475c50f66",
+    "src/lattice_qaoa/__init__.py": "c735051e3cdf56fb6f25aeaa155befc21569d17d8d35c8d626494b7673355e08",
+    "tests/test_aggressive_pruning.py": "6dc86fb379627db75061438254d07c7c9c22134d72b4037faf76d6875e7deefc",
+    "tests/test_device_noise.py": "d5db8136c3efd46aacb87894ac87c307e7f134c6b077d7ae5727e3b1c22db1f3",
+    "tests/test_fresh_evaluation.py": "e0d89eddd66510291e8000428d47f57b5b7e4286f5ceaf4804e2608b63df60c4",
+    "tests/test_hybrid_quality.py": "573b09c2470ac53d20df6eb6aaa6a746f7fab73bef90153aa2bab2ac0660e3e0",
+    "tests/test_mechanisms.py": "6940c58b157196378d06e574a7b749e0507a8cf835082ae2454f10af0d04bd6f",
+    "tests/test_module_lwe.py": "a1cd4c7b4a7385c2948ad80d9ad7ca538d03a5fa4afb013f13c822c8fbd68380",
+    "tests/test_qaoa_encoding.py": "afc94ea70dd24dc946b312314bd62141f379c717d03de3b15cdaeb9cd6129341",
+    "tests/test_sampling.py": "b9a99e8f883479aaed6cb95a92429d7402e4184b414ae93d04c8d5779cbae6fb",
+    "tests/test_sparsification.py": "9cabf050322838decd63234595c38d3c1d09b85c20e5b923e1dc74efa7a7a9e3",
+    "experiments/run_noise_mechanisms.py": "a2a259aabd47d713110b3215d3fded5d0daee5dedf3cb6831ffd6f051b462885",
+    "experiments/research_run.py": "b53ee48b44654045bcc1250ced6c22f0661abbdafe1e24aca1a242726a3bd26e",
+    "experiments/configs/EXP-012.json": "c64fc8d25086bc6c5096de0d1eebbe631901539dde3333a1812dc6b356458dce"
+  },
+  "input_sha256": {
+    "experiments/runs/EXP-001_20261018T120321801881+0530/instances.json": "c501984a2a5ec80fdecfe52a6972ae9d6951fc7a988d71d6336cba47e03cc929",
+    "research/calibrations/ibm_fez_20261020T050035937321+0530/backend_properties.json": "337ce1dc734f676d9f67123adfbc591b4b7c3d5ababba648c8e180cb815b08a2",
+    "research/calibrations/ibm_fez_20261020T050035937321+0530/manifest.json": "c1de0d1d262a2a86e011c8eee2814b9936f72cc6fe11dce245d8baa6d417a2ad",
+    "research/calibrations/ibm_fez_20261020T050035937321+0530/patch_candidates.json": "43ec09edf46207711d90f555e0702f379d6971570f29693b8d4225bfd5d3e792",
+    "research/calibrations/ibm_fez_20261020T050035937321+0530/snapshot.json": "4c117a3984fdb53f524b31cf70eef40085747f83e0f481c9b20737b5f38e8133"
+  },
+  "output_sha256": {
+    "cohort.json": "84707214cb4d44a502bdf3b161f6999f6c2dcadcd8c5148d3d82a58e2cb4afbc",
+    "config.json": "c64fc8d25086bc6c5096de0d1eebbe631901539dde3333a1812dc6b356458dce",
+    "gate_noise_model.json": "63fb57bc4f3df382c0249ba49391449e25df8a3b230226a4f82f8c606a5c01f2"
+  },
+  "qpu_seconds": 0,
+  "qpu_jobs_submitted": 0,
+  "finished_at": "2026-10-20T06:05:02.181361+05:30",
+  "elapsed_seconds": 5.767219700006535,
+  "error": "AssertionError('\\nNot equal to tolerance rtol=1e-07, atol=1e-10\\n\\nMismatched elements: 1 / 128 (0.781%)\\nMismatch at index:\\n [104]: 0.9999975854393437 (ACTUAL), 1 (DESIRED)\\nMax absolute difference among violations: 2.41456066e-06\\nMax relative difference among violations: 2.41456066e-06\\n ACTUAL: array([1.      , 1.      , 1.      , 1.      , 1.      , 1.      ,\\n       1.      , 1.      , 1.      , 1.      , 1.      , 1.      ,\\n       1.      , 1.      , 1.      , 1.      , 1.      , 1.      ,...\\n DESIRED: array(1)')"
+}

@@ -1,0 +1,46 @@
+{
+  "hashes": 629,
+  "public_instances": 128,
+  "matching_pairs": 256,
+  "logical_probabilities": 768,
+  "native_circuits": 768,
+  "native_edges": 108991,
+  "noise_files": 192,
+  "readout_linearity_checks": 192,
+  "cached_replays": 6,
+  "maximum_native_gap": 2,
+  "primary_bootstrap_reproduced": true,
+  "half_trajectory_success_sensitivity": {
+    "cached_cap128": [
+      0.8324173135147283,
+      0.8334551984334685
+    ],
+    "incumbent_cap128": [
+      0.8380131126019835,
+      0.8381330095563373
+    ],
+    "cached_cap160": [
+      0.8323093539966845,
+      0.8321696553996619
+    ],
+    "incumbent_cap160": [
+      0.839506543395335,
+      0.8397607210936394
+    ],
+    "cached24": [
+      0.8329887289821761,
+      0.8335848753689279
+    ],
+    "incumbent24": [
+      0.8390461379980619,
+      0.8392014176822601
+    ]
+  },
+  "primary_half_trajectory_differences": [
+    -0.00719718939865055,
+    -0.0075910656939774945
+  ],
+  "status": "passed",
+  "completed_at": "2026-10-20T19:37:25.613994+05:30",
+  "source_run": "experiments/runs/EXP-026_20261020T190619077356+0530"
+}

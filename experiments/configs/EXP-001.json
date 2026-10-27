@@ -1,0 +1,21 @@
+{
+  "id": "EXP-001",
+  "name": "Toy Module-LWE generation and exact classical references",
+  "purpose": "Validate the instance algebra and decoding objective before any QAOA encoding.",
+  "status": "exploratory development cohort, not a held-out evaluation",
+  "parameters": {"n": 2, "k": 2, "q": 17, "eta": 2},
+  "count": 64,
+  "first_seed": 2026101800,
+  "sampling": "64 consecutive instance seeds; no rejection or outcome-based selection",
+  "objective": "min over integer w,s of ||q*w + A_expanded*s - t||^2 + ||s||^2",
+  "baselines": ["Babai on original embedding basis", "LLL followed by Babai", "certified exhaustive CVP"],
+  "exact_reference_candidate_cap": 1000000,
+  "hardware": "none",
+  "notes": [
+    "CBD eta=2 is used independently for secret and error coefficients.",
+    "n=2, q=17 are tiny toy choices, not ML-KEM parameters.",
+    "The least-squares objective is not exact maximum-likelihood decoding for CBD.",
+    "Closest-vector recovery and planted-secret recovery are separate measurements.",
+    "No BDD promise, QAOA improvement, novelty, or quantum advantage is asserted."
+  ]
+}

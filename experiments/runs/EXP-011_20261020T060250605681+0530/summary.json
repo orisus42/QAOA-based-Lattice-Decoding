@@ -1,0 +1,3843 @@
+{
+  "experiment_id": "EXP-011",
+  "count": 64,
+  "training_count": 16,
+  "checks": {
+    "training_groups": 16,
+    "development_groups": 64,
+    "overlap": 0,
+    "statevectors": 10076,
+    "independent_circuit_checks": 19,
+    "max_circuit_discrepancy": 1.3552527156068805e-18,
+    "all_distinct_edge_masks": 6556
+  },
+  "babai_optimum_count": 53,
+  "grid": {
+    "same_angles": {
+      "0": {
+        "mean_logical_rzz": 101.4375,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8690696121000407,
+              "difference_from_old_full": 4.336808689942018e-19,
+              "paired_pointwise_ci95": [
+                -3.0466081046842638e-18,
+                4.7704895589362195e-18
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7314348452269313,
+              "difference_from_old_full": 1.7832957333041577e-15,
+              "paired_pointwise_ci95": [
+                -3.3237301799715624e-15,
+                7.022854520144508e-15
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9960371606194813,
+              "difference_from_old_full": 1.734723475976807e-18,
+              "paired_pointwise_ci95": [
+                0.0,
+                5.204170427930421e-18
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6453039606568076,
+              "difference_from_old_full": 2.2343238370581275e-15,
+              "paired_pointwise_ci95": [
+                -1.5612511283791264e-16,
+                6.641128619255812e-15
+              ]
+            }
+          }
+        }
+      },
+      "25": {
+        "mean_logical_rzz": 76.078125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8682697746762598,
+              "difference_from_old_full": -0.0007998374237809737,
+              "paired_pointwise_ci95": [
+                -0.0031915584586484115,
+                0.0013629247413129214
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7324183210430455,
+              "difference_from_old_full": 0.0009834758161154748,
+              "paired_pointwise_ci95": [
+                -0.00029038081638525494,
+                0.002788724041943356
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9954366992212373,
+              "difference_from_old_full": -0.0006004613982440992,
+              "paired_pointwise_ci95": [
+                -0.0016056329331514004,
+                0.0003054941888978765
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.645596026859684,
+              "difference_from_old_full": 0.0002920662028785409,
+              "paired_pointwise_ci95": [
+                -4.9006622649929925e-05,
+                0.0007696117100839468
+              ]
+            }
+          }
+        }
+      },
+      "50": {
+        "mean_logical_rzz": 50.71875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8710356269977078,
+              "difference_from_old_full": 0.0019660148976670816,
+              "paired_pointwise_ci95": [
+                -0.0016577065458119515,
+                0.005444321974418862
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.727594661459615,
+              "difference_from_old_full": -0.0038401837673152257,
+              "paired_pointwise_ci95": [
+                -0.008361921225197168,
+                -0.00020749037865692367
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9962164615859372,
+              "difference_from_old_full": 0.0001793009664558757,
+              "paired_pointwise_ci95": [
+                -0.001786481199754328,
+                0.001536799483438678
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.64492787394075,
+              "difference_from_old_full": -0.00037608671605546956,
+              "paired_pointwise_ci95": [
+                -0.0009370459506396353,
+                0.00014193841010974308
+              ]
+            }
+          }
+        }
+      },
+      "60": {
+        "mean_logical_rzz": 41.0625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8700377315494836,
+              "difference_from_old_full": 0.0009681194494428821,
+              "paired_pointwise_ci95": [
+                -0.00414280679127805,
+                0.006334243045973603
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.731372206528282,
+              "difference_from_old_full": -6.263869864801472e-05,
+              "paired_pointwise_ci95": [
+                -0.0023254892918396024,
+                0.0023045739727431884
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.995772629246538,
+              "difference_from_old_full": -0.00026453137294340894,
+              "paired_pointwise_ci95": [
+                -0.0032276739489216933,
+                0.0020720065162915095
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6462782290119655,
+              "difference_from_old_full": 0.0009742683551595861,
+              "paired_pointwise_ci95": [
+                -0.0003259183358470935,
+                0.0033302503621677566
+              ]
+            }
+          }
+        }
+      },
+      "61": {
+        "mean_logical_rzz": 40.078125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8706452641608128,
+              "difference_from_old_full": 0.0015756520607720878,
+              "paired_pointwise_ci95": [
+                -0.0032230842255720586,
+                0.007580935052984239
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7310677857397043,
+              "difference_from_old_full": -0.0003670594872254608,
+              "paired_pointwise_ci95": [
+                -0.0033173042194140157,
+                0.002198904980878954
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9958008005660623,
+              "difference_from_old_full": -0.00023636005341896686,
+              "paired_pointwise_ci95": [
+                -0.0026817738310975017,
+                0.0020056984614761427
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.646250214389926,
+              "difference_from_old_full": 0.0009462537331203398,
+              "paired_pointwise_ci95": [
+                -0.00028012028785259264,
+                0.002812471147815189
+              ]
+            }
+          }
+        }
+      },
+      "62": {
+        "mean_logical_rzz": 39.078125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8705289312958592,
+              "difference_from_old_full": 0.0014593191958184324,
+              "paired_pointwise_ci95": [
+                -0.003487601575064139,
+                0.007342882551079044
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7313879603437505,
+              "difference_from_old_full": -4.688488317903389e-05,
+              "paired_pointwise_ci95": [
+                -0.003281536658953067,
+                0.002861166839844196
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9953365249215267,
+              "difference_from_old_full": -0.0007006356979546696,
+              "paired_pointwise_ci95": [
+                -0.003643770124813202,
+                0.0016836276057218057
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6465492952405203,
+              "difference_from_old_full": 0.0012453345837147578,
+              "paired_pointwise_ci95": [
+                -0.0001990982294649313,
+                0.003682354485868774
+              ]
+            }
+          }
+        }
+      },
+      "63": {
+        "mean_logical_rzz": 37.90625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.871315132879136,
+              "difference_from_old_full": 0.0022455207790951608,
+              "paired_pointwise_ci95": [
+                -0.002119119352362991,
+                0.007370483551360507
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7306799370066415,
+              "difference_from_old_full": -0.0007549082202878594,
+              "paired_pointwise_ci95": [
+                -0.003884494785002078,
+                0.00202253110047435
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9954719608901095,
+              "difference_from_old_full": -0.0005651997293718344,
+              "paired_pointwise_ci95": [
+                -0.004136529647598526,
+                0.002035741526084993
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6463978218502726,
+              "difference_from_old_full": 0.0010938611934675595,
+              "paired_pointwise_ci95": [
+                -0.00041357611907716455,
+                0.003862405160389613
+              ]
+            }
+          }
+        }
+      },
+      "64": {
+        "mean_logical_rzz": 36.90625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8719638218903256,
+              "difference_from_old_full": 0.002894209790284921,
+              "paired_pointwise_ci95": [
+                -0.0013295151905690235,
+                0.007989635374470576
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7298223814078604,
+              "difference_from_old_full": -0.0016124638190694734,
+              "paired_pointwise_ci95": [
+                -0.005343287960077917,
+                0.0015037807251741934
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9960664855470354,
+              "difference_from_old_full": 2.9324927554036026e-05,
+              "paired_pointwise_ci95": [
+                -0.002785869277773479,
+                0.002194850758453591
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6458781859485985,
+              "difference_from_old_full": 0.0005742252917927959,
+              "paired_pointwise_ci95": [
+                -0.000624912476129485,
+                0.002706166990077921
+              ]
+            }
+          }
+        }
+      },
+      "65": {
+        "mean_logical_rzz": 35.890625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8720806697257124,
+              "difference_from_old_full": 0.0030110576256717186,
+              "paired_pointwise_ci95": [
+                -0.0009200665468649142,
+                0.0073411673863552785
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.729369576949442,
+              "difference_from_old_full": -0.00206526827748809,
+              "paired_pointwise_ci95": [
+                -0.005833058083166004,
+                0.0013223565210173935
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9960794213788097,
+              "difference_from_old_full": 4.226075932829178e-05,
+              "paired_pointwise_ci95": [
+                -0.003252261404196904,
+                0.0022714970953182628
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6460079445704623,
+              "difference_from_old_full": 0.0007039839136567388,
+              "paired_pointwise_ci95": [
+                -0.0007393017326861396,
+                0.0032738457217867186
+              ]
+            }
+          }
+        }
+      },
+      "66": {
+        "mean_logical_rzz": 34.90625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8725374846701148,
+              "difference_from_old_full": 0.0034678725700741982,
+              "paired_pointwise_ci95": [
+                -0.0002165622103178733,
+                0.007348966926398309
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.72883498932229,
+              "difference_from_old_full": -0.0025998559046395454,
+              "paired_pointwise_ci95": [
+                -0.006371595059265739,
+                0.0007365677390867277
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9964575846617914,
+              "difference_from_old_full": 0.0004204240423099897,
+              "paired_pointwise_ci95": [
+                -0.0017100218946396566,
+                0.0020847212352345956
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.645590622428126,
+              "difference_from_old_full": 0.0002866617713201472,
+              "paired_pointwise_ci95": [
+                -0.0007581140449908107,
+                0.0019706287288939507
+              ]
+            }
+          }
+        }
+      },
+      "67": {
+        "mean_logical_rzz": 33.9375,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.872722968263965,
+              "difference_from_old_full": 0.003653356163924278,
+              "paired_pointwise_ci95": [
+                -0.00023626996870555408,
+                0.008036066986987103
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7278361561743756,
+              "difference_from_old_full": -0.0035986890525540813,
+              "paired_pointwise_ci95": [
+                -0.008167124232515383,
+                0.0002907257998032739
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.996543300095672,
+              "difference_from_old_full": 0.0005061394761906816,
+              "paired_pointwise_ci95": [
+                -0.0010824545290453542,
+                0.0021479588357265858
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.645329492274967,
+              "difference_from_old_full": 2.553161816138544e-05,
+              "paired_pointwise_ci95": [
+                -0.0008377889948402307,
+                0.0011053814783978546
+              ]
+            }
+          }
+        }
+      },
+      "68": {
+        "mean_logical_rzz": 32.9375,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8725059135490857,
+              "difference_from_old_full": 0.00343630144904501,
+              "paired_pointwise_ci95": [
+                -0.0012215600266845257,
+                0.008756437998913416
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.728404640215726,
+              "difference_from_old_full": -0.0030302050112034594,
+              "paired_pointwise_ci95": [
+                -0.007563252095601756,
+                0.0009897932336373663
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.996187417151838,
+              "difference_from_old_full": 0.00015025653235667576,
+              "paired_pointwise_ci95": [
+                -0.001601378538231522,
+                0.0019891180597489708
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6454105240410746,
+              "difference_from_old_full": 0.00010656338426917947,
+              "paired_pointwise_ci95": [
+                -0.0007308965538055006,
+                0.001180904485178187
+              ]
+            }
+          }
+        }
+      },
+      "69": {
+        "mean_logical_rzz": 31.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8734723395910291,
+              "difference_from_old_full": 0.004402727490988412,
+              "paired_pointwise_ci95": [
+                -0.0004213832242954361,
+                0.010579338375128243
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7281653785984465,
+              "difference_from_old_full": -0.003269466628483389,
+              "paired_pointwise_ci95": [
+                -0.008208169346714768,
+                0.0008250954156455581
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9964749964637881,
+              "difference_from_old_full": 0.00043783584430678694,
+              "paired_pointwise_ci95": [
+                -0.0010599687343897297,
+                0.001973818509693057
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6453626454030843,
+              "difference_from_old_full": 5.868474627890308e-05,
+              "paired_pointwise_ci95": [
+                -0.0007424107655242393,
+                0.0010967985519354181
+              ]
+            }
+          }
+        }
+      },
+      "70": {
+        "mean_logical_rzz": 30.90625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8740167555702201,
+              "difference_from_old_full": 0.004947143470179338,
+              "paired_pointwise_ci95": [
+                0.0005601113455715341,
+                0.010634584988864411
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7281009464415527,
+              "difference_from_old_full": -0.0033338987853772685,
+              "paired_pointwise_ci95": [
+                -0.007893641169089272,
+                0.00019842005133590028
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9973092689954205,
+              "difference_from_old_full": 0.0012721083759391662,
+              "paired_pointwise_ci95": [
+                0.0002683615176229414,
+                0.0026054105370277125
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6446683955472885,
+              "difference_from_old_full": -0.0006355651095170597,
+              "paired_pointwise_ci95": [
+                -0.0013694831509616853,
+                -8.158820701548659e-05
+              ]
+            }
+          }
+        }
+      },
+      "71": {
+        "mean_logical_rzz": 29.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8731893105870158,
+              "difference_from_old_full": 0.004119698486975093,
+              "paired_pointwise_ci95": [
+                -0.00036650957592279426,
+                0.009938119240943313
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.728647251270751,
+              "difference_from_old_full": -0.002787593956178603,
+              "paired_pointwise_ci95": [
+                -0.007638672319210183,
+                0.0010421318548498317
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9971234521902022,
+              "difference_from_old_full": 0.0010862915707207967,
+              "paired_pointwise_ci95": [
+                -3.609140973538897e-05,
+                0.0024553246847212593
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6446571637281124,
+              "difference_from_old_full": -0.000646796928692784,
+              "paired_pointwise_ci95": [
+                -0.0016878870670558226,
+                7.84155707014167e-05
+              ]
+            }
+          }
+        }
+      },
+      "72": {
+        "mean_logical_rzz": 28.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8751500555461592,
+              "difference_from_old_full": 0.006080443446118517,
+              "paired_pointwise_ci95": [
+                0.0005645087986042836,
+                0.013072225528265204
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7265650148116087,
+              "difference_from_old_full": -0.004869830415321182,
+              "paired_pointwise_ci95": [
+                -0.010501647638595794,
+                -0.0003917008857597638
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9971784178186827,
+              "difference_from_old_full": 0.0011412571992013166,
+              "paired_pointwise_ci95": [
+                0.00012279267226871467,
+                0.002271851200102915
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6445975397022647,
+              "difference_from_old_full": -0.0007064209545407686,
+              "paired_pointwise_ci95": [
+                -0.0014265343521700615,
+                -0.00010248170600939276
+              ]
+            }
+          }
+        }
+      },
+      "73": {
+        "mean_logical_rzz": 27.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8752511524718739,
+              "difference_from_old_full": 0.006181540371833162,
+              "paired_pointwise_ci95": [
+                0.0003251701090191423,
+                0.01342715483536863
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.726786918461041,
+              "difference_from_old_full": -0.004647926765888325,
+              "paired_pointwise_ci95": [
+                -0.010701490576220834,
+                0.00044369494491356694
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9970664772525277,
+              "difference_from_old_full": 0.0010293166330463486,
+              "paired_pointwise_ci95": [
+                -1.5839080483317177e-05,
+                0.0022525059377287125
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6447825136560406,
+              "difference_from_old_full": -0.0005214470007645529,
+              "paired_pointwise_ci95": [
+                -0.0012349712904044608,
+                4.028202413039392e-05
+              ]
+            }
+          }
+        }
+      },
+      "74": {
+        "mean_logical_rzz": 26.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8754576693936336,
+              "difference_from_old_full": 0.0063880572935927655,
+              "paired_pointwise_ci95": [
+                0.0009744484781739015,
+                0.013066592717302782
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7269936739053784,
+              "difference_from_old_full": -0.0044411713215511996,
+              "paired_pointwise_ci95": [
+                -0.009473803521334699,
+                -0.0001809431635557239
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9975964407112972,
+              "difference_from_old_full": 0.001559280091815881,
+              "paired_pointwise_ci95": [
+                -4.1568481613954086e-05,
+                0.0033325622749098764
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6445263692801735,
+              "difference_from_old_full": -0.0007775913766318102,
+              "paired_pointwise_ci95": [
+                -0.0016617462615174286,
+                -5.585505850679024e-05
+              ]
+            }
+          }
+        }
+      },
+      "75": {
+        "mean_logical_rzz": 25.359375,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8765037733928258,
+              "difference_from_old_full": 0.007434161292785123,
+              "paired_pointwise_ci95": [
+                8.547859260809597e-05,
+                0.01592005807372703
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7273444639728757,
+              "difference_from_old_full": -0.004090381254053994,
+              "paired_pointwise_ci95": [
+                -0.010222463078905767,
+                0.0013908805228725497
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9977012738243463,
+              "difference_from_old_full": 0.001664113204864934,
+              "paired_pointwise_ci95": [
+                -0.0007796070942892359,
+                0.0043169851292985525
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6444240613936874,
+              "difference_from_old_full": -0.0008798992631178018,
+              "paired_pointwise_ci95": [
+                -0.0025185209343488732,
+                0.00035921452030254937
+              ]
+            }
+          }
+        }
+      },
+      "76": {
+        "mean_logical_rzz": 24.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8773456323014103,
+              "difference_from_old_full": 0.008276020201369553,
+              "paired_pointwise_ci95": [
+                0.000286105393776422,
+                0.017439455170887942
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7276511319272565,
+              "difference_from_old_full": -0.003783713299673492,
+              "paired_pointwise_ci95": [
+                -0.010704230917952133,
+                0.0029591787910377577
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9973445752244889,
+              "difference_from_old_full": 0.0013074146050076636,
+              "paired_pointwise_ci95": [
+                -0.001508405306460619,
+                0.004265398652416076
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644724074444388,
+              "difference_from_old_full": -0.0005798862124174291,
+              "paired_pointwise_ci95": [
+                -0.002630114681932654,
+                0.0011961873353169973
+              ]
+            }
+          }
+        }
+      },
+      "77": {
+        "mean_logical_rzz": 23.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8785758547696014,
+              "difference_from_old_full": 0.009506242669560723,
+              "paired_pointwise_ci95": [
+                0.0001786727092640235,
+                0.020677894813453973
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7264160621379094,
+              "difference_from_old_full": -0.00501878308902013,
+              "paired_pointwise_ci95": [
+                -0.013199191790860482,
+                0.002622334103285891
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9968685473838155,
+              "difference_from_old_full": 0.0008313867643341862,
+              "paired_pointwise_ci95": [
+                -0.002770195367047999,
+                0.004080833971736435
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.645150935379323,
+              "difference_from_old_full": -0.0001530252774824513,
+              "paired_pointwise_ci95": [
+                -0.0023427101347410074,
+                0.0023803977762774644
+              ]
+            }
+          }
+        }
+      },
+      "78": {
+        "mean_logical_rzz": 22.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8794259055077895,
+              "difference_from_old_full": 0.010356293407748926,
+              "paired_pointwise_ci95": [
+                0.0005938639253963143,
+                0.021967061052954703
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7261133484287976,
+              "difference_from_old_full": -0.005321496798132052,
+              "paired_pointwise_ci95": [
+                -0.013989635923012732,
+                0.002802499949486753
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9972158903390655,
+              "difference_from_old_full": 0.001178729719584097,
+              "paired_pointwise_ci95": [
+                -0.0019836580769450446,
+                0.004310997415884947
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644833717814505,
+              "difference_from_old_full": -0.0004702428423006312,
+              "paired_pointwise_ci95": [
+                -0.002770019871376612,
+                0.0017591267680291181
+              ]
+            }
+          }
+        }
+      },
+      "79": {
+        "mean_logical_rzz": 21.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.880021771211875,
+              "difference_from_old_full": 0.010952159111834413,
+              "paired_pointwise_ci95": [
+                0.0010434460091414172,
+                0.022810132678847368
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.725727212064844,
+              "difference_from_old_full": -0.005707633162086043,
+              "paired_pointwise_ci95": [
+                -0.014695060666894062,
+                0.0027001936432681567
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9968822379947166,
+              "difference_from_old_full": 0.0008450773752352748,
+              "paired_pointwise_ci95": [
+                -0.002922837707306308,
+                0.004142157324275782
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6452529480305422,
+              "difference_from_old_full": -5.1012626263148564e-05,
+              "paired_pointwise_ci95": [
+                -0.0023555414081132663,
+                0.0028100784464993233
+              ]
+            }
+          }
+        }
+      },
+      "80": {
+        "mean_logical_rzz": 20.6875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8801273467810409,
+              "difference_from_old_full": 0.01105773468100009,
+              "paired_pointwise_ci95": [
+                0.0018738499452532326,
+                0.02176127306547337
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.72568905736597,
+              "difference_from_old_full": -0.0057457878609602775,
+              "paired_pointwise_ci95": [
+                -0.013842794279251072,
+                0.0020009071298348045
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9974999142767179,
+              "difference_from_old_full": 0.0014627536572365159,
+              "paired_pointwise_ci95": [
+                -0.0013209241849709936,
+                0.004355132568345103
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6447300624403933,
+              "difference_from_old_full": -0.000573898216412197,
+              "paired_pointwise_ci95": [
+                -0.0026383681136058178,
+                0.0014129118181675222
+              ]
+            }
+          }
+        }
+      },
+      "81": {
+        "mean_logical_rzz": 19.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8804386791206699,
+              "difference_from_old_full": 0.011369067020629165,
+              "paired_pointwise_ci95": [
+                0.0018317703761826243,
+                0.022486121506207022
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7256268165238886,
+              "difference_from_old_full": -0.005808028703040948,
+              "paired_pointwise_ci95": [
+                -0.014356127872202641,
+                0.0027602857136630257
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9973011548629304,
+              "difference_from_old_full": 0.0012639942434490015,
+              "paired_pointwise_ci95": [
+                -0.0023884121907465144,
+                0.004771323903738083
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644899733501848,
+              "difference_from_old_full": -0.00040422715495775155,
+              "paired_pointwise_ci95": [
+                -0.003077220051400525,
+                0.002357960561864311
+              ]
+            }
+          }
+        }
+      },
+      "82": {
+        "mean_logical_rzz": 18.6875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8798938857903899,
+              "difference_from_old_full": 0.010824273690349159,
+              "paired_pointwise_ci95": [
+                0.001314091116156947,
+                0.021649276172406196
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7259099597245706,
+              "difference_from_old_full": -0.005524885502359678,
+              "paired_pointwise_ci95": [
+                -0.014296369850012966,
+                0.0035374418077031766
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9967549433482978,
+              "difference_from_old_full": 0.0007177827288163789,
+              "paired_pointwise_ci95": [
+                -0.0038990127338022437,
+                0.004518221556957009
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6454155466365625,
+              "difference_from_old_full": 0.00011158597975689452,
+              "paired_pointwise_ci95": [
+                -0.002838818004773074,
+                0.0038305593080215955
+              ]
+            }
+          }
+        }
+      },
+      "83": {
+        "mean_logical_rzz": 17.6875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8780062840045868,
+              "difference_from_old_full": 0.008936671904546152,
+              "paired_pointwise_ci95": [
+                0.0005277156542335535,
+                0.018505549185090522
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7265708128797757,
+              "difference_from_old_full": -0.00486403234715424,
+              "paired_pointwise_ci95": [
+                -0.013510052973348832,
+                0.0042537085196858
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9963145718806672,
+              "difference_from_old_full": 0.00027741126118580733,
+              "paired_pointwise_ci95": [
+                -0.005034566445325159,
+                0.004342673649282721
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6456526775755256,
+              "difference_from_old_full": 0.0003487169187201232,
+              "paired_pointwise_ci95": [
+                -0.002942588809472377,
+                0.004695838117166339
+              ]
+            }
+          }
+        }
+      },
+      "84": {
+        "mean_logical_rzz": 16.71875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8775412148410555,
+              "difference_from_old_full": 0.008471602741014873,
+              "paired_pointwise_ci95": [
+                -0.00038253647285318564,
+                0.018216579399497168
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.726976634192022,
+              "difference_from_old_full": -0.004458211034907917,
+              "paired_pointwise_ci95": [
+                -0.01318542799230802,
+                0.005170985667039461
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9954834945337236,
+              "difference_from_old_full": -0.0005536660857576887,
+              "paired_pointwise_ci95": [
+                -0.0067277487598863955,
+                0.0037757012956350674
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.646271040261959,
+              "difference_from_old_full": 0.000967079605153652,
+              "paired_pointwise_ci95": [
+                -0.0024460584217106045,
+                0.005972132173191482
+              ]
+            }
+          }
+        }
+      },
+      "85": {
+        "mean_logical_rzz": 15.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8766940271575957,
+              "difference_from_old_full": 0.007624415057555026,
+              "paired_pointwise_ci95": [
+                -0.0012711421592324018,
+                0.018221195722295587
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7274135752965614,
+              "difference_from_old_full": -0.004021269930368335,
+              "paired_pointwise_ci95": [
+                -0.01183433109313502,
+                0.004311058022140641
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9951658970614817,
+              "difference_from_old_full": -0.0008712635579996211,
+              "paired_pointwise_ci95": [
+                -0.0055538684727555535,
+                0.002514658019594301
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6463075608377373,
+              "difference_from_old_full": 0.001003600180931704,
+              "paired_pointwise_ci95": [
+                -0.001233682267886138,
+                0.004465434869597952
+              ]
+            }
+          }
+        }
+      },
+      "86": {
+        "mean_logical_rzz": 14.71875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8737756626240056,
+              "difference_from_old_full": 0.004706050523964864,
+              "paired_pointwise_ci95": [
+                -0.0026379916979471212,
+                0.013418908312988318
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.728743337376845,
+              "difference_from_old_full": -0.0026915078500849635,
+              "paired_pointwise_ci95": [
+                -0.009207739272691069,
+                0.00443791189662139
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9947603821182079,
+              "difference_from_old_full": -0.0012767785012734196,
+              "paired_pointwise_ci95": [
+                -0.004907168606542587,
+                0.001675226819136207
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6463126580637804,
+              "difference_from_old_full": 0.0010086974069748907,
+              "paired_pointwise_ci95": [
+                -0.0012760294671696484,
+                0.003913619106560941
+              ]
+            }
+          }
+        }
+      },
+      "87": {
+        "mean_logical_rzz": 13.71875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8734224720328982,
+              "difference_from_old_full": 0.004352859932857578,
+              "paired_pointwise_ci95": [
+                -0.0024757817570141716,
+                0.012444128573683398
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.728451631535806,
+              "difference_from_old_full": -0.002983213691124035,
+              "paired_pointwise_ci95": [
+                -0.008837410510112527,
+                0.0029021509173949196
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9947967411984651,
+              "difference_from_old_full": -0.0012404194210163307,
+              "paired_pointwise_ci95": [
+                -0.003946457025725144,
+                0.0011846817764274973
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6458782405400463,
+              "difference_from_old_full": 0.000574279883240613,
+              "paired_pointwise_ci95": [
+                -0.0011282283333012499,
+                0.002550367570264289
+              ]
+            }
+          }
+        }
+      },
+      "88": {
+        "mean_logical_rzz": 12.546875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8692281355625734,
+              "difference_from_old_full": 0.0001585234625326895,
+              "paired_pointwise_ci95": [
+                -0.005762832121633708,
+                0.006632463430372385
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.732604906905542,
+              "difference_from_old_full": 0.001170061678612555,
+              "paired_pointwise_ci95": [
+                -0.004070562367447841,
+                0.008429178934870805
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9931291414584333,
+              "difference_from_old_full": -0.0029080191610480494,
+              "paired_pointwise_ci95": [
+                -0.007756387071666742,
+                0.0008209232899284826
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.64702351360352,
+              "difference_from_old_full": 0.0017195529467147475,
+              "paired_pointwise_ci95": [
+                -0.0011881080349161678,
+                0.005724825524189763
+              ]
+            }
+          }
+        }
+      },
+      "89": {
+        "mean_logical_rzz": 11.546875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8673817143721039,
+              "difference_from_old_full": -0.0016878977279369033,
+              "paired_pointwise_ci95": [
+                -0.008755114153320667,
+                0.006094678175835671
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.734307296155171,
+              "difference_from_old_full": 0.002872450928241156,
+              "paired_pointwise_ci95": [
+                -0.0036619116480156072,
+                0.01101383464044791
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9899530060696276,
+              "difference_from_old_full": -0.006084154549853782,
+              "paired_pointwise_ci95": [
+                -0.01338591533305044,
+                -0.0002810453963106647
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6483052010230503,
+              "difference_from_old_full": 0.0030012403662446757,
+              "paired_pointwise_ci95": [
+                -0.0010098903921567236,
+                0.0085045280579186
+              ]
+            }
+          }
+        }
+      },
+      "90": {
+        "mean_logical_rzz": 10.53125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8652789601095723,
+              "difference_from_old_full": -0.0037906519904685023,
+              "paired_pointwise_ci95": [
+                -0.01004722450262001,
+                0.00208885691081536
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7360188853186296,
+              "difference_from_old_full": 0.004584040091699344,
+              "paired_pointwise_ci95": [
+                -0.0007865655106717961,
+                0.012063535568353058
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9896122497852191,
+              "difference_from_old_full": -0.006424910834262297,
+              "paired_pointwise_ci95": [
+                -0.014110202248011192,
+                -0.000336286335499216
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.649320450750426,
+              "difference_from_old_full": 0.0040164900936206435,
+              "paired_pointwise_ci95": [
+                -0.00013234007685036296,
+                0.009805363462094121
+              ]
+            }
+          }
+        }
+      },
+      "95": {
+        "mean_logical_rzz": 5.546875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8487595841086326,
+              "difference_from_old_full": -0.02031002799140806,
+              "paired_pointwise_ci95": [
+                -0.03202766332941916,
+                -0.010023838545847059
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7503998763732564,
+              "difference_from_old_full": 0.018965031146327152,
+              "paired_pointwise_ci95": [
+                0.007960085472827111,
+                0.03218377548982283
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9683567048364554,
+              "difference_from_old_full": -0.027680455783025873,
+              "paired_pointwise_ci95": [
+                -0.04544173669060239,
+                -0.012096048715598254
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6619632100319643,
+              "difference_from_old_full": 0.016659249375159065,
+              "paired_pointwise_ci95": [
+                0.005803432139600692,
+                0.029687961590748786
+              ]
+            }
+          }
+        }
+      },
+      "100": {
+        "mean_logical_rzz": 0.0,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8335463783412231,
+              "difference_from_old_full": -0.035523233758817614,
+              "paired_pointwise_ci95": [
+                -0.05722241203879804,
+                -0.016841205002785655
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7632938304850354,
+              "difference_from_old_full": 0.03185898525810549,
+              "paired_pointwise_ci95": [
+                0.013738087845581209,
+                0.053452016378168245
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.8959935659201976,
+              "difference_from_old_full": -0.1000435946992838,
+              "paired_pointwise_ci95": [
+                -0.15657507412433846,
+                -0.048909721359375144
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7084006309481095,
+              "difference_from_old_full": 0.06309667029130406,
+              "paired_pointwise_ci95": [
+                0.026010476752049923,
+                0.10511193106843472
+              ]
+            }
+          }
+        }
+      }
+    },
+    "trained_angles": {
+      "0": {
+        "mean_logical_rzz": 101.4375,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8690680595280387,
+              "difference_from_old_full": -1.5525720020682574e-06,
+              "paired_pointwise_ci95": [
+                -2.4985925908440786e-06,
+                -7.177908918012823e-07
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.731436228272031,
+              "difference_from_old_full": 1.3830451011526135e-06,
+              "paired_pointwise_ci95": [
+                5.582460549800189e-07,
+                2.3787530215320376e-06
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9960366206514302,
+              "difference_from_old_full": -5.399680511799371e-07,
+              "paired_pointwise_ci95": [
+                -9.204467151623444e-07,
+                -2.3007567992463194e-07
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6453042689060853,
+              "difference_from_old_full": 3.0824927977832206e-07,
+              "paired_pointwise_ci95": [
+                9.942985645192832e-08,
+                5.762793220374236e-07
+              ]
+            }
+          }
+        }
+      },
+      "25": {
+        "mean_logical_rzz": 76.078125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8683696297229236,
+              "difference_from_old_full": -0.0006999823771170009,
+              "paired_pointwise_ci95": [
+                -0.003102776125964077,
+                0.0014609756295903972
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.732325483691362,
+              "difference_from_old_full": 0.0008906384644321169,
+              "paired_pointwise_ci95": [
+                -0.00038586401895386905,
+                0.0026639221814299327
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9954603805995796,
+              "difference_from_old_full": -0.0005767800199016973,
+              "paired_pointwise_ci95": [
+                -0.0015802498285023112,
+                0.00033885554785465026
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.645582926006722,
+              "difference_from_old_full": 0.000278965349916737,
+              "paired_pointwise_ci95": [
+                -6.44458178877043e-05,
+                0.0007589718770586816
+              ]
+            }
+          }
+        }
+      },
+      "50": {
+        "mean_logical_rzz": 50.71875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8718145697307504,
+              "difference_from_old_full": 0.0027449576307097875,
+              "paired_pointwise_ci95": [
+                -0.0011227207814060538,
+                0.006646011823058089
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.726818862992168,
+              "difference_from_old_full": -0.004615982234761659,
+              "paired_pointwise_ci95": [
+                -0.009793883296903163,
+                -0.00046340662302832227
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9963358609090127,
+              "difference_from_old_full": 0.000298700289531318,
+              "paired_pointwise_ci95": [
+                -0.0017028792425891823,
+                0.0017183537482206943
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644857051564789,
+              "difference_from_old_full": -0.0004469090920165425,
+              "paired_pointwise_ci95": [
+                -0.0010594113397919523,
+                0.00011578400826437997
+              ]
+            }
+          }
+        }
+      },
+      "60": {
+        "mean_logical_rzz": 41.0625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8712870731850177,
+              "difference_from_old_full": 0.002217461084977083,
+              "paired_pointwise_ci95": [
+                -0.0029861064292580324,
+                0.007900483162851746
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.730279674368263,
+              "difference_from_old_full": -0.0011551708586667493,
+              "paired_pointwise_ci95": [
+                -0.0037669662173915974,
+                0.0014067969820076342
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9960415158686772,
+              "difference_from_old_full": 4.355249195805641e-06,
+              "paired_pointwise_ci95": [
+                -0.002972036594833659,
+                0.002385040246900566
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.646132970661286,
+              "difference_from_old_full": 0.0008290100044807402,
+              "paired_pointwise_ci95": [
+                -0.0004478190861466757,
+                0.0031608793274494856
+              ]
+            }
+          }
+        }
+      },
+      "61": {
+        "mean_logical_rzz": 40.078125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8720048207518084,
+              "difference_from_old_full": 0.002935208651767748,
+              "paired_pointwise_ci95": [
+                -0.0020558814126552523,
+                0.009348069599763259
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.729902274430751,
+              "difference_from_old_full": -0.0015325707961789913,
+              "paired_pointwise_ci95": [
+                -0.004763571958262824,
+                0.0012568291516906758
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9960846399788286,
+              "difference_from_old_full": 4.7479359347162714e-05,
+              "paired_pointwise_ci95": [
+                -0.0024039613823563437,
+                0.0023229898595347955
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.646085367478419,
+              "difference_from_old_full": 0.0007814068216136748,
+              "paired_pointwise_ci95": [
+                -0.0003851569022898857,
+                0.0026254623627089964
+              ]
+            }
+          }
+        }
+      },
+      "62": {
+        "mean_logical_rzz": 39.078125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8719750941501705,
+              "difference_from_old_full": 0.0029054820501298855,
+              "paired_pointwise_ci95": [
+                -0.002328352696828893,
+                0.009281465672378862
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7301651531785405,
+              "difference_from_old_full": -0.0012696920483894307,
+              "paired_pointwise_ci95": [
+                -0.0046949650833164325,
+                0.001711798251522991
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9956450367377856,
+              "difference_from_old_full": -0.00039212388169577485,
+              "paired_pointwise_ci95": [
+                -0.0034090909212094733,
+                0.002021435632579468
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.64637323852808,
+              "difference_from_old_full": 0.0010692778712745148,
+              "paired_pointwise_ci95": [
+                -0.0003099239657574182,
+                0.0034278399348947114
+              ]
+            }
+          }
+        }
+      },
+      "63": {
+        "mean_logical_rzz": 37.90625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8729111418003137,
+              "difference_from_old_full": 0.00384152970027307,
+              "paired_pointwise_ci95": [
+                -0.0008480103945539052,
+                0.00942461775547038
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.729334498834741,
+              "difference_from_old_full": -0.0021003463921887393,
+              "paired_pointwise_ci95": [
+                -0.005462415607175107,
+                0.0009228319450756104
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9957727938157214,
+              "difference_from_old_full": -0.00026436680375995295,
+              "paired_pointwise_ci95": [
+                -0.003925002732155555,
+                0.0023632700076888524
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6462561344351503,
+              "difference_from_old_full": 0.0009521737783444346,
+              "paired_pointwise_ci95": [
+                -0.0005808513476710682,
+                0.0038023016213390684
+              ]
+            }
+          }
+        }
+      },
+      "64": {
+        "mean_logical_rzz": 36.90625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8736862495014157,
+              "difference_from_old_full": 0.004616637401375086,
+              "paired_pointwise_ci95": [
+                -7.348043913065185e-05,
+                0.010121703487730189
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.728335874149072,
+              "difference_from_old_full": -0.0030989710778576776,
+              "paired_pointwise_ci95": [
+                -0.007206411578104201,
+                0.00035296624380965
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9963968159769794,
+              "difference_from_old_full": 0.00035965535749801596,
+              "paired_pointwise_ci95": [
+                -0.0025170925740204955,
+                0.0025493064671418247
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6457303712942553,
+              "difference_from_old_full": 0.00042641063744999763,
+              "paired_pointwise_ci95": [
+                -0.0008599397552237535,
+                0.002656039752666316
+              ]
+            }
+          }
+        }
+      },
+      "65": {
+        "mean_logical_rzz": 35.890625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8739477260186206,
+              "difference_from_old_full": 0.004878113918579851,
+              "paired_pointwise_ci95": [
+                0.0004374782932057751,
+                0.009688624655231601
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.727755721976826,
+              "difference_from_old_full": -0.0036791232501038086,
+              "paired_pointwise_ci95": [
+                -0.008133822752821894,
+                0.00017923806648300193
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9963941535482704,
+              "difference_from_old_full": 0.00035699292878901834,
+              "paired_pointwise_ci95": [
+                -0.003042637742800637,
+                0.00269991532482725
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.645874365412541,
+              "difference_from_old_full": 0.0005704047557361508,
+              "paired_pointwise_ci95": [
+                -0.0009609311723556061,
+                0.0032425778361834536
+              ]
+            }
+          }
+        }
+      },
+      "66": {
+        "mean_logical_rzz": 34.90625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8745816830278126,
+              "difference_from_old_full": 0.005512070927771881,
+              "paired_pointwise_ci95": [
+                0.001149784813446091,
+                0.010296974437011636
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.727066792538847,
+              "difference_from_old_full": -0.004368052688082533,
+              "paired_pointwise_ci95": [
+                -0.009217252311009774,
+                -0.0003531035934537809
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.996797196739796,
+              "difference_from_old_full": 0.0007600361203146961,
+              "paired_pointwise_ci95": [
+                -0.0014149722959518937,
+                0.002540201308943476
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6454320152094195,
+              "difference_from_old_full": 0.000128054552613905,
+              "paired_pointwise_ci95": [
+                -0.0009497225984928219,
+                0.0018042542170763956
+              ]
+            }
+          }
+        }
+      },
+      "67": {
+        "mean_logical_rzz": 33.9375,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8749267482319019,
+              "difference_from_old_full": 0.005857136131861099,
+              "paired_pointwise_ci95": [
+                0.0012499630532105874,
+                0.011083979359725214
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.725840184800993,
+              "difference_from_old_full": -0.005594660425936884,
+              "paired_pointwise_ci95": [
+                -0.011434754992787262,
+                -0.000845615691201574
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.996932973134637,
+              "difference_from_old_full": 0.000895812515155749,
+              "paired_pointwise_ci95": [
+                -0.0006882233562524773,
+                0.0025901320993482347
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6451502382036787,
+              "difference_from_old_full": -0.00015372245312701704,
+              "paired_pointwise_ci95": [
+                -0.0010185209122751885,
+                0.0008854166141870503
+              ]
+            }
+          }
+        }
+      },
+      "68": {
+        "mean_logical_rzz": 32.9375,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8747763559536299,
+              "difference_from_old_full": 0.005706743853589164,
+              "paired_pointwise_ci95": [
+                0.00046725550017198486,
+                0.011878980248483797
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7263649654355047,
+              "difference_from_old_full": -0.005069879791425164,
+              "paired_pointwise_ci95": [
+                -0.01060994603741027,
+                -0.00024030856975544723
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9966513012903002,
+              "difference_from_old_full": 0.0006141406708188996,
+              "paired_pointwise_ci95": [
+                -0.001022466992063068,
+                0.002454339515667761
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6451951924722774,
+              "difference_from_old_full": -0.0001087681845280547,
+              "paired_pointwise_ci95": [
+                -0.0009256759566454912,
+                0.0008450427694537564
+              ]
+            }
+          }
+        }
+      },
+      "69": {
+        "mean_logical_rzz": 31.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8759970283870961,
+              "difference_from_old_full": 0.0069274162870554545,
+              "paired_pointwise_ci95": [
+                0.0012285713501873777,
+                0.014153649266935625
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.725935744570359,
+              "difference_from_old_full": -0.0054991006565708635,
+              "paired_pointwise_ci95": [
+                -0.011476123605747365,
+                -0.0005894076584871118
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9969403890955135,
+              "difference_from_old_full": 0.0009032284760321918,
+              "paired_pointwise_ci95": [
+                -0.0005826725838551731,
+                0.002575759580947649
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6451395060811045,
+              "difference_from_old_full": -0.00016445457570114091,
+              "paired_pointwise_ci95": [
+                -0.0009581386638645703,
+                0.0008228868085603831
+              ]
+            }
+          }
+        }
+      },
+      "70": {
+        "mean_logical_rzz": 30.90625,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8768058771335626,
+              "difference_from_old_full": 0.0077362650335218806,
+              "paired_pointwise_ci95": [
+                0.0022558178810721825,
+                0.014872566539455635
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.725686344259662,
+              "difference_from_old_full": -0.005748500967267735,
+              "paired_pointwise_ci95": [
+                -0.011507349536654311,
+                -0.0012559222466291043
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9978101536105437,
+              "difference_from_old_full": 0.0017729929910623703,
+              "paired_pointwise_ci95": [
+                0.0006003963538138995,
+                0.003334021497085403
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6444066438388427,
+              "difference_from_old_full": -0.0008973168179626928,
+              "paired_pointwise_ci95": [
+                -0.0017721514738831957,
+                -0.00025061613848483775
+              ]
+            }
+          }
+        }
+      },
+      "71": {
+        "mean_logical_rzz": 29.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8761105627426689,
+              "difference_from_old_full": 0.007040950642628195,
+              "paired_pointwise_ci95": [
+                0.0015912880634180164,
+                0.014148688323739562
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7260985996013316,
+              "difference_from_old_full": -0.005336245625598049,
+              "paired_pointwise_ci95": [
+                -0.011333163578577827,
+                -0.0008466729718565718
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9977176205605945,
+              "difference_from_old_full": 0.001680459941113207,
+              "paired_pointwise_ci95": [
+                0.0004717190089861725,
+                0.003255629737220001
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644361078298158,
+              "difference_from_old_full": -0.0009428823586475031,
+              "paired_pointwise_ci95": [
+                -0.002060344747249905,
+                -0.00017504136262320365
+              ]
+            }
+          }
+        }
+      },
+      "72": {
+        "mean_logical_rzz": 28.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8785900316928781,
+              "difference_from_old_full": 0.00952041959283737,
+              "paired_pointwise_ci95": [
+                0.002738674572399412,
+                0.018223501855340614
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7235543343815656,
+              "difference_from_old_full": -0.007880510845364227,
+              "paired_pointwise_ci95": [
+                -0.015086975014092199,
+                -0.002087342720542549
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9977300601884589,
+              "difference_from_old_full": 0.0016928995689775538,
+              "paired_pointwise_ci95": [
+                0.0005505186704683208,
+                0.0030385025115199733
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6443302052299424,
+              "difference_from_old_full": -0.0009737554268632112,
+              "paired_pointwise_ci95": [
+                -0.0018305681477607948,
+                -0.0002690272915783874
+              ]
+            }
+          }
+        }
+      },
+      "73": {
+        "mean_logical_rzz": 27.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8787907528742748,
+              "difference_from_old_full": 0.009721140774234038,
+              "paired_pointwise_ci95": [
+                0.0024810466285949055,
+                0.01869918856366199
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7236849707927044,
+              "difference_from_old_full": -0.007749874434225468,
+              "paired_pointwise_ci95": [
+                -0.015244863410080562,
+                -0.0016295812926653127
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9976413125217434,
+              "difference_from_old_full": 0.0016041519022620063,
+              "paired_pointwise_ci95": [
+                0.0004566781827244914,
+                0.0029745905445811857
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6445161392324747,
+              "difference_from_old_full": -0.0007878214243309777,
+              "paired_pointwise_ci95": [
+                -0.001553494754204445,
+                -0.00016064954313621134
+              ]
+            }
+          }
+        }
+      },
+      "74": {
+        "mean_logical_rzz": 26.921875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8792595543659832,
+              "difference_from_old_full": 0.010189942265942553,
+              "paired_pointwise_ci95": [
+                0.003339699259990813,
+                0.01852230471325689
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7237337892988074,
+              "difference_from_old_full": -0.007701055928122265,
+              "paired_pointwise_ci95": [
+                -0.014291634236445796,
+                -0.0022883799585363537
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9982208751602778,
+              "difference_from_old_full": 0.0021837145407963606,
+              "paired_pointwise_ci95": [
+                0.0005071351576102378,
+                0.004180141211753984
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6442093799064468,
+              "difference_from_old_full": -0.0010945807503589533,
+              "paired_pointwise_ci95": [
+                -0.0021339410692962756,
+                -0.00028021450666196025
+              ]
+            }
+          }
+        }
+      },
+      "75": {
+        "mean_logical_rzz": 25.359375,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8807716018153928,
+              "difference_from_old_full": 0.011701989715352069,
+              "paired_pointwise_ci95": [
+                0.002907851143540492,
+                0.02203786729879511
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7238013957459897,
+              "difference_from_old_full": -0.007633449480940042,
+              "paired_pointwise_ci95": [
+                -0.015134884484967264,
+                -0.0014449504075943775
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9984076301398974,
+              "difference_from_old_full": 0.002370469520415997,
+              "paired_pointwise_ci95": [
+                7.096917333150809e-05,
+                0.005113180115519056
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644043577642093,
+              "difference_from_old_full": -0.0012603830147127175,
+              "paired_pointwise_ci95": [
+                -0.0029912502058795174,
+                -2.484299259160048e-05
+              ]
+            }
+          }
+        }
+      },
+      "76": {
+        "mean_logical_rzz": 24.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8819435189125184,
+              "difference_from_old_full": 0.012873906812477688,
+              "paired_pointwise_ci95": [
+                0.003204547447589515,
+                0.024336731476367692
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7240488470764284,
+              "difference_from_old_full": -0.007385998150501075,
+              "paired_pointwise_ci95": [
+                -0.015757309702665524,
+                -0.0004169230374231684
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9981216110361184,
+              "difference_from_old_full": 0.002084450416637027,
+              "paired_pointwise_ci95": [
+                -0.0004255124129588419,
+                0.0050050955913888175
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6442940349192234,
+              "difference_from_old_full": -0.001009925737582032,
+              "paired_pointwise_ci95": [
+                -0.0030431784425351237,
+                0.0005500714543276128
+              ]
+            }
+          }
+        }
+      },
+      "77": {
+        "mean_logical_rzz": 23.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8837386729512543,
+              "difference_from_old_full": 0.014669060851213596,
+              "paired_pointwise_ci95": [
+                0.0034679082842542053,
+                0.02837221283948281
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.722370370348834,
+              "difference_from_old_full": -0.009064474878095908,
+              "paired_pointwise_ci95": [
+                -0.019252932168005547,
+                -0.00026503593201939563
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9976403719946272,
+              "difference_from_old_full": 0.001603211375145807,
+              "paired_pointwise_ci95": [
+                -0.0015411291723944984,
+                0.00474899038381718
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644713997693961,
+              "difference_from_old_full": -0.0005899629628444251,
+              "paired_pointwise_ci95": [
+                -0.002744306772422271,
+                0.0015784907395685241
+              ]
+            }
+          }
+        }
+      },
+      "78": {
+        "mean_logical_rzz": 22.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.884917519075739,
+              "difference_from_old_full": 0.015847906975698364,
+              "paired_pointwise_ci95": [
+                0.003923740707141603,
+                0.03041715752570171
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7218176064043136,
+              "difference_from_old_full": -0.009617238822616031,
+              "paired_pointwise_ci95": [
+                -0.02012931602958462,
+                -0.0006712299618942262
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9980375827160959,
+              "difference_from_old_full": 0.002000422096614572,
+              "paired_pointwise_ci95": [
+                -0.0007682214415979391,
+                0.005149300959092474
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644389896598187,
+              "difference_from_old_full": -0.000914064058618394,
+              "paired_pointwise_ci95": [
+                -0.0031712638697197057,
+                0.0009748834033039433
+              ]
+            }
+          }
+        }
+      },
+      "79": {
+        "mean_logical_rzz": 21.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8859467074494418,
+              "difference_from_old_full": 0.016877095349401135,
+              "paired_pointwise_ci95": [
+                0.004460533061470227,
+                0.03171036864901767
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7211310070708548,
+              "difference_from_old_full": -0.010303838156074784,
+              "paired_pointwise_ci95": [
+                -0.021274997948718514,
+                -0.0006225492876083807
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9976970953507173,
+              "difference_from_old_full": 0.0016599347312358497,
+              "paired_pointwise_ci95": [
+                -0.001612315563453408,
+                0.004875520614917373
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6447678245638073,
+              "difference_from_old_full": -0.0005361360929979873,
+              "paired_pointwise_ci95": [
+                -0.002749649163124787,
+                0.0018063378885483595
+              ]
+            }
+          }
+        }
+      },
+      "80": {
+        "mean_logical_rzz": 20.6875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8862948166939502,
+              "difference_from_old_full": 0.01722520459390954,
+              "paired_pointwise_ci95": [
+                0.005135468348663843,
+                0.031242210347454773
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.720883924404534,
+              "difference_from_old_full": -0.010550920822395969,
+              "paired_pointwise_ci95": [
+                -0.020891252069743852,
+                -0.0017200206598168334
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9983282772981356,
+              "difference_from_old_full": 0.0022911166786541513,
+              "paired_pointwise_ci95": [
+                -0.00022434234486975131,
+                0.005265565680159891
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644252332209871,
+              "difference_from_old_full": -0.001051628446934589,
+              "paired_pointwise_ci95": [
+                -0.003128821072451347,
+                0.0006446889016281064
+              ]
+            }
+          }
+        }
+      },
+      "81": {
+        "mean_logical_rzz": 19.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8872793097227033,
+              "difference_from_old_full": 0.01820969762266259,
+              "paired_pointwise_ci95": [
+                0.0055333173699020025,
+                0.03302754104147929
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7203662270536757,
+              "difference_from_old_full": -0.01106861817325441,
+              "paired_pointwise_ci95": [
+                -0.022234797835019218,
+                -0.0011082066189551745
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9980933333629258,
+              "difference_from_old_full": 0.0020561727434444694,
+              "paired_pointwise_ci95": [
+                -0.0011628295041029365,
+                0.005511140638835133
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.64444766981208,
+              "difference_from_old_full": -0.0008562908447254311,
+              "paired_pointwise_ci95": [
+                -0.003437260235998204,
+                0.0014882686136377893
+              ]
+            }
+          }
+        }
+      },
+      "82": {
+        "mean_logical_rzz": 18.6875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8870164494784212,
+              "difference_from_old_full": 0.01794683737838055,
+              "paired_pointwise_ci95": [
+                0.005300532355508061,
+                0.033020832079193194
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7204899335789157,
+              "difference_from_old_full": -0.010944911648013984,
+              "paired_pointwise_ci95": [
+                -0.022773914984681225,
+                -0.0002714165310124589
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9975281830242233,
+              "difference_from_old_full": 0.0014910224047419048,
+              "paired_pointwise_ci95": [
+                -0.002698889855864319,
+                0.005222375982853367
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.644961505945677,
+              "difference_from_old_full": -0.00034245471112881454,
+              "paired_pointwise_ci95": [
+                -0.003279985573899832,
+                0.002992857312871869
+              ]
+            }
+          }
+        }
+      },
+      "83": {
+        "mean_logical_rzz": 17.6875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8851930579413783,
+              "difference_from_old_full": 0.016123445841337552,
+              "paired_pointwise_ci95": [
+                0.004477090529442271,
+                0.029745837690031682
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7209408479565576,
+              "difference_from_old_full": -0.010493997270372153,
+              "paired_pointwise_ci95": [
+                -0.022369883694018818,
+                0.00019624814226659664
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9971819156592283,
+              "difference_from_old_full": 0.0011447550397469131,
+              "paired_pointwise_ci95": [
+                -0.0036210132160998895,
+                0.005132534085502199
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6451832839913543,
+              "difference_from_old_full": -0.0001206766654513157,
+              "paired_pointwise_ci95": [
+                -0.003344167555338933,
+                0.0037750993309843403
+              ]
+            }
+          }
+        }
+      },
+      "84": {
+        "mean_logical_rzz": 16.71875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8850404535884902,
+              "difference_from_old_full": 0.015970841488449454,
+              "paired_pointwise_ci95": [
+                0.004137714938666816,
+                0.030085115212616847
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7211346171782136,
+              "difference_from_old_full": -0.010300228048716255,
+              "paired_pointwise_ci95": [
+                -0.022292822415085376,
+                0.0009180063573883539
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9964939142454597,
+              "difference_from_old_full": 0.00045675362597831157,
+              "paired_pointwise_ci95": [
+                -0.005296217940316755,
+                0.004718317090166361
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.64571825371543,
+              "difference_from_old_full": 0.0004142930586246672,
+              "paired_pointwise_ci95": [
+                -0.0030083900377990895,
+                0.005070385213570238
+              ]
+            }
+          }
+        }
+      },
+      "85": {
+        "mean_logical_rzz": 15.703125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8845184303000735,
+              "difference_from_old_full": 0.015448818200032837,
+              "paired_pointwise_ci95": [
+                0.003120676777897512,
+                0.0310191756803832
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.721192408871126,
+              "difference_from_old_full": -0.010242436355803772,
+              "paired_pointwise_ci95": [
+                -0.021468567579875895,
+                -0.00020762114597036664
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9965262343521022,
+              "difference_from_old_full": 0.0004890737326208022,
+              "paired_pointwise_ci95": [
+                -0.0034031743241916086,
+                0.003607262093811037
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6455144079226773,
+              "difference_from_old_full": 0.0002104472658721497,
+              "paired_pointwise_ci95": [
+                -0.0019315816917358697,
+                0.00316471352389698
+              ]
+            }
+          }
+        }
+      },
+      "86": {
+        "mean_logical_rzz": 14.71875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8812759857043508,
+              "difference_from_old_full": 0.012206373604310202,
+              "paired_pointwise_ci95": [
+                0.0018103463171004262,
+                0.025568745267620197
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.722397695203913,
+              "difference_from_old_full": -0.009037150023016478,
+              "paired_pointwise_ci95": [
+                -0.01914362587467958,
+                -0.00033440636625360506
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9963844058869356,
+              "difference_from_old_full": 0.00034724526745423534,
+              "paired_pointwise_ci95": [
+                -0.0024152438072326124,
+                0.002921295461299685
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6453933901042683,
+              "difference_from_old_full": 8.942944746248224e-05,
+              "paired_pointwise_ci95": [
+                -0.0019041697974544409,
+                0.002196759831423497
+              ]
+            }
+          }
+        }
+      },
+      "87": {
+        "mean_logical_rzz": 13.71875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8811047650192781,
+              "difference_from_old_full": 0.012035152919237395,
+              "paired_pointwise_ci95": [
+                0.0017979696291586364,
+                0.024699822766482478
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.721897893875354,
+              "difference_from_old_full": -0.009536951351575815,
+              "paired_pointwise_ci95": [
+                -0.019254209052643034,
+                -0.001686578332007046
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9965028192554676,
+              "difference_from_old_full": 0.00046565863598619674,
+              "paired_pointwise_ci95": [
+                -0.0014626011709362673,
+                0.0025769646092848315
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6449682549946276,
+              "difference_from_old_full": -0.0003357056621774504,
+              "paired_pointwise_ci95": [
+                -0.0020257908819752935,
+                0.0010511429228185832
+              ]
+            }
+          }
+        }
+      },
+      "88": {
+        "mean_logical_rzz": 12.546875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8759306621236392,
+              "difference_from_old_full": 0.006861050023598488,
+              "paired_pointwise_ci95": [
+                -0.0010092404951415619,
+                0.01688033421676967
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7265855535209456,
+              "difference_from_old_full": -0.004849291705984367,
+              "paired_pointwise_ci95": [
+                -0.012178096813676853,
+                0.002342763004089762
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9952306168417172,
+              "difference_from_old_full": -0.0008065437777641654,
+              "paired_pointwise_ci95": [
+                -0.004539951692052785,
+                0.002384962700182454
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6458049242948443,
+              "difference_from_old_full": 0.0005009636380390488,
+              "paired_pointwise_ci95": [
+                -0.0021791233752380306,
+                0.003539289923624997
+              ]
+            }
+          }
+        }
+      },
+      "89": {
+        "mean_logical_rzz": 11.546875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8736484348201229,
+              "difference_from_old_full": 0.004578822720082195,
+              "paired_pointwise_ci95": [
+                -0.004169885727871796,
+                0.01559019615188811
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7284653620369568,
+              "difference_from_old_full": -0.002969483189972824,
+              "paired_pointwise_ci95": [
+                -0.01122619424461547,
+                0.005146536166552457
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9922251460752964,
+              "difference_from_old_full": -0.003812014544184887,
+              "paired_pointwise_ci95": [
+                -0.00983486053731719,
+                0.0011616788636437988
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6469337634110586,
+              "difference_from_old_full": 0.0016298027542533608,
+              "paired_pointwise_ci95": [
+                -0.0018542150765025408,
+                0.006144165093780359
+              ]
+            }
+          }
+        }
+      },
+      "90": {
+        "mean_logical_rzz": 10.53125,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8717167961363788,
+              "difference_from_old_full": 0.002647184036338047,
+              "paired_pointwise_ci95": [
+                -0.005138679892744353,
+                0.011035000717426063
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.730094853943112,
+              "difference_from_old_full": -0.0013399912838175515,
+              "paired_pointwise_ci95": [
+                -0.008562633291162044,
+                0.00579034153330458
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9923097496425332,
+              "difference_from_old_full": -0.003727410976948212,
+              "paired_pointwise_ci95": [
+                -0.01010021713055212,
+                0.001333116739134491
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.6475900332812854,
+              "difference_from_old_full": 0.002286072624479666,
+              "paired_pointwise_ci95": [
+                -0.0011426391507382164,
+                0.006889077375749139
+              ]
+            }
+          }
+        }
+      },
+      "95": {
+        "mean_logical_rzz": 5.546875,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8518912718124786,
+              "difference_from_old_full": -0.017178340287562176,
+              "paired_pointwise_ci95": [
+                -0.027272601513218683,
+                -0.008201539605228748
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7474192484000604,
+              "difference_from_old_full": 0.015984403173130508,
+              "paired_pointwise_ci95": [
+                0.0065343105965817135,
+                0.027716864235452353
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.9734275396426302,
+              "difference_from_old_full": -0.022609620976851187,
+              "paired_pointwise_ci95": [
+                -0.03798751703200118,
+                -0.009173030319468856
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.658963087860876,
+              "difference_from_old_full": 0.013659127204070719,
+              "paired_pointwise_ci95": [
+                0.004475521939350652,
+                0.024887443746324733
+              ]
+            }
+          }
+        }
+      },
+      "100": {
+        "mean_logical_rzz": 0.0,
+        "by_budget": {
+          "1024": {
+            "hybrid_success": {
+              "mean": 0.8331141435851916,
+              "difference_from_old_full": -0.03595546851484907,
+              "paired_pointwise_ci95": [
+                -0.058026364805344496,
+                -0.017081686240575322
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.763322927701184,
+              "difference_from_old_full": 0.031888082474254016,
+              "paired_pointwise_ci95": [
+                0.013631144525847653,
+                0.053790279808980095
+              ]
+            }
+          },
+          "16384": {
+            "hybrid_success": {
+              "mean": 0.8912919131917976,
+              "difference_from_old_full": -0.10474524742768389,
+              "paired_pointwise_ci95": [
+                -0.16432982665493784,
+                -0.051370313498119
+              ]
+            },
+            "hybrid_expected_distance": {
+              "mean": 2.7117285966793787,
+              "difference_from_old_full": 0.06642463602257313,
+              "paired_pointwise_ci95": [
+                0.02742258863583006,
+                0.11077324358091056
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "mechanisms": {
+    "full": {
+      "mean_logical_rzz": 101.4375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8690696121000407,
+            "difference_from_old_full": 0.0,
+            "paired_pointwise_ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.7314348452269295,
+            "difference_from_old_full": 0.0,
+            "paired_pointwise_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9960371606194813,
+            "difference_from_old_full": 0.0,
+            "paired_pointwise_ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6453039606568054,
+            "difference_from_old_full": 0.0,
+            "paired_pointwise_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "weak75": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8765037733928258,
+            "difference_from_old_full": 0.007434161292785125,
+            "paired_pointwise_ci95": [
+              8.547859260810691e-05,
+              0.01592005807372704
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.727344463972867,
+            "difference_from_old_full": -0.004090381254062574,
+            "paired_pointwise_ci95": [
+              -0.010222463078898616,
+              0.001390880522845424
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9977012738243463,
+            "difference_from_old_full": 0.0016641132048649358,
+            "paired_pointwise_ci95": [
+              -0.000779607094289229,
+              0.004316985129298556
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6444240613936856,
+            "difference_from_old_full": -0.0008798992631198974,
+            "paired_pointwise_ci95": [
+              -0.0025185209343485697,
+              0.0003592145203041804
+            ]
+          }
+        }
+      }
+    },
+    "strong75": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8336613219594409,
+            "difference_from_old_full": -0.03540829014059989,
+            "paired_pointwise_ci95": [
+              -0.05732129608113333,
+              -0.016735445657376277
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.76294768454488,
+            "difference_from_old_full": 0.031512839317950125,
+            "paired_pointwise_ci95": [
+              0.013685742013033516,
+              0.05260813895354382
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.8970633530206653,
+            "difference_from_old_full": -0.0989738075988161,
+            "paired_pointwise_ci95": [
+              -0.1544615469221572,
+              -0.04855074577476589
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.706952589464584,
+            "difference_from_old_full": 0.061648628807778494,
+            "paired_pointwise_ci95": [
+              0.025832815616269638,
+              0.10279305217526825
+            ]
+          }
+        }
+      }
+    },
+    "protect_coordinate75": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8765037733928258,
+            "difference_from_old_full": 0.007434161292785125,
+            "paired_pointwise_ci95": [
+              8.547859260810691e-05,
+              0.01592005807372704
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.727344463972867,
+            "difference_from_old_full": -0.004090381254062574,
+            "paired_pointwise_ci95": [
+              -0.010222463078898616,
+              0.001390880522845424
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9977012738243463,
+            "difference_from_old_full": 0.0016641132048649358,
+            "paired_pointwise_ci95": [
+              -0.000779607094289229,
+              0.004316985129298556
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6444240613936856,
+            "difference_from_old_full": -0.0008798992631199182,
+            "paired_pointwise_ci95": [
+              -0.002518520934348591,
+              0.0003592145203041599
+            ]
+          }
+        }
+      }
+    },
+    "drop_coordinate75": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8351228712094858,
+            "difference_from_old_full": -0.03394674089055491,
+            "paired_pointwise_ci95": [
+              -0.05519455049408751,
+              -0.016118635218573086
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.7601414842441914,
+            "difference_from_old_full": 0.028706639017261174,
+            "paired_pointwise_ci95": [
+              0.012845618784020655,
+              0.04661778222082919
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9064124833977037,
+            "difference_from_old_full": -0.08962467722177765,
+            "paired_pointwise_ci95": [
+              -0.1445354786370235,
+              -0.04228995662377402
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.697621595688224,
+            "difference_from_old_full": 0.052317635031418425,
+            "paired_pointwise_ci95": [
+              0.02145934475085531,
+              0.09043247421292919
+            ]
+          }
+        }
+      }
+    },
+    "weight90": {
+      "mean_logical_rzz": 34.90625,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8740058273378664,
+            "difference_from_old_full": 0.004936215237825602,
+            "paired_pointwise_ci95": [
+              0.0009337761922146063,
+              0.009446394775428756
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.729016943632549,
+            "difference_from_old_full": -0.0024179015943807114,
+            "paired_pointwise_ci95": [
+              -0.005079913022759909,
+              0.0001332816028489148
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9964378014881937,
+            "difference_from_old_full": 0.0004006408687123302,
+            "paired_pointwise_ci95": [
+              -0.0029187851160589976,
+              0.0028349518902140228
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6458190949105775,
+            "difference_from_old_full": 0.0005151342537717749,
+            "paired_pointwise_ci95": [
+              -0.0010452516677926208,
+              0.0031757115511176844
+            ]
+          }
+        }
+      }
+    },
+    "no_pairs100": {
+      "mean_logical_rzz": 0.0,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8335463783412231,
+            "difference_from_old_full": -0.03552323375881762,
+            "paired_pointwise_ci95": [
+              -0.05722241203879804,
+              -0.016841205002785655
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.7632938304850243,
+            "difference_from_old_full": 0.03185898525809464,
+            "paired_pointwise_ci95": [
+              0.013738087845578707,
+              0.05345201637816243
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.8959935659201976,
+            "difference_from_old_full": -0.1000435946992838,
+            "paired_pointwise_ci95": [
+              -0.15657507412433846,
+              -0.04890972135937514
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.708400630947982,
+            "difference_from_old_full": 0.06309667029117617,
+            "paired_pointwise_ci95": [
+              0.026010476752041576,
+              0.10511193106825492
+            ]
+          }
+        }
+      }
+    },
+    "random75_0": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8404492582762217,
+            "difference_from_old_full": -0.02862035382381893,
+            "paired_pointwise_ci95": [
+              -0.04676038004712601,
+              -0.01336707613065816
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.757931457739444,
+            "difference_from_old_full": 0.026496612512514194,
+            "paired_pointwise_ci95": [
+              0.011291062903286507,
+              0.04408999628742907
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9334376274096581,
+            "difference_from_old_full": -0.06259953320982331,
+            "paired_pointwise_ci95": [
+              -0.10675342021801401,
+              -0.02521113135581531
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6858488663251188,
+            "difference_from_old_full": 0.0405449056683132,
+            "paired_pointwise_ci95": [
+              0.014366444884437012,
+              0.07417552131117207
+            ]
+          }
+        }
+      }
+    },
+    "ties75_0": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8765330209841474,
+            "difference_from_old_full": 0.007463408884106747,
+            "paired_pointwise_ci95": [
+              0.000841092162016969,
+              0.015414842180214343
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.727445670563105,
+            "difference_from_old_full": -0.003989174663825021,
+            "paired_pointwise_ci95": [
+              -0.009803235510333961,
+              0.001202445523775915
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9979168120380362,
+            "difference_from_old_full": 0.0018796514185547841,
+            "paired_pointwise_ci95": [
+              3.813602701085811e-05,
+              0.004067788169134095
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.644397998291511,
+            "difference_from_old_full": -0.000905962365294586,
+            "paired_pointwise_ci95": [
+              -0.0023586982240978373,
+              0.0001944949730524669
+            ]
+          }
+        }
+      }
+    },
+    "random75_1": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8435133730151751,
+            "difference_from_old_full": -0.02555623908486549,
+            "paired_pointwise_ci95": [
+              -0.04148682460575605,
+              -0.012267369871411417
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.7551732827461697,
+            "difference_from_old_full": 0.02373843751923982,
+            "paired_pointwise_ci95": [
+              0.010084227516541837,
+              0.039843020870014484
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9524026216958322,
+            "difference_from_old_full": -0.043634538923649054,
+            "paired_pointwise_ci95": [
+              -0.07314925309450064,
+              -0.01774449095823385
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.673327626994767,
+            "difference_from_old_full": 0.028023666337961148,
+            "paired_pointwise_ci95": [
+              0.00900382368570114,
+              0.05078484111987848
+            ]
+          }
+        }
+      }
+    },
+    "ties75_1": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8753817948311736,
+            "difference_from_old_full": 0.006312182731132943,
+            "paired_pointwise_ci95": [
+              0.00026359751657567895,
+              0.013436342193321462
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.727796440174253,
+            "difference_from_old_full": -0.0036384050526765167,
+            "paired_pointwise_ci95": [
+              -0.009201539248239106,
+              0.0013641218924197852
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9977780207926689,
+            "difference_from_old_full": 0.001740860173187496,
+            "paired_pointwise_ci95": [
+              -0.0001295632033859944,
+              0.003990849573746104
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6443627020736264,
+            "difference_from_old_full": -0.0009412585831790402,
+            "paired_pointwise_ci95": [
+              -0.002551026483000332,
+              0.00021723550034884943
+            ]
+          }
+        }
+      }
+    },
+    "random75_2": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.83658708260845,
+            "difference_from_old_full": -0.032482529491590625,
+            "paired_pointwise_ci95": [
+              -0.05279548397719634,
+              -0.015213446333402542
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.761014740313703,
+            "difference_from_old_full": 0.029579895086772962,
+            "paired_pointwise_ci95": [
+              0.012551742806980412,
+              0.050401628811203074
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9178785535288361,
+            "difference_from_old_full": -0.07815860709064525,
+            "paired_pointwise_ci95": [
+              -0.12656025562145717,
+              -0.03661743385946811
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.698864597774197,
+            "difference_from_old_full": 0.05356063711739169,
+            "paired_pointwise_ci95": [
+              0.01834867037125327,
+              0.09788435269287
+            ]
+          }
+        }
+      }
+    },
+    "ties75_2": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8758527467685531,
+            "difference_from_old_full": 0.006783134668512434,
+            "paired_pointwise_ci95": [
+              0.0007247815294015422,
+              0.014057704851942751
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.727646260279538,
+            "difference_from_old_full": -0.003788584947391923,
+            "paired_pointwise_ci95": [
+              -0.00879438827862205,
+              0.0008596024781639059
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9978722884988768,
+            "difference_from_old_full": 0.0018351278793954668,
+            "paired_pointwise_ci95": [
+              7.5560932728289874e-06,
+              0.00400240778693334
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6444154954652532,
+            "difference_from_old_full": -0.0008884651915519563,
+            "paired_pointwise_ci95": [
+              -0.0023353631215629676,
+              0.00020614895569913554
+            ]
+          }
+        }
+      }
+    },
+    "random75_3": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.84192459420332,
+            "difference_from_old_full": -0.027145017896720587,
+            "paired_pointwise_ci95": [
+              -0.043575603382812876,
+              -0.012980045610258159
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.755835731759968,
+            "difference_from_old_full": 0.024400886533038197,
+            "paired_pointwise_ci95": [
+              0.01080336663971147,
+              0.03996360242736293
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9332615007805911,
+            "difference_from_old_full": -0.06277565983889029,
+            "paired_pointwise_ci95": [
+              -0.10710896256505788,
+              -0.024052082785322473
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.687442187535317,
+            "difference_from_old_full": 0.04213822687851152,
+            "paired_pointwise_ci95": [
+              0.012915252904910836,
+              0.07749567030915505
+            ]
+          }
+        }
+      }
+    },
+    "ties75_3": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8771531062037041,
+            "difference_from_old_full": 0.00808349410366341,
+            "paired_pointwise_ci95": [
+              0.0001382850723874628,
+              0.018368615281298413
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.7265975584798627,
+            "difference_from_old_full": -0.004837286747067123,
+            "paired_pointwise_ci95": [
+              -0.01218600584676563,
+              0.0009532922129190122
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9977026234102804,
+            "difference_from_old_full": 0.001665462790798964,
+            "paired_pointwise_ci95": [
+              -0.00024641650138765194,
+              0.003977619334260618
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.644486844932996,
+            "difference_from_old_full": -0.0008171157238094917,
+            "paired_pointwise_ci95": [
+              -0.0024383120118509397,
+              0.00028055217638238737
+            ]
+          }
+        }
+      }
+    },
+    "random75_4": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8413375006276147,
+            "difference_from_old_full": -0.027732111472426053,
+            "paired_pointwise_ci95": [
+              -0.04671106683719469,
+              -0.011517118732162804
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.753948145233214,
+            "difference_from_old_full": 0.02251330000628404,
+            "paired_pointwise_ci95": [
+              0.00978359052825318,
+              0.037098280512117464
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9350607694240503,
+            "difference_from_old_full": -0.06097639119543115,
+            "paired_pointwise_ci95": [
+              -0.10461915912031619,
+              -0.024879698600552974
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.684400268944277,
+            "difference_from_old_full": 0.039096308287471813,
+            "paired_pointwise_ci95": [
+              0.013523555760494988,
+              0.07099098681707533
+            ]
+          }
+        }
+      }
+    },
+    "ties75_4": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.878353419824312,
+            "difference_from_old_full": 0.009283807724271387,
+            "paired_pointwise_ci95": [
+              0.0012086993169846106,
+              0.01958227203460846
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.7264290180519515,
+            "difference_from_old_full": -0.005005827174978109,
+            "paired_pointwise_ci95": [
+              -0.01214812915804301,
+              0.0008645604220952436
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9978026687393491,
+            "difference_from_old_full": 0.0017655081198676738,
+            "paired_pointwise_ci95": [
+              -0.00012212833797908376,
+              0.004047003176885483
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.6443761850173044,
+            "difference_from_old_full": -0.0009277756395009822,
+            "paired_pointwise_ci95": [
+              -0.0025197680017737985,
+              0.0002150442630589543
+            ]
+          }
+        }
+      }
+    },
+    "full_scaled": {
+      "mean_logical_rzz": 101.4375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.86589164634273,
+            "difference_from_old_full": -0.003177965757310709,
+            "paired_pointwise_ci95": [
+              -0.0052280219131575776,
+              -0.0014822697552908841
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.7339122390914676,
+            "difference_from_old_full": 0.0024773938645380536,
+            "paired_pointwise_ci95": [
+              0.0011362651956478322,
+              0.004041336955411629
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.994652439555562,
+            "difference_from_old_full": -0.001384721063919337,
+            "paired_pointwise_ci95": [
+              -0.0024209325146753707,
+              -0.0005604484944512878
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.646084040339586,
+            "difference_from_old_full": 0.0007800796827802658,
+            "paired_pointwise_ci95": [
+              0.00024081657589635174,
+              0.0015308926738504766
+            ]
+          }
+        }
+      }
+    },
+    "split_full": {
+      "mean_logical_rzz": 101.4375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8667757660427222,
+            "difference_from_old_full": -0.0022938460573183805,
+            "paired_pointwise_ci95": [
+              -0.003968275066262078,
+              -0.0008374077120692321
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.732715180156992,
+            "difference_from_old_full": 0.0012803349300625072,
+            "paired_pointwise_ci95": [
+              0.0003969900773379346,
+              0.002335028500515527
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9949660058723795,
+            "difference_from_old_full": -0.0010711547471018452,
+            "paired_pointwise_ci95": [
+              -0.0019978528893710053,
+              -0.0003083396708045758
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.645961252544181,
+            "difference_from_old_full": 0.0006572918873751603,
+            "paired_pointwise_ci95": [
+              0.00014789942064415972,
+              0.0014352835069856035
+            ]
+          }
+        }
+      }
+    },
+    "random75_replicate_mean": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8407623617461564,
+            "difference_from_old_full": -0.028307250353884338,
+            "paired_pointwise_ci95": [
+              -0.04596065966586982,
+              -0.013365581997769422
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.7567806715584995,
+            "difference_from_old_full": 0.02534582633156983,
+            "paired_pointwise_ci95": [
+              0.011158345924502053,
+              0.04175151335798926
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9344082145677935,
+            "difference_from_old_full": -0.06162894605168781,
+            "paired_pointwise_ci95": [
+              -0.10018943872038578,
+              -0.02829826043554129
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.685976709514735,
+            "difference_from_old_full": 0.04067274885792984,
+            "paired_pointwise_ci95": [
+              0.014729912729017282,
+              0.07141679367184349
+            ]
+          }
+        }
+      }
+    },
+    "ties75_replicate_mean": {
+      "mean_logical_rzz": 25.359375,
+      "by_budget": {
+        "1024": {
+          "hybrid_success": {
+            "mean": 0.8766548177223781,
+            "difference_from_old_full": 0.007585205622337385,
+            "paired_pointwise_ci95": [
+              0.0008802059750351656,
+              0.015957397448528813
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.7271829895097417,
+            "difference_from_old_full": -0.004251855717187763,
+            "paired_pointwise_ci95": [
+              -0.010193150884774734,
+              0.000981122349256548
+            ]
+          }
+        },
+        "16384": {
+          "hybrid_success": {
+            "mean": 0.9978144826958422,
+            "difference_from_old_full": 0.0017773220763608773,
+            "paired_pointwise_ci95": [
+              -7.083266016314468e-05,
+              0.003996125391561372
+            ]
+          },
+          "hybrid_expected_distance": {
+            "mean": 2.644407845156138,
+            "difference_from_old_full": -0.0008961155006672189,
+            "paired_pointwise_ci95": [
+              -0.0024298891606699654,
+              0.00022468609841985382
+            ]
+          }
+        }
+      }
+    }
+  },
+  "qpu_seconds": 0,
+  "limits": [
+    "Exploratory selection on old development cases, not final validation.",
+    "Pointwise paired uncertainty does not correct the many sparsity comparisons; do not declare an optimal percentage from the maximum.",
+    "Ideal probabilities are exact statevector results; finite-shot success is a mathematical expectation, not an observed count.",
+    "No secure ML-KEM or quantum-advantage claim."
+  ]
+}

@@ -1,0 +1,96 @@
+EXP-005: Babai alone versus Babai plus QAOA
+Internal research explanation, not final poster prose.
+
+Purpose and provenance
+  This is a post-hoc reanalysis of all 64 EXP-001 toy Module-LWE examples using
+  saved EXP-004 angles, pruning masks, and 524,288 measured bitstrings. No
+  parameter refitting, new shots, hardware execution, or sample filtering.
+  Run: experiments/runs/EXP-005_20261020T041426326139+0530
+
+Returned answer
+  Start with LLL-Babai. Among the N sampled candidates accept a new answer only
+  for a strictly smaller ORIGINAL cost. On a tie retain the earlier incumbent.
+  The final cost is min(Babai cost, sampled costs). The returned distance is
+  its square root. Non-worsening follows from retaining Babai, so strict
+  improvements must be measured separately.
+
+Objective and relation to Lv et al.
+  Our squared distance is ||q*w + A*s - t||^2 + ||s||^2.
+  It is the distance in the augmented secret-and-residual lattice, and is not
+  simply the LWE residual norm or the exact CBD negative log likelihood.
+  Lv et al., section 5.1, compare residual distance before and after QAOA on
+  a different LWE formulation: https://doi.org/10.3390/e24101428
+  We perform the analogous quality-refinement comparison, not a reproduction
+  of their instances, encoding, noise distribution, or QAOA tuning procedure.
+  Closer under our objective does not necessarily mean correct secret recovery.
+
+Expectation calculation
+  For each instance, group the exact ideal sampling probabilities by original
+  cost, capped at Babai's cost. If S(v)=Pr[capped sampled cost >= v], the minimum
+  of N independent samples equals v with probability S(v)^N-S(next v)^N.
+  Weight these probabilities by sqrt(v) to obtain expected returned distance,
+  and by v to obtain expected squared distance. These are different quantities:
+  E[sqrt(cost)] must not be replaced with sqrt(E[cost]).
+  The result is independently checked using the survival-sum expectation.
+  Strict-improvement probability is 1-(1-p_better)^N. Exact-optimum success is
+  one when Babai is optimal, otherwise 1-(1-p_optimum)^N.
+  Saved measurements are rescored directly and verified against original-basis
+  lattice vectors. Their observed outcomes remain separate from expectations.
+
+Main findings at N=1024, all 64 examples
+  Method                  Mean expected distance  Expected optima  Observed optima
+  Babai alone                   2.769118             53.0000          53
+  + full fixed-angle QAOA        2.731435             55.6205          55
+  + weak 25% pruning             2.732418             55.5693          56
+  + weak 50% pruning             2.727595             55.7463          57
+  + classical 1/2-coordinate     2.685261             61.0000          61
+  Exact CVP reference            2.643128             64.0000          --
+  Expected counts are repeated-batch averages, not fractional observed cases.
+  All QAOA rows above reuse the same saved global angles. Full tuned QAOA and
+  10% pruning / global-retrained variants are also reported in summary.json.
+
+Where the improvements happen
+  Babai already attains an exact optimum in 53/64 cases, leaving only 11 that
+  can improve. Full, 25%-pruned, and 50%-pruned QAOA each strictly improved four
+  cases in the saved batch, tied Babai on 60, and worsened none. Of those four,
+  two, three, and four respectively reached an exact optimum. These are single
+  batches, so the apparent ranking is not reliable from counts alone.
+  Exact expected strict improvement counts: 3.9778, 3.9025, and 4.2574 of 64.
+  Conditional on the 11 improvable cases, the mean expected distance decreases
+  5.91%, 5.75%, and 6.51%, respectively. Across ALL 64, reductions are only
+  1.36%, 1.33%, and 1.50%. The conditional view never replaces the full cohort.
+  Full QAOA closes about 29.91% of Babai's total distance gap to the known
+  optima; 25% pruning closes 29.13% and 50% pruning closes 32.96%.
+  The classical 1/2-coordinate refinement improves nine cases, repairs eight
+  Babai failures, and closes 66.56% of the available distance gap.
+  Uniform sampling of the identical binary box gives only 0.3366 expected
+  strict improvements and 53.1858 expected optima. Beating this weak control
+  does not establish superiority over classical local refinement.
+
+Concrete saved observation
+  For MLWE-009, Babai has squared cost 17 (distance 4.1231). The 25%-pruned
+  samples include a candidate with cost 7 (distance 2.6458), the exact optimum.
+  The full-QAOA batch reaches cost 16 on this case, while the 50%-pruned batch
+  does not improve it. This illustrates shot variability, not a selected
+  success criterion or a claim that 25% pruning always wins.
+
+Interpretation and limits
+  Yes, QAOA refinement improves Babai's quality on these examples, in the
+  qualitative sense used by Lv et al. The effect is modest at the current shot
+  budget. It is not evidence of practical superiority over classical methods.
+  The 25% pruning candidate preserves most of full QAOA's average refinement
+  benefit while reducing all-to-all compiled CX count by 25%. Its slightly
+  WORSE mean hybrid quality is relative to full QAOA; it is still BETTER than
+  Babai alone. This clarifies the reference point in methodology_EXP004.txt.
+  Noisy hardware behavior, end-to-end speed, secure parameters, and unseen
+  instance generalization remain untested. The 50% result remains secondary.
+
+Verification and figure
+  49 tests passed, including exhaustive small-shot sequences for distances and
+  strict-improvement probabilities. 512 prior distributions reproduced; 2880
+  order-statistic calculations cross-checked; 524,288 saved samples rescored;
+  128 classical control candidates verified. The EXP-004 hashes were audited
+  before analysis. All source, input, and derived-result hashes are saved.
+  The Seaborn figure shows the 11 improvable cases explicitly and full-cohort
+  exact recovery separately. Prediction intervals describe shot variability
+  on these fixed 64 examples, not confidence about a wider problem population.

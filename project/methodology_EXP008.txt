@@ -1,0 +1,164 @@
+EXP-008: IBM Fez routing and calibrated noise for QAOA lattice decoding
+Internal research record, not final poster text or captions.
+
+Purpose
+  Test whether the full QAOA circuit and both previously selected 75% pruned
+  variants preserve their resource/quality trade-off after physical connectivity,
+  gate compilation, idle time, and calibrated device noise are included.
+  The user also asks whether this project direction is promising before using
+  the 600-second QPU allowance. This experiment submits no QPU jobs.
+
+Calibration and physical mapping
+  Live read-only metadata access found accessible IBM Fez, Kingston and
+  Marrakesh backends. Fez was selected lexicographically without evaluating
+  quantum solution outcomes. Public data were fetched around 05:00 local time
+  on 20 October 2026; calibration last update was 03:37:33+05:30 the same day.
+  Snapshot: research/calibrations/ibm_fez_20261020T050035937321+0530
+  The capture utility saves public calibration properties and no credentials.
+  It selects a connected 16-node patch from public connectivity/error values,
+  preferring more internal edges, then lower mean CZ/readout error, then indices.
+  Physical qubits: 91,92,93,94,95,98,99,109,110,111,112,113,114,115,118,129.
+  The patch has 16 undirected edges, mean CZ error 0.0022293 and mean readout
+  error 0.0173416. Native CZ duration is 68 ns, SX 24 ns, readout 1660 ns.
+  T1 ranges 87.81--176.36 microseconds and T2 23.85--204.24 microseconds.
+  Physical patch placement is fixed for all three methods and every instance.
+  Initial logical bit i maps to patch position i. Qiskit optimization level 3
+  and routing seed 2026102030 are shared. Final permutations are explicitly
+  reversed before decoding the original lattice bitstring.
+  Routing is constrained to this actual device subgraph. Allowing more device
+  qubits or a different placement could change the result; no optimality claim.
+
+Physics included and excluded
+  Native rz/sx/x/cz/id gates are compiled to the calibrated target. Aer builds
+  depolarizing plus gate-time thermal-relaxation channels from per-gate error,
+  duration, qubit T1/T2 and frequency. T2 is capped at 2*T1 when needed.
+  ALAP scheduling inserts explicit idle delays; a separate RelaxationNoisePass
+  applies T1/T2 noise to delays only, avoiding duplicate gate-time noise.
+  A final barrier aligns unitary completion. The simulator saves premeasurement
+  physical probabilities; the calibrated asymmetric classical readout channel
+  is then applied exactly on all physical bits, before mapping back to logical
+  order. This preserves correct readout direction and physical calibration.
+  The model assumes zero-temperature relaxation and perfect initial reset.
+  It excludes leakage, crosstalk, calibration drift, coherent errors, correlated
+  readout, mitigation, twirling, and dynamical decoupling. It is an approximate
+  calibration-based model, not a measurement of real device performance.
+
+Frozen study and computational shortcut
+  D-020 freezes all choices before the main noisy evaluation. Full and both
+  75% angle pairs are copied from EXP-007; no noise-aware fitting or selection.
+  All 512 examples are routed and checked against the original ideal result.
+  Babai already solves 441 exactly. Since its answer is always retained, the
+  hybrid output for those cases remains optimal under ANY sampled distribution.
+  Their noise cannot change the final hybrid quality. Therefore simulating all
+  71 Babai-nonoptimal cases is sufficient for the full 512-case hybrid result.
+  The reference labels are used solely to skip irrelevant evaluation work;
+  they are not supplied to a solver or used to claim an execution speedup.
+  For standalone QAOA behavior, use a separately seeded random 32-case subset.
+  This subset contains 2 Babai failures and overlaps the 71-case diagnostic set.
+  The union has 101 cases; never report this enriched union as a representative
+  unconditional sample for QAOA-only performance. No methods or cases are
+  dropped because of noisy outcomes, and no outcome-based stopping is used.
+
+Noise trajectories, shot budgets, and uncertainty
+  Exact 16-qubit density matrices would need about 64 GiB for the matrix alone.
+  Instead, Aer samples 64 independent stochastic pure-state noise trajectories
+  per circuit, saving the full probability distribution for each trajectory.
+  This uses more distributional information than a single measured bitstring.
+  It does not mean that only 64 physical measurement shots are being compared.
+  Average these trajectories to estimate the mixed-state distribution, apply
+  readout analytically, and compute estimated best-of-256/1024/4096/16384-shot
+  metrics. These are noisy Monte Carlo plug-in estimates, not exact predictions.
+  Store each trajectory's probabilities for costs up to the Babai incumbent,
+  plus the full mean distributions before and after readout, seeds, and checksums.
+  Every case uses all 64 prespecified trajectories. Main budget remains 1024.
+  A 5000-replicate trajectory bootstrap gives fixed-cohort simulation uncertainty.
+  A paired 512-group bootstrap combined with trajectory resampling separately
+  quantifies instance-plus-simulation uncertainty. Methods share resampled groups.
+  A leave-one-trajectory-out jackknife checks nonlinear plug-in bias; its
+  correction is reported rather than silently relabeling estimates as exact.
+  Scope remains exploratory local noise validation on the existing fresh cohort.
+
+Reproducibility and source documentation
+  Native routed circuits are stored as QPY for all 512 cases and three methods.
+  QPY circuits use compact local patch indices 0--15. They are not directly
+  submit-ready: map these indices back to the saved physical Fez qubit IDs,
+  attach correctly mapped measurements, and validate against the refreshed
+  full backend target before any separately authorized hardware execution.
+  Each circuit's original ideal probability distribution is independently
+  verified after routing and final-permutation correction, before adding noise.
+  Physical CZ edges, gate counts, duration, delays, and calibrated noise models
+  are saved. Each noisy output has a checkpoint with seed, time and SHA-256.
+  Two preliminary timing profiles used old development MLWE-000 only, with no
+  quality-based selection. The first exposed a global OpenMP thread cap; the
+  second limited only BLAS threads and enabled Aer trajectory parallelism.
+  Preliminary profiles are preserved under PRE-008 folders, separately from
+  the main EXP-008 result. All physics and angle policies remain unchanged.
+  A supplemental three-qubit synthetic circuit (not a Module-LWE performance
+  result) cross-checks the complete gate/idle/readout model against exact
+  density-matrix evolution. Its 4096-trajectory estimate differs by at most
+  1.85 Monte Carlo standard errors across all eight probabilities. The model
+  has a nonzero total-variation change of 0.0865 from the noiseless circuit.
+
+  Primary documentation checked 20 October 2026:
+  https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.noise.NoiseModel.html
+  https://qiskit.github.io/qiskit-aer/tutorials/2_device_noise_simulation
+  https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.AerSimulator.html
+  https://quantum.cloud.ibm.com/docs/en/guides/estimate-job-run-time
+
+QPU planning limits
+  This study makes no cloud execution calls and uses zero QPU seconds.
+  A possible later study compares 16 cases times three methods. Estimate time
+  from mean scheduled duration plus readout, reset and default 250-us repetition
+  delay, with one-job and one-job-per-circuit overhead scenarios. IBM documents
+  approximately 2 seconds per sub-job, but decomposition/overhead can differ.
+  These are planning estimates, not quota guarantees or an execution approval.
+  Preserve at least 120 seconds of the user's 600-second budget. Refresh live
+  calibration and actual remaining quota before any authorized QPU submission.
+  Gate reduction can improve fidelity much more than wall-clock usage because
+  repetition delay and other overheads dominate short circuits.
+
+Results recorded 2026-10-20T05:31:14.868451+05:30
+  EXP-008 replayed a live IBM Fez calibration from 20 October 2026 on a fixed connected 16-qubit patch. All 512 EXP-007 cases were routed with frozen full and both 75% QAOA angle policies; all 1536 routed circuits reproduce their ideal distributions. Mean native CZ gates fall from 559.752 to 165.549 (70.425%); mean scheduled unitary time falls from 22.783 to about 7.404 microseconds. Calibrated gate errors, gate and idle relaxation, and asymmetric readout were simulated using 64 noise trajectories per circuit. All 71 Babai-nonoptimal cases plus an independent random 32-case subset (101 unique cases) were simulated. Keeping Babai fixes the remaining 441 hybrid outputs at an exact optimum, so all 512 contribute to hybrid results. At 1024 shots the estimated expected hybrid success is 87.1373% for full, 88.4168% for 75%-same-angle, and 88.6458% for 75%-previously-trained; Babai alone is 86.1328%. Expected additional optima recovered are 5.143, 11.694, and 12.866. Paired success gains versus full are +1.2795 percentage points [0.9652,1.6236] and +1.5084 [1.1318,1.9097] (95% group-plus-simulation bootstrap intervals). The extra mean-distance benefit over Babai is 2.169 times [1.938,2.444] and 2.387 times [2.126,2.698] that of full noisy QAOA. At 16384 shots estimated hybrid success is 95.5957%, 98.7707%, and 98.9765%. These are Monte Carlo estimates under one approximate noise model, with separate simulation uncertainty and a finite-trajectory bias check, not observed hardware success rates. Classical two-coordinate refinement still solves 497/512 (97.0703%) with at most 513 candidate evaluations, beating all QAOA variants at the primary 1024-shot budget. The evidence supports reducing QAOA lattice-decoding resources and noise sensitivity on these tiny toy Module-LWE instances. No new tuning, real hardware execution, practical quantum advantage, secure ML-KEM attack, or novelty is claimed. Project QPU usage remains zero.
+
+Additional uncertainty and validation details
+  Fixed-cohort simulation-only 95% success intervals at 1024 shots:
+    full: 87.1022--87.1726%; 75%-same: 88.3792--88.4518%;
+    75%-trained: 88.6027--88.6850%.
+  These quantify Monte Carlo uncertainty in expected success, not the variation
+  of one future finite-shot hardware campaign, nor calibration/model error.
+  Jackknife corrections to aggregate success at 1024 shots are +0.00087,
+  +0.00117 and +0.00148 percentage points respectively; at 16384 they are
+  +0.06657, +0.01762 and +0.01678 points. Reported estimates remain uncorrected
+  with these bias diagnostics available. The correction is small relative to
+  the paired differences; it does not establish exact noisy probabilities.
+  The random 32-case standalone QAOA diagnostic gives estimated 1024-shot
+  success of 8.6297%, 17.5947% and 18.3857%, respectively. Do not present these
+  as standalone results over all 512 cases or over the enriched 101-case union.
+  All 1536 routed ideal distributions agree to at most 5.36e-17 per probability.
+  The independent saved-output audit checks 303 readout applications, 606
+  best-of-shot statistics, and 12 full-cohort aggregates; all pass. All
+  831 final output hashes were verified after figure generation.
+  The 66 mathematical tests passed; installed-plugin deprecation warnings do
+  not change the results. Routing and noise execution took about 17.9 minutes
+  locally. This duration excludes later analysis and is not quantum runtime.
+
+Interpretation and next work
+  Both pruning variants have smaller circuits and better noisy aggregate
+  quality than full QAOA at the primary budget, with positive paired intervals.
+  The trained policy has the best point estimate, but this study does not
+  establish its superiority over the same-angle 75% policy. The noisy follow-up
+  is exploratory; intervals are not adjusted for all comparisons. Hardware
+  model uncertainty is not contained in the bootstrap intervals.
+  The finding supports an incremental QAOA implementation contribution and a
+  focused hardware test. It does not beat strong classical decoding at the
+  primary budget. Classical two-coordinate refinement solves 97.0703% with at
+  most 513 evaluations; classical CBD sampling plus Babai is 97.0507% at 1024.
+  At 16384 shots the pruned hybrid exceeds that deterministic refinement's
+  exact-success rate, but uses a different sample/runtime budget; no overall
+  speed or practical advantage follows.
+  Gate reduction is about 70.4%; per-shot execution-cycle savings are only
+  about 5.6% under the default 250-us repetition delay. Fidelity and quota
+  savings are different claims. See hardware_plan_EXP008.txt for scenarios.
+  Next, freeze a small paired hardware cohort without selecting pruning wins,
+  refresh calibration/quota, verify physical mapping, and retain a 120-second
+  reserve. No actual hardware cohort or job is created by this simulation.

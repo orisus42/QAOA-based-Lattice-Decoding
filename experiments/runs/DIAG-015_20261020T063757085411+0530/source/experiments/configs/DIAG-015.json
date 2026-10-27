@@ -1,0 +1,12 @@
+{
+  "experiment_id":"DIAG-015",
+  "purpose":"Reanalyse saved ideal probabilities for shot budgets, attribution and recoverable-but-difficult strata. No new final validation or adaptive solver selection.",
+  "instances_run":"experiments/runs/EXP-001_20261018T120321801881+0530",
+  "baseline_run":"experiments/runs/EXP-003_20261020T014441792732+0530",
+  "sweep_run":"experiments/runs/EXP-011_20261020T060250605681+0530",
+  "targets":[0.90,0.95,0.99],
+  "budgets":[128,256,512,1024,2048,4096,8192,16384],
+  "methods":[["full",0,"same_angles"],["weak75",75,"same_angles"],["weak81",81,"same_angles"],["weak75_trained",75,"trained_angles"],["weak81_trained",81,"trained_angles"],["product100",100,"same_angles"]],
+  "limits":["All64 are repeatedly inspected development examples; no new generalization evidence.","Shot counts use exact ideal probabilities and mean cohort optimum success, not observed success or a per-instance guarantee.","Logical RZZ count times shots is only an entangling-operation volume, not runtime or billing; all64 are charged shots, including Babai successes unknown to the solver.","Conditional strata are evaluation labels only; no oracle case filtering is a deployable method.","Classical CBD and local-search candidates have different generation costs; sample counts are not end-to-end time comparisons."],
+  "qpu_seconds":0
+}

@@ -1,0 +1,15 @@
+{
+  "trajectories": 64,
+  "seed": 20261020285,
+  "settings": {
+    "method": "statevector",
+    "max_parallel_threads": 4,
+    "max_parallel_shots": 4,
+    "max_parallel_experiments": 1,
+    "max_memory_mb": 2048,
+    "zero_threshold": 0.0,
+    "fusion_max_qubit": 1
+  },
+  "snapshot_sha256": "a8efb847cd5286ac4cd09e880ab7eb6a8cdc462aed15c09b500a5462e1bb62e5",
+  "limitations": "Local calibrated Markovian model; excludes drift, crosstalk, leakage and coherent errors. Finite trajectory uncertainty."
+}

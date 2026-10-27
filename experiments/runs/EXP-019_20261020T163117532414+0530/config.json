@@ -1,0 +1,46 @@
+{
+  "experiment_id": "EXP-019",
+  "purpose": "Development-only nearest-prior-art control: signed weighted incumbent-informed pruning adapted from Liu et al. 2022, Algorithms 1/2.",
+  "source_url": "https://arxiv.org/abs/2205.00118",
+  "training_run": "experiments/runs/EXP-003_20261020T014441792732+0530",
+  "development_run": "experiments/runs/EXP-001_20261018T120321801881+0530",
+  "comparison_checkpoint": "experiments/runs/EXP-017_20261020T070005441867+0530",
+  "logical_budget": 24,
+  "reference_spins": "Babai has coordinate code 2 (little-endian bits 0,1) in the four-value box; spins repeat +1,-1.",
+  "selection": "Keep K pairs with smallest J_ij*b_i*b_j, where b is the Babai spin string. Preserve all original fields and retained coupling weights. No target labels enter selection.",
+  "selection_angles": [
+    1.3393885543560986,
+    -0.3516024709404892
+  ],
+  "optimizer": {
+    "seed": 2026102041,
+    "population": 24,
+    "generations": 31,
+    "evaluation_budget": 768,
+    "gamma_bounds": [
+      0,
+      12.566370614359172
+    ],
+    "beta_bounds": [
+      -1.5707963267948966,
+      0
+    ]
+  },
+  "budgets": [
+    256,
+    1024,
+    4096,
+    16384
+  ],
+  "bootstrap_seed": 20261020191,
+  "bootstrap_replicates": 5000,
+  "calibration": "research/calibrations/ibm_fez_20261020T050035937321+0530/snapshot.json",
+  "routing_seed": 2026102031,
+  "limitations": [
+    "Adaptation to weighted signed lattice Ising models with fields and a fixed K, not an exact reproduction of the MaxCut algorithm or its theoretical guarantees.",
+    "Only the already inspected 64 development cases; no use of the 128-case validation for method selection.",
+    "No new quantum hardware or noise runs; no novelty or quantum advantage claim.",
+    "Angle fit has the same 768-call budget as the saved comparison methods. Timings from separate runs are descriptive rather than a controlled speed benchmark."
+  ],
+  "qpu_seconds": 0
+}

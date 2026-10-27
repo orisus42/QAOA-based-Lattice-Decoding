@@ -1,0 +1,103 @@
+{
+  "experiment_id": "EXP-023",
+  "count": 128,
+  "timing_count": 32,
+  "identical_mask_count": 128,
+  "identical_path_count": 128,
+  "max_probability_difference": 0.0,
+  "quality_preservation_passed": true,
+  "babai_optimum_count": 116,
+  "box_coverage_count": 128,
+  "hybrid_success": {
+    "256": {
+      "mean": 0.9141337089597751,
+      "ci95": [
+        0.8638349233218902,
+        0.9573670832844746
+      ]
+    },
+    "1024": {
+      "mean": 0.9333313947997546,
+      "ci95": [
+        0.8938871031922707,
+        0.9676056493973684
+      ]
+    },
+    "4096": {
+      "mean": 0.972043620116438,
+      "ci95": [
+        0.9521212745128135,
+        0.9884370791916983
+      ]
+    },
+    "16384": {
+      "mean": 0.9963782332320354,
+      "ci95": [
+        0.9908195490645031,
+        0.9997142537727204
+      ]
+    }
+  },
+  "timing": {
+    "original": {
+      "mean": 2.0223651218751115,
+      "ci95": [
+        1.9264949042969917,
+        2.119888318593881
+      ]
+    },
+    "cached": {
+      "mean": 0.14427272187515428,
+      "ci95": [
+        0.1356785567970249,
+        0.15324804632834202
+      ]
+    },
+    "incumbent": {
+      "mean": 0.00013525562499694388,
+      "ci95": [
+        0.0001283544968683259,
+        0.0001433629593716148
+      ]
+    },
+    "magnitude": {
+      "mean": 0.00011797887499938042,
+      "ci95": [
+        0.00011135731093767731,
+        0.00012577866249861814
+      ]
+    }
+  },
+  "speedup_ratio_of_mean_medians": {
+    "ratio": 14.017654173220324,
+    "ci95": [
+      13.630826127305786,
+      14.400918309841838
+    ]
+  },
+  "median_per_instance_speedup": 14.306631748495892,
+  "selection_calls": {
+    "original": {
+      "mean": 4998.015625,
+      "ci95": [
+        4870.840234375,
+        5127.470703125
+      ]
+    },
+    "cached": {
+      "mean": 4998.015625,
+      "ci95": [
+        4870.840234375,
+        5127.470703125
+      ]
+    }
+  },
+  "tie_recomputations": 0,
+  "limitations": [
+    "Implementation acceleration of the existing p=1 algorithm, not a new pruning rule or novelty claim.",
+    "Analytic expectation call count need not decrease; speed comes from caching and vectorization.",
+    "Single CPU environment and tiny same-distribution16-qubit examples; no scaling or end-to-end quantum advantage.",
+    "Ideal probabilities only; no noise simulation, cloud calls or QPU usage."
+  ],
+  "qpu_seconds": 0
+}

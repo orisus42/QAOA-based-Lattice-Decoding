@@ -1,0 +1,81 @@
+{
+  "experiment_id": "DIAG-009",
+  "count": 64,
+  "recorded_at": "2026-10-20T05:46:13.425322+05:30",
+  "geometry_statistics": {
+    "nonzero_edges": {
+      "min": 80.0,
+      "median": 104.0,
+      "mean": 101.4375,
+      "max": 120.0
+    },
+    "removed_edges": {
+      "min": 60.0,
+      "median": 78.0,
+      "mean": 76.078125,
+      "max": 90.0
+    },
+    "within_coordinate_retained": {
+      "min": 6.0,
+      "median": 8.0,
+      "mean": 7.921875,
+      "max": 8.0
+    },
+    "removed_pair_squared_weight_fraction": {
+      "min": 0.0426085428018984,
+      "median": 0.1686152355304897,
+      "mean": 0.1618531502789598,
+      "max": 0.2544864736168566
+    },
+    "removed_total_squared_weight_fraction": {
+      "min": 0.02339994207935129,
+      "median": 0.10006003483228831,
+      "mean": 0.09862379822747132,
+      "max": 0.19996024647187438
+    },
+    "p1_distribution_tv_upper_bound": {
+      "min": 0.20488679767572482,
+      "median": 0.42367422475861777,
+      "mean": 0.4108260259024438,
+      "max": 0.5989332380166799
+    },
+    "same_angle_p1_state_fidelity": {
+      "min": 0.7025872882917591,
+      "median": 0.8363352331824729,
+      "mean": 0.8407939796932504,
+      "max": 0.9588982711052659
+    },
+    "pure_state_l2_distance_squared": {
+      "min": 0.041532977688073666,
+      "median": 0.17098343133420651,
+      "mean": 0.1672845385793365,
+      "max": 0.323732900919133
+    }
+  },
+  "fresh_edge_count_min_median_max": [
+    72,
+    104.0,
+    120
+  ],
+  "fresh_same_mask_count_74_75": 0,
+  "fresh_same_mask_count_75_76": 170,
+  "success_gain_decomposition": {
+    "weak75_frozen": {
+      "ideal_gain_pp": 0.3321547958767934,
+      "noisy_gain_pp": 1.2794748074043794,
+      "difference_in_noise_losses_pp": 0.9473200115275859
+    },
+    "weak75_retrained": {
+      "ideal_gain_pp": 0.6720062392654436,
+      "noisy_gain_pp": 1.5084264131010716,
+      "difference_in_noise_losses_pp": 0.8364201738356281
+    }
+  },
+  "limits": [
+    "Exploratory descriptive diagnostics on old development data; no causality or new holdout performance claim.",
+    "The state-distance bound is a standard elementary consequence of diagonal phase evolution and orthogonality, not a novelty claim.",
+    "The p=1 bound assumes uniform initial state, identical angles/mixer, and unchanged fields/normalization; it does not guarantee improved success.",
+    "Difference in noise losses is an algebraic decomposition, not an isolated causal noise-channel experiment."
+  ],
+  "qpu_seconds": 0
+}

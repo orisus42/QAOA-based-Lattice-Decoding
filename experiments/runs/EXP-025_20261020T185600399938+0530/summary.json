@@ -1,0 +1,90 @@
+{
+  "experiment_id": "EXP-025",
+  "count": 4,
+  "matching": [
+    {
+      "128": {
+        "native_cz": 47,
+        "logical_k": {
+          "cached": 7,
+          "incumbent": 7
+        },
+        "slack": 81
+      },
+      "160": {
+        "native_cz": 149,
+        "logical_k": {
+          "cached": 19,
+          "incumbent": 20
+        },
+        "slack": 11
+      }
+    },
+    {
+      "128": {
+        "native_cz": 67,
+        "logical_k": {
+          "cached": 8,
+          "incumbent": 8
+        },
+        "slack": 61
+      },
+      "160": {
+        "native_cz": 67,
+        "logical_k": {
+          "cached": 8,
+          "incumbent": 8
+        },
+        "slack": 93
+      }
+    },
+    {
+      "128": {
+        "native_cz": 51,
+        "logical_k": {
+          "cached": 10,
+          "incumbent": 9
+        },
+        "slack": 77
+      },
+      "160": {
+        "native_cz": 140,
+        "logical_k": {
+          "cached": 21,
+          "incumbent": 22
+        },
+        "slack": 20
+      }
+    },
+    {
+      "128": {
+        "native_cz": 61,
+        "logical_k": {
+          "cached": 11,
+          "incumbent": 8
+        },
+        "slack": 67
+      },
+      "160": {
+        "native_cz": 146,
+        "logical_k": {
+          "cached": 20,
+          "incumbent": 20
+        },
+        "slack": 14
+      }
+    }
+  ],
+  "profile": {
+    "seconds": 4.154733300001681,
+    "trajectories": 32,
+    "max_norm_deviation": 6.439293542825908e-15,
+    "ideal_verified": true
+  },
+  "qpu_seconds": 0,
+  "limitations": [
+    "Feasibility and numerical/runtime profile only on old development public data; no quality-driven choice.",
+    "Symbolic compilation fixes counts before angle binding.",
+    "Saved-calibration noise simulation only, no cloud calls."
+  ]
+}

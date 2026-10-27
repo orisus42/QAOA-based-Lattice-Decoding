@@ -1,0 +1,213 @@
+WORKING RESEARCH NOTES: CRYPTOGRAPHIC PROVENANCE AND PRUNING MECHANISMS
+This is an internal explanation, not final poster prose or a caption.
+
+1. What the ML-KEM connection now establishes
+
+FIPS 203 K-PKE.KeyGen forms t_hat = A_hat*s_hat + e_hat in the NTT
+representation of R_q = Z_q[x]/(x^256+1), q=3329. Converting back to
+coefficient representation gives t = A*s + e modulo q. The public key
+contains t_hat and the seed needed to regenerate A_hat. The secret and
+key-generation error use CBD_eta1: eta1=3 for rank k=2 and eta1=2 for
+k=3 or 4. Ciphertext compression, ciphertext noise and encapsulation are
+outside our public-key decoding objective.
+
+EXP-010 pinned kyber-py commit 897923667b2fa80afcf910fc8c1825dddf54a97d
+and NIST ACVP-Server commit 975de31eb83d87039ec88934fdc47d8c312b892d.
+All 75 supplied key-generation vectors (25 per parameter set) reproduced
+the exact public and private key bytes. We decoded the coefficient arrays
+and independently checked the equation using our NumPy negacyclic
+convolution and signed-shift matrix expansion on all 75 full-size cases.
+These are public test-vector secrets, used for verification only. This is
+not formal implementation certification, and no full-size key was decoded
+by our lattice solver or quantum algorithm.
+
+Let A_c be the coefficient matrix. Our augmented basis and target are
+  B = [[q I, A_c], [0, I]], y = [t, 0], z = [w, s].
+Then ||Bz-y||^2 = ||q w + A_c s - t||^2 + ||s||^2.
+For the planted key equation there is an integer wrap w giving residual
+-e, hence cost ||e||^2+||s||^2. Minimizing this Euclidean cost favors a short
+secret and error. It is not the exact discrete CBD likelihood. A closest
+vector can encode another secret, particularly in a tiny ambiguous system.
+Closest-vector success, planted-secret recovery and box coverage are
+therefore different measurements. This models a toy key-recovery search;
+it is not the operation performed by ordinary ML-KEM decapsulation.
+
+Our quantum experiments independently generate lower-degree analogues,
+not arbitrary cropped pieces of a secure ML-KEM key. They keep the
+negacyclic polynomial/module equation and CBD sampling, but change degree,
+rank and/or modulus and use a research RNG.
+Changing degree and modulus also changes polynomial factorization and lattice
+geometry; this is not a security-preserving parameter reduction.
+The full ML-KEM degree is256; our n=2,k=2 experiments have only four scalar
+secret coefficients. Under
+the same two-bit-per-augmented-coordinate encoding, the illustrative
+register would grow from 16 qubits to 2048/3072/4096 qubits at ML-KEM's
+three ranks, before routing or improving the unproven search-window
+coverage. These counts are not resource estimates for a successful attack.
+
+EXP-010 evaluated 32 cases in each of six toy parameter families (192 total).
+All boxes covered an optimum; all exact-reference searches completed.
+The reference's bound was tightened by public exhaustive CBD-support
+search, used only for evaluation. The QAOA center remained Babai's output.
+Both q=3329 families and q=97 were already solved in all 32 cases by Babai.
+Matching the secure modulus at tiny dimension does not establish useful
+cryptanalytic difficulty. At q=17,eta=3, only 17/32 planted secrets belonged
+to the optimum set; 75% pruning's optimum success was marginally below
+full QAOA. These negative/null observations are retained.
+
+2. Formal method and the finer sweep
+
+LLL is applied to the public augmented basis. Babai supplies z0. Each
+reduced-basis coefficient is restricted to z0_i+{-2,-1,0,1}, using two bits.
+Expansion yields H = sum_i h_i Z_i + sum_(i<j) J_ij Z_i Z_j (constant
+omitted). Coefficients use the original RMS normalization. Pruning removes
+selected J terms only from the phase generator; fields, scoring objective,
+Babai incumbent and original normalization are unchanged.
+
+The p=1 circuit is exp(-i beta sum X) exp(-i gamma H_sparse)|+>^N.
+The hybrid returns Babai or the lowest-original-cost sample, whichever is
+better. It retains Babai on ties; elsewhere secret-return statistics use
+the first sampled minimum. A zero-pair circuit is a product distribution
+and is classically samplable.
+
+EXP-011 tested all M+1 possible weakest-edge counts for every one of the
+64 development cases: 6556 masks. Ties use deterministic coefficient-index
+ordering. It also fitted 36 percentage settings plus one separate-field/
+pair-angle control on the same independent 16 training groups. Each fit
+received exactly 768 original-energy objective evaluations, with no
+reference optimum or secret as an input. The optimizer deliberately ends
+at a fixed budget, so its maximum-iterations status is not a convergence
+guarantee. A further 19 control policies were evaluated, including random
+and tied-magnitude permutations. Total statevectors: 10076.
+
+At 1024 samples, expected hybrid optimum success on development data is:
+  Babai alone                         82.8125%
+  full QAOA                           86.9070%
+  weakest75, unchanged angles          87.6504%
+  weakest75, equally fitted angles     88.0772%
+  weakest81, unchanged angles          88.0439%
+  weakest81, equally fitted angles     88.7279%
+  weakest90, equally fitted angles     87.1717%
+At 16384 samples the highest tested common-grid success occurs at75%,
+not81%, for both angle policies. These are exact finite-shot expectations
+from ideal distributions, not observed percentages from hardware shots.
+The grid maximum is exploratory and selected after many comparisons.
+Pointwise bootstrap intervals do not establish a unique optimal fraction.
+The original 512-group EXP-007/008 evidence still validates the previously
+frozen75% settings; it is not fresh data for selecting81% or another rule.
+
+3. What the ideal controls do and do not explain
+
+At 1024 samples and original angles, count-matched75% deletion gives
+87.6504% (weak),84.0762% (five random orders averaged within each case),
+and83.3661% (strong). Which interactions are removed matters.
+
+Weak75 removes16.19% of pair squared weight on average, retains7.92/8
+within-coordinate bit interactions, and keeps the original ground states
+near the bottom of the sparse spectrum (mean rank fraction0.00382).
+Full/sparse energy rank correlation averages0.9417; the overlap of the
+lowest1% of states is only47.0%, so the phase landscape does change.
+Same-angle state fidelity averages0.8408. These are descriptive diagnostics,
+not guarantees of improved sample quality.
+
+Protecting coordinate pairs before removing weak terms gave the same
+hybrid success as ordinary weak pruning on this cohort. Deleting these
+pairs first gave83.5123%. However, these pairs are also strong interactions;
+this comparison does not isolate coordinate geometry from magnitude.
+There is no evidence yet that an explicit lattice-specific protection
+rule improves over generic magnitude pruning.
+
+Scaling every coupling to match weak75's retained squared pair weight,
+without removing edges, gave86.5892%. A full circuit with separately
+trained field and pair phase angles gave86.6776%, although it reduced the
+training mean energy. These specific controls did not reproduce the gain.
+They do not rule out all rescalings or better angle optimizers. Optimizing
+mean energy and maximizing rare-optimum sampling are different objectives.
+
+Randomizing only tied-magnitude removal gave87.6655%, close to the ordinary
+tie order. Retaining90% of pair squared weight gave87.4006% with34.91 mean
+RZZ terms, compared with25.36 forweak75 and101.44 forfull. This prior-art
+style baseline also works; we have not established superiority to every
+generic sparsifier. Removing every pair term gave83.3546%.
+
+4. Noise mechanisms and numerical reliability
+
+EXP-012 uses the same routed circuits for ideal, readout-only, gate-channel,
+idle-only, gate+idle and gate+idle+readout comparisons. Gate channels already
+include gate-duration T1/T2; idle relaxation covers scheduled delays.
+Channel effects can interact and must not be added as independent losses.
+All11 Babai failures are simulated; keeping the exact-optimal incumbent
+fixes the other53 hybrid outputs without oracle access by the solver.
+There are no full-cohort standalone-QAOA claims from this selected subset.
+
+Two initial runs failed a strict trajectory-normalization check. Disabling
+output truncation did not fix it. DIAG-013 reproduced a2.41456e-6 norm defect
+with two-qubit Kraus fusion, versus1.04e-14 with one-qubit fusion and
+9.33e-15 with fusion disabled, on the same routed circuit/seed. The new
+noise run uses one-qubit fusion throughout, without renormalizing outputs
+or loosening checks. This identifies a numerical association, not a full
+upstream root-cause diagnosis. Failed runs and diagnostic arrays remain.
+
+The successful run simulated 66 circuits with 128 trajectories each (8448
+trajectories), plus 22 ideal routed checks. Maximum trajectory norm error
+was 8.66e-11, within the unchanged 1e-10 absolute tolerance. No probability
+renormalization was performed. Independently reloaded all 22 QPY circuits,
+checked 8168 native CZ edges, and verified 264 finite-shot statistics with
+the older independent calculation.
+
+At 1024 samples, full versus weak75 expected hybrid success (%) was:
+  ideal                 86.90696   87.65038
+  readout only          86.32468   87.29215
+  gate channels         84.99203   86.75260
+  idle only             85.49397   87.25791
+  gate + idle           84.34856   86.45633
+  gate + idle + readout  84.16474   86.20209
+The combined-noise paired gain is 2.03735 percentage points, with a
+pointwise 95% group-plus-Monte-Carlo bootstrap interval [0.92232,3.31987].
+The ideal difference is 0.74342 points; its 3000-resample interval in this
+run barely includes zero, unlike the similarly borderline estimate from
+the different bootstrap seed in EXP-011. Do not call the small development
+ideal difference conclusively significant. The combined-noise result is
+clearer under this model. Neither interval covers model misspecification.
+
+Both gate channels and idle relaxation increase the point-estimated
+benefit of pruning. Their effects are not additive; readout changes the
+gap differently depending on the preceding state/noise. Shorter circuits
+and altered state sensitivity remain intertwined. These experiments do
+not prove that gate count alone explains every difference.
+
+At 16384 samples with combined noise the estimates are 94.8890% full and
+99.1499% weak75. Finite-trajectory plug-in bias is small in the recorded
+jackknife check (maximum absolute estimate across all channels/budgets
+0.0577 percentage points). These remain Monte Carlo predictions rather
+than hardware observations. This 64-case development study does not
+replace the previous frozen 512-case evaluation.
+
+5. Contribution boundaries
+
+Existing work already sparsifies QAOA phase operators (Liu et al.,2022)
+and uses magnitude/top-K/squared-weight compression (Cavaliere et al.,2026).
+The current contribution is an application-specific, reproducible study of
+the quality/resource trade-off in short-secret module-derived lattice
+decoding, with explicit cryptographic provenance, strong classical controls,
+sparsity/budget curves, negative controls, and calibrated noise components.
+No new pruning algorithm, universal mechanism, optimal75% setting, quantum
+advantage or secure ML-KEM attack has been demonstrated. A mathematical
+proof of improved low-energy sampling and independence from the particular
+basis, encoding, p=1 restriction and problem family remain open.
+
+The evidence can support a useful student methods/benchmark project even
+when classical decoding wins. A stronger novelty claim would require a
+specific new method plus a fair comparison and independent validation.
+Final hardware selection should favor a stable resource/quality region,
+retain75% as the historical anchor, and validate any new selection on
+untouched groups before using the600-second QPU budget (120-second reserve).
+No QPU seconds have been used.
+
+Primary references and pinned provenance
+  https://csrc.nist.gov/pubs/fips/203/final
+  https://github.com/usnistgov/ACVP-Server/tree/975de31eb83d87039ec88934fdc47d8c312b892d/gen-val/json-files/ML-KEM-keyGen-FIPS203
+  https://github.com/GiacomoPope/kyber-py/tree/897923667b2fa80afcf910fc8c1825dddf54a97d
+  https://arxiv.org/abs/2205.00118
+  https://advanced.onlinelibrary.wiley.com/doi/10.1002/qute.70335
+  https://raw.githubusercontent.com/Qiskit/qiskit-aer/0.17.2/src/transpile/fusion.hpp

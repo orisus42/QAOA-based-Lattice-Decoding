@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Using Variational Quantum Algorithm to Solve the LWE Problem",
+    "year": "2022",
+    "url": "https://doi.org/10.3390/e24101428",
+    "finding": "Already maps LWE to BDD and applies QAOA around a classical nearest-plane estimate.",
+    "implication": "Neither the LWE-to-lattice connection nor a Babai-centered QAOA search is our invention."
+  },
+  {
+    "title": "Quantum-classical hybrid algorithm for solving the learning-with-errors problem on NISQ devices",
+    "year": "2025",
+    "url": "https://www.nature.com/articles/s42005-025-02126-w",
+    "finding": "Reports a small IBM hardware demonstration using a lattice-based hybrid construction for decision-LWE.",
+    "implication": "Do not claim the first quantum-hardware lattice/LWE experiment; our task and evaluation differ."
+  },
+  {
+    "title": "Heuristic Time Complexity of NISQ Shortest-Vector-Problem Solvers",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2502.05284",
+    "finding": "Studies fixed-angle QAOA and a controlled-mixer variant for SVP; the reported simulations assume ideal devices.",
+    "implication": "Lattice angle pretraining is established; physical-device behavior is a sensible experimental follow-up."
+  },
+  {
+    "title": "A Practically Scalable Approach to the Closest Vector Problem for Sieving via QAOA with Fixed Angles",
+    "year": "2025 preprint / 2026 publication",
+    "url": "https://arxiv.org/abs/2503.08403",
+    "finding": "Pretrains QAOA angles for constrained CVP on prime lattices arising in sieving. It discusses restricted search-space coverage and structure-dependent conclusions.",
+    "implication": "Our q-ary toy benchmark is a different instance family, but fixed-angle CVP itself is prior work. Compare with the authors\u2019 public implementation: https://github.com/BenPrie/qaoa-for-cvp."
+  },
+  {
+    "title": "Graph Learning for Parameter Prediction of Quantum Approximate Optimization Algorithm",
+    "year": "2024",
+    "url": "https://arxiv.org/abs/2403.03310",
+    "finding": "Uses graph learning to improve QAOA initialization for MaxCut.",
+    "implication": "Machine learning for QAOA parameters is established. Our modest extension is its evaluation on these lattice instances."
+  },
+  {
+    "title": "Graph Representation Learning for Parameter Transferability in Quantum Approximate Optimization Algorithm",
+    "year": "2024",
+    "url": "https://arxiv.org/abs/2401.06655",
+    "finding": "Studies structural representations and donor-instance selection for QAOA parameter transfer.",
+    "implication": "Even structure-based selection is prior art; describe this project as application and empirical comparison, not a new general algorithm."
+  },
+  {
+    "title": "Transferring linearly fixed QAOA angles: performance and real device results",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2504.12632",
+    "finding": "Demonstrates a compact transferable angle schedule and real-device results for Ising optimization.",
+    "implication": "Hardware transfer and compact parameter schedules are also established. Normalization and strong fixed-angle controls matter."
+  },
+  {
+    "title": "When the Learning With Errors Problem Meets the Coherent Ising Machine: A Penalty-Free Algorithm-Hardware Co-Design",
+    "year": "2026 preprint",
+    "url": "https://arxiv.org/abs/2606.22843",
+    "finding": "Proposes a Babai-recentered least-squares QUBO and adaptive encoding for a coherent Ising machine.",
+    "implication": "Recent related encoding work overlaps our ingredients. Its hardware is different from gate-based IBM QAOA; its claims were not independently reproduced here."
+  },
+  {
+    "title": "IBM Quantum Open Plan",
+    "year": "Documentation checked 16 October 2026",
+    "url": "https://quantum.cloud.ibm.com/docs/en/guides/plans-overview",
+    "finding": "The standard Open Plan allowance is up to ten minutes per rolling 28-day window.",
+    "implication": "The plan below uses that allowance; it does not depend on promotional access."
+  },
+  {
+    "title": "IBM Quantum workload usage",
+    "year": "Documentation checked 16 October 2026",
+    "url": "https://quantum.cloud.ibm.com/docs/en/guides/estimate-job-run-time",
+    "finding": "Usage includes QPU-locked execution and per-sub-job overhead; a quick estimate uses about 0.00035 seconds per execution plus overhead.",
+    "implication": "Shot counts alone do not guarantee quota compliance. Compile for the chosen device and inspect actual job usage."
+  },
+  {
+    "title": "IBM maximum execution time",
+    "year": "Documentation checked 16 October 2026",
+    "url": "https://quantum.cloud.ibm.com/docs/en/guides/max-execution-time",
+    "finding": "Per-job maximum execution time is based on QPU usage. A batch time-to-live is a different limit.",
+    "implication": "Use per-job caps and a cumulative local usage ledger; retain a reserve."
+  }
+]

@@ -1,0 +1,132 @@
+INTERNAL RESEARCH METHODS — USER AUTHORS FINAL POSTER TEXT
+EXP-017: residual-guided phase selection under a logical circuit budget
+The actual protocol timestamps and results are in the immutable run manifests.
+
+PUBLIC INPUTS AND THE MEANING OF ERROR
+
+Inputs are the reduced public lattice basis B, public target y, a classical
+incumbent z0, a gate cap K and angles obtained from separate training cases.
+The residual is r=B z0-y: the remaining error of our current guess. It is not
+the hidden error used to generate the cryptographic instance. Neither that
+hidden error, the secret, an enumerated optimum, nor a precomputed codebook
+is an input to the new selector.
+
+For coefficient changes delta, the objective is ||r+B delta||^2. The existing
+two-bit coordinate encoding uses z=z0-2+W x, where each coordinate has binary
+weights1 and2. With D=B W, and midpoint m=r-(1/2)B1, its Ising coefficients are
+h=-D^T m and J_ij=(D^T D)_ij/2 for i<j, plus an irrelevant scalar constant.
+The original normalization sqrt(sum h_i^2+sum J_ij^2) is retained throughout
+mask selection, circuit construction and scoring. public_phase computes this
+using polynomial-size arrays only. The independent exhaustive box encoder is
+used afterwards for verification of the tiny experimental cases.
+
+SPECIFIED ALGORITHM
+
+1. Start with all nonzero J interactions and the frozen full-QAOA anchor angles.
+2. For each currently retained interaction, consider deleting just that term.
+3. Evaluate each trial circuit's exact p=1 expectation of the FULL ORIGINAL
+   cost Hamiltonian, using the established analytic formula in qaoa.py.
+4. Delete the term producing the lowest expectation; break ties by (i,j) order.
+5. Repeat until the requested logical RZZ budget is reached.
+6. At that cap, also evaluate ordinary magnitude pruning at the same cap.
+   Fall back to it if it has equal or lower expected energy. Retain original
+   fields and the original numerical values of every surviving interaction.
+7. Use the resulting mask with either the frozen anchor angles or a separately
+   trained global angle pair. Score every measured candidate by the complete
+   original lattice cost and retain the classical incumbent on cost ties.
+
+The fallback guarantees no worse expected energy than magnitude pruning at
+the SELECTION angles (up to numerical tolerance). It does not guarantee better
+optimum probability, better finite-shot minima, or the same guarantee after
+changing the angles. The method is a deterministic greedy heuristic; it does
+not solve the global combinatorial problem of choosing the best K edges.
+
+This first implementation uses the logical number of RZZ interactions as its
+circuit budget. A routed circuit may need different native CZ counts for two
+masks with the same K. We compile and report those costs; we do not pretend
+that K is a hard native-gate or execution-time limit. A genuinely native-cost
+selector would need a further design and evaluation step.
+
+CLASSICAL SELECTION COST
+
+With M original edges, a standalone backward path to K evaluates roughly
+sum_{m=K+1}^M m candidate expectations, plus two fallback comparisons at each
+requested checkpoint. The16/24/32 masks share one path. Each checkpoint stores
+its cumulative calls and elapsed time; K24 conservatively includes the earlier
+K32 fallback check. No exponentially sized statevector or ground-truth score
+is used by this selector, although the polynomial overhead can be substantial.
+This is classical algorithm-design work, not quantum optimization shots.
+
+CONTROLS AND SPLITS
+
+Primary budget:24 logical RZZ gates. Secondary budgets:16 and32.
+Primary outcome: mean exact-optimum success of Babai-plus-sampling at1024 shots.
+Primary comparison: globally trained residual24 versus globally trained
+magnitude24 on128 previously unused public-matrix groups; a positive lower
+endpoint of the paired two-sided95% bootstrap interval is the prespecified
+criterion for evidence of improvement. Secondary comparisons are exploratory.
+
+All masks and global angles use the original16 training groups. Every method
+receives768 global-training objective calls, scored using original energy.
+The deletion selector uses the pre-existing full-QAOA anchor angles. The new
+global fits are frozen before evaluating either the old64 development cases
+or generating the128 new cases. No model is selected from development outcomes
+and then silently reported as preselected on the fresh cohort.
+
+Geometry ablation: run the identical deletion rule with r=0, using the resulting
+geometry-only coefficients and normalization, and transfer just the edge mask
+back to the real instance. Thus this mask depends on the reduced basis alone;
+the real circuit still uses the real fields. This tests the value of target/
+residual information, but differences include the ablation's normalization.
+
+Other controls: full QAOA; magnitude pruning; squared-weight90 compression;
+the zero-interaction product-state circuit; uniform sampling in the same box;
+sampling from the public centered-binomial secret prior with optimal modular
+lifts; and classical one/two-coordinate refinement. Simple controls and all
+QAOA methods retain the same Babai incumbent and score the same original cost.
+The classical secret sampler can explore outside the QAOA box. Equal sample
+counts are not equal runtime or equal search domains.
+
+Additional equal-effort control: at K24 optimize ordinary-pruning angles for
+each instance, allowing at most the residual selector's analytic-call count.
+It includes the separately trained ordinary angles in its initial population.
+The optimizer may converge early; record actual calls and wall time. One
+analytic call is not necessarily identical CPU work in batched mask selection
+and scalar angle tuning, so both measurements are retained.
+
+We report exact statevector probabilities and predicted256/1024/4096/16384-shot
+outcomes, plus reproducible categorical samples stored in compressed files.
+Those categorical samples are local simulated measurements, not QPU results.
+Keep closest-vector optimum, planted-secret recovery and box coverage separate.
+
+ROUTING AND REPRODUCIBILITY
+
+The primary trained full/magnitude24/residual24/geometry24 circuits are routed
+on the saved16-qubit IBM Fez patch with one fixed transpiler seed. Save QPY,
+native CZ counts, unitary durations and final permutations. Independent ideal
+simulation of selected routed circuits checks those permutations. No new noise
+simulation is part of this run and no cloud job or paid access is used.
+
+Immutable runs contain input/source hashes, package versions, config, public
+training masks and fits, frozen-protocol timestamp, disjointness audit, every
+selection trace, per-instance data, simulated samples, routed circuits and
+summary statistics. audit_residual_pruning.py independently verifies hashes,
+logical caps, native edges, representative distributions, saved sampling,
+deterministic selection replays and the primary paired bootstrap interval.
+
+IMPLEMENTATION FAILURE PRESERVED
+
+EXP-017_20261020T065734295409+0530 completed training but failed before reporting
+evaluation outcomes: SciPy's legacy RandomState rejects seeds above2**32-1.
+The per-instance optimizer now takes an explicit NumPy Generator with the same
+seed value. A large-seed reproducibility and call-budget test was added. No
+pruning choice or scientific comparison changed in response to this failure.
+
+LIMITS
+
+This is one p=1 implementation on a tiny fixed Module-LWE distribution, not a
+secure-parameter attack, a new general algorithm claim, or quantum advantage.
+The earlier literature review already found phase sparsification, budgeted
+compression and adaptive QAOA methods. A useful implementation improvement and
+an original algorithmic contribution are different claims. Any negative or
+null outcome in optimum sampling must be retained even if mean energy improves.

@@ -1,0 +1,60 @@
+{
+  "run_id": "EXP-011_20261020T060250605681+0530",
+  "started_at": "2026-10-20T06:02:50.605681+05:30",
+  "status": "completed",
+  "command": "python experiments/run_pruning_mechanisms.py",
+  "python": "3.14.3",
+  "packages": {
+    "numpy": "2.4.6",
+    "sympy": "1.14.0",
+    "scipy": "1.18.0",
+    "qiskit": "2.4.2",
+    "qiskit-aer": "0.17.2",
+    "seaborn": "0.13.2",
+    "matplotlib": "3.10.9"
+  },
+  "source_sha256": {
+    "src/lattice_qaoa/classical.py": "aba3bbbbec7b819dc36847285eb2b8961006a230d990599d3b1cc9acaa0d2ee3",
+    "src/lattice_qaoa/device.py": "25574a0a2ec26fe016ac586f3e87a9e3f5edbcd5e3d1ce2544b6e59c193d9123",
+    "src/lattice_qaoa/encoding.py": "db0b436458d3210cf994eb796c7235645ddd7932aedd543ceab4ba5707af201c",
+    "src/lattice_qaoa/evaluation.py": "96e6b3551ec659fb47db6f8b7d7da921c80fcc4e733f71bc4406345e0d800589",
+    "src/lattice_qaoa/instances.py": "4a3ba14e8b39674d0aabd63a8dabde14066210ddcfd1457480bb1c996bbe781b",
+    "src/lattice_qaoa/mechanisms.py": "da144aac3bd01452e8ec1ac987563e81f01231e67870b92f613a6d0a4425d97f",
+    "src/lattice_qaoa/qaoa.py": "2276eb60558f345f9e95bef45e70551ef833d2c980552e88754e5d7fd87406a8",
+    "src/lattice_qaoa/reference.py": "db8d1b3e270d1c88cb5f7e70ade6aa4c4b04c537991c0479f222f9e91fbb098d",
+    "src/lattice_qaoa/sampling.py": "44efe1f908da13c7f424c6888f68aa21ee244cce9a1659845b1fad5a9c23f99c",
+    "src/lattice_qaoa/sparsify.py": "b5f86b3cb5e7ddf6e3b60c70b68b65448fa8bb809ade04ebca40230475c50f66",
+    "src/lattice_qaoa/__init__.py": "c735051e3cdf56fb6f25aeaa155befc21569d17d8d35c8d626494b7673355e08",
+    "tests/test_aggressive_pruning.py": "6dc86fb379627db75061438254d07c7c9c22134d72b4037faf76d6875e7deefc",
+    "tests/test_device_noise.py": "d5db8136c3efd46aacb87894ac87c307e7f134c6b077d7ae5727e3b1c22db1f3",
+    "tests/test_fresh_evaluation.py": "e0d89eddd66510291e8000428d47f57b5b7e4286f5ceaf4804e2608b63df60c4",
+    "tests/test_hybrid_quality.py": "573b09c2470ac53d20df6eb6aaa6a746f7fab73bef90153aa2bab2ac0660e3e0",
+    "tests/test_mechanisms.py": "6940c58b157196378d06e574a7b749e0507a8cf835082ae2454f10af0d04bd6f",
+    "tests/test_module_lwe.py": "a1cd4c7b4a7385c2948ad80d9ad7ca538d03a5fa4afb013f13c822c8fbd68380",
+    "tests/test_qaoa_encoding.py": "afc94ea70dd24dc946b312314bd62141f379c717d03de3b15cdaeb9cd6129341",
+    "tests/test_sampling.py": "b9a99e8f883479aaed6cb95a92429d7402e4184b414ae93d04c8d5779cbae6fb",
+    "tests/test_sparsification.py": "9cabf050322838decd63234595c38d3c1d09b85c20e5b923e1dc74efa7a7a9e3",
+    "experiments/run_pruning_mechanisms.py": "40fea2f445b60d355bd42393b6cbd420ab7d5715b5db4dcef56e03d22507ff56",
+    "experiments/research_run.py": "b53ee48b44654045bcc1250ced6c22f0661abbdafe1e24aca1a242726a3bd26e",
+    "experiments/configs/EXP-011.json": "468b9b2d4865fd908e61998d6062c608c21dbf5773aac5e5f723e6233ba76c40"
+  },
+  "input_sha256": {
+    "experiments/runs/EXP-001_20261018T120321801881+0530/instances.json": "c501984a2a5ec80fdecfe52a6972ae9d6951fc7a988d71d6336cba47e03cc929",
+    "experiments/runs/EXP-003_20261020T014441792732+0530/training.json": "d8d8dd6f50c5dd7613f1ed9c470848d4339f227b18d44fcbab2617294fd6f83d"
+  },
+  "output_sha256": {
+    "config.json": "4a9223a556fcd64ac13aa5149003cda83b4dd80a6f926a71e6da5809e10c9998",
+    "diagnostics.json": "8496f584b996fa581824dc3e2f29084a766e09e41ffc68043c4260c5b84c99fd",
+    "grid.json": "ae1eba5fb3745be295ca0c9a58e92d37e7f542f142ced86e391a4aa7b1d66c8d",
+    "mechanisms.json": "f428d033746111d84cbb29968d3ffc6856a79b85942e7ba5c4172d766d6b4ae0",
+    "summary.json": "49bf554264c399d3f28eb8623a9d2b0f6fa78b00b8a921492a7d55c3386e857d",
+    "sweep_all_counts.jsonl": "9656a46eeb1342f0da2388bd135699bb0366dc0f343d492d4ad8393ee2085209",
+    "training.json": "93ed023d1693bac141d16c33a6403c5fbbbcd006a71e6305b21381bae9ab4811",
+    "training_frozen_at.txt": "12328bfd61f416450d2fe6b6777784b278246b58d88c1a4e0a83c70fb6b86171",
+    "validation.json": "13c42a5d5391d453bc9474fe8d2f0f195a8384663f3c9b9ee38fd316a5fd22b2"
+  },
+  "qpu_seconds": 0,
+  "qpu_jobs_submitted": 0,
+  "finished_at": "2026-10-20T06:05:36.361011+05:30",
+  "elapsed_seconds": 165.75536110000394
+}

@@ -1,0 +1,79 @@
+{
+  "id": "EXP-003",
+  "name": "Ideal QAOA versus classical controls on 64 toy Module-LWE examples",
+  "input_run": "experiments/runs/EXP-001_20261018T120321801881+0530",
+  "cohort": "The same 64 previously generated toy Module-LWE development examples, all retained",
+  "encoding": "LLL-reduced 8-dimensional secret/error embedding; Babai-centered coefficients [-2,-1,0,+1]; 2 bits per coefficient; 16 qubits",
+  "coverage_audit_before_run": "The previously proposed two-bit window contains at least one known exact optimum on all 64 cases; no window adjustment or instance filtering performed.",
+  "depth_p": 1,
+  "angle_objective": "Minimize normalized expected squared decoding cost; no reference optimum or planted secret enters parameter fitting",
+  "parameter_bounds": [
+    [
+      0.0,
+      12.566370614359172
+    ],
+    [
+      -1.5707963267948966,
+      0.0
+    ]
+  ],
+  "global_training": {
+    "count": 16,
+    "first_seed": 2026102200,
+    "optimizer_seed": 2026102003,
+    "maxiter": 45,
+    "popsize": 10
+  },
+  "instance_tuning": {
+    "method": "L-BFGS-B",
+    "starts": "trained global angle plus three prespecified starts",
+    "extra_starts": [
+      [
+        0.5,
+        -0.3
+      ],
+      [
+        2.0,
+        -0.7
+      ],
+      [
+        5.0,
+        -1.2
+      ]
+    ],
+    "maxiter": 100
+  },
+  "shots_per_circuit": 1024,
+  "report_budgets": [
+    1,
+    10,
+    50,
+    100,
+    256,
+    1024
+  ],
+  "measurement_seed": 2026102004,
+  "uniform_seed": 2026102005,
+  "secret_sampling_seed": 2026102006,
+  "classical_controls": [
+    "LLL+Babai",
+    "Uniform sampling with replacement in the identical binary box",
+    "CBD(eta=2) secret sampling with optimal modular lift",
+    "Babai plus greedy one-coordinate moves",
+    "Babai plus greedy one/two-coordinate moves",
+    "Exact full-lattice CVP reference"
+  ],
+  "classical_refinement_evaluation_cap": 1024,
+  "hybrid_rule": "Retain Babai's candidate and replace it only with a strictly lower public cost; ties retain the incumbent",
+  "secret_recovery_rule": "Evaluate the returned minimum-cost candidate, with ties resolved by earliest sample or retained Babai incumbent",
+  "hardware": "none",
+  "limitations": [
+    "Exploratory comparison on one tiny parameter set and previously inspected development instances, not a final unseen evaluation.",
+    "One QAOA layer and this specific encoding/parameter procedure; no general conclusion about all QAOA variants.",
+    "Analytic p=1 energy optimization is performed classically; its effort is recorded and excluded from the displayed shot budget.",
+    "Equal samples do not mean equal runtime, energy consumption, or full computational effort.",
+    "Classical secret sampling exploits the known small-secret distribution and is not confined to the binary box; uniform box sampling isolates the same-space comparison.",
+    "Classical local refinement is over the full integer coefficient lattice, with explicit candidate-evaluation counts.",
+    "No noise or hardware execution. CVP success is separate from planted-secret recovery."
+  ]
+}

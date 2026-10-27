@@ -1,0 +1,460 @@
+{
+  "experiment_id": "EXP-012",
+  "count": 64,
+  "simulated_babai_failures": 11,
+  "checks": {
+    "ideal_circuits_verified": 22,
+    "max_routed_discrepancy": 1.8756697583999227e-17,
+    "noisy_circuits": 66,
+    "trajectories": 8448,
+    "max_trajectory_norm_deviation": 8.661682482369315e-11
+  },
+  "methods": {
+    "full": {
+      "ideal": {
+        "1024": {
+          "hybrid_success": 0.8690696121000411,
+          "hybrid_mean_distance": 2.7314348452269277,
+          "group_plus_mc_ci95": [
+            0.7965513080413238,
+            0.9381785029467253
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.8690696121000411,
+            0.8690696121000411
+          ],
+          "jackknife_estimated_success_bias": 0.0
+        },
+        "16384": {
+          "hybrid_success": 0.9960371606194816,
+          "hybrid_mean_distance": 2.645303960656807,
+          "group_plus_mc_ci95": [
+            0.9929949233650986,
+            0.9985401876585325
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.9960371606194816,
+            0.9960371606194816
+          ],
+          "jackknife_estimated_success_bias": 0.0
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_success": 0.8632468372430967,
+          "hybrid_mean_distance": 2.7367415929914984,
+          "group_plus_mc_ci95": [
+            0.7875747105527606,
+            0.9352573803342882
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.8632468372430967,
+            0.8632468372430967
+          ],
+          "jackknife_estimated_success_bias": 0.0
+        },
+        "16384": {
+          "hybrid_success": 0.9927428866931497,
+          "hybrid_mean_distance": 2.646822783804122,
+          "group_plus_mc_ci95": [
+            0.9877514148461197,
+            0.9970960991858511
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.9927428866931497,
+            0.9927428866931497
+          ],
+          "jackknife_estimated_success_bias": 0.0
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_success": 0.8499202569597449,
+          "hybrid_mean_distance": 2.7486041590725776,
+          "group_plus_mc_ci95": [
+            0.7667016899007011,
+            0.9302512685341391
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.8489004167971009,
+            0.8510371552640196
+          ],
+          "jackknife_estimated_success_bias": -1.0654479384739936e-05
+        },
+        "16384": {
+          "hybrid_success": 0.9763768376039867,
+          "hybrid_mean_distance": 2.6566865120816474,
+          "group_plus_mc_ci95": [
+            0.9598239202719792,
+            0.989893648758499
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.973599982124986,
+            0.9784690203801107
+          ],
+          "jackknife_estimated_success_bias": -0.000317181923721167
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_success": 0.8549397435441362,
+          "hybrid_mean_distance": 2.744753031712304,
+          "group_plus_mc_ci95": [
+            0.7749026411410462,
+            0.9322151342431494
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.8539914730365299,
+            0.8558539661280704
+          ],
+          "jackknife_estimated_success_bias": -9.429360015620432e-06
+        },
+        "16384": {
+          "hybrid_success": 0.9853750151993932,
+          "hybrid_mean_distance": 2.6516354723351974,
+          "group_plus_mc_ci95": [
+            0.9745749522129984,
+            0.9939729098685296
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.9837669890829054,
+            0.9865262677853671
+          ],
+          "jackknife_estimated_success_bias": -0.00017396102707928351
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_success": 0.8434855861219692,
+          "hybrid_mean_distance": 2.754543512393524,
+          "group_plus_mc_ci95": [
+            0.7574551198037436,
+            0.927605374167133
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.8424126713920861,
+            0.8445016825616828
+          ],
+          "jackknife_estimated_success_bias": -1.0404361949990153e-05
+        },
+        "16384": {
+          "hybrid_success": 0.9569538790149441,
+          "hybrid_mean_distance": 2.6679853572666934,
+          "group_plus_mc_ci95": [
+            0.9270459203601445,
+            0.981183372364811
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.952259952201851,
+            0.9602453804975558
+          ],
+          "jackknife_estimated_success_bias": -0.0005769534128148672
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_success": 0.8416474462291574,
+          "hybrid_mean_distance": 2.756408330785633,
+          "group_plus_mc_ci95": [
+            0.7546874663192851,
+            0.9270397501358421
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.8407385605198078,
+            0.8425247389523542
+          ],
+          "jackknife_estimated_success_bias": -7.627267425091579e-06
+        },
+        "16384": {
+          "hybrid_success": 0.9488900053894829,
+          "hybrid_mean_distance": 2.6727447919902394,
+          "group_plus_mc_ci95": [
+            0.9155067830680161,
+            0.9770307903172617
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.944227618577121,
+            0.9522437530141408
+          ],
+          "jackknife_estimated_success_bias": -0.0004926534889593166
+        }
+      }
+    },
+    "weak75": {
+      "ideal": {
+        "1024": {
+          "hybrid_success": 0.876503773392826,
+          "hybrid_mean_distance": 2.7273444639728694,
+          "group_plus_mc_ci95": [
+            0.8078725068647071,
+            0.9411919393938226
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.876503773392826,
+            0.876503773392826
+          ],
+          "jackknife_estimated_success_bias": 0.0
+        },
+        "16384": {
+          "hybrid_success": 0.9977012738243464,
+          "hybrid_mean_distance": 2.6444240613936847,
+          "group_plus_mc_ci95": [
+            0.9955531635143672,
+            0.9993837953371179
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.9977012738243464,
+            0.9977012738243464
+          ],
+          "jackknife_estimated_success_bias": 0.0
+        }
+      },
+      "readout_only": {
+        "1024": {
+          "hybrid_success": 0.8729214611050473,
+          "hybrid_mean_distance": 2.730255749169215,
+          "group_plus_mc_ci95": [
+            0.8022813906680467,
+            0.9402201913452334
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.8729214611050473,
+            0.8729214611050473
+          ],
+          "jackknife_estimated_success_bias": 0.0
+        },
+        "16384": {
+          "hybrid_success": 0.9969547156834991,
+          "hybrid_mean_distance": 2.644827395926673,
+          "group_plus_mc_ci95": [
+            0.9942211045623618,
+            0.9991098106984396
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.9969547156834991,
+            0.9969547156834991
+          ],
+          "jackknife_estimated_success_bias": 0.0
+        }
+      },
+      "gate_channels": {
+        "1024": {
+          "hybrid_success": 0.8675260292992424,
+          "hybrid_mean_distance": 2.7347011854144077,
+          "group_plus_mc_ci95": [
+            0.7943870779072366,
+            0.9371950083514147
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.866632097562071,
+            0.8683909490474374
+          ],
+          "jackknife_estimated_success_bias": -8.65245422223453e-06
+        },
+        "16384": {
+          "hybrid_success": 0.9946579491079091,
+          "hybrid_mean_distance": 2.6461795294512847,
+          "group_plus_mc_ci95": [
+            0.9899118341288643,
+            0.9982742023151436
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.9941034107945743,
+            0.9951133816472669
+          ],
+          "jackknife_estimated_success_bias": -4.721226985150706e-05
+        }
+      },
+      "idle_only": {
+        "1024": {
+          "hybrid_success": 0.8725791010790298,
+          "hybrid_mean_distance": 2.7308269268943284,
+          "group_plus_mc_ci95": [
+            0.801508710044892,
+            0.9393700816933207
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.8718446498687413,
+            0.873322856944589
+          ],
+          "jackknife_estimated_success_bias": -6.827210646629528e-06
+        },
+        "16384": {
+          "hybrid_success": 0.9968841487968632,
+          "hybrid_mean_distance": 2.644982611485354,
+          "group_plus_mc_ci95": [
+            0.994010555020607,
+            0.9990717656589719
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.996563246402287,
+            0.9971421774283523
+          ],
+          "jackknife_estimated_success_bias": -2.240729527214734e-05
+        }
+      },
+      "gate_and_idle": {
+        "1024": {
+          "hybrid_success": 0.864563342710273,
+          "hybrid_mean_distance": 2.7372864066857785,
+          "group_plus_mc_ci95": [
+            0.7886832499343824,
+            0.9358520997618461
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.8634910780906272,
+            0.8655878961708103
+          ],
+          "jackknife_estimated_success_bias": -1.210027833762348e-05
+        },
+        "16384": {
+          "hybrid_success": 0.9929053970204504,
+          "hybrid_mean_distance": 2.6473085134225096,
+          "group_plus_mc_ci95": [
+            0.9866085567487625,
+            0.9977343142005869
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.9919826279894115,
+            0.9935679659389439
+          ],
+          "jackknife_estimated_success_bias": -9.075686465307743e-05
+        }
+      },
+      "gate_idle_readout": {
+        "1024": {
+          "hybrid_success": 0.8620209369608445,
+          "hybrid_mean_distance": 2.7394074643897315,
+          "group_plus_mc_ci95": [
+            0.7852023727653038,
+            0.9350952984808449
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.861048673520172,
+            0.8629620552089754
+          ],
+          "jackknife_estimated_success_bias": -9.723339779683666e-06
+        },
+        "16384": {
+          "hybrid_success": 0.9914988791583546,
+          "hybrid_mean_distance": 2.6480862739646787,
+          "group_plus_mc_ci95": [
+            0.9843597989757027,
+            0.9970951811223614
+          ],
+          "fixed_cohort_mc_ci95": [
+            0.9905350702634818,
+            0.9921948389901594
+          ],
+          "jackknife_estimated_success_bias": -9.099469496799684e-05
+        }
+      }
+    }
+  },
+  "paired_gains": {
+    "ideal": {
+      "1024": {
+        "gain_percentage_points": 0.7434161292784958,
+        "pointwise_ci95_pp": [
+          -0.001202400042064063,
+          1.5376172704862257
+        ]
+      },
+      "16384": {
+        "gain_percentage_points": 0.16641132048648144,
+        "pointwise_ci95_pp": [
+          -0.0573574910902777,
+          0.42757323376885215
+        ]
+      }
+    },
+    "readout_only": {
+      "1024": {
+        "gain_percentage_points": 0.9674623861950615,
+        "pointwise_ci95_pp": [
+          0.15062703376066802,
+          1.875272649552639
+        ]
+      },
+      "16384": {
+        "gain_percentage_points": 0.4211828990349442,
+        "pointwise_ci95_pp": [
+          0.04064082364659689,
+          0.8599586546464816
+        ]
+      }
+    },
+    "gate_channels": {
+      "1024": {
+        "gain_percentage_points": 1.760577233949745,
+        "pointwise_ci95_pp": [
+          0.769709608923552,
+          2.852251344929477
+        ]
+      },
+      "16384": {
+        "gain_percentage_points": 1.828111150392231,
+        "pointwise_ci95_pp": [
+          0.7355226409392893,
+          3.166806107645807
+        ]
+      }
+    },
+    "idle_only": {
+      "1024": {
+        "gain_percentage_points": 1.7639357534893652,
+        "pointwise_ci95_pp": [
+          0.7497742956649669,
+          2.888390826435303
+        ]
+      },
+      "16384": {
+        "gain_percentage_points": 1.1509133597469967,
+        "pointwise_ci95_pp": [
+          0.43838025029008987,
+          2.029583460348007
+        ]
+      }
+    },
+    "gate_and_idle": {
+      "1024": {
+        "gain_percentage_points": 2.1077756588303798,
+        "pointwise_ci95_pp": [
+          0.9505415284755048,
+          3.445535737309133
+        ]
+      },
+      "16384": {
+        "gain_percentage_points": 3.5951518005506333,
+        "pointwise_ci95_pp": [
+          1.5683309577752471,
+          6.1400704780112285
+        ]
+      }
+    },
+    "gate_idle_readout": {
+      "1024": {
+        "gain_percentage_points": 2.037349073168704,
+        "pointwise_ci95_pp": [
+          0.9223247803665411,
+          3.319867641711948
+        ]
+      },
+      "16384": {
+        "gain_percentage_points": 4.260887376887168,
+        "pointwise_ci95_pp": [
+          1.8996288913972328,
+          7.062236557753905
+        ]
+      }
+    }
+  },
+  "qpu_seconds": 0,
+  "limits": [
+    "One saved IBM Fez calibration and one routing seed, approximate independent Markovian noise.",
+    "128 trajectories estimate probabilities; nonlinear finite-shot statistics are plug-in estimates, not hardware observations.",
+    "Only Babai failures simulated; remaining hybrid outputs are exactly optimal. No full-cohort standalone claim.",
+    "Pointwise intervals combine paired development-group resampling with trajectory uncertainty; exploratory, not final validation.",
+    "Channel effects need not add because noise changes the state and interacts with later channels."
+  ]
+}

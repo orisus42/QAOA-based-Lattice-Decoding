@@ -1,0 +1,33 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+\definecolor{ink}{HTML}{263E62}
+\definecolor{phase}{HTML}{E28B32}
+\definecolor{mix}{HTML}{8754A1}
+\begin{document}
+\begin{minipage}{20cm}
+\centering
+\begin{quantikz}[row sep={0.42cm,between origins},column sep=0.35cm]
+\lstick{$q_{0}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{0})} & \gate[16,style={fill=phase!15}]{\displaystyle U_{ZZ}^{\mathcal S}(\gamma)\,=\!\prod_{(i,j)\in\mathcal S}e^{-i\gamma J_{ij}Z_iZ_j}} & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{1}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{1})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{2}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{2})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{3}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{3})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{4}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{4})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{5}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{5})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{6}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{6})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{7}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{7})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{8}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{8})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{9}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{9})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{10}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{10})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{11}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{11})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{12}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{12})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{13}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{13})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{14}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{14})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\lstick{$q_{15}:\ket{0}$} & \gate[style={fill=ink!8}]{H} & \gate{R_z(\theta_{15})} & \qw & \gate[style={fill=mix!12}]{R_x(2\beta)} & \meter{} \\
+\end{quantikz}
+\vspace{5mm}
+\(p=1,\quad n_q=16,\quad |\mathcal S|=26,\quad \gamma=1.339389,\quad\beta=-0.351602\)
+\par\(\theta_i=2\gamma h_i\)
+\end{minipage}
+\end{document}
